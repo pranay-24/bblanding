@@ -51,7 +51,7 @@ const Hero: React.FC<HeroProps> = ({ contactFormEmbed }) => {
         <Slider {...sliderSettings}>
           {carouselImages.map((slide, index) => (
             <div key={index} className="relative">
-              <div className="  w-full">
+              <div className=" md:h-[70vh] w-full">
                 <div
                   className="absolute inset-0 bg-center bg-cover bg-no-repeat"
                   style={{ backgroundImage: `url(${slide.url})` }}
