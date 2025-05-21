@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AboutSection: React.FC = () => {
+const HomeGenerator: React.FC = () => {
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
@@ -13,9 +13,9 @@ const AboutSection: React.FC = () => {
             />
           </div>
           <div className="w-full md:w-2/3">
-            <span className="text-orange-primary font-medium mb-2 block">Why Choose BlueBest</span>
+            {/* <span className="text-orange-primary font-medium mb-2 block">Why Choose BlueBest</span> */}
             <h2 className=" text-3xl md:text-4xl font-bold text-blue-primary mb-4">
-              Your Trusted Partner for Home Comfort
+             Briggs & Stratton Whole-Home Generator
             </h2>
             <p className=" text-gray-600 mb-6">
               With over 20 years of experience serving Bountiful and surrounding areas, 
@@ -23,6 +23,26 @@ const AboutSection: React.FC = () => {
               and plumbing services. Our team of certified professionals is committed 
               to delivering exceptional service and ensuring your complete satisfaction.
             </p>
+            <ul className="list-none pl-4 space-y-2 mb-8">
+  <li className="relative pl-6 text-gray-600">
+    <span className="absolute left-0 top-1 inline-block h-5 w-5 bg-[url(https://res.cloudinary.com/dwe4p22ut/image/upload/v1747842034/next-100_smkyiq.png)] bg-contain bg-no-repeat bg-center"></span>
+    Automatically powers your home in seconds.
+  </li>
+  <li className="relative pl-6 text-gray-600">
+    <span className="absolute left-0 top-1 inline-block h-5 w-5 bg-[url(https://res.cloudinary.com/dwe4p22ut/image/upload/v1747842034/next-100_smkyiq.png)] bg-contain bg-no-repeat bg-center"></span>
+    Keeps your family safe and comfortable.
+
+  </li>
+  <li className="relative pl-6  text-gray-600">
+    <span className="absolute left-0 top-1 inline-block h-5 w-5 bg-[url(https://res.cloudinary.com/dwe4p22ut/image/upload/v1747842034/next-100_smkyiq.png)] bg-contain bg-no-repeat bg-center"></span>
+    Protects your valuables and appliances.
+  </li>
+    <li className="relative pl-6  text-gray-600">
+    <span className="absolute left-0 top-1 inline-block h-5 w-5 bg-[url(https://res.cloudinary.com/dwe4p22ut/image/upload/v1747842034/next-100_smkyiq.png)] bg-contain bg-no-repeat bg-center"></span>
+    Ensures uninterrupted remote work and productivity.
+  </li>
+</ul>
+
             {/* <a
               href="#contact"
               className="inline-block px-6 py-3 bg-blue-primary text-white font-semibold rounded-lg 
@@ -45,4 +65,4 @@ const AboutSection: React.FC = () => {
   );
 };
 
-export default AboutSection;
+export default HomeGenerator;

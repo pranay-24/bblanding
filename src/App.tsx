@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import AboutSection from './components/AboutSection';
+import HomeGenerator from './components/HomeGenerator';
 import FeaturesSection from './components/FeaturesSection';
 import ServicesSection from './components/ServicesSection';
 import SpecialsSection from './components/SpecialsSection';
@@ -17,8 +18,9 @@ function App() {
     <div className="flex flex-col min-h-screen">
       <Navbar />
       <main className="flex-grow">
-        <Hero contactFormEmbed={contactFormEmbed} />
+        {/* <Hero contactFormEmbed={contactFormEmbed} /> */}
         <AboutSection />
+        <HomeGenerator/>
         <ServicesSection />
         <FeaturesSection />
         <SpecialsSection />

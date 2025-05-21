@@ -80,7 +80,7 @@ const Navbar: React.FC = () => {
         isScrolled ? 'bg-white shadow-nav' : 'bg-white shadow-nav'
       }`}
     >
-      <div className="container mx-auto ">
+      <div className="container px-4 mx-auto ">
         <div className="flex flex-col">
           {/* Top Bar */}
           <div className="flex justify-between items-center py-4">

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Flame, Thermometer, Droplets } from 'lucide-react';
+import {  Phone } from 'lucide-react';
 
 const ServicesSection: React.FC = () => {
   const services = [
@@ -52,13 +53,21 @@ const ServicesSection: React.FC = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <a 
-            href="tel:+13852741575"
-            className="px-6 py-3 bg-orange-primary text-white font-semibold rounded-lg shadow hover:bg-orange-dark transition duration-300 inline-block cta-button"
-          >
-            Call For Service: (385) 274-1575
-          </a>
+        <div className="flex gap-2 justify-center text-center mt-12">
+            <a
+              href="#contact"
+              className="px-11 py-3.5 text-lg bg-gradient-to-b from-orange-600 to-orange-500 text-white text-center ease-out whitespace-pre-wrap rounded-full uppercase font-semibold font-['Kanit'] leading-relaxed shadow-[0_0.2em_0_#003572] transition duration-300"
+            >
+
+              Schedule Service
+            </a>
+            <a
+                href="tel:+13852741575"
+                className="flex items-center justify-center px-11 py-3.5 text-lg bg-[#003572] text-white text-center ease-out whitespace-pre-wrap rounded-full uppercase font-semibold font-['Kanit'] leading-relaxed "
+              >
+                <Phone size={18} className="mr-2" />
+                (385) 274-1575
+              </a>
         </div>
       </div>
     </section>
