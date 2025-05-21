@@ -27,10 +27,13 @@ function App() {
        </div>
        
        
-        <FeaturesSection />
-        <SpecialsSection />
+        {/* <FeaturesSection />
+        <SpecialsSection /> */}
         <TestimonialsSection />
-        <CertificationsSection />
+        <div className="bg-[url('https://res.cloudinary.com/dwe4p22ut/image/upload/v1747858949/Orange-Tones-BG-1_kf4kpy.webp')] bg-cover bg-center bg-no-repeat">
+         <CertificationsSection />
+        </div>
+       
       </main>
       <Footer />
     </div>

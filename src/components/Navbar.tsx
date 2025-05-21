@@ -16,42 +16,37 @@ const Navbar: React.FC = () => {
   const navItems: NavItem[] = [
     {
       title: 'HEATING',
-      href: '#heating',
+      href: 'https://bluebest.com/furnace-company-bountiful-ut/',
       dropdown: [
-        { title: 'Furnace Installation', href: '#furnace-installation' },
-        { title: 'Heating Repair', href: '#heating-repair' },
-        { title: 'Heat Pumps', href: '#heat-pumps' },
-        { title: 'Maintenance', href: '#heating-maintenance' },
+        { title: 'FURNACE REPAIR', href: 'https://bluebest.com/furnace-service-bountiful-ut/' },
+        { title: 'FURNACE REPLACEMENT', href: 'https://bluebest.com/furnace-replacement-bountiful-ut/' },
+        { title: 'FURNACE MAINTENANCE', href: 'https://bluebest.com/furnace-tune-up-bountiful-ut/' },
+        { title: 'HEAT PUMPS', href: 'https://bluebest.com/heat-pumps-services/' },
       ]
     },
     {
       title: 'AIR CONDITIONING',
-      href: '#air',
+      href: 'https://bluebest.com/ac-company-bountiful-ut/',
       dropdown: [
-        { title: 'AC Installation', href: '#ac-installation' },
-        { title: 'AC Repair', href: '#ac-repair' },
-        { title: 'Ductless Systems', href: '#ductless-systems' },
-        { title: 'Maintenance', href: '#ac-maintenance' },
+        { title: 'AC REPAIR', href: 'https://bluebest.com/air-conditioner-repair-bountiful-ut/' },
+        { title: 'AC INSTALLATION', href: 'https://bluebest.com/air-conditioner-installation-bountiful-ut/' },
+        { title: 'AC MAINTENANCE', href: 'https://bluebest.com/hvac-maintenance-bountiful-ut/' },
+        { title: 'DUCTLESS MINI-SPLITS', href: 'https://bluebest.com/ductless-mini-splits-bountiful-ut/' },
       ]
     },
     {
       title: 'PLUMBING',
-      href: '#plumbing',
-      dropdown: [
-        { title: 'Emergency Service', href: '#emergency-plumbing' },
-        { title: 'Water Heaters', href: '#water-heaters' },
-        { title: 'Drain Cleaning', href: '#drain-cleaning' },
-        { title: 'Repiping', href: '#repiping' },
-      ]
+      href: 'https://bluebest.com/plumbing-bountiful-ut/',
+   
     },
     {
-      title: 'GENERATORS',
+      title: 'PRODUCTS',
       href: '#generators',
       dropdown: [
-        { title: 'Stratton & Briggs', href: '#stratton-briggs' },
-        { title: 'Installation', href: '#generator-installation' },
-        { title: 'Maintenance', href: '#generator-maintenance' },
-        { title: 'Repairs', href: '#generator-repairs' },
+        { title: 'BRIGGS & STRATTON', href: 'https://bluebest.com/briggs-stratton-generators-bounitful-ut/' },
+        { title: 'LENNOX', href: 'https://bluebest.com/lennox-products/' },
+        { title: 'AMANA', href: 'https://bluebest.com/amana-products/' },
+        { title: 'HAGUE WATER TREATMENT', href: 'https://bluebest.com/hague-water-treatment/' },
       ]
     },
     {
@@ -88,15 +83,15 @@ const Navbar: React.FC = () => {
             
             {/* Phone Number Button */}
             <div className="flex items-center gap-4">
-              <a
+              {/* <a
                 href="#specials"
                 className="hidden md:inline-block px-4 py-2 text-orange-primary font-medium hover:text-orange-dark transition duration-300"
               >
                 Special Offers
-              </a>
+              </a> */}
               <a
                 href="tel:+13852741575"
-                className="hidden md:flex items-center px-4 py-2 rounded-full bg-blue-primary text-white font-medium hover:bg-blue-dark transition duration-300"
+                className="hidden md:flex items-center px-11 py-3.5 text-lg bg-gradient-to-b from-orange-600 to-orange-500 text-white text-center ease-out whitespace-pre-wrap rounded-full uppercase font-semibold font-['Kanit'] leading-relaxed shadow-[0_0.2em_0_#003572] transition duration-300"
               >
                 <Phone size={18} className="mr-2" />
                 (385) 274-1575

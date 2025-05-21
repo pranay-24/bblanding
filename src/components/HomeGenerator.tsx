@@ -2,7 +2,7 @@ import React from 'react';
 
 const HomeGenerator: React.FC = () => {
   return (
-    <section className="py-16 bg-transparent">
+    <section className="py-16 bg-transparent" id="Briggs_Generator">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center gap-6">
           <div className="w-full md:w-1/3">
@@ -53,7 +53,7 @@ const HomeGenerator: React.FC = () => {
               Schedule Service
             </a> */}
             <a
-              href="#contact"
+              href="tel:+13852741575"
               className="px-11 py-3.5 text-lg bg-gradient-to-b from-orange-600 to-orange-500 text-white text-center ease-out whitespace-pre-wrap rounded-full uppercase font-semibold font-['Kanit'] leading-relaxed shadow-[0_0.2em_0_#003572] transition duration-300 "
             >
 

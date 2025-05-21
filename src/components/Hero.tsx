@@ -29,13 +29,29 @@ const Hero: React.FC<HeroProps> = ({ contactFormEmbed }) => {
     adaptiveHeight: true,
   };
 
+ const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  e.preventDefault();
+  const target = document.getElementById('Briggs_Generator');
+  
+  if (target) {
+    const navbarOffset = 90; // Adjust based on your navbar height
+    const elementPosition = target.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - navbarOffset;
+    
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    });
+  }
+};
+
   return (
-    <section className="pt-32 md:pt-24 relative">
+    <section className="pt-20 md:pt-[150px] lg:pt-[130px] relative" id="hero_Section-bblanding">
       <div className="w-full relative">
         <Slider {...sliderSettings}>
           {carouselImages.map((slide, index) => (
             <div key={index} className="relative">
-              <div className=" h-full lg:h-[80vh] w-full">
+              <div className=" h-[900px] lg:h-[80vh] w-full">
                 <div
                   className="absolute inset-0 bg-center bg-cover bg-no-repeat"
                   style={{ backgroundImage: `url(${slide.url})` }}
@@ -52,7 +68,8 @@ const Hero: React.FC<HeroProps> = ({ contactFormEmbed }) => {
                       <p className="text-lg md:text-xl mb-6">Losing power isn't just inconvenient - it's <span className="font-bold">costly</span> and <span className="font-bold">disruptive.</span></p>
                       <div className="flex flex-col sm:flex-row gap-4">
                         <a 
-                          href="#generators" 
+                          
+                            onClick={handleClick}
                           className="px-11 py-3.5 text-lg bg-gradient-to-b from-orange-600 to-orange-500 text-white text-center ease-out whitespace-pre-wrap rounded-full uppercase font-semibold font-['Kanit'] leading-relaxed shadow-[0_0.2em_0_#003572] transition duration-300"
                         >
                           Learn More

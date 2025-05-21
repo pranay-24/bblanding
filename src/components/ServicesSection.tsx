@@ -23,6 +23,15 @@ const ServicesSection: React.FC = () => {
       link: '#plumbing'
     }
   ];
+    const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+      e.preventDefault();
+      const target = document.getElementById('hero_Section-bblanding');
+      
+      // Add this null check to satisfy TypeScript
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
 
   return (
     <section id="services" className="py-16 bg-transparent">
@@ -55,10 +64,9 @@ const ServicesSection: React.FC = () => {
 
         <div className="flex gap-2 justify-center text-center mt-12">
             <a
-              href="#contact"
+               onClick={handleClick}
               className="px-11 py-3.5 text-lg bg-gradient-to-b from-orange-600 to-orange-500 text-white text-center ease-out whitespace-pre-wrap rounded-full uppercase font-semibold font-['Kanit'] leading-relaxed shadow-[0_0.2em_0_#003572] transition duration-300"
             >
-
               Schedule Service
             </a>
             <a
