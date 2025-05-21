@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&display=swap');
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+  p, li, span, a, div {
+    @apply font-body;
+  }
+}
+
+:root {
+  --blue-primary: #0071BC;
+  --orange-primary: #F7941D;
+  --blue-light: #E6F0F9;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: var(--blue-light);
+  margin: 0;
+  padding: 0;
+}
+
+.slick-dots li button:before {
+  color: var(--blue-primary);
+  font-size: 12px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: var(--orange-primary);
+  opacity: 1;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: var(--blue-primary);
+  font-size: 24px;
+}
+
+.header-nav a {
+  position: relative;
+}
+
+.header-nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--orange-primary);
+  transition: width 0.3s ease;
+}
+
+.header-nav a:hover::after {
+  width: 100%;
+}
+
+.cta-button {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(247, 148, 29, 0.4);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
