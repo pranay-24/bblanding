@@ -2,7 +2,7 @@ import React from 'react';
 
 const HomeGenerator: React.FC = () => {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-transparent">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center gap-6">
           <div className="w-full md:w-1/3">
@@ -42,6 +42,7 @@ const HomeGenerator: React.FC = () => {
     Ensures uninterrupted remote work and productivity.
   </li>
 </ul>
+ <span className="text-xl text-orange-primary font-bold mb-8 block">Get $2,000 OFF Your Whole-Home Generator</span>
 
             {/* <a
               href="#contact"
@@ -53,11 +54,14 @@ const HomeGenerator: React.FC = () => {
             </a> */}
             <a
               href="#contact"
-              className="px-11 py-3.5 text-lg bg-gradient-to-b from-orange-600 to-orange-500 text-white text-center ease-out whitespace-pre-wrap rounded-full uppercase font-semibold font-['Kanit'] leading-relaxed shadow-[0_0.2em_0_#003572] transition duration-300"
+              className="px-11 py-3.5 text-lg bg-gradient-to-b from-orange-600 to-orange-500 text-white text-center ease-out whitespace-pre-wrap rounded-full uppercase font-semibold font-['Kanit'] leading-relaxed shadow-[0_0.2em_0_#003572] transition duration-300 "
             >
 
-              Schedule Service
+              Call Us Now
             </a>
+            <span className="text-md mt-8 text-gray-600 font-bold mb-8 block">**For a limited time only (Till 15th May 2025)
+</span>
+
           </div>
         </div>
       </div>

@@ -9,6 +9,7 @@ export default {
         'blue-dark': '#005A96',
         'orange-primary': '#F7941D',
         'orange-dark': '#E67E00',
+        'grey-color':'#666',
       },
       fontFamily: {
           heading: ['Kanit', 'sans-serif'],
