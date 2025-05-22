@@ -138,8 +138,8 @@ const Hero: React.FC<HeroProps> = ({ contactFormEmbed }) => {
                     {/* Left side - Text content */}
                     <div className="text-white z-10 max-w-md md:max-w-xl md:mr-8 mb-10 md:mb-0 fade-in lg:flex-1">
                       <h1 className="text-3xl md:text-5xl font-bold mb-4">{slide.title}</h1>
-                      <p className="font-bold text-lg md:text-xl mb-6">Spoiled food. Interrupted work. Sleepless nights</p>
-                      <p className="text-lg md:text-xl mb-6">
+                      <p className="font-bold text-base md:text-xl mb-3">Spoiled food. Interrupted work. Sleepless nights</p>
+                      <p className="text-base md:text-xl mb-6">
                         Losing power isn't just inconvenient - it's <span className="font-bold">costly</span> and <span className="font-bold">disruptive.</span>
                       </p>
                       <div className="flex flex-col sm:flex-row gap-4">
