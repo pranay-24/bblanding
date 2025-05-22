@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutSection: React.FC = () => {
   return (
-    <section className="py-16 bg-transparent">
+    <section className="py-4 md:py-16 bg-transparent">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center gap-6">
           <div className="w-full md:w-1/2">
@@ -13,14 +13,16 @@ const AboutSection: React.FC = () => {
             />
           </div>
           <div className="w-full md:w-1/2">
-            {/* <span className="text-orange-primary font-medium mb-2 block">Why Choose BlueBest</span>
-            <h2 className=" text-3xl md:text-4xl font-bold text-blue-primary mb-4">
-              Your Trusted Partner for Home Comfort
-            </h2> */}
+            {/* <span className="text-orange-primary font-medium mb-2 block">Why Choose BlueBest</span> */}
+             <h2 className=" text-3xl md:text-4xl font-bold text-blue-primary mb-4">
+              The Hidden Cost of Power Outages
+             </h2>
             <p className=" text-gray-600 mb-9">
-              A summer storm knocks your power out. Your fridge stops running, your home security fails, and your family's comfort is compromised. 
+              A summer storm knocks your power out. Your fridge stops running, your home security fails, and your family's comfort is compromised.It’s not just about inconvenience—it’s about loss. Hundreds of dollars in spoiled groceries. Hours of lost productivity. Security vulnerabilities. Interrupted sleep. All of it adds up, creating anxiety and real financial strain. 
               </p>
-<span className="text-md mt-8 text-gray-600 font-bold mb-8 block">Suddenly, your home isn't your sanctuary - it’s a source of stress.</span>
+<span className="text-md mt-8 text-gray-600  mb-8 block">Suddenly, your home isn't your sanctuary - it’s a source of stress.</span>
+<span className="text-md mt-8 text-gray-600  mb-8 block">No more panicking when the skies darken. No more resetting the Wi-Fi or tossing groceries. With a <span className="text-blue-dark font-extrabold ">Briggs & Stratton Whole-House Generator</span>, your life doesn’t skip a beat.</span>
+
 
               
             {/* <a

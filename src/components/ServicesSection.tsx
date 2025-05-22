@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flame, Thermometer, Droplets } from 'lucide-react';
+import { Flame, Thermometer, Droplets, Zap} from 'lucide-react';
 import {  Phone } from 'lucide-react';
 
 const ServicesSection: React.FC = () => {
@@ -8,19 +8,19 @@ const ServicesSection: React.FC = () => {
       icon: <Flame className="w-12 h-12 text-orange-primary" />,
       title: 'Heating',
       description: 'Professional heating installation, repair and maintenance services for your home or business.',
-      link: '#heating'
+      link: 'https://bluebest.com/furnace-company-bountiful-ut/'
     },
     {
       icon: <Thermometer className="w-12 h-12 text-blue-primary" />,
       title: 'Air Conditioning',
       description: 'Keep your space cool and comfortable with our expert air conditioning services.',
-      link: '#air'
+      link: 'https://bluebest.com/ac-company-bountiful-ut/'
     },
     {
-      icon: <Droplets className="w-12 h-12 text-blue-primary" />,
-      title: 'Plumbing',
-      description: 'From emergency repairs to new installations, we handle all your plumbing needs.',
-      link: '#plumbing'
+      icon: <Zap className="w-12 h-12 text-blue-primary" />,
+      title: 'Generator',
+      description: 'If you want reliable access to electricity, consider installing Briggs and Stratton generators.',
+      link: 'https://bluebest.com/briggs-stratton-generators-bounitful-ut/'
     }
   ];
     const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -34,9 +34,9 @@ const ServicesSection: React.FC = () => {
     };
 
   return (
-    <section id="services" className="py-16 bg-transparent">
+    <section id="services" className="py-4 md:py-16 bg-transparent">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
+        <div className="text-left md:text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-blue-primary mb-4">Our Other Services</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             BlueBest provides quality plumbing, heating, and air conditioning services to homes and businesses in Bountiful, UT and surrounding areas.

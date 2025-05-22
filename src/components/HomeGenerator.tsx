@@ -2,7 +2,8 @@ import React from 'react';
 
 const HomeGenerator: React.FC = () => {
   return (
-    <section className="py-16 bg-transparent" id="Briggs_Generator">
+    <section className="py-4 md:py-16 bg-transparent" id="Briggs_Generator">
+      
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center gap-6">
           <div className="w-full md:w-1/3">
@@ -13,7 +14,7 @@ const HomeGenerator: React.FC = () => {
             />
           </div>
           <div className="w-full md:w-2/3">
-            {/* <span className="text-orange-primary font-medium mb-2 block">Why Choose BlueBest</span> */}
+            <span className="text-orange-primary font-medium mb-2 block">Meet Your Home's New Best Friend</span>
             <h2 className=" text-3xl md:text-4xl font-bold text-blue-primary mb-4">
              Briggs & Stratton Whole-Home Generator
             </h2>

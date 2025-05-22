@@ -18,20 +18,20 @@ const Navbar: React.FC = () => {
       title: 'HEATING',
       href: 'https://bluebest.com/furnace-company-bountiful-ut/',
       dropdown: [
-        { title: 'FURNACE REPAIR', href: 'https://bluebest.com/furnace-service-bountiful-ut/' },
-        { title: 'FURNACE REPLACEMENT', href: 'https://bluebest.com/furnace-replacement-bountiful-ut/' },
-        { title: 'FURNACE MAINTENANCE', href: 'https://bluebest.com/furnace-tune-up-bountiful-ut/' },
-        { title: 'HEAT PUMPS', href: 'https://bluebest.com/heat-pumps-services/' },
+        { title: 'Furnace Repair', href: 'https://bluebest.com/furnace-service-bountiful-ut/' },
+        { title: 'Furnace Replacement', href: 'https://bluebest.com/furnace-replacement-bountiful-ut/' },
+        { title: 'Furnace Maintenance', href: 'https://bluebest.com/furnace-tune-up-bountiful-ut/' },
+        { title: 'Heat Pumps', href: 'https://bluebest.com/heat-pumps-services/' },
       ]
     },
     {
       title: 'AIR CONDITIONING',
       href: 'https://bluebest.com/ac-company-bountiful-ut/',
       dropdown: [
-        { title: 'AC REPAIR', href: 'https://bluebest.com/air-conditioner-repair-bountiful-ut/' },
-        { title: 'AC INSTALLATION', href: 'https://bluebest.com/air-conditioner-installation-bountiful-ut/' },
-        { title: 'AC MAINTENANCE', href: 'https://bluebest.com/hvac-maintenance-bountiful-ut/' },
-        { title: 'DUCTLESS MINI-SPLITS', href: 'https://bluebest.com/ductless-mini-splits-bountiful-ut/' },
+        { title: 'AC Repair', href: 'https://bluebest.com/air-conditioner-repair-bountiful-ut/' },
+        { title: 'AC Installation', href: 'https://bluebest.com/air-conditioner-installation-bountiful-ut/' },
+        { title: 'AC Maintainence', href: 'https://bluebest.com/hvac-maintenance-bountiful-ut/' },
+        { title: 'Ductless Mini-Splits', href: 'https://bluebest.com/ductless-mini-splits-bountiful-ut/' },
       ]
     },
     {
@@ -43,20 +43,25 @@ const Navbar: React.FC = () => {
       title: 'PRODUCTS',
       href: '#generators',
       dropdown: [
-        { title: 'BRIGGS & STRATTON', href: 'https://bluebest.com/briggs-stratton-generators-bounitful-ut/' },
-        { title: 'LENNOX', href: 'https://bluebest.com/lennox-products/' },
-        { title: 'AMANA', href: 'https://bluebest.com/amana-products/' },
-        { title: 'HAGUE WATER TREATMENT', href: 'https://bluebest.com/hague-water-treatment/' },
+        { title: 'Briggs & Stratton Generators', href: 'https://bluebest.com/briggs-stratton-generators-bounitful-ut/' },
+        { title: 'Lennox', href: 'https://bluebest.com/lennox-products/' },
+        { title: 'Amana', href: 'https://bluebest.com/amana-products/' },
+        { title: 'Hague Water Treatment', href: 'https://bluebest.com/hague-water-treatment/' },
       ]
     },
     {
       title: 'SERVICES',
-      href: '#services',
+      href: 'https://bluebest.com/our-hvac-services-layton-ut/',
       dropdown: [
-        { title: 'Maintenance Plans', href: '#maintenance-plans' },
-        { title: 'Commercial Services', href: '#commercial' },
-        { title: 'Financing', href: '#financing' },
+        { title: 'Commercial HVAC', href: 'https://bluebest.com/commercial-hvac/' },
+        { title: 'Ductwork', href: 'https://bluebest.com/ductwork-bountiful-ut/' },
+        { title: 'HVAC Maintenance Plan', href: 'https://bluebest.com/hvac-maintenance-plan-layton-ut/' },
       ]
+    },
+      {
+      title: 'CONTACT',
+      href: 'https://bluebest.com/contact-us/',
+   
     },
   ];
 
@@ -72,7 +77,7 @@ const Navbar: React.FC = () => {
   return (
     <header 
       className={`fixed w-full top-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-nav' : 'bg-white shadow-nav'
+        isScrolled ? 'bg-blue-light shadow-nav' : 'bg-blue-light shadow-nav'
       }`}
     >
       <div className="container px-4 mx-auto ">
@@ -119,7 +124,7 @@ const Navbar: React.FC = () => {
               >
                 <a
                   href={item.href}
-                  className="px-4 py-2 font-medium text-blue-primary hover:text-blue-dark transition duration-300 flex items-center"
+                  className="px-4 py-2 font-bold text-blue-primary hover:text-orange-primary transition duration-300 flex items-center"
                 >
                   {item.title}
                   {item.dropdown && <ChevronDown size={16} className="ml-1" />}
@@ -130,7 +135,7 @@ const Navbar: React.FC = () => {
                       <a
                         key={dropItem.title}
                         href={dropItem.href}
-                        className="block px-4 py-2 text-gray-700 hover:bg-blue-light hover:text-blue-primary transition duration-300"
+                        className="block px-4 py-2 text-gray-700 hover:bg-blue-light hover:text-orange-primary transition duration-300"
                       >
                         {dropItem.title}
                       </a>

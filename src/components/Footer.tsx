@@ -32,12 +32,12 @@ const Footer: React.FC = () => {
           <div className="col-span-1">
             <h3 className="text-xl font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
-              <li><a href="#heating" className="hover:text-orange-primary transition duration-300">Heating</a></li>
-              <li><a href="#cooling" className="hover:text-orange-primary transition duration-300">Cooling</a></li>
-              <li><a href="#plumbing" className="hover:text-orange-primary transition duration-300">Plumbing</a></li>
-              <li><a href="#air-quality" className="hover:text-orange-primary transition duration-300">Air Quality</a></li>
-              <li><a href="#generators" className="hover:text-orange-primary transition duration-300">Generators</a></li>
-              <li><a href="#maintenance" className="hover:text-orange-primary transition duration-300">Maintenance Plans</a></li>
+              <li><a href="https://bluebest.com/furnace-company-bountiful-ut/" className="hover:text-orange-primary transition duration-300">Heating</a></li>
+              <li><a href="https://bluebest.com/ac-company-bountiful-ut/" className="hover:text-orange-primary transition duration-300">Cooling</a></li>
+              <li><a href="https://bluebest.com/plumbing-bountiful-ut/" className="hover:text-orange-primary transition duration-300">Plumbing</a></li>
+              <li><a href="https://bluebest.com/air-quality-bountiful-ut/" className="hover:text-orange-primary transition duration-300">Air Quality</a></li>
+              <li><a href="https://bluebest.com/briggs-stratton-generators-bounitful-ut/" className="hover:text-orange-primary transition duration-300">Generators</a></li>
+              <li><a href="https://bluebest.com/hvac-maintenance-plan-layton-ut/" className="hover:text-orange-primary transition duration-300">Maintenance Plans</a></li>
             </ul>
           </div>
 
@@ -45,18 +45,18 @@ const Footer: React.FC = () => {
           <div className="col-span-1">
             <h3 className="text-xl font-semibold mb-4">Company</h3>
             <ul className="space-y-2">
-              <li><a href="#about" className="hover:text-orange-primary transition duration-300">About Us</a></li>
-              <li><a href="#testimonials" className="hover:text-orange-primary transition duration-300">Testimonials</a></li>
-              <li><a href="#financing" className="hover:text-orange-primary transition duration-300">Financing</a></li>
-              <li><a href="#careers" className="hover:text-orange-primary transition duration-300">Careers</a></li>
-              <li><a href="#blog" className="hover:text-orange-primary transition duration-300">Blog</a></li>
-              <li><a href="#contact" className="hover:text-orange-primary transition duration-300">Contact</a></li>
+              <li><a href="https://bluebest.com/about-us/" className="hover:text-orange-primary transition duration-300">About Us</a></li>
+              <li><a href="https://bluebest.com/reviews/" className="hover:text-orange-primary transition duration-300">Testimonials</a></li>
+              <li><a href="https://bluebest.com/financing/" className="hover:text-orange-primary transition duration-300">Financing</a></li>
+              <li><a href="https://bluebest.com/apply-jobs/" className="hover:text-orange-primary transition duration-300">Careers</a></li>
+              <li><a href="https://bluebest.com/blog/" className="hover:text-orange-primary transition duration-300">Blog</a></li>
+              <li><a href="https://bluebest.com/contact-us/" className="hover:text-orange-primary transition duration-300">Contact</a></li>
             </ul>
           </div>
 
           {/* Hours and Social */}
           <div className="col-span-1">
-            <h3 className="text-xl font-semibold mb-4">Hours</h3>
+            {/* <h3 className="text-xl font-semibold mb-4">Hours</h3>
             <ul className="space-y-1 mb-6">
               <li className="flex justify-between">
                 <span>Monday - Friday:</span>
@@ -71,7 +71,7 @@ const Footer: React.FC = () => {
                 <span>Closed</span>
               </li>
               <li className="mt-2 text-orange-primary font-medium">24/7 Emergency Service Available</li>
-            </ul>
+            </ul> */}
             
             <h3 className="text-xl font-semibold mb-4">Connect With Us</h3>
             <div className="flex space-x-4">
