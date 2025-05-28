@@ -5,13 +5,14 @@ import Logo from './Logo';
 const Footer: React.FC = () => {
   return (
     <footer className="bg-blue-primary text-white pt-12 pb-6">
-      <div className="container mx-auto px-4">
+      <div className="lg:container mx-auto px-4">
+        <div className="bg-white p-4 rounded-lg inline-block mb-4">
+              <Logo />
+            </div>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Logo and Contact */}
           <div className="col-span-1">
-            <div className="bg-white p-4 rounded-lg inline-block mb-4">
-              <Logo />
-            </div>
+            
             <ul className="space-y-3 mt-4">
               <li className="flex items-start">
                 <MapPin size={20} className="mr-2 mt-1 flex-shrink-0" />
