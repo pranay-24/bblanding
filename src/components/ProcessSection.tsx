@@ -1,0 +1,87 @@
+import React from 'react';
+import {  Phone } from 'lucide-react';
+
+const ProcessSection: React.FC = () => {
+  const steps = [
+    { number: 1, title: 'Free Consultation', text: 'Schedule Your Estimate' },
+    { number: 2, title: 'Professional Installation', text: 'Get Expert Recommendation + Quote' },
+    { number: 3, title: 'Lifetime Support', text: 'Enjoy Hassle-Free Installation with 0% Financing' },
+  ];
+
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+        e.preventDefault();
+        const target = document.getElementById('hero_Section-bblanding');
+        
+        // Add this null check to satisfy TypeScript
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
+
+  return (
+    <section className="py-16">
+      <div className="container mx-auto px-4 ">
+        <h2 className="text-3xl md:text-4xl font-bold text-blue-primary text-center mb-16">
+          Here's How Easy It Is
+        </h2>
+        
+        <div className="flex flex-col md:flex-row items-center justify-center gap-0 relative">
+          {steps.map((step, index) => (
+            <React.Fragment key={step.number}>
+              <div className="flex flex-col items-start relative">
+                <div className="w-[175px] md:w-[200px] h-[175px] md:h-[200px] rounded-full bg-blue-primary-dark flex flex-col justify-start pt-7 md:pt-9 items-center relative shadow-[inset_7px_-7px_8px_#ea580c]">
+                  <span className="text-2xl md:text-3xl font-bold text-white text-center">
+                    {step.number}
+                  </span>
+                  <span className="text-md md:text-lg font-bold text-white mt-1 text-center px-2">
+                    {step.text}
+                  </span>
+                </div>
+                {/* <h3 className="mt-4 font-bold text-gray-800 text-center">
+                  {step.title}
+                </h3> */}
+
+              </div>
+              {index < steps.length - 1 && (
+                // <div className="hidden md:block w-30 h-[2px] bg-orange-primary self-start mt-[100px]" />
+              <div className="hidden md:block w-20 h-[3px] bg-orange-primary" />
+              )}
+               {index < steps.length - 1 && (
+                
+                //  <div className="block md:hidden w-[2px] h-30  self-start ml-[100px]" />
+                 <div className="block md:hidden w-[3px] h-16 bg-orange-primary" />
+              )}
+            </React.Fragment>
+          ))}
+          
+        </div>
+         <p className="pt-16 text-xl font-bold text-gray-600 max-w-3xl mx-auto text-center">
+            Simple.Fast.Done Right
+          </p>
+           <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-primary mb-4">Ready for a New HVAC System? Let's Talk.</h2>
+          {/* <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            BlueBest provides quality plumbing, heating, and air conditioning services to homes and businesses in Bountiful, UT and surrounding areas.
+          </p> */}
+        </div>
+        <div className="flex flex-col md:flex-row gap-4 justify-center text-center mt-12">
+            <a
+               onClick={handleClick}
+              className="px-11 py-3.5 text-lg bg-gradient-to-b from-orange-600 to-orange-500 text-white text-center ease-out whitespace-pre-wrap rounded-full uppercase font-semibold font-['Kanit'] leading-relaxed hover:cursor-pointer shadow-[0_0.2em_0_#003572] transition duration-300"
+            >
+              Request Estimate
+            </a>
+            <a
+                href="tel:+13852741575"
+                className="flex items-center justify-center px-11 py-3.5 text-lg bg-[#003572] text-white text-center ease-out whitespace-pre-wrap rounded-full uppercase font-semibold font-['Kanit'] leading-relaxed "
+              >
+                <Phone size={18} className="mr-2" />
+                (385) 274-1575
+              </a>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ProcessSection;

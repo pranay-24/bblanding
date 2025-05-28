@@ -2,71 +2,94 @@ import React from 'react';
 import { Shield, Clock, Award, PenTool as Tool, Users, Sparkles } from 'lucide-react';
 
 const FeaturesSection: React.FC = () => {
-  const features = [
-    {
-      icon: <Shield className="w-8 h-8 text-orange-primary" />,
-      title: 'Licensed & Insured',
-      description: 'Fully licensed professionals you can trust'
-    },
-    {
-      icon: <Clock className="w-8 h-8 text-orange-primary" />,
-      title: '24/7 Service',
-      description: 'Emergency services available anytime'
-    },
-    {
-      icon: <Award className="w-8 h-8 text-orange-primary" />,
-      title: 'Award Winning',
-      description: 'Recognized for excellence in service'
-    },
-    {
-      icon: <Tool className="w-8 h-8 text-orange-primary" />,
-      title: 'Expert Repairs',
-      description: 'Professional diagnosis and repairs'
-    },
-    {
-      icon: <Users className="w-8 h-8 text-orange-primary" />,
-      title: 'Family Owned',
-      description: 'Serving our community since 2003'
-    },
-    {
-      icon: <Sparkles className="w-8 h-8 text-orange-primary" />,
-      title: 'Quality Parts',
-      description: 'Only genuine replacement parts'
-    }
-  ];
+ 
 
   return (
-    <section className="py-16 bg-blue-light">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row items-center gap-12">
-          <div className="w-full md:w-1/2">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {features.map((feature, index) => (
-                <div key={index} className="bg-white p-6 rounded-lg shadow-md">
-                  <div className="mb-4">{feature.icon}</div>
-                  <h3 className="text-lg font-semibold text-blue-primary mb-2">{feature.title}</h3>
-                  <p className="text-gray-600">{feature.description}</p>
-                </div>
-              ))}
+    <section className="py-16 ">
+      <div className="lg:container mx-auto px-4">
+        <div className="flex flex-col lg:flex-row items-center gap-12">
+          <div className="w-full lg:w-1/2">
+          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-6">Why Salt Lake City Trusts BlueBest</h2>
+            <div className="grid   grid-cols-1 sm:grid-cols-2 gap-6">
+              
+               <div className="flex flex-col p-4 ">
+        <div className="mb-4 flex gap-5 mx-auto">
+          <img 
+            src="https://res.cloudinary.com/dwe4p22ut/image/upload/v1748383311/log-2_x9jcve.png"
+            alt="Column 1 Image 1"
+            className="w-24 h-20 object-contain"
+          />
+          <img 
+            src="https://res.cloudinary.com/dwe4p22ut/image/upload/v1748383311/logo-1_hzxybc.png"
+            alt="Column 1 Image 2"
+            className="w-24 h-20 object-contain"
+          />
+        </div>
+        <div className="text-blue-primary-dark text-md font-bold leading-relaxed text-center">
+          Three-Time & Current Best-of-State Winner – Heat & Air
+        </div>
+      </div>
+
+      <div className="flex flex-col p-4 ">
+        <div className="mb-4 mx-auto">
+          <img 
+            src="https://res.cloudinary.com/dwe4p22ut/image/upload/v1748383311/medal-logo-1_mr3xay.png"
+            alt="Column 2"
+            className="w-full h-20 object-contain"
+          />
+        </div>
+        <div className="text-blue-primary-dark text-md font-bold leading-relaxed text-center">
+         Current Best-of-State Winner – Plumbing
+        </div>
+      </div>
+
+<div className="flex flex-col p-4 ">
+        <div className="mb-4 mx-auto">
+          <img 
+            src="https://res.cloudinary.com/dwe4p22ut/image/upload/v1748383311/goggle_logo-1_alvocy.png"
+            alt="Column 3"
+            className="w-full h-20 object-contain"
+          />
+        </div>
+        <div className="text-blue-primary-dark text-md font-bold leading-relaxed text-center">
+          2,000+ Five-Star Google Reviews
+        </div>
+      </div>
+
+      <div className="flex flex-col p-4 ">
+        <div className="mb-4 mx-auto">
+          <img 
+            src="https://res.cloudinary.com/dwe4p22ut/image/upload/v1748383311/lennox_logo-1_wlpewc.png"
+            alt="Column 4"
+            className="w-full h-20 object-contain"
+          />
+        </div>
+        <div className="text-blue-primary-dark text-md font-bold leading-relaxed text-center">
+          Lennox-Certified Premier Dealer
+        </div>
+      </div>
+
+ <div className="flex flex-col p-4 ">
+        <div className="mb-4 mx-auto">
+          <img 
+            src="https://res.cloudinary.com/dwe4p22ut/image/upload/v1748388272/license-svg_k6r6ix.svg"
+            alt="Column 4"
+            className="w-full h-20 object-contain"
+          />
+        </div>
+        <div className="text-blue-primary-dark text-md font-bold leading-relaxed text-center">
+          Local. Licensed. Bonded. Insured.
+        </div>
+      </div>
+
             </div>
-            <div className="mt-8 text-center md:text-left">
-              <a
-                href="#contact"
-                className="inline-block px-6 py-3 bg-orange-primary text-white font-semibold 
-                  rounded-lg shadow hover:bg-orange-dark transition duration-300 mb-4"
-              >
-                Get Started Today
-              </a>
-              <p className="text-blue-primary font-medium">
-                100% Satisfaction Guaranteed
-              </p>
-            </div>
+        
           </div>
-          <div className="w-full md:w-1/2">
+          <div className="w-full lg:w-1/2">
             <img
-              src="https://images.pexels.com/photos/8962339/pexels-photo-8962339.jpeg"
+              src="https://res.cloudinary.com/dwe4p22ut/image/upload/v1748386314/hero-4_gmdtes.jpg"
               alt="Professional Service Team"
-              className="rounded-lg shadow-lg w-full h-[600px] object-cover"
+              className=" shadow-lg w-full h-[500px] md:h-[600px] object-cover"
             />
           </div>
         </div>

@@ -19,6 +19,18 @@ export default {
       boxShadow: {
         'nav': '0 2px 10px rgba(0, 0, 0, 0.1)',
       },
+       container: {
+      center: true,
+      padding: '2rem',
+      screens: {
+        'sm': '640px',
+        'md': '1024px',
+        'lg': '1024px',
+        'xl': '1200px',    // Custom max-width
+        '2xl': '1400px',   // Custom max-width
+      },
+    },
+    
     },
   },
   plugins: [],

@@ -9,6 +9,9 @@ import SpecialsSection from './components/SpecialsSection';
 import TestimonialsSection from './components/TestimonialsSection';
 import CertificationsSection from './components/CertificationsSection';
 import Footer from './components/Footer';
+import AvoidHeadaches from './components/AvoidHeadaches'
+import ProcessSection from './components/ProcessSection'
+import SecondaryHero from './components/SecondaryHero'
 
 function App() {
   // Your embed code would go here as a state variable
@@ -19,20 +22,30 @@ function App() {
       <Navbar />
       <main className="flex-grow">
         <Hero contactFormEmbed={contactFormEmbed} />
-        <div className="bg-[url('https://res.cloudinary.com/dwe4p22ut/image/upload/v1747853406/toparticlewrapperbg_wyeckj.webp')] bg-cover bg-center bg-no-repeat">
-         <AboutSection />
-          
-        <HomeGenerator/>
-        <ServicesSection />
-       </div>
        
-       
+       <AvoidHeadaches contactFormEmbed={contactFormEmbed}/>
+                 
+        <SecondaryHero/>
+        
+       <div className="bg-[url('https://res.cloudinary.com/dwe4p22ut/image/upload/v1747858949/Orange-Tones-BG-1_kf4kpy.webp')] bg-cover bg-center bg-no-repeat">
+       <FeaturesSection/>
+         </div>
         {/* <FeaturesSection />
         <SpecialsSection /> */}
+         <div className="
+    bg-[linear-gradient(to_bottom,rgba(255,255,255,0)_0%,rgba(255,255,255,1)_100%),url('https://res.cloudinary.com/dwe4p22ut/image/upload/v1747853406/toparticlewrapperbg_wyeckj.webp')]
+    bg-cover
+    bg-center
+    bg-no-repeat
+  ">
         <TestimonialsSection />
-        <div className="bg-[url('https://res.cloudinary.com/dwe4p22ut/image/upload/v1747858949/Orange-Tones-BG-1_kf4kpy.webp')] bg-cover bg-center bg-no-repeat">
+        <ProcessSection/>
          <CertificationsSection />
         </div>
+
+        
+        
+      
        
       </main>
       <Footer />

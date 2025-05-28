@@ -4,12 +4,29 @@ const CertificationsSection: React.FC = () => {
   return (
     <section className="py-16 ">
       <div className="container mx-auto px-4" style={{ maxWidth: '650px'}}>
-        <div className="text-center mb-12">
+        {/* <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Trusted & Certified</h2>
           <p className="text-lg text-white max-w-3xl mx-auto">
             BlueBest is proud to be recognized by industry leaders and maintain the highest standards of service.
           </p>
+        </div> */}
+
+         <div className="flex items-center justify-center w-full  mx-auto mb-12">
+  
+        <div className="flex-1 h-0.5 bg-orange-500"></div>
+        
+       
+        <div className="px-4">
+            <img 
+                src="https://res.cloudinary.com/dwe4p22ut/image/upload/v1748440410/new-blue-best-ornament_jnhios.svg" 
+                alt="Logo" 
+                className="w-12 h-12 object-contain"
+            />
         </div>
+        
+       
+        <div className="flex-1 h-0.5 bg-orange-500"></div>
+    </div>
 
         {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center"> */}
           {/* These would normally be actual images, using placeholder divs for the example */}
@@ -46,9 +63,9 @@ const CertificationsSection: React.FC = () => {
         <div className="text-center mt-8">
           <p className="text-blue-primary font-medium">Amana Pro Trusted Dealer</p>
         </div>
-
+{/* 
        <div className="grid  bg-blue-primary  grid-cols-1 md:grid-cols-3 gap-4 mt-12 max-w-3xl mx-auto">
-      {/* Image container - takes full width on mobile, 1/3 width on desktop */}
+      
       <div className="flex items-center justify-center p-4">
         <div className="w-[100px] md:w-full aspect-square ">
           <img 
@@ -59,14 +76,14 @@ const CertificationsSection: React.FC = () => {
         </div>
       </div>
       
-      {/* Content container - takes full width on mobile, 2/3 width on desktop */}
+   
       <div className="md:col-span-2 pt-0 pb-8 pl-8 pr-8 md:p-8 rounded-lg text-center md:text-left">
         <h3 className="text-2xl font-bold text-white mb-4">Three-Time Winner Best of State, 2023-2025</h3>
         <p className="text-white">
           The Best of State Judges recognize BlueBest for excellence in service, innovation, and contribution to the quality of life in Utah.
         </p>
       </div>
-    </div>
+    </div> */}
       </div>
     </section>
   );
