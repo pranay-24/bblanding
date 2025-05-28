@@ -34,11 +34,11 @@ const Hero: React.FC<HeroProps> = ({ contactFormEmbed }) => {
 
 
 
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    const target = document.getElementById('Briggs_Generator');
-    
-    if (target) {
+     const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+            e.preventDefault();
+            const target = document.getElementById('hero_Section-bblanding');
+            
+               if (target) {
       const navbarOffset = 90;
       const elementPosition = target.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - navbarOffset;
@@ -48,7 +48,7 @@ const Hero: React.FC<HeroProps> = ({ contactFormEmbed }) => {
         behavior: 'smooth'
       });
     }
-  };
+          };
 
   return (
     <section className="pt-[80px] md:pt-[150px] lg:pt-[130px] relative">

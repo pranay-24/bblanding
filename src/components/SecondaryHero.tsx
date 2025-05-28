@@ -7,10 +7,16 @@ const SecondaryHero: React.FC = () => {
             e.preventDefault();
             const target = document.getElementById('hero_Section-bblanding');
             
-            // Add this null check to satisfy TypeScript
-            if (target) {
-              target.scrollIntoView({ behavior: 'smooth' });
-            }
+               if (target) {
+      const navbarOffset = 90;
+      const elementPosition = target.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - navbarOffset;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
           };
 
   return (

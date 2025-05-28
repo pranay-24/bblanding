@@ -8,15 +8,21 @@ const ProcessSection: React.FC = () => {
     { number: 3, title: 'Lifetime Support', text: 'Enjoy Hassle-Free Installation with 0% Financing' },
   ];
 
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-        e.preventDefault();
-        const target = document.getElementById('hero_Section-bblanding');
-        
-        // Add this null check to satisfy TypeScript
-        if (target) {
-          target.scrollIntoView({ behavior: 'smooth' });
-        }
-      };
+     const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+            e.preventDefault();
+            const target = document.getElementById('hero_Section-bblanding');
+            
+               if (target) {
+      const navbarOffset = 90;
+      const elementPosition = target.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - navbarOffset;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+          };
 
   return (
     <section className="py-16">
