@@ -26,7 +26,7 @@ const App: React.FC = () => {
             {/* Add more routes as needed */}
             <Route 
               path="/services" 
-              element={<div className="py-20 text-center">Services Page Coming Soon</div>} 
+              element={<div className="py-20 text-center">Services Page Coming Soons</div>} 
             />
           </Routes>
         </main>
