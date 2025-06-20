@@ -5,7 +5,7 @@ interface HeroProps {
   contactFormEmbed: string;
 }
 
-const Hero_copy1: React.FC<HeroProps> = ({ contactFormEmbed }) => {
+const Hero_copy1: React.FC<HeroProps> = () => {
   const [isFormLoaded, setIsFormLoaded] = useState(false);
   const [formHeight, setFormHeight] = useState(0);
   const formRef = useRef<HTMLDivElement>(null);

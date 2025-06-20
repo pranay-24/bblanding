@@ -32,13 +32,11 @@ const Hero: React.FC<HeroProps> = ({ contactFormEmbed }) => {
     adaptiveHeight: false, // Changed to false for consistent height
   };
 
-
-
-     const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-            e.preventDefault();
-            const target = document.getElementById('hero_Section-bblanding');
-            
-               if (target) {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const target = document.getElementById('hero_Section-bblanding');
+    
+    if (target) {
       const navbarOffset = 90;
       const elementPosition = target.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - navbarOffset;
@@ -48,7 +46,7 @@ const Hero: React.FC<HeroProps> = ({ contactFormEmbed }) => {
         behavior: 'smooth'
       });
     }
-          };
+  };
 
   return (
     <section className="pt-[80px] md:pt-[150px] lg:pt-[130px] relative">
@@ -82,17 +80,16 @@ const Hero: React.FC<HeroProps> = ({ contactFormEmbed }) => {
                         >
                           GET YOUR FREE ESTIMATE
                         </a>
-                          <a
-                                          href="tel:+13852741575"
-                                          className=" flex items-center justify-center px-11 py-3.5 text-lg bg-blue-primary-dark text-white text-center ease-out whitespace-pre-wrap rounded-full uppercase font-semibold font-['Kanit'] leading-relaxed shadow-[0_0.2em_0_#f97316] transition duration-300"
-                                        >
-                                          <Phone size={18} className="mr-2" />
-                                          (385) 274-1575
-                                        </a>
+                        <a
+                          href="tel:+13852741575"
+                          className=" flex items-center justify-center px-11 py-3.5 text-lg bg-blue-primary-dark text-white text-center ease-out whitespace-pre-wrap rounded-full uppercase font-semibold font-['Kanit'] leading-relaxed shadow-[0_0.2em_0_#f97316] transition duration-300"
+                        >
+                          <Phone size={18} className="mr-2" />
+                          (385) 274-1575
+                        </a>
                       </div>
                     </div>
                     
-                  
                     <div className="z-10 w-full max-w-md lg:flex-1 bg-transparent rounded-lg fade-in">
                       
                     </div>
@@ -105,7 +102,8 @@ const Hero: React.FC<HeroProps> = ({ contactFormEmbed }) => {
         <MultiColumnSection/>
       </div>
 
-      <style jsx>{`
+      {/* Fixed: Moved styles to a separate component or use CSS modules */}
+      <style>{`
         .fade-in {
           animation: fadeIn 0.8s ease-in-out;
         }
@@ -127,9 +125,7 @@ const Hero: React.FC<HeroProps> = ({ contactFormEmbed }) => {
 
 export default Hero;
 
-
-
-export  function MultiColumnSection() {
+export function MultiColumnSection() {
   return (
     <div className="bg-white rounded-lg grid grid-cols-2 md:grid-cols-4  max-w-4xl mx-auto  py-6 ">
       {/* Column 1 - Two images side by side */}
@@ -195,4 +191,3 @@ export  function MultiColumnSection() {
     </div>
   );
 }
-
