@@ -21,11 +21,33 @@ const ThankYouPage: React.FC = () => {
   // - Conditional content display
   // - A/B testing variations
 
+  // Function to handle closing the overlay
+  const handleClose = () => {
+    window.location.href = '/';
+  };
+
   // Thank you content overlay
   const ThankYouOverlay: React.FC = () => (
-    <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 p-4">
-      <div className="bg-white rounded-2xl shadow-2xl max-w-2xl w-full mx-4 p-8 md:p-12 text-center relative">
+    <div 
+      className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 p-4"
+      onClick={handleClose} // Click outside to close
+    >
+      <div 
+        className="bg-white rounded-2xl shadow-2xl max-w-2xl w-full mx-4 p-8 md:p-12 text-center relative"
+        onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside the modal
+      >
         
+        {/* Close Button (X icon) */}
+        <button
+          onClick={handleClose}
+          className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-full transition-colors duration-200"
+          aria-label="Close"
+        >
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+
         {/* Success Icon */}
         <div className="mb-6">
           <div className="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4">
@@ -66,7 +88,7 @@ const ThankYouPage: React.FC = () => {
 
         {/* Close button - optional */}
         <button 
-          onClick={() => window.location.href = '/'}
+          onClick={handleClose}
           className="text-gray-500 hover:text-gray-700 text-sm underline mt-4"
         >
           Continue browsing our services
