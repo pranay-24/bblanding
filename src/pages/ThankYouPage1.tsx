@@ -1,4 +1,4 @@
-import React from 'react';
+import React , { useEffect }from 'react';
 import { useLocation } from 'react-router-dom';
 import Hero from '../components/Hero';
 import FeaturesSection from '../components/FeaturesSection';
@@ -8,12 +8,28 @@ import AvoidHeadaches from '../components/AvoidHeadaches';
 import ProcessSection from '../components/ProcessSection';
 import SecondaryHero from '../components/SecondaryHero';
 
+// Declare gtag for TypeScript
+declare global {
+  interface Window {
+    gtag: (...args: any[]) => void;
+  }
+}
+
+
 const ThankYouPage: React.FC = () => {
   // Extract formId from URL parameters for tracking/analytics
   const { search } = useLocation();
   const params = new URLSearchParams(search);
   const formId: string | null = params.get('form'); // e.g. "A", "hero-form", "avoid-headaches", etc.
   
+  useEffect(() => {
+    if (window.gtag) {
+      window.gtag('config', 'AW-396446063/XYpNCK6y8eIaEO-Shb0B', {
+        'phone_conversion_number': '(385) 200-2604'
+      });
+    }
+  }, []);
+
   // Future use cases for formId:
   // - Custom thank you messages per form
   // - Different contact info based on form type
@@ -79,10 +95,10 @@ const ThankYouPage: React.FC = () => {
           
           {/* Phone Button */}
           <a 
-            href="tel:+13852741575"
+            href="tel:+13852002604"
             className="inline-block px-8 py-4 text-xl bg-gradient-to-b from-orange-600 to-orange-500 text-white font-bold rounded-full shadow-lg hover:from-orange-700 hover:to-orange-600 transition duration-300 transform hover:scale-105"
           >
-            📞 (385) 274-1575
+            📞 (385) 200-2604
           </a>
         </div>
 

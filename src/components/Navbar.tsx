@@ -153,11 +153,12 @@ const Navbar: React.FC = () => {
                 Special Offers
               </a> */}
               <a
-                href="tel:+13852741575"
+                href="tel:+13852002604"
                 className="hidden md:flex items-center px-11 py-3.5 text-lg bg-gradient-to-b from-orange-600 to-orange-500 text-white text-center ease-out whitespace-pre-wrap rounded-full uppercase font-semibold font-['Kanit'] leading-relaxed shadow-[0_0.2em_0_#003572] transition duration-300"
               >
                 <Phone size={18} className="mr-2" />
-                (385) 274-1575
+                (385) 200-2604
+                
               </a>
               
               {/* Mobile Menu Button */}
@@ -183,7 +184,7 @@ const Navbar: React.FC = () => {
                 <a
                   href={item.href}
                   onClick={(e) => handleSmoothScroll(e, item.href)}
-                  className="px-4 py-2 font-bold text-blue-primary hover:text-orange-primary transition duration-300 flex items-center"
+                  className="px-4 py-2 font-bold text-xl text-blue-primary hover:text-orange-primary transition duration-300 flex items-center"
                 >
                   {item.title}
                   {/* {item.dropdown && <ChevronDown size={16} className="ml-1" />} */}
@@ -234,11 +235,11 @@ const Navbar: React.FC = () => {
                 </div>
               ))}
               <a
-                href="tel:+13852741575"
+                href="tel:+13852002604"
                 className="flex items-center justify-center px-4 py-3 mt-2 rounded-full bg-blue-primary text-white font-medium hover:bg-blue-dark transition duration-300"
               >
                 <Phone size={18} className="mr-2" />
-                (385) 274-1575
+                (385) 200-2604
               </a>
             </nav>
           </div>
