@@ -7,13 +7,9 @@ import CertificationsSection from '../components/CertificationsSection';
 import AvoidHeadaches from '../components/AvoidHeadaches';
 import ProcessSection from '../components/ProcessSection';
 import SecondaryHero from '../components/SecondaryHero';
+import { Helmet } from 'react-helmet';
 
 // Declare gtag for TypeScript
-declare global {
-  interface Window {
-    gtag: (...args: any[]) => void;
-  }
-}
 
 
 const ThankYouPage: React.FC = () => {
@@ -22,13 +18,7 @@ const ThankYouPage: React.FC = () => {
   const params = new URLSearchParams(search);
   const formId: string | null = params.get('form'); // e.g. "A", "hero-form", "avoid-headaches", etc.
   
-  useEffect(() => {
-    if (window.gtag) {
-      window.gtag('config', 'AW-396446063/XYpNCK6y8eIaEO-Shb0B', {
-        'phone_conversion_number': '(385) 200-2604'
-      });
-    }
-  }, []);
+
 
   // Future use cases for formId:
   // - Custom thank you messages per form
@@ -118,8 +108,28 @@ const ThankYouPage: React.FC = () => {
 
   return (
     <>
+       <Helmet>
+        <script>
+          {`gtag('config', 'AW-396446063/XYpNCK6y8eIaEO-Shb0B', {
+            'phone_conversion_number': '(385) 200-2604'
+          });`}
+        </script>
+         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-396446063"></script>
+<script>
+  {`
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-396446063');
+  `}
+
+</script>
+      </Helmet>
+
       {/* Thank You Overlay */}
       <ThankYouOverlay />
+      
+     
       
       {/* Same Landing Page Content (dimmed in background) */}
       <div className="opacity-30">
