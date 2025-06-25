@@ -11,6 +11,7 @@ import CertificationsSection from '../components/CertificationsSection';
 import AvoidHeadaches from '../components/AvoidHeadaches';
 import ProcessSection from '../components/ProcessSection';
 import SecondaryHero from '../components/SecondaryHero';
+import { Helmet } from 'react-helmet';
 
 interface LandingPageProps {
   contactFormEmbed: string;
@@ -19,6 +20,20 @@ interface LandingPageProps {
 const LandingPage: React.FC<LandingPageProps> = ({ contactFormEmbed }) => {
   return (
     <>
+        <Helmet>
+           
+             <script async src="https://www.googletagmanager.com/gtag/js?id=AW-396446063"></script>
+    <script>
+      {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-396446063');
+      `}
+    
+    </script>
+          </Helmet>
+
       <Hero contactFormEmbed={contactFormEmbed} />
       <div className="md:mt-[-50px] lg:mt-[-100px] xl:mt-[-100px] relative z-100">
       <MultiColumnSection />
