@@ -108,23 +108,7 @@ const ThankYouPage: React.FC = () => {
 
   return (
     <>
-       <Helmet>
-        <script>
-          {`gtag('config', 'AW-396446063/XYpNCK6y8eIaEO-Shb0B', {
-            'phone_conversion_number': '(385) 200-2604'
-          });`}
-        </script>
-         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-396446063"></script>
-<script>
-  {`
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'AW-396446063');
-  `}
-
-</script>
-      </Helmet>
+      
 
       {/* Thank You Overlay */}
       <ThankYouOverlay />
