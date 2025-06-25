@@ -78,11 +78,11 @@ const ProcessSection: React.FC = () => {
               Request Estimate
             </a>
             <a
-                href="tel:+13852741575"
+                href="tel:+13852002604"
                 className="flex items-center justify-center px-11 py-3.5 text-lg bg-[#003572] text-white text-center ease-out whitespace-pre-wrap rounded-full uppercase font-semibold font-['Kanit'] leading-relaxed "
               >
                 <Phone size={18} className="mr-2" />
-                (385) 274-1575
+                (385) 200-2604
               </a>
         </div>
       </div>
