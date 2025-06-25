@@ -109,7 +109,13 @@ const ThankYouPage: React.FC = () => {
   return (
     <>
       
-
+<Helmet>
+  <script>
+    {`
+     gtag('event', 'conversion', {'send_to': 'AW-396446063/7BpGCMTNsd8aEO-Shb0B'});
+    `}
+  </script>
+</Helmet>
       {/* Thank You Overlay */}
       <ThankYouOverlay />
       
