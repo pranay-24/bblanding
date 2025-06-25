@@ -14,56 +14,114 @@ const Navbar: React.FC = () => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
   const navItems: NavItem[] = [
-    {
-      title: 'HEATING',
-      href: 'https://bluebest.com/furnace-company-bountiful-ut/',
+     {
+      title: 'Home',
+      href: '/',
       dropdown: [
-        { title: 'Furnace Repair', href: 'https://bluebest.com/furnace-service-bountiful-ut/' },
-        { title: 'Furnace Replacement', href: 'https://bluebest.com/furnace-replacement-bountiful-ut/' },
-        { title: 'Furnace Maintenance', href: 'https://bluebest.com/furnace-tune-up-bountiful-ut/' },
-        { title: 'Heat Pumps', href: 'https://bluebest.com/heat-pumps-services/' },
+        // { title: 'Furnace Repair', href: 'https://bluebest.com/furnace-service-bountiful-ut/' },
+        // { title: 'Furnace Replacement', href: 'https://bluebest.com/furnace-replacement-bountiful-ut/' },
+        // { title: 'Furnace Maintenance', href: 'https://bluebest.com/furnace-tune-up-bountiful-ut/' },
+        // { title: 'Heat Pumps', href: 'https://bluebest.com/heat-pumps-services/' },
+      ]
+    },
+     {
+      title: 'Offers',
+      href: '#offers',
+      dropdown: [
+        // { title: 'Furnace Repair', href: 'https://bluebest.com/furnace-service-bountiful-ut/' },
+        // { title: 'Furnace Replacement', href: 'https://bluebest.com/furnace-replacement-bountiful-ut/' },
+        // { title: 'Furnace Maintenance', href: 'https://bluebest.com/furnace-tune-up-bountiful-ut/' },
+        // { title: 'Heat Pumps', href: 'https://bluebest.com/heat-pumps-services/' },
+      ]
+    },
+    
+    {
+      title: ' Why Trusts Blue Best',
+      href: '#why-trust-bluebest',
+      dropdown: [
+        // { title: 'Furnace Repair', href: 'https://bluebest.com/furnace-service-bountiful-ut/' },
+        // { title: 'Furnace Replacement', href: 'https://bluebest.com/furnace-replacement-bountiful-ut/' },
+        // { title: 'Furnace Maintenance', href: 'https://bluebest.com/furnace-tune-up-bountiful-ut/' },
+        // { title: 'Heat Pumps', href: 'https://bluebest.com/heat-pumps-services/' },
+      ]
+    },
+     
+    {
+      title: 'Testimonials',
+      href: '#testimonials',
+      dropdown: [
+        // { title: 'AC Repair', href: 'https://bluebest.com/air-conditioner-repair-bountiful-ut/' },
+        // { title: 'AC Installation', href: 'https://bluebest.com/air-conditioner-installation-bountiful-ut/' },
+        // { title: 'AC Maintainence', href: 'https://bluebest.com/hvac-maintenance-bountiful-ut/' },
+        // { title: 'Ductless Mini-Splits', href: 'https://bluebest.com/ductless-mini-splits-bountiful-ut/' },
       ]
     },
     {
-      title: 'AIR CONDITIONING',
-      href: 'https://bluebest.com/ac-company-bountiful-ut/',
+      title: 'Request Free Estimate',
+      href: '#request-free-estimate',
       dropdown: [
-        { title: 'AC Repair', href: 'https://bluebest.com/air-conditioner-repair-bountiful-ut/' },
-        { title: 'AC Installation', href: 'https://bluebest.com/air-conditioner-installation-bountiful-ut/' },
-        { title: 'AC Maintainence', href: 'https://bluebest.com/hvac-maintenance-bountiful-ut/' },
-        { title: 'Ductless Mini-Splits', href: 'https://bluebest.com/ductless-mini-splits-bountiful-ut/' },
+        // { title: 'AC Repair', href: 'https://bluebest.com/air-conditioner-repair-bountiful-ut/' },
+        // { title: 'AC Installation', href: 'https://bluebest.com/air-conditioner-installation-bountiful-ut/' },
+        // { title: 'AC Maintainence', href: 'https://bluebest.com/hvac-maintenance-bountiful-ut/' },
+        // { title: 'Ductless Mini-Splits', href: 'https://bluebest.com/ductless-mini-splits-bountiful-ut/' },
       ]
     },
-    {
-      title: 'PLUMBING',
-      href: 'https://bluebest.com/plumbing-bountiful-ut/',
+    // {
+    //   title: 'PLUMBING',
+    //   href: 'https://bluebest.com/plumbing-bountiful-ut/',
    
-    },
-    {
-      title: 'PRODUCTS',
-      href: '#generators',
-      dropdown: [
-        { title: 'Briggs & Stratton Generators', href: 'https://bluebest.com/briggs-stratton-generators-bounitful-ut/' },
-        { title: 'Lennox', href: 'https://bluebest.com/lennox-products/' },
-        { title: 'Amana', href: 'https://bluebest.com/amana-products/' },
-        { title: 'Hague Water Treatment', href: 'https://bluebest.com/hague-water-treatment/' },
-      ]
-    },
-    {
-      title: 'SERVICES',
-      href: 'https://bluebest.com/our-hvac-services-layton-ut/',
-      dropdown: [
-        { title: 'Commercial HVAC', href: 'https://bluebest.com/commercial-hvac/' },
-        { title: 'Ductwork', href: 'https://bluebest.com/ductwork-bountiful-ut/' },
-        { title: 'HVAC Maintenance Plan', href: 'https://bluebest.com/hvac-maintenance-plan-layton-ut/' },
-      ]
-    },
-      {
-      title: 'CONTACT',
-      href: 'https://bluebest.com/contact-us/',
+    // },
+    // {
+    //   title: 'PRODUCTS',
+    //   href: '#generators',
+    //   dropdown: [
+    //     // { title: 'Briggs & Stratton Generators', href: 'https://bluebest.com/briggs-stratton-generators-bounitful-ut/' },
+    //     // { title: 'Lennox', href: 'https://bluebest.com/lennox-products/' },
+    //     // { title: 'Amana', href: 'https://bluebest.com/amana-products/' },
+    //     // { title: 'Hague Water Treatment', href: 'https://bluebest.com/hague-water-treatment/' },
+    //   ]
+    // },
+    // {
+    //   title: 'SERVICES',
+    //   href: 'https://bluebest.com/our-hvac-services-layton-ut/',
+    //   dropdown: [
+    //     // { title: 'Commercial HVAC', href: 'https://bluebest.com/commercial-hvac/' },
+    //     // { title: 'Ductwork', href: 'https://bluebest.com/ductwork-bountiful-ut/' },
+    //     // { title: 'HVAC Maintenance Plan', href: 'https://bluebest.com/hvac-maintenance-plan-layton-ut/' },
+    //   ]
+    // },
+    //   {
+    //   title: 'CONTACT',
+    //   href: 'https://bluebest.com/contact-us/',
    
-    },
+    // },
   ];
+
+  // Function to handle smooth scrolling with offset
+  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    // Only handle anchor links (starting with #)
+    if (href.startsWith('#')) {
+      e.preventDefault();
+      
+      const targetId = href.substring(1);
+      const targetElement = document.getElementById(targetId);
+      
+      if (targetElement) {
+        const navbarHeight = 120; // Adjust this value based on your navbar height
+        const elementPosition = targetElement.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+      
+      // Close mobile menu after clicking
+      setIsOpen(false);
+    }
+  };
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -124,12 +182,13 @@ const Navbar: React.FC = () => {
               >
                 <a
                   href={item.href}
+                  onClick={(e) => handleSmoothScroll(e, item.href)}
                   className="px-4 py-2 font-bold text-blue-primary hover:text-orange-primary transition duration-300 flex items-center"
                 >
                   {item.title}
-                  {item.dropdown && <ChevronDown size={16} className="ml-1" />}
+                  {/* {item.dropdown && <ChevronDown size={16} className="ml-1" />} */}
                 </a>
-                {item.dropdown && activeDropdown === item.title && (
+                {/* {item.dropdown && activeDropdown === item.title && (
                   <div className="absolute top-full left-0 w-48 bg-white shadow-lg rounded-lg py-2 z-50">
                     {item.dropdown.map((dropItem) => (
                       <a
@@ -141,7 +200,7 @@ const Navbar: React.FC = () => {
                       </a>
                     ))}
                   </div>
-                )}
+                )} */}
               </div>
             ))}
           </nav>
@@ -159,7 +218,7 @@ const Navbar: React.FC = () => {
                   >
                     {item.title}
                   </a>
-                  {item.dropdown && (
+                  {/* {item.dropdown && (
                     <div className="pl-4 mt-2 space-y-2">
                       {item.dropdown.map((dropItem) => (
                         <a
@@ -171,7 +230,7 @@ const Navbar: React.FC = () => {
                         </a>
                       ))}
                     </div>
-                  )}
+                  )} */}
                 </div>
               ))}
               <a

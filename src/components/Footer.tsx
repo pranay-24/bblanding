@@ -6,12 +6,17 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-blue-primary text-white pt-12 pb-6">
       <div className="lg:container mx-auto px-4">
-        <div className="bg-white p-4 rounded-lg inline-block mb-4">
-              <Logo />
-            </div>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+      
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+             <span className="bg-transparent   mb-4 flex items-center justify-center">
+              <div className="bg-white p-4 rounded-lg"> 
+                <Logo />
+              </div>
+   
+  </span>
+
           {/* Logo and Contact */}
-          <div className="col-span-1">
+          <div className="col-span-1 flex items-center justify-center">
             
             <ul className="space-y-3 mt-4">
               <li className="flex items-start">
@@ -30,7 +35,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Services */}
-          <div className="col-span-1">
+          {/* <div className="col-span-1">
             <h3 className="text-xl font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
               <li><a href="https://bluebest.com/furnace-company-bountiful-ut/" className="hover:text-orange-primary transition duration-300">Heating</a></li>
@@ -40,10 +45,10 @@ const Footer: React.FC = () => {
               <li><a href="https://bluebest.com/briggs-stratton-generators-bounitful-ut/" className="hover:text-orange-primary transition duration-300">Generators</a></li>
               <li><a href="https://bluebest.com/hvac-maintenance-plan-layton-ut/" className="hover:text-orange-primary transition duration-300">Maintenance Plans</a></li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Company */}
-          <div className="col-span-1">
+          {/* <div className="col-span-1">
             <h3 className="text-xl font-semibold mb-4">Company</h3>
             <ul className="space-y-2">
               <li><a href="https://bluebest.com/about-us/" className="hover:text-orange-primary transition duration-300">About Us</a></li>
@@ -53,10 +58,10 @@ const Footer: React.FC = () => {
               <li><a href="https://bluebest.com/blog/" className="hover:text-orange-primary transition duration-300">Blog</a></li>
               <li><a href="https://bluebest.com/contact-us/" className="hover:text-orange-primary transition duration-300">Contact</a></li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Hours and Social */}
-          <div className="col-span-1">
+          <div className="col-span-1 flex items-center justify-center">
             {/* <h3 className="text-xl font-semibold mb-4">Hours</h3>
             <ul className="space-y-1 mb-6">
               <li className="flex justify-between">
@@ -73,8 +78,8 @@ const Footer: React.FC = () => {
               </li>
               <li className="mt-2 text-orange-primary font-medium">24/7 Emergency Service Available</li>
             </ul> */}
-            
-            <h3 className="text-xl font-semibold mb-4">Connect With Us</h3>
+            <div>
+ <h3 className="text-xl font-semibold mb-4">Connect With Us</h3>
             <div className="flex space-x-4">
               <a href="#" className="hover:text-orange-primary transition duration-300">
                 <Facebook size={24} />
@@ -89,6 +94,8 @@ const Footer: React.FC = () => {
                 <Youtube size={24} />
               </a>
             </div>
+            </div>
+           
           </div>
         </div>
 

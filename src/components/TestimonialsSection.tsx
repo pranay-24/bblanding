@@ -30,8 +30,8 @@ const TestimonialsSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-16 ">
-      <div className="lg:container mx-auto px-4">
+    <section className=" " id="testimonials">
+      <div className="lg:container mx-auto px-4 py-16">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-blue-primary mb-4">
             What Homeowners Are Saying

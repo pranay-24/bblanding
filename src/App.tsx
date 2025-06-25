@@ -24,10 +24,10 @@ const App: React.FC = () => {
               element={<ThankYouPage />} 
             />
             {/* Add more routes as needed */}
-            <Route 
+            {/* <Route 
               path="/services" 
               element={<div className="py-20 text-center">Services Page Coming Soons</div>} 
-            />
+            /> */}
           </Routes>
         </main>
         <Footer />

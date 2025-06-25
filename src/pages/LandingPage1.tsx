@@ -1,5 +1,6 @@
 import React from 'react';
 import Hero from '../components/Hero';
+import { MultiColumnSection } from '../components/MultiColumnSection';
 import AboutSection from '../components/AboutSection';
 import HomeGenerator from '../components/HomeGenerator';
 import FeaturesSection from '../components/FeaturesSection';
@@ -19,7 +20,9 @@ const LandingPage: React.FC<LandingPageProps> = ({ contactFormEmbed }) => {
   return (
     <>
       <Hero contactFormEmbed={contactFormEmbed} />
-      
+      <div className="md:mt-[-50px] lg:mt-[-100px] xl:mt-[-150px] relative z-100">
+      <MultiColumnSection />
+      </div>
       <AvoidHeadaches contactFormEmbed={contactFormEmbed} />
       
       <SecondaryHero />

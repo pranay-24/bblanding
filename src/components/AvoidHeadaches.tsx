@@ -6,9 +6,9 @@ interface HeroProps {
 
 const AvoidHeadaches: React.FC<HeroProps> = ({ contactFormEmbed }) => {
   return (
-    <section className="py-4 md:py-10 bg-transparent" id="hero_Section-bblanding">
+    <section className=" bg-transparent" id="hero_Section-bblanding">
       
-      <div className="lg:container mx-auto px-4">
+      <div className="lg:container mx-auto px-4 py-4 md:py-10">
         <div className="flex flex-col lg:flex-row items-baseline gap-6">
          
           <div className="w-full lg:w-1/2">

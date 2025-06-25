@@ -5,8 +5,8 @@ const FeaturesSection: React.FC = () => {
  
 
   return (
-    <section className="py-16 ">
-      <div className="lg:container mx-auto px-4">
+    <section className=" " id="why-trust-bluebest">
+      <div className="lg:container mx-auto px-4 py-16">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="w-full lg:w-1/2">
           <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-6">Why Salt Lake City Trusts BlueBest</h2>

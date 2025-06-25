@@ -49,7 +49,7 @@ const Hero: React.FC<HeroProps> = ({ contactFormEmbed }) => {
   };
 
   return (
-    <section className="pt-[80px] md:pt-[150px] lg:pt-[130px] relative">
+    <section className="pt-[80px] md:pt-[150px] lg:pt-[130px] relative" id="">
       <div className="w-full relative">
         <Slider {...sliderSettings}>
           {carouselImages.map((slide, index) => (
@@ -99,7 +99,7 @@ const Hero: React.FC<HeroProps> = ({ contactFormEmbed }) => {
             </div>
           ))}
         </Slider>
-        <MultiColumnSection/>
+        {/* <MultiColumnSection/> */}
       </div>
 
       {/* Fixed: Moved styles to a separate component or use CSS modules */}

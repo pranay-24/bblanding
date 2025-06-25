@@ -25,8 +25,8 @@ const ProcessSection: React.FC = () => {
           };
 
   return (
-    <section className="py-16">
-      <div className="container mx-auto px-4 ">
+    <section className="" id="request-free-estimate">
+      <div className="container mx-auto px-4 py-16">
         <h2 className="text-3xl md:text-4xl font-bold text-blue-primary text-center mb-16">
           Here's How Easy It Is
         </h2>
