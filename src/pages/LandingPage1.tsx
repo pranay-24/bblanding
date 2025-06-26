@@ -20,8 +20,23 @@ interface LandingPageProps {
 const LandingPage: React.FC<LandingPageProps> = ({ contactFormEmbed }) => {
   return (
     <>
-       
-
+       <Helmet>
+         <script>
+          {`
+              window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-396446063');
+          `}
+         </script>
+         <script>
+          {`
+          gtag('config', 'AW-396446063/XYpNCK6y8eIaEO-Shb0B', {
+    'phone_conversion_number': '(385) 200-2604'
+  });
+          `}
+         </script>
+      </Helmet>  
       <Hero contactFormEmbed={contactFormEmbed} />
       <div className="md:mt-[-50px] lg:mt-[-100px] xl:mt-[-100px] relative z-100">
       <MultiColumnSection />

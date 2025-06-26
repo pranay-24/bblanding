@@ -110,6 +110,22 @@ const ThankYouPage: React.FC = () => {
     <>
       
 <Helmet>
+    <script>
+          {`
+              window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-396446063');
+          `}
+         </script>
+         <script>
+          {`
+          gtag('config', 'AW-396446063/XYpNCK6y8eIaEO-Shb0B', {
+    'phone_conversion_number': '(385) 200-2604'
+  });
+          `}
+         </script>
+         
   <script>
     {`
      gtag('event', 'conversion', {'send_to': 'AW-396446063/7BpGCMTNsd8aEO-Shb0B'});
