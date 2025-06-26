@@ -35,11 +35,11 @@ const ProcessSection: React.FC = () => {
           {steps.map((step, index) => (
             <React.Fragment key={step.number}>
               <div className="flex flex-col items-start relative">
-                <div className="w-[175px] md:w-[200px] h-[175px] md:h-[200px] rounded-full bg-blue-primary-dark flex flex-col justify-start pt-7 md:pt-9 items-center relative shadow-[inset_7px_-7px_8px_#ea580c]">
+                <div className="w-[190px] md:w-[215px] h-[190px] md:h-[215px] rounded-full bg-blue-primary-dark flex flex-col justify-start pt-7 md:pt-9 items-center relative shadow-[inset_7px_-7px_8px_#ea580c]">
                   <span className="text-2xl md:text-3xl font-bold text-white text-center">
                     {step.number}
                   </span>
-                  <span className="text-md md:text-lg font-bold text-white mt-1 text-center px-2">
+                  <span className="text-md md:text-lg max-w-[150px] md:max-w-full font-bold text-white mt-1 text-center px-2">
                     {step.text}
                   </span>
                 </div>

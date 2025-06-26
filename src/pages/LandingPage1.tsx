@@ -38,7 +38,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ contactFormEmbed }) => {
          </script>
       </Helmet>  
       <Hero contactFormEmbed={contactFormEmbed} />
-      <div className="md:mt-[-50px] lg:mt-[-100px] xl:mt-[-100px] relative z-100">
+      <div className="md:mt-[-50px]  relative z-100">
       <MultiColumnSection />
       </div>
       <AvoidHeadaches contactFormEmbed={contactFormEmbed} />

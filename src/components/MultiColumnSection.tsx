@@ -10,7 +10,7 @@ import React, { useState, useEffect, useRef } from 'react';
 
   {/* Column 1 - Takes 33% on desktop, full width on mobile */}
   
-  <div className="flex flex-col bg-white p-2 rounded-lg h-42 md:h-full max-w-xl mx-auto border-4 border-[var(--orange-dark)]">
+  <div className="flex flex-col bg-white p-2 rounded-lg h-42 md:h-full  mx-auto border-4 border-[var(--orange-dark)]">
   
      <div className="text-center">
       <div className="text-2xl md:text-2xl font-bold text-orange-500 uppercase mb-2">
@@ -24,9 +24,9 @@ import React, { useState, useEffect, useRef } from 'react';
   </div>
   
   {/* Main heading */}
-  <div className="text-2xl md:text-2xl font-bold text-blue-primary-dark uppercase mb-2">
+  <h3 className="text-3xl md:text-4xl  font-bold text-blue-primary-dark uppercase mb-2">
    $6,300 CASH BACK
-  </div>
+  </h3>
   
   {/* Secondary sub heading */}
   <div className="text-lg md:text-lg font-semibold text-black uppercase mb-2">

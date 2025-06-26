@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import LandingPage from './pages/LandingPage1';
 import ThankYouPage from './pages/ThankYouPage1';
+import HomeRedirect from './pages/HomeRedirect';
 
 const App: React.FC = () => {
   // Your embed code would go here as a state variable
@@ -17,6 +18,10 @@ const App: React.FC = () => {
           <Routes>
             <Route 
               path="/" 
+              element={<HomeRedirect />} 
+            />
+            <Route 
+              path="/hvac" 
               element={<LandingPage contactFormEmbed={contactFormEmbed} />} 
             />
             <Route 

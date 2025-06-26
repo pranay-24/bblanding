@@ -55,7 +55,7 @@ const Hero: React.FC<HeroProps> = ({ contactFormEmbed }) => {
           {carouselImages.map((slide, index) => (
             <div key={index} className="">
               {/* Fixed height container with responsive heights */}
-              <div className="h-[500px] md:h-[550px] lg:h-[70vh] w-full relative">
+              <div className="h-[500px] md:h-[70vh] lg:h-[75vh] w-full relative">
                 <div
                   className="absolute inset-0 bg-center bg-cover bg-no-repeat"
                   style={{ backgroundImage: `url(${slide.url})` }}
@@ -76,13 +76,13 @@ const Hero: React.FC<HeroProps> = ({ contactFormEmbed }) => {
                       <div className="flex flex-col xl:flex-row gap-4 max-w-md lg:max-w-3xl">
                         <a 
                           onClick={handleClick}
-                          className="px-11 py-3.5 text-lg bg-gradient-to-b from-orange-600 to-orange-500 text-white text-center ease-out whitespace-pre-wrap rounded-full uppercase font-semibold font-['Kanit'] leading-relaxed shadow-[0_0.2em_0_#003572] transition duration-300 cursor-pointer"
+                          className="px-11 py-3.5 text-base bg-gradient-to-b from-orange-600 to-orange-500 text-white text-center ease-out whitespace-pre-wrap rounded-full uppercase font-semibold font-['Kanit'] leading-relaxed shadow-[0_0.2em_0_#003572] transition duration-300 cursor-pointer"
                         >
                           GET YOUR FREE ESTIMATE
                         </a>
                         <a
                           href="tel:+13852002604"
-                          className=" flex items-center justify-center px-11 py-3.5 text-lg bg-blue-primary-dark text-white text-center ease-out whitespace-pre-wrap rounded-full uppercase font-semibold font-['Kanit'] leading-relaxed shadow-[0_0.2em_0_#f97316] transition duration-300"
+                          className=" flex items-center justify-center px-11 py-3.5 text-base bg-blue-primary-dark text-white text-center ease-out whitespace-pre-wrap rounded-full uppercase font-semibold font-['Kanit'] leading-relaxed shadow-[0_0.2em_0_#f97316] transition duration-300"
                         >
                           <Phone size={18} className="mr-2" />
                           (385) 200-2604

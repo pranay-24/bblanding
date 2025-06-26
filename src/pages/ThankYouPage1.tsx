@@ -16,8 +16,19 @@ const ThankYouPage: React.FC = () => {
   // Extract formId from URL parameters for tracking/analytics
   const { search } = useLocation();
   const params = new URLSearchParams(search);
-  const formId: string | null = params.get('form'); // e.g. "A", "hero-form", "avoid-headaches", etc.
+  const formId: string | null = params.get('form_id');; // e.g. "A", "hero-form", "avoid-headaches", etc.
   
+ const handleClose = () => {
+    // Check if form_id exists and redirect accordingly
+    if (formId === 'hvac') {
+      window.location.href = '/hvac';
+    } else if (formId === 'plumbing') {
+      window.location.href = '/plumbing';
+    } else {
+      // Default redirect if no form_id or unrecognized form_id
+      window.location.href = '/hvac';
+    }
+  };
 
 
   // Future use cases for formId:
@@ -28,9 +39,7 @@ const ThankYouPage: React.FC = () => {
   // - A/B testing variations
 
   // Function to handle closing the overlay
-  const handleClose = () => {
-    window.location.href = '/';
-  };
+
 
   // Thank you content overlay
   const ThankYouOverlay: React.FC = () => (
@@ -86,7 +95,7 @@ const ThankYouPage: React.FC = () => {
           {/* Phone Button */}
           <a 
             href="tel:+13852002604"
-            className="inline-block px-8 py-4 text-xl bg-gradient-to-b from-orange-600 to-orange-500 text-white font-bold rounded-full shadow-lg hover:from-orange-700 hover:to-orange-600 transition duration-300 transform hover:scale-105"
+            className="inline-block px-8 py-4 text-base bg-gradient-to-b from-orange-600 to-orange-500 text-white font-bold rounded-full shadow-lg hover:from-orange-700 hover:to-orange-600 transition duration-300 transform hover:scale-105"
           >
             📞 (385) 200-2604
           </a>
@@ -125,7 +134,7 @@ const ThankYouPage: React.FC = () => {
   });
           `}
          </script>
-         
+
   <script>
     {`
      gtag('event', 'conversion', {'send_to': 'AW-396446063/7BpGCMTNsd8aEO-Shb0B'});

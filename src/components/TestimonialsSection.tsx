@@ -55,7 +55,7 @@ const TestimonialsSection: React.FC = () => {
                   />
                 ))}
               </div>
-              <p className="text-gray-600 mb-6 italic">"{testimonial.statement}"</p>
+              <p className="text-gray-600 text-base mb-6 italic">"{testimonial.statement}"</p>
               <div className="flex items-center justify-between mt-auto">
                 <span className="font-semibold text-blue-primary">
                   {testimonial.author}

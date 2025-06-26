@@ -1,3 +1,4 @@
+/* ===== CSS FILE (styles.css or globals.css) ===== */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&display=swap');
@@ -9,11 +10,100 @@
 @tailwind utilities;
 
 @layer base {
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-heading;
+  /* Set larger default font sizes for all elements */
+  html {
+    font-size: 18px; /* This makes 1rem = 18px instead of 16px */
   }
-  p, li, span, a, div {
+  
+  body {
+    font-size: var(--font-base); /* Use your custom base size */
+    line-height: 1.6;
+  }
+  
+  /* Headings with increased default sizes */
+  h1 {
+    @apply font-heading;
+    font-size: var(--font-5xl); /* 48px */
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  
+  h2 {
+    @apply font-heading;
+    font-size: var(--font-4xl); /* 36px */
+    line-height: 1.3;
+    margin-bottom: 0.875rem;
+  }
+  
+  h3 {
+    @apply font-heading;
+    font-size: var(--font-3xl); /* 30px */
+    line-height: 1.3;
+    margin-bottom: 0.75rem;
+  }
+  
+  h4 {
+    @apply font-heading;
+    font-size: var(--font-2xl); /* 24px */
+    line-height: 1.4;
+    margin-bottom: 0.625rem;
+  }
+  
+  h5 {
+    @apply font-heading;
+    font-size: var(--font-xl); /* 20px */
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
+  
+  h6 {
+    @apply font-heading;
+    font-size: var(--font-lg); /* 18px */
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Paragraphs and text elements with larger defaults */
+  p {
     @apply font-body;
+    font-size: var(--font-lg); /* 18px instead of 16px */
+    line-height: 1.7;
+    margin-bottom: 1rem;
+  }
+  
+  /* Lists with larger text */
+  li {
+    @apply font-body;
+    font-size: var(--font-lg); /* 18px */
+    line-height: 1.6;
+    margin-bottom: 0.25rem;
+  }
+  
+  /* Links and spans */
+  a {
+    @apply font-body;
+    font-size: inherit; /* Inherit from parent but ensure font family is applied */
+  }
+  
+  span {
+    @apply font-body;
+    font-size: inherit;
+  }
+  
+  /* Divs inherit size but get proper font family */
+  div {
+    @apply font-body;
+  }
+  
+  /* Form elements with larger text */
+  input, textarea, select, button {
+    font-size: var(--font-base); /* 16px */
+    font-family: inherit;
+  }
+  
+  /* Table text */
+  td, th {
+    font-size: var(--font-base); /* 16px */
   }
 }
 
@@ -21,8 +111,23 @@
   --blue-primary: #0071BC;
   --orange-primary: #F7941D;
   --blue-light: #dae7f6;
-  --blue-primary-dark : #003572;
-  --orange-dark:#de4c27;
+  --blue-primary-dark: #003572;
+  --orange-dark: #de4c27;
+
+  /* Fixed and properly scaled font sizes - increased base sizes */
+  --font-xs: 0.8rem;  /* 14px (was 12px) */
+  --font-sm: 0.875rem;      /* 16px (was 14px) */
+  --font-base: 0.95rem; /* 18px (was 16px) */
+  --font-lg: 1.1rem;   /* 20px (was 18px) */
+  --font-xl: 1.2rem;  /* 22px (was 20px) */
+  --font-2xl: 1.3rem; /* 26px (was 24px) */
+  --font-3xl: 1.7rem;     /* 32px (was 30px) */
+  --font-4xl: 2rem;   /* 40px (was 36px) */
+  --font-5xl: 2.6rem;  /* 52px (was 48px) */
+  --font-6xl: 2.6rem;     /* 64px (was 60px) */
+  --font-7xl: 2.6rem;     /* 80px (was 72px) */
+  --font-8xl: 2.6rem;   /* 104px (was 96px) */
+  --font-9xl: 2.6rem;   /* 136px (was 128px) */
 }
 
 body {
@@ -82,4 +187,32 @@ body {
 
 .fade-in {
   animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Responsive font scaling - increased mobile sizes too */
+@media (max-width: 768px) {
+  :root {
+    --font-xs: 0.8rem;    /* 12.8px (increased from 11.2px) */
+    --font-sm: 0.9rem;    /* 14.4px (increased from 12.8px) */
+    --font-base: 1rem;    /* 16px (increased from 14.4px) */
+    --font-lg: 1.125rem;  /* 18px (increased from 16px) */
+    --font-xl: 1.25rem;   /* 20px (increased from 18px) */
+    --font-2xl: 1.375rem; /* 22px (increased from 20px) */
+    --font-3xl: 1.625rem; /* 26px (increased from 24px) */
+    --font-4xl: 2rem;     /* 32px (increased from 30px) */
+    --font-5xl: 2.5rem;   /* 40px (increased from 36px) */
+  }
+  
+  /* Smaller default increases for mobile */
+  html {
+    font-size: 16px; /* Slightly smaller increase on mobile */
+  }
+  
+  p {
+    font-size: var(--font-base); /* 16px on mobile instead of 18px */
+  }
+  
+  li {
+    font-size: var(--font-base); /* 16px on mobile */
+  }
 }

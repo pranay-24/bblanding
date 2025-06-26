@@ -58,7 +58,7 @@ const Navbar: React.FC = () => {
     },
     {
       title: 'Request Free Estimate',
-      href: '#request-free-estimate',
+      href: '#hero_Section-bblanding',
       dropdown: [
         // { title: 'AC Repair', href: 'https://bluebest.com/air-conditioner-repair-bountiful-ut/' },
         // { title: 'AC Installation', href: 'https://bluebest.com/air-conditioner-installation-bountiful-ut/' },
@@ -184,7 +184,7 @@ const Navbar: React.FC = () => {
                 <a
                   href={item.href}
                   onClick={(e) => handleSmoothScroll(e, item.href)}
-                  className="px-4 py-2 font-bold text-xl text-blue-primary hover:text-orange-primary transition duration-300 flex items-center"
+                  className="px-4 py-2 font-bold text-base xl:text-lg text-blue-primary hover:text-orange-primary transition duration-300 flex items-center"
                 >
                   {item.title}
                   {/* {item.dropdown && <ChevronDown size={16} className="ml-1" />} */}
@@ -215,7 +215,7 @@ const Navbar: React.FC = () => {
                 <div key={item.title}>
                   <a
                     href={item.href}
-                    className="font-medium text-blue-primary hover:text-blue-dark py-2 block"
+                    className="font-medium text-base text-blue-primary hover:text-blue-dark py-2 block"
                   >
                     {item.title}
                   </a>
