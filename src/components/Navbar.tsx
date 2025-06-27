@@ -14,16 +14,7 @@ const Navbar: React.FC = () => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
   const navItems: NavItem[] = [
-     {
-      title: 'Home',
-      href: '/',
-      dropdown: [
-        // { title: 'Furnace Repair', href: 'https://bluebest.com/furnace-service-bountiful-ut/' },
-        // { title: 'Furnace Replacement', href: 'https://bluebest.com/furnace-replacement-bountiful-ut/' },
-        // { title: 'Furnace Maintenance', href: 'https://bluebest.com/furnace-tune-up-bountiful-ut/' },
-        // { title: 'Heat Pumps', href: 'https://bluebest.com/heat-pumps-services/' },
-      ]
-    },
+    
      {
       title: 'Offers',
       href: '#offers',

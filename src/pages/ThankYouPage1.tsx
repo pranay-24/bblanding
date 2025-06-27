@@ -64,13 +64,13 @@ const ThankYouPage: React.FC = () => {
         </button>
 
         {/* Success Icon */}
-        <div className="mb-6">
+        {/* <div className="mb-6">
           <div className="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4">
             <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
             </svg>
           </div>
-        </div>
+        </div> */}
 
         {/* Main Headline */}
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-primary mb-6 leading-tight">
