@@ -6,47 +6,122 @@ import React, { useState, useEffect, useRef } from 'react';
         <div className="lg:container mx-auto px-4 py-16">
 
 
-
+ <h2 className=" text-3xl md:text-4xl font-bold text-blue-primary mb-4 text-center">
+             Offers
+            </h2>
 
   {/* Column 1 - Takes 33% on desktop, full width on mobile */}
   
-  <div className="flex flex-col bg-white p-2 rounded-lg h-42 md:h-full  mx-auto border-4 border-[var(--orange-dark)]">
+  <div className="flex flex-col md:flex-row bg-white p-2 rounded-lg h-42 md:h-full  mx-auto ">
   
+     
+  
+
+   {/* Column 2 - Takes 22% on desktop (1/3 of remaining 66%), half width on mobile */}
+   <div className="w-full md:w-[33%]  p-3 flex justify-center ">
+   <div className="flex flex-col bg-white p-2 rounded-lg h-42 md:h-full border-4 border-[var(--orange-dark)]">
+
+    <div className="text-center">
+   {/* Sub heading */}
+   {/* <div className="text-xs md:text-sm font-semibold text-gray-600 uppercase mb-1">
+     AWARD WINNING
+   </div> */}
+  
+   {/* Main heading */}
+   <div className="text-3xl md:text-4xl font-bold text-blue-primary-dark uppercase mb-2">
+    Free
+   </div>
+  
+   {/* Secondary sub heading */}
+   <div className="text-lg md:text-lg font-semibold text-black uppercase mb-2">
+    CAMERA INSPECTION
+   </div>
+  
+   {/* Paragraph */}
+   <p className="text-base md:text-base text-black  mb-2 leading-tight">
+     Recognized for excellence in heating and cooling solutions across the state.
+   </p>
+  
+   {/* Sub text */}
+   <div className="text-sm md:text-sm text-black italic">
+    Must present offer at time of service Expires 7/15/25.
+   </div>
+ </div>
+   </div>
+    
+   </div>
+
+   {/* Column 3 - Takes 22% on desktop (1/3 of remaining 66%), half width on mobile */}
+   <div className="w-full md:w-[33%] flex  p-3 justify-center">
+    <div className="flex flex-col bg-white p-2 rounded-lg h-42 md:h-full border-4 border-[var(--orange-dark)]">
+
      <div className="text-center">
-      <div className="text-2xl md:text-2xl font-bold text-orange-500 uppercase mb-2">
-   OFFER
-  </div>
+   {/* Sub heading */}
+   {/* <div className="text-xs md:text-sm font-semibold text-gray-600 uppercase mb-1">
+     AWARD WINNING
+   </div> */}
+  
+   {/* Main heading */}
+   <div className="text-3xl md:text-4xl font-bold text-blue-primary-dark uppercase mb-2">
+    $99
+   </div>
+  
+   {/* Secondary sub heading */}
+   <div className="text-lg md:text-lg font-semibold text-black uppercase mb-2">
+    WATER HEATER TUNE-UP + ANODE ROD CHECK
+   </div>
+  
+   {/* Paragraph */}
+   {/* <p className="text-xs md:text-sm text-black  mb-2 leading-tight">
+     Recognized for excellence in heating and cooling solutions across the state.
+   </p> */}
+  
+   {/* Sub text */}
+   <div className="text-sm md:text-sm text-black italic">
+    Must present offer at time of service Expires 7/15/25.
+   </div>
+ </div>
+    </div>
+    
+   </div>
 
 
-  {/* Sub heading */}
-  <div className="text-sm md:text-sm font-semibold text-black uppercase mb-1">
-   GET UP TO
-  </div>
   
-  {/* Main heading */}
-  <h3 className="text-3xl md:text-4xl  font-bold text-blue-primary-dark uppercase mb-2">
-   $6,300 CASH BACK
-  </h3>
-  
-  {/* Secondary sub heading */}
-  <div className="text-lg md:text-lg font-semibold text-black uppercase mb-2">
-    IN REBATES AND TAX INCENTIVES!
-  </div>
-  
-  {/* Paragraph */}
-  <p className="text-base md:text-lg text-orange-600 mb-2 leading-tight">
-    We planned ahead and have 2024 inventory in stock at great prices!
-  </p>
-  
-  <div className="text-sm md:text-sm text-black italic">
-    *25-C tax credit, terms and conditions apply.
-  </div>
+   {/* Column 4 - Takes 22% on desktop (1/3 of remaining 66%), full width centered on mobile */}
+   <div className="w-full md:w-[33%] flex justify-center p-3 mx-auto md:mx-0">
+      <div className="flex flex-col bg-white p-2 rounded-lg h-42 md:h-full border-4 border-[var(--orange-dark)]">
 
-  {/* Sub text */}
-  <div className="text-sm md:text-sm text-black italic">
-    *Must present offer at time of service Expires 7/15/25.
-  </div>
-</div>
+      <div className="text-center">
+   {/* Sub heading */}
+   {/* <div className="text-xs md:text-sm font-semibold text-gray-600 uppercase mb-1">
+     AWARD WINNING
+   </div> */}
+  
+   {/* Main heading */}
+   <div className="text-3xl md:text-4xl font-bold text-blue-primary-dark uppercase mb-2">
+   $500 OFF
+   </div>
+  
+   {/* Secondary sub heading */}
+   <div className="text-lg md:text-lg font-semibold text-black uppercase mb-2">
+    OFF A NEW WATER HEATER
+   </div>
+  
+   {/* Paragraph */}
+   {/* <p className="text-xs md:text-sm text-black  mb-2 leading-tight">
+     Recognized for excellence in heating and cooling solutions across the state.
+   </p> */}
+  
+   {/* Sub text */}
+   <div className="text-sm md:text-sm text-black italic">
+    Must present offer at time of service Expires 7/15/25.
+   </div>
+ </div>
+      </div>
+    
+   </div>
+
+
   </div>
   
   </div>
