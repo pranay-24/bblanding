@@ -114,6 +114,15 @@
   --blue-primary-dark: #003572;
   --orange-dark: #de4c27;
 
+  /* Google Brand Colors - ADD THESE */
+  --google-blue: hsl(217, 89%, 61%);
+  --google-green: hsl(142, 53%, 44%);
+  --google-yellow: hsl(45, 100%, 51%);
+  --google-red: hsl(4, 90%, 58%);
+  --google-gray: hsl(210, 11%, 15%);
+  --google-light-gray: hsl(210, 16%, 93%);
+
+
   /* Fixed and properly scaled font sizes - increased base sizes */
   --font-xs: 0.8rem;  /* 14px (was 12px) */
   --font-sm: 0.875rem;      /* 16px (was 14px) */
@@ -214,5 +223,55 @@ body {
   
   li {
     font-size: var(--font-base); /* 16px on mobile */
+  }
+}
+
+@layer utilities {
+  .google-blue {
+    color: var(--google-blue);
+  }
+  
+  .bg-google-blue {
+    background-color: var(--google-blue);
+  }
+  
+  .google-green {
+    color: var(--google-green);
+  }
+  
+  .bg-google-green {
+    background-color: var(--google-green);
+  }
+  
+  .google-yellow {
+    color: var(--google-yellow);
+  }
+  
+  .bg-google-yellow {
+    background-color: var(--google-yellow);
+  }
+  
+  .google-red {
+    color: var(--google-red);
+  }
+  
+  .bg-google-red {
+    background-color: var(--google-red);
+  }
+  
+  .google-gray {
+    color: var(--google-gray);
+  }
+  
+  .bg-google-gray {
+    background-color: var(--google-gray);
+  }
+  
+  .google-light-gray {
+    color: var(--google-light-gray);
+  }
+  
+  .bg-google-light-gray {
+    background-color: var(--google-light-gray);
   }
 }

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Slider from 'react-slick';
-import { Menu, X, Phone, ChevronDown } from 'lucide-react';
+import { Menu, X, Phone, ChevronDown, Star } from 'lucide-react';
 interface HeroProps {
   contactFormEmbed: string;
 }
@@ -49,13 +49,13 @@ const Hero: React.FC<HeroProps> = ({ contactFormEmbed }) => {
   };
 
   return (
-    <section className="pt-[80px] md:pt-[150px] lg:pt-[130px] relative" id="">
+    <section className="pt-[80px] md:pt-[150px] lg:pt-[150px] relative" id="">
       <div className="w-full relative">
         <Slider {...sliderSettings}>
           {carouselImages.map((slide, index) => (
             <div key={index} className="">
               {/* Fixed height container with responsive heights */}
-              <div className="h-[500px] md:h-[70vh] lg:h-[75vh] w-full relative">
+              <div className="h-auto lg:h-[85vh] w-full relative">
                 <div
                   className="absolute inset-0 bg-center bg-cover bg-no-repeat"
                   style={{ backgroundImage: `url(${slide.url})` }}
@@ -67,6 +67,32 @@ const Hero: React.FC<HeroProps> = ({ contactFormEmbed }) => {
                   <div className="flex flex-col lg:flex-row h-full items-center justify-center md:justify-between py-10">
                     {/* Left side - Text content */}
                     <div className="text-white z-10 max-w-[768px]  md:mr-8 mb-10 md:mb-0 fade-in lg:flex-1">
+                      <div className="flex items-center space-x-2 mb-6">
+                 <div className="flex items-center  h-full">
+              <img 
+             src="/google-g-logo.svg"
+             alt="Column 1 Image 1"
+             className="w-11 h-full object-contain"
+           />
+            </div>
+                <div className="flex flex-col items-start">
+              <div className="flex items-center space-x-1 mb-1">
+                {[...Array(5)].map((_, i) => (
+                  <Star 
+                    key={i} 
+                    className={`w-4 h-4 fill-[#ffffed] text-[#ffffed]`} 
+                  />
+                ))}
+              </div>
+              <div className="flex flex-row space-x-3 justify-center items-center ">
+                <span className="text-lg font-bold text-[#ffffed]">5.0 RATING</span>
+                <span className="text-sm font-bold text-[#ffffed]">(2000+ Reviews)</span>
+              </div>
+            </div>
+
+            </div>  
+
+
                       <h1 className="text-3xl md:text-5xl font-bold mb-4">{slide.title}</h1>
                       
                       <p className="text-base md:text-xl mb-6">
