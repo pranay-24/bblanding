@@ -76,13 +76,13 @@ const TestimonialsSection: React.FC = () => {
     },
     {
       id: 4,
-      userName: "Jeffery Hansen",
+      userName: "Elizabeth M",
       timeAgo: "1 week ago",
       rating: 5,
       text: "Our experience with Blue Best has been fantastic. Shawn, Carlson and Khaing have done amazing job with fixing our shower and pressure valve, patching the drywall and installing both a water softener and a shower steamer.",
       fullText: "Our experience with Blue Best has been fantastic. Shawn, Carlson and Khaing have done amazing job with fixing our shower and pressure valve, patching the drywall and installing both a water softener and a shower steamer. We highly recommend them!!!",
       avatarColor: 'yellow',
-      initial: 'J'
+      initial: 'E'
     }  
     
   ];
