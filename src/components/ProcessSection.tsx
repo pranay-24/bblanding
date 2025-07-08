@@ -61,9 +61,11 @@ const ProcessSection: React.FC = () => {
           ))}
           
         </div>
-         <p className="pt-16 text-xl font-bold text-gray-600 max-w-3xl mx-auto text-center">
-            Simple.Fast.Done Right
-          </p>
+         <p className="pt-16 text-xl font-bold text-gray-600 max-w-3xl mx-auto text-center flex justify-center gap-4">
+  <span>Simple.</span>
+  <span>Fast.</span>
+  <span>Done Right.</span>
+</p>
            <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-blue-primary mb-4">Ready for a New HVAC System? Let's Talk.</h2>
           {/* <p className="text-lg text-gray-600 max-w-3xl mx-auto">
