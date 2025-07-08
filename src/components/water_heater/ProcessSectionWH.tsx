@@ -61,11 +61,13 @@ const ProcessSectionWH: React.FC = () => {
           ))}
           
         </div>
-         <p className="pt-16 text-xl font-bold text-gray-600 max-w-3xl mx-auto text-center">
-            Simple.Fast.Done Right
-          </p>
+         <p className="pt-16 text-xl font-bold text-gray-600 max-w-3xl mx-auto text-center flex justify-center gap-4">
+  <span>Simple.</span>
+  <span>Fast.</span>
+  <span>Done Right.</span>
+</p>
            <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-primary mb-4 max-w-3xl text-center mx-auto">Are you in urgent need of pipe repair in Bountiful or other plumbing services?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-primary mb-4 max-w-3xl text-center mx-auto">Ready to Install Your New Water Heater?</h2>
           {/* <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             BlueBest provides quality plumbing, heating, and air conditioning services to homes and businesses in Bountiful, UT and surrounding areas.
           </p> */}

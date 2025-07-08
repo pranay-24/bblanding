@@ -14,15 +14,18 @@ const AvoidHeadachesWH: React.FC<HeroProps> = ({ contactFormEmbed }) => {
           <div className="w-full lg:w-1/2">
             {/* <span className="text-orange-primary font-medium mb-2 block">Meet Your Home's New Best Friend</span> */}
             <h2 className=" text-3xl md:text-4xl font-bold text-blue-primary mb-4">
-             Our Expert Plumbing Services
+             Don’t Let Cold Showers Ruin Your Day
             </h2>
-            {/* <p className=" text-gray-600 mb-6">
-              With over 20 years of experience serving Bountiful and surrounding areas, 
-              BlueBest has established itself as the region's premier provider of HVAC 
-              and plumbing services. Our team of certified professionals is committed 
-              to delivering exceptional service and ensuring your complete satisfaction.
-            </p> */}
-            <ul className="list-none pl-4 space-y-2 mb-8">
+            <p className=" text-gray-600 mb-6">
+              When your water heater fails, you need a team that shows up fast and gets the job done right. Whether it’s time to replace an old unit or upgrade to something more efficient, Blue Best Plumbing, Heating, Air & Generators is here to help.
+            </p>
+
+             <p className=" text-gray-600 mb-6">
+              We install all types of water heaters including gas, electric, and tankless models with upfront pricing, fast turnaround, and 5-star service.
+            </p>
+
+
+            {/* <ul className="list-none pl-4 space-y-2 mb-8">
   <li className="relative pl-6 text-gray-600">
     <span className="absolute left-0 top-1 inline-block h-5 w-5 bg-[url(https://res.cloudinary.com/dwe4p22ut/image/upload/v1747842034/next-100_smkyiq.png)] bg-contain bg-no-repeat bg-center"></span>
     Water heater Installation
@@ -56,7 +59,7 @@ const AvoidHeadachesWH: React.FC<HeroProps> = ({ contactFormEmbed }) => {
     <span className="absolute left-0 top-1 inline-block h-5 w-5 bg-[url(https://res.cloudinary.com/dwe4p22ut/image/upload/v1747842034/next-100_smkyiq.png)] bg-contain bg-no-repeat bg-center"></span>
   Water Softeners
   </li>
-</ul>
+</ul> */}
 <p className=" text-gray-600 mb-6">
               With <span className="text-blue-primary-dark ">BlueBest</span>, you're guaranteed a smooth install, certified technicians, and honest pricing.
             </p>

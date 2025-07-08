@@ -22,7 +22,7 @@ interface LandingPageProps {
   contactFormEmbed: string;
 }
 
-const LandingPage2: React.FC<LandingPageProps> = ({ contactFormEmbed }) => {
+const LandingPageWH: React.FC<LandingPageProps> = ({ contactFormEmbed }) => {
   return (
     <>
        <Helmet>
@@ -63,4 +63,4 @@ const LandingPage2: React.FC<LandingPageProps> = ({ contactFormEmbed }) => {
   );
 };
 
-export default LandingPage2;
+export default LandingPageWH;

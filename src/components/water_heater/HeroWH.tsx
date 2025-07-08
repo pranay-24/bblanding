@@ -12,10 +12,10 @@ const HeroWH: React.FC<HeroProps> = ({ contactFormEmbed }) => {
 
   const carouselImages = [
     {
-      url: 'https://res.cloudinary.com/dwe4p22ut/image/upload/v1748381588/hero-banner-2_o7dlss.jpg',
-      title: '0% Financing for 12 Months on New HVAC System.',
+      url: 'https://res.cloudinary.com/dwe4p22ut/image/upload/v1750980769/BB_Plumbing_1_uxf8fa.png',
+      title: '$500 Off on a New Water Heater Installation',
       subTitle: 'Get your free estimate by filling up the form.',
-      subTitle2: 'A limited-time offer from Salt Lake City\'s most trusted HVAC & plumbing experts.'
+      subTitle2: 'A limited-time offer from most trusted plumbing experts.'
     },
   ];
 
@@ -98,13 +98,13 @@ const HeroWH: React.FC<HeroProps> = ({ contactFormEmbed }) => {
                       <p className="text-base md:text-xl mb-6">
                        {slide.subTitle2}
                       </p>
-                      <p className="font-bold text-base md:text-xl mb-3">{slide.subTitle}</p>
+                      {/* <p className="font-bold text-base md:text-xl mb-3">{slide.subTitle}</p> */}
                       <div className="flex flex-col xl:flex-row gap-4 max-w-md lg:max-w-3xl">
                         <a 
                           onClick={handleClick}
                           className="px-11 py-3.5 text-base bg-gradient-to-b from-orange-600 to-orange-500 text-white text-center ease-out whitespace-pre-wrap rounded-full uppercase font-semibold font-['Kanit'] leading-relaxed shadow-[0_0.2em_0_#003572] transition duration-300 cursor-pointer"
                         >
-                          GET YOUR FREE ESTIMATE
+                          GET IMMEDIATE ASSISTANCE 
                         </a>
                         <a
                           href="tel:+13852002604"

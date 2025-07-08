@@ -99,12 +99,12 @@ import React, { useState, useEffect, useRef } from 'react';
   
    {/* Main heading */}
    <div className="text-3xl md:text-4xl font-bold text-blue-primary-dark uppercase mb-2">
-   $500 OFF
+   $50 OFF
    </div>
   
    {/* Secondary sub heading */}
    <div className="text-lg md:text-lg font-semibold text-black uppercase mb-2">
-    OFF A NEW WATER HEATER
+    ANY PLUMBING REPAIR & REPLACEMENT
    </div>
   
    {/* Paragraph */}

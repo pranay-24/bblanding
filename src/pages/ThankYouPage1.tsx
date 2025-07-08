@@ -24,7 +24,9 @@ const ThankYouPage: React.FC = () => {
       window.location.href = '/hvac';
     } else if (formId === 'plumbing') {
       window.location.href = '/plumbing';
-    } else {
+    } else if (formId === 'wh') {
+      window.location.href = '/water-heater';
+    }else {
       // Default redirect if no form_id or unrecognized form_id
       window.location.href = '/hvac';
     }
