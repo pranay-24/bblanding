@@ -1,7 +1,7 @@
 import React from 'react';
 import {  Phone } from 'lucide-react';
 
-const ProcessSectionWH: React.FC = () => {
+const ProcessSectionTU: React.FC = () => {
   const steps = [
     { number: 1, title: 'Free Consultation', text: 'Schedule Your Estimate' },
     { number: 2, title: 'Professional Installation', text: 'Get Expert Recommendation + Quote' },
@@ -90,4 +90,4 @@ const ProcessSectionWH: React.FC = () => {
   );
 };
 
-export default ProcessSectionWH;
+export default ProcessSectionTU;
