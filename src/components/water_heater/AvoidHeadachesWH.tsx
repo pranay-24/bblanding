@@ -17,7 +17,7 @@ const AvoidHeadachesWH: React.FC<HeroProps> = ({ contactFormEmbed }) => {
              Don’t Let Cold Showers Ruin Your Day
             </h2>
             <p className=" text-gray-600 mb-6">
-              When your water heater fails, you need a team that shows up fast and gets the job done right. Whether it’s time to replace an old unit or upgrade to something more efficient, Blue Best Plumbing, Heating, Air & Generators is here to help.
+              When your water heater fails, you need a team that shows up fast and gets the job done right. Whether it’s time to replace an old unit or upgrade to something more efficient, Blue Best is here to help.
             </p>
 
              <p className=" text-gray-600 mb-6">
