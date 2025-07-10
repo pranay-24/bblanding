@@ -3,7 +3,7 @@ import {  Phone } from 'lucide-react';
 
 const ProcessSectionWH: React.FC = () => {
   const steps = [
-    { number: 1, title: 'Free Consultation', text: 'Schedule Your Estimate' },
+    { number: 1, title: 'Free Consultation', text: 'Start with a Quick Call' },
     { number: 2, title: 'Professional Installation', text: 'Get Expert Recommendation + Quote' },
     { number: 3, title: 'Lifetime Support', text: 'Enjoy Hassle-Free Plumbing Services' },
   ];

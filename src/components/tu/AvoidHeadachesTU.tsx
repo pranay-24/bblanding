@@ -33,14 +33,15 @@ const AvoidHeadachesTU: React.FC<HeroProps> = ({ contactFormEmbed }) => {
     <span className="absolute left-0 top-1 inline-block h-5 w-5 bg-[url(https://res.cloudinary.com/dwe4p22ut/image/upload/v1747842034/next-100_smkyiq.png)] bg-contain bg-no-repeat bg-center"></span>
     Electrical connections check
   </li>
-    <li className="relative pl-6  text-gray-600">
-    <span className="absolute left-0 top-1 inline-block h-5 w-5 bg-[url(https://res.cloudinary.com/dwe4p22ut/image/upload/v1747842034/next-100_smkyiq.png)] bg-contain bg-no-repeat bg-center"></span>
-  Gas Line Maintenance
-  </li>
-    <li className="relative pl-6  text-gray-600">
+  <li className="relative pl-6  text-gray-600">
     <span className="absolute left-0 top-1 inline-block h-5 w-5 bg-[url(https://res.cloudinary.com/dwe4p22ut/image/upload/v1747842034/next-100_smkyiq.png)] bg-contain bg-no-repeat bg-center"></span>
   Refrigerant level & pressure check
   </li>
+    <li className="relative pl-6  text-gray-600">
+    <span className="absolute left-0 top-1 inline-block h-5 w-5 bg-[url(https://res.cloudinary.com/dwe4p22ut/image/upload/v1747842034/next-100_smkyiq.png)] bg-contain bg-no-repeat bg-center"></span>
+  Air filter inspection
+  </li>
+    
     <li className="relative pl-6  text-gray-600">
     <span className="absolute left-0 top-1 inline-block h-5 w-5 bg-[url(https://res.cloudinary.com/dwe4p22ut/image/upload/v1747842034/next-100_smkyiq.png)] bg-contain bg-no-repeat bg-center"></span>
   Condenser & coil cleaning

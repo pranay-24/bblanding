@@ -4,8 +4,8 @@ import {  Phone } from 'lucide-react';
 const ProcessSectionTU: React.FC = () => {
   const steps = [
     { number: 1, title: 'Free Consultation', text: 'Schedule Your Estimate' },
-    { number: 2, title: 'Professional Installation', text: 'Get Expert Recommendation + Quote' },
-    { number: 3, title: 'Lifetime Support', text: 'Enjoy Low Price $129 HVAC Tune-Up' },
+    { number: 2, title: 'Professional Installation', text: 'Get Expert Advice' },
+    { number: 3, title: 'Lifetime Support', text: 'Enjoy Low Price HVAC Tune-Up' },
   ];
 
      const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -77,7 +77,7 @@ const ProcessSectionTU: React.FC = () => {
                onClick={handleClick}
               className="px-11 py-3.5 text-lg bg-gradient-to-b from-orange-600 to-orange-500 text-white text-center ease-out whitespace-pre-wrap rounded-full uppercase font-semibold font-['Kanit'] leading-relaxed hover:cursor-pointer shadow-[0_0.2em_0_#003572] transition duration-300"
             >
-              BOOK MY $129 TUNE-UP
+              Book HVAC Tune Up Now
             </a>
             <a
                 href="tel:+13852002604"

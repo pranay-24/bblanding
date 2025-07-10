@@ -45,7 +45,7 @@ const SecondaryHeroTU: React.FC = () => {
            <a onClick={handleClick}
             className="max-w-lg px-11 py-3.5 text-lg bg-gradient-to-b from-orange-600 to-orange-500 text-white text-center ease-out whitespace-pre-wrap rounded-full uppercase font-semibold font-['Kanit'] leading-relaxed hover:cursor-pointer shadow-[0_0.2em_0_#003572] transition duration-300"
           >
-            REQUEST ESTIMATE
+            Book HVAC Tune Up Now
           </a>
           
           <a  href="tel:+13852002604"

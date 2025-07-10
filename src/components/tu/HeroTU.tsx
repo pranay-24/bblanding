@@ -96,7 +96,7 @@ const HeroTU: React.FC<HeroProps> = ({ contactFormEmbed }) => {
                       <h1 className="text-3xl md:text-5xl font-bold mb-4">{slide.title}</h1>
                       
                       <p className="text-base md:text-xl mb-6">
-                       Prevent breakdowns, reduce energy bills, and extend the life of your system all for just $129.<span className="font-extrabold"> Get your free estimate by filling up the form.</span>
+                       Prevent breakdowns, reduce energy bills, and extend the life of your system all for just $129.
                       </p>
                       {/* <p className="font-bold text-base md:text-xl mb-3">{slide.subTitle}</p> */}
                       <div className="flex flex-col xl:flex-row gap-4 max-w-md lg:max-w-3xl">
