@@ -12,7 +12,7 @@ const HeroWH: React.FC<HeroProps> = ({ contactFormEmbed }) => {
 
   const carouselImages = [
     {
-      url: 'https://res.cloudinary.com/dwe4p22ut/image/upload/v1750980769/BB_Plumbing_1_uxf8fa.png',
+      url: '/water-heater-hero-image.png',
       title: '$500 Off on a New Water Heater Installation',
       subTitle: 'Get your free estimate by filling up the form.',
       subTitle2: 'A limited-time offer from most trusted plumbing experts.'

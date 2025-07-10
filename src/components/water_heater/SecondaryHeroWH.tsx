@@ -26,7 +26,7 @@ const SecondaryHeroWH: React.FC = () => {
   <div className="mx-auto ">
     <div className="relative">
       <img
-        src="https://res.cloudinary.com/dwe4p22ut/image/upload/v1750980769/BB_Plumbing_3_szlspg.png"
+        src="/water-heater-limited-time-offer.png"
         alt="Plumbing Installation"
         className="w-full h-[600px] object-cover "
       />
