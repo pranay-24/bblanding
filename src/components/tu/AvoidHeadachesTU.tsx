@@ -14,27 +14,24 @@ const AvoidHeadachesTU: React.FC<HeroProps> = ({ contactFormEmbed }) => {
           <div className="w-full lg:w-1/2">
             {/* <span className="text-orange-primary font-medium mb-2 block">Meet Your Home's New Best Friend</span> */}
             <h2 className=" text-3xl md:text-4xl font-bold text-blue-primary mb-4">
-             Our Expert Plumbing Services
+             What’s Included in Our $129 Tune-Up?
             </h2>
-            {/* <p className=" text-gray-600 mb-6">
-              With over 20 years of experience serving Bountiful and surrounding areas, 
-              BlueBest has established itself as the region's premier provider of HVAC 
-              and plumbing services. Our team of certified professionals is committed 
-              to delivering exceptional service and ensuring your complete satisfaction.
-            </p> */}
+            <p className=" text-gray-600 mb-6">
+             Our licensed and certified techs perform a full 20+ point inspection that includes:
+            </p>
             <ul className="list-none pl-4 space-y-2 mb-8">
   <li className="relative pl-6 text-gray-600">
     <span className="absolute left-0 top-1 inline-block h-5 w-5 bg-[url(https://res.cloudinary.com/dwe4p22ut/image/upload/v1747842034/next-100_smkyiq.png)] bg-contain bg-no-repeat bg-center"></span>
-    Water heater Installation
+    Thermostat testing & calibration
   </li>
   <li className="relative pl-6 text-gray-600">
     <span className="absolute left-0 top-1 inline-block h-5 w-5 bg-[url(https://res.cloudinary.com/dwe4p22ut/image/upload/v1747842034/next-100_smkyiq.png)] bg-contain bg-no-repeat bg-center"></span>
-   Water Heater Repairs and Maintenance
+   Blower motor inspection
 
   </li>
   <li className="relative pl-6  text-gray-600">
     <span className="absolute left-0 top-1 inline-block h-5 w-5 bg-[url(https://res.cloudinary.com/dwe4p22ut/image/upload/v1747842034/next-100_smkyiq.png)] bg-contain bg-no-repeat bg-center"></span>
-   Pipe and Drain Repairs
+    Electrical connections check
   </li>
     <li className="relative pl-6  text-gray-600">
     <span className="absolute left-0 top-1 inline-block h-5 w-5 bg-[url(https://res.cloudinary.com/dwe4p22ut/image/upload/v1747842034/next-100_smkyiq.png)] bg-contain bg-no-repeat bg-center"></span>
@@ -42,23 +39,31 @@ const AvoidHeadachesTU: React.FC<HeroProps> = ({ contactFormEmbed }) => {
   </li>
     <li className="relative pl-6  text-gray-600">
     <span className="absolute left-0 top-1 inline-block h-5 w-5 bg-[url(https://res.cloudinary.com/dwe4p22ut/image/upload/v1747842034/next-100_smkyiq.png)] bg-contain bg-no-repeat bg-center"></span>
-  Tankless Water Heaters
+  Refrigerant level & pressure check
   </li>
     <li className="relative pl-6  text-gray-600">
     <span className="absolute left-0 top-1 inline-block h-5 w-5 bg-[url(https://res.cloudinary.com/dwe4p22ut/image/upload/v1747842034/next-100_smkyiq.png)] bg-contain bg-no-repeat bg-center"></span>
-  Toilet Repair & Installation
+  Condenser & coil cleaning
   </li>
     <li className="relative pl-6  text-gray-600">
     <span className="absolute left-0 top-1 inline-block h-5 w-5 bg-[url(https://res.cloudinary.com/dwe4p22ut/image/upload/v1747842034/next-100_smkyiq.png)] bg-contain bg-no-repeat bg-center"></span>
-  Water Filtration Systems
+  Safety system verification
   </li>
    <li className="relative pl-6  text-gray-600">
     <span className="absolute left-0 top-1 inline-block h-5 w-5 bg-[url(https://res.cloudinary.com/dwe4p22ut/image/upload/v1747842034/next-100_smkyiq.png)] bg-contain bg-no-repeat bg-center"></span>
-  Water Softeners
+  Ductwork & drain line inspection
+  </li>
+   <li className="relative pl-6  text-gray-600">
+    <span className="absolute left-0 top-1 inline-block h-5 w-5 bg-[url(https://res.cloudinary.com/dwe4p22ut/image/upload/v1747842034/next-100_smkyiq.png)] bg-contain bg-no-repeat bg-center"></span>
+  System performance review
+  </li>
+   <li className="relative pl-6  text-gray-600">
+    <span className="absolute left-0 top-1 inline-block h-5 w-5 bg-[url(https://res.cloudinary.com/dwe4p22ut/image/upload/v1747842034/next-100_smkyiq.png)] bg-contain bg-no-repeat bg-center"></span>
+  Written service report & expert recommendations
   </li>
 </ul>
 <p className=" text-gray-600 mb-6">
-              With <span className="text-blue-primary-dark ">BlueBest</span>, you're guaranteed a smooth install, certified technicians, and honest pricing.
+               <span className="text-blue-primary-dark ">One low price. No hidden fees.</span>
             </p>
  {/* <span className="text-xl text-orange-primary font-bold mb-8 block">Get $2,000 OFF Your Whole-Home Generator</span> */}
 

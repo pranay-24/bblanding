@@ -19,7 +19,7 @@ import React, { useState, useEffect, useRef } from 'react';
 
    {/* Column 2 - Takes 22% on desktop (1/3 of remaining 66%), half width on mobile */}
    <div className="w-full md:w-[33%]  p-3 flex justify-center ">
-   <div className="flex flex-col bg-white p-2 rounded-lg h-42 md:h-full border-4 border-[var(--orange-dark)]">
+   <div className="flex flex-col bg-white p-2 rounded-lg h-42 md:h-full border-4 border-[var(--orange-dark)] w-full">
 
     <div className="text-center">
    {/* Sub heading */}
@@ -53,7 +53,7 @@ import React, { useState, useEffect, useRef } from 'react';
 
    {/* Column 3 - Takes 22% on desktop (1/3 of remaining 66%), half width on mobile */}
    <div className="w-full md:w-[33%] flex  p-3 justify-center">
-    <div className="flex flex-col bg-white p-2 rounded-lg h-42 md:h-full border-4 border-[var(--orange-dark)]">
+    <div className="flex flex-col bg-white p-2 rounded-lg h-42 md:h-full border-4 border-[var(--orange-dark)] w-full">
 
      <div className="text-center">
    {/* Sub heading */}
@@ -89,7 +89,7 @@ import React, { useState, useEffect, useRef } from 'react';
   
    {/* Column 4 - Takes 22% on desktop (1/3 of remaining 66%), full width centered on mobile */}
    <div className="w-full md:w-[33%] flex justify-center p-3 mx-auto md:mx-0">
-      <div className="flex flex-col bg-white p-2 rounded-lg h-42 md:h-full border-4 border-[var(--orange-dark)]">
+      <div className="flex flex-col bg-white p-2 rounded-lg h-42 md:h-full border-4 border-[var(--orange-dark)] w-full">
 
       <div className="text-center">
    {/* Sub heading */}

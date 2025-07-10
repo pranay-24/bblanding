@@ -266,6 +266,15 @@ const GoogleReviewsWidget = ({ testimonials }: GoogleReviewsWidgetProps) => {
           />
         </div>
       </div>
+      <div  className="flex justify-center mt-6">
+         <a
+               href="https://www.google.com/search?q=blue+best+heating+and+air&oq=Blue+best+&aqs=chrome.1.69i57j69i59j0i512l3j69i60j69i61l2.8166j0j7&sourceid=chrome&ie=UTF-8#lrd="
+               target="_blank"
+              className="px-11 py-3.5 text-lg bg-gradient-to-b from-orange-600 to-orange-500 text-white text-center ease-out whitespace-pre-wrap rounded-full uppercase font-semibold font-['Kanit'] leading-relaxed hover:cursor-pointer shadow-[0_0.2em_0_#003572] transition duration-300"
+            >
+              SEE ALL REVIEWS
+            </a>
+      </div>
     </div>
   );
 };

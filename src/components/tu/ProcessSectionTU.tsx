@@ -5,7 +5,7 @@ const ProcessSectionTU: React.FC = () => {
   const steps = [
     { number: 1, title: 'Free Consultation', text: 'Schedule Your Estimate' },
     { number: 2, title: 'Professional Installation', text: 'Get Expert Recommendation + Quote' },
-    { number: 3, title: 'Lifetime Support', text: 'Enjoy Hassle-Free Plumbing Services' },
+    { number: 3, title: 'Lifetime Support', text: 'Enjoy Low Price $129 HVAC Tune-Up' },
   ];
 
      const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -61,11 +61,13 @@ const ProcessSectionTU: React.FC = () => {
           ))}
           
         </div>
-         <p className="pt-16 text-xl font-bold text-gray-600 max-w-3xl mx-auto text-center">
-            Simple.Fast.Done Right
-          </p>
+        <p className="pt-16 text-xl font-bold text-gray-600 max-w-3xl mx-auto text-center flex justify-center gap-4">
+  <span>Simple.</span>
+  <span>Fast.</span>
+  <span>Done Right.</span>
+</p>
            <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-primary mb-4 max-w-3xl text-center mx-auto">Are you in urgent need of pipe repair in Bountiful or other plumbing services?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-primary mb-4 max-w-3xl text-center mx-auto">Book Your $129 HVAC Tune-Up Today!</h2>
           {/* <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             BlueBest provides quality plumbing, heating, and air conditioning services to homes and businesses in Bountiful, UT and surrounding areas.
           </p> */}
@@ -75,7 +77,7 @@ const ProcessSectionTU: React.FC = () => {
                onClick={handleClick}
               className="px-11 py-3.5 text-lg bg-gradient-to-b from-orange-600 to-orange-500 text-white text-center ease-out whitespace-pre-wrap rounded-full uppercase font-semibold font-['Kanit'] leading-relaxed hover:cursor-pointer shadow-[0_0.2em_0_#003572] transition duration-300"
             >
-              GET IMMEDIATE ASSISTANCE
+              BOOK MY $129 TUNE-UP
             </a>
             <a
                 href="tel:+13852002604"

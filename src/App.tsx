@@ -7,6 +7,7 @@ import ThankYouPage from './pages/ThankYouPage1';
 import HomeRedirect from './pages/HomeRedirect';
 import LandingPage2 from './pages/LandingPage2';
 import LandingPageWH from './pages/LandingPageWH';
+import LandingPageTU from './pages/LandingPageTU';
 
 const App: React.FC = () => {
   // Your embed code would go here as a state variable
@@ -14,7 +15,7 @@ const App: React.FC = () => {
   const contactFormEmbed: string = `<div class="elfsight-app-66cf87e4-4cd5-4498-98e4-93447252644a" data-elfsight-app-lazy></div>`;
 const plumbingFormEmbed : string = `<div class="elfsight-app-9ea74b87-b66a-4830-aa5d-c10757a6db11" data-elfsight-app-lazy></div>`;
 const waterheaterFormEmbed : string = `<div class="elfsight-app-9fd1aba2-a3c8-4d9e-9f8e-0798ea11031e" data-elfsight-app-lazy></div>`;
-
+const tuneupFormEmbed : string = `<div class="elfsight-app-9fd1aba2-a3c8-4d9e-9f8e-0798ea11031e" data-elfsight-app-lazy></div>`;
 
   return (
     <Router>
@@ -37,6 +38,10 @@ const waterheaterFormEmbed : string = `<div class="elfsight-app-9fd1aba2-a3c8-4d
             <Route 
               path="/water-heater" 
               element={<LandingPageWH contactFormEmbed={waterheaterFormEmbed} />} 
+            />
+            <Route 
+              path="/hvac-tune-up" 
+              element={<LandingPageTU contactFormEmbed={tuneupFormEmbed } />} 
             />
             <Route 
               path="/thank-you" 

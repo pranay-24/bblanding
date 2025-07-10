@@ -113,6 +113,16 @@ const Navbar: React.FC = () => {
     }
   };
 
+// Add this function after handleSmoothScroll
+const handleMobileLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  // Handle smooth scrolling for anchor links
+  if (href.startsWith('#')) {
+    handleSmoothScroll(e, href);
+  }
+  
+  // Always close mobile menu when any link is clicked
+  setIsOpen(false);
+};
 
   useEffect(() => {
     const handleScroll = () => {
@@ -122,6 +132,32 @@ const Navbar: React.FC = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+  // Add this useEffect after your existing useEffect
+useEffect(() => {
+  const handleClickOutside = (event: MouseEvent) => {
+    if (isOpen) {
+      const target = event.target as Element;
+      const mobileMenu = document.querySelector('[data-mobile-menu]');
+      const menuButton = document.querySelector('[data-menu-button]');
+      
+      // Close menu if click is outside both the menu and the toggle button
+      if (mobileMenu && menuButton && 
+          !mobileMenu.contains(target) && 
+          !menuButton.contains(target)) {
+        setIsOpen(false);
+      }
+    }
+  };
+
+  if (isOpen) {
+    document.addEventListener('mousedown', handleClickOutside);
+  }
+
+  return () => {
+    document.removeEventListener('mousedown', handleClickOutside);
+  };
+}, [isOpen]);
+
 
   return (
     <header 
@@ -154,6 +190,7 @@ const Navbar: React.FC = () => {
               
               {/* Mobile Menu Button */}
               <button
+              data-menu-button
                 className="md:hidden text-blue-primary"
                 onClick={() => setIsOpen(!isOpen)}
                 aria-label="Toggle Menu"
@@ -199,42 +236,32 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* Mobile Navigation */}
-        {isOpen && (
-          <div className="md:hidden mt-4 pb-4">
-            <nav className="flex flex-col space-y-4">
-              {navItems.map((item) => (
-                <div key={item.title}>
-                  <a
-                    href={item.href}
-                    className="font-medium text-base text-blue-primary hover:text-blue-dark py-2 block"
-                  >
-                    {item.title}
-                  </a>
-                  {/* {item.dropdown && (
-                    <div className="pl-4 mt-2 space-y-2">
-                      {item.dropdown.map((dropItem) => (
-                        <a
-                          key={dropItem.title}
-                          href={dropItem.href}
-                          className="block text-gray-700 hover:text-blue-primary py-1"
-                        >
-                          {dropItem.title}
-                        </a>
-                      ))}
-                    </div>
-                  )} */}
-                </div>
-              ))}
-              <a
-                href="tel:+13852002604"
-                className="flex items-center justify-center px-4 py-3 mt-2 rounded-full bg-blue-primary text-white font-medium hover:bg-blue-dark transition duration-300"
-              >
-                <Phone size={18} className="mr-2" />
-                (385) 200-2604
-              </a>
-            </nav>
-          </div>
-        )}
+        {/* Mobile Navigation */}
+{isOpen && (
+  <div data-mobile-menu className="md:hidden mt-4 pb-4">
+    <nav className="flex flex-col space-y-4">
+      {navItems.map((item) => (
+        <div key={item.title}>
+          
+           <a href={item.href}
+            onClick={(e) => handleMobileLinkClick(e, item.href)} // Use new handler
+            className="font-medium text-base text-blue-primary hover:text-blue-dark py-2 block"
+          >
+            {item.title}
+          </a>
+        </div>
+      ))}
+      
+        <a href="tel:+13852002604"
+        onClick={() => setIsOpen(false)} // Close menu when phone link clicked
+        className="flex items-center justify-center px-4 py-3 mt-2 rounded-full bg-blue-primary text-white font-medium hover:bg-blue-dark transition duration-300"
+      >
+        <Phone size={18} className="mr-2" />
+        (385) 200-2604
+      </a>
+    </nav>
+  </div>
+)}
       </div>
     </header>
   );

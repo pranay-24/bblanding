@@ -26,7 +26,7 @@ const SecondaryHeroTU: React.FC = () => {
   <div className="mx-auto ">
     <div className="relative">
       <img
-        src="https://res.cloudinary.com/dwe4p22ut/image/upload/v1750980769/BB_Plumbing_3_szlspg.png"
+        src="https://res.cloudinary.com/dwe4p22ut/image/upload/v1748386263/hero-3_rxo7uq.png"
         alt="Plumbing Installation"
         className="w-full h-[600px] object-cover "
       />
@@ -37,7 +37,7 @@ const SecondaryHeroTU: React.FC = () => {
         <div className="text-left md:text-center mb-12 mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-blue-primary mb-4">Limited-Time Offer – Act Fast!</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            $50 OFF on any Plumbing Repair and Replacement. This offer is only valid for a short time book your free estimate today before it expires.
+            Extend the life of your HVAC system in just $129. This offer is only valid for a short time book your free estimate today before it expires.
           </p>
         </div>
         <div className="flex flex-col max-w-fit gap-2 justify-center text-center mt-12 mx-auto">
@@ -45,7 +45,7 @@ const SecondaryHeroTU: React.FC = () => {
            <a onClick={handleClick}
             className="max-w-lg px-11 py-3.5 text-lg bg-gradient-to-b from-orange-600 to-orange-500 text-white text-center ease-out whitespace-pre-wrap rounded-full uppercase font-semibold font-['Kanit'] leading-relaxed hover:cursor-pointer shadow-[0_0.2em_0_#003572] transition duration-300"
           >
-            GET IMMEDIATE ASSISTANCE
+            REQUEST ESTIMATE
           </a>
           
           <a  href="tel:+13852002604"

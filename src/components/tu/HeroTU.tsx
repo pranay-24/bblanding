@@ -13,9 +13,9 @@ const HeroTU: React.FC<HeroProps> = ({ contactFormEmbed }) => {
   const carouselImages = [
     {
       url: 'https://res.cloudinary.com/dwe4p22ut/image/upload/v1748381588/hero-banner-2_o7dlss.jpg',
-      title: '0% Financing for 12 Months on New HVAC System.',
-      subTitle: 'Get your free estimate by filling up the form.',
-      subTitle2: 'A limited-time offer from Salt Lake City\'s most trusted HVAC & plumbing experts.'
+      title: 'Stay Comfortable Year-Round With Our $129 HVAC Tune-Up',
+      subTitle: '',
+      subTitle2: 'Prevent breakdowns, reduce energy bills, and extend the life of your system all for just $129.'
     },
   ];
 
@@ -96,15 +96,15 @@ const HeroTU: React.FC<HeroProps> = ({ contactFormEmbed }) => {
                       <h1 className="text-3xl md:text-5xl font-bold mb-4">{slide.title}</h1>
                       
                       <p className="text-base md:text-xl mb-6">
-                       {slide.subTitle2}
+                       Prevent breakdowns, reduce energy bills, and extend the life of your system all for just $129.<span className="font-extrabold"> Get your free estimate by filling up the form.</span>
                       </p>
-                      <p className="font-bold text-base md:text-xl mb-3">{slide.subTitle}</p>
+                      {/* <p className="font-bold text-base md:text-xl mb-3">{slide.subTitle}</p> */}
                       <div className="flex flex-col xl:flex-row gap-4 max-w-md lg:max-w-3xl">
                         <a 
                           onClick={handleClick}
                           className="px-11 py-3.5 text-base bg-gradient-to-b from-orange-600 to-orange-500 text-white text-center ease-out whitespace-pre-wrap rounded-full uppercase font-semibold font-['Kanit'] leading-relaxed shadow-[0_0.2em_0_#003572] transition duration-300 cursor-pointer"
                         >
-                          GET YOUR FREE ESTIMATE
+                          Book My $129 Tune-Up
                         </a>
                         <a
                           href="tel:+13852002604"
