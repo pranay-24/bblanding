@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { useEffect }  from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import LandingPage from './pages/LandingPage1';
@@ -17,8 +17,29 @@ const plumbingFormEmbed : string = `<div class="elfsight-app-9ea74b87-b66a-4830-
 const waterheaterFormEmbed : string = `<div class="elfsight-app-9fd1aba2-a3c8-4d9e-9f8e-0798ea11031e" data-elfsight-app-lazy></div>`;
 const tuneupFormEmbed : string = `<div class="elfsight-app-68a16ab9-1de2-4515-9130-b5b0d11544d3" data-elfsight-app-lazy></div>`;
 
+// Facebook Pixel tracking hook
+function useFacebookPageView() {
+  const location = useLocation();
+  
+  useEffect(() => {
+    // Fire PageView on every route change
+    if (window.fbq) {
+      window.fbq('track', 'PageView');
+      console.log('Facebook PageView tracked for:', location.pathname); // Optional: for debugging
+    }
+  }, [location.pathname]);
+}
+
+// Wrapper component to provide pixel tracking
+function PixelWrapper({ children }: { children: React.ReactNode }) {
+  useFacebookPageView();
+  return <>{children}</>;
+}
+
+
   return (
     <Router>
+       <PixelWrapper>
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <main className="flex-grow">
@@ -56,6 +77,7 @@ const tuneupFormEmbed : string = `<div class="elfsight-app-68a16ab9-1de2-4515-91
         </main>
         <Footer />
       </div>
+      </PixelWrapper>
     </Router>
   );
 };
