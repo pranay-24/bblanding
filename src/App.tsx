@@ -36,11 +36,11 @@ const App: React.FC = () => {
             currency: 'USD'
           });
           
-          console.log('Facebook Lead event tracked from source:', sourceId);
+          //console.log('Facebook Lead event tracked from source:', sourceId);
         } else {
           // Fire regular PageView for all other pages
           window.fbq('track', 'PageView');
-          console.log('Facebook PageView tracked for:', location.pathname);
+          //console.log('Facebook PageView tracked for:', location.pathname);
         }
       }
     }, [location.pathname, location.search]); // Include location.search to track URL parameter changes
