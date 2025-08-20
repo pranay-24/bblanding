@@ -78,7 +78,7 @@ import React, { useState, useEffect, useRef } from 'react';
   
    {/* Sub text */}
    <div className="text-sm md:text-sm text-black italic">
-    Must present offer at time of service Expires 7/30/25.
+    Must present offer at time of service Expires 11/30/25.
    </div>
  </div>
     </div>
