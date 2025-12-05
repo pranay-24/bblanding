@@ -13,7 +13,8 @@ const Hero: React.FC<HeroProps> = ({ contactFormEmbed }) => {
   const carouselImages = [
     {
       url: 'https://res.cloudinary.com/dwe4p22ut/image/upload/v1748381588/hero-banner-2_o7dlss.jpg',
-      title: 'Get $1,000 Off New HVAC System Installs. Offer Ending on December 31',
+      title1: 'Get $1,000 Off New HVAC System Installs.',
+      title2: 'Offer Ending on December 31',
       subTitle: 'Get your free estimate by filling up the form.',
       subTitle2: 'A limited-time offer from Salt Lake City\'s most trusted HVAC & plumbing experts.'
     },
@@ -93,8 +94,9 @@ const Hero: React.FC<HeroProps> = ({ contactFormEmbed }) => {
             </div>  
 
 
-                      <h1 className="text-3xl md:text-5xl font-bold mb-4">{slide.title}</h1>
-                      
+                      <h1 className="text-3xl md:text-5xl font-bold mb-4">{slide.title1}</h1>
+                      <h3 className="text-xl md:text-2xl font-bold mb-4">{slide.title2}</h3>
+
                       <p className="text-base md:text-xl mb-6">
                        {slide.subTitle2}
                       </p>

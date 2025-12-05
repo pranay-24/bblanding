@@ -37,7 +37,10 @@ const SecondaryHero: React.FC = () => {
         <div className="text-left md:text-center mb-12 mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-blue-primary mb-4">Limited-Time Offer – Act Fast!</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Get a brand-new HVAC system with 0% financing for 12 months. This offer is only valid for a short time book your free estimate today before it expires.
+            Get $1,000 Off New HVAC System Installs. 
+          </p>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            Offer Ending on December 31 
           </p>
         </div>
         <div className="flex flex-col lg:flex-row gap-2 justify-center text-center mt-12">
