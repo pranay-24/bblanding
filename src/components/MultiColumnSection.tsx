@@ -14,38 +14,38 @@ import React, { useState, useEffect, useRef } from 'react';
   
      <div className="text-center">
       <div className="text-2xl md:text-2xl font-bold text-orange-500 uppercase mb-2">
-   OFFER
+   NEW OFFER
   </div>
 
 
   {/* Sub heading */}
-  <div className="text-sm md:text-sm font-semibold text-black uppercase mb-1">
+  {/* <div className="text-sm md:text-sm font-semibold text-black uppercase mb-1">
    GET UP TO
-  </div>
+  </div> */}
   
   {/* Main heading */}
-  <h3 className="text-3xl md:text-4xl  font-bold text-blue-primary-dark uppercase mb-2">
-   $6,300 CASH BACK
+  <h3 className="text-3xl md:text-4xl  font-bold text-blue-primary-dark  mb-2">
+   Start Heating for Just $49/Month
   </h3>
   
   {/* Secondary sub heading */}
-  <div className="text-lg md:text-lg font-semibold text-black uppercase mb-2">
+  {/* <div className="text-lg md:text-lg font-semibold text-black uppercase mb-2">
     IN REBATES AND TAX INCENTIVES!
-  </div>
+  </div> */}
   
   {/* Paragraph */}
-  <p className="text-base md:text-lg text-orange-600 mb-2 leading-tight">
-    We planned ahead and have 2024 inventory in stock at great prices!
+  <p className="text-base md:text-lg text-black  mb-2 leading-tight">
+    Stay warm and comfortable without breaking the bank. With our $49/month heating offer, you can install or upgrade your home’s heating system with low monthly payments, professional installation, and dependable performance you can trust.
   </p>
   
-  <div className="text-sm md:text-sm text-black italic">
-    *25-C tax credit, terms and conditions apply.
+  <div className="text-base md:text-lg text-orange-600 mb-2 leading-tight">
+    Upgrade your home heating with low monthly payments and expert installation.
   </div>
 
   {/* Sub text */}
-  <div className="text-sm md:text-sm text-black italic">
+  {/* <div className="text-sm md:text-sm text-black italic">
     *Must present offer at time of service Expires 12/31/25.
-  </div>
+  </div> */}
 </div>
   </div>
   

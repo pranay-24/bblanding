@@ -9,6 +9,9 @@ import LandingPage2 from './pages/LandingPage2';
 import LandingPageWH from './pages/LandingPageWH';
 import LandingPageTU from './pages/LandingPageTU';
 import FurnaceService from './pages/FurnaceService';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsAndConditions from './pages/TermsAndConditions';
+import AccessibilityStatement from './pages/AccessibilityStatement';
 
 const App: React.FC = () => {
   // Your embed code would go here as a state variable
@@ -102,6 +105,18 @@ const App: React.FC = () => {
               <Route 
                 path="/thank-you" 
                 element={<ThankYouPage />} 
+              />
+              <Route 
+                path="/privacy-policy" 
+                element={<PrivacyPolicy />} 
+              />
+              <Route 
+                path="/terms-and-conditions" 
+                element={<TermsAndConditions />} 
+              />
+              <Route 
+                path="/accessibility-statement" 
+                element={<AccessibilityStatement />} 
               />
             </Routes>
           </main>

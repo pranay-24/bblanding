@@ -13,8 +13,8 @@ const Hero: React.FC<HeroProps> = ({ contactFormEmbed }) => {
   const carouselImages = [
     {
       url: 'https://res.cloudinary.com/dwe4p22ut/image/upload/v1748381588/hero-banner-2_o7dlss.jpg',
-      title1: 'Claim Up to $3,200 in Federal HVAC Credits',
-      title2: 'Offer Ending on December 31',
+      title1: 'New offer - Start Heating for Just $49/Month',
+      title2: '',
       subTitle: '',
       subTitle2: 'A limited-time offer from Salt Lake City\'s most trusted HVAC & plumbing experts.'
     },

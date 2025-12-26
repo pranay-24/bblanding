@@ -104,9 +104,9 @@ const Footer: React.FC = () => {
         <div className="text-center text-sm text-blue-100/80">
           <p>&copy; {new Date().getFullYear()} BlueBest Plumbing, Heating, Air, Generators. All rights reserved.</p>
           <div className="mt-2 flex justify-center space-x-4">
-            <a href="#privacy" className="hover:text-orange-primary transition duration-300">Privacy Policy</a>
-            <a href="#terms" className="hover:text-orange-primary transition duration-300">Terms of Service</a>
-            <a href="#accessibility" className="hover:text-orange-primary transition duration-300">Accessibility</a>
+            <a href="/privacy-policy" className="hover:text-orange-primary transition duration-300">Privacy Policy</a>
+            <a href="/terms-and-conditions" className="hover:text-orange-primary transition duration-300">Terms of Service</a>
+            <a href="/accessibility-statement" className="hover:text-orange-primary transition duration-300">Accessibility</a>
           </div>
         </div>
       </div>
