@@ -37,7 +37,7 @@ const SecondaryHero: React.FC = () => {
         <div className="text-left md:text-center mb-12 mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-blue-primary mb-4">Limited-Time Offer – Act Fast!</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Start Heating for Just $49/Month
+           Get Instant Heating + Full System from Only $199/Month
           </p>
           {/* <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Offer Ending on December 31 

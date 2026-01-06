@@ -25,7 +25,7 @@ import React, { useState, useEffect, useRef } from 'react';
   
   {/* Main heading */}
   <h3 className="text-3xl md:text-4xl  font-bold text-blue-primary-dark  mb-2">
-   Start Heating for Just $49/Month
+   Get Instant Heating + Full System from Only $199/Month
   </h3>
   
   {/* Secondary sub heading */}
@@ -35,12 +35,12 @@ import React, { useState, useEffect, useRef } from 'react';
   
   {/* Paragraph */}
   <p className="text-base md:text-lg text-black  mb-2 leading-tight">
-    Stay warm and comfortable without breaking the bank. With our $49/month heating offer, you can install or upgrade your home’s heating system with low monthly payments, professional installation, and dependable performance you can trust.
+    Stay warm and comfortable without breaking the bank. Enjoy professional installation, and dependable performance you can trust.
   </p>
   
-  <div className="text-base md:text-lg text-orange-600 mb-2 leading-tight">
+  {/* <div className="text-base md:text-lg text-orange-600 mb-2 leading-tight">
     Upgrade your home heating with low monthly payments and expert installation.
-  </div>
+  </div> */}
 
   {/* Sub text */}
   {/* <div className="text-sm md:text-sm text-black italic">

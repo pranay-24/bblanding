@@ -13,7 +13,7 @@ const Hero: React.FC<HeroProps> = ({ contactFormEmbed }) => {
   const carouselImages = [
     {
       url: 'https://res.cloudinary.com/dwe4p22ut/image/upload/v1748381588/hero-banner-2_o7dlss.jpg',
-      title1: 'New offer - Start Heating for Just $49/Month',
+      title1: 'Get Instant Heating + Full System from Only $199/Month',
       title2: '',
       subTitle: '',
       subTitle2: 'A limited-time offer from Salt Lake City\'s most trusted HVAC & plumbing experts.'
