@@ -25,7 +25,7 @@ import React, { useState, useEffect, useRef } from 'react';
   
   {/* Main heading */}
   <h3 className="text-3xl md:text-4xl  font-bold text-blue-primary-dark  mb-2">
-   Get Instant Heating + Full System from Only $199/Month
+   Trade In Your Old System & Save Up to $1,000
   </h3>
   
   {/* Secondary sub heading */}
