@@ -66,12 +66,11 @@ const AvoidHeadaches: React.FC<HeroProps> = ({ contactFormEmbed }) => {
 
           </div>
            <div className="w-full lg:w-1/2">
-          {/* Actual form */}
-                        <div 
-                          className={`transition-opacity duration-300'}`}
-                          dangerouslySetInnerHTML={{ __html: contactFormEmbed }} 
-                        />
-                      </div>
+            {/* Actual form */}
+            <div
+              dangerouslySetInnerHTML={{ __html: contactFormEmbed }}
+            />
+          </div>
          
 
         </div>

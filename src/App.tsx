@@ -15,11 +15,11 @@ import AccessibilityStatement from './pages/AccessibilityStatement';
 
 const App: React.FC = () => {
   // Your embed code would go here as a state variable
-  const contactFormEmbed: string = '<div class="elfsight-app-66cf87e4-4cd5-4498-98e4-93447252644a" data-elfsight-app-lazy></div>';
-  const plumbingFormEmbed : string = '<div class="elfsight-app-9ea74b87-b66a-4830-aa5d-c10757a6db11" data-elfsight-app-lazy></div>';
-  const waterheaterFormEmbed : string = '<div class="elfsight-app-9fd1aba2-a3c8-4d9e-9f8e-0798ea11031e" data-elfsight-app-lazy></div>';
-  const tuneupFormEmbed : string = '<div class="elfsight-app-68a16ab9-1de2-4515-9130-b5b0d11544d3" data-elfsight-app-lazy></div>';
-  const furnaceFormEmbed : string = '<div class="elfsight-app-273f7c94-a8c3-4b17-a1bf-664cc55c81cd" data-elfsight-app-lazy></div>'; // Update with actual embed code
+  const contactFormEmbed: string = '<div class="elfsight-app-66cf87e4-4cd5-4498-98e4-93447252644a"></div>';
+  const plumbingFormEmbed : string = '<div class="elfsight-app-9ea74b87-b66a-4830-aa5d-c10757a6db11"></div>';
+  const waterheaterFormEmbed : string = '<div class="elfsight-app-9fd1aba2-a3c8-4d9e-9f8e-0798ea11031e"></div>';
+  const tuneupFormEmbed : string = '<div class="elfsight-app-68a16ab9-1de2-4515-9130-b5b0d11544d3"></div>';
+  const furnaceFormEmbed : string = '<div class="elfsight-app-273f7c94-a8c3-4b17-a1bf-664cc55c81cd"></div>'; // Update with actual embed code
 
   // Facebook Pixel tracking hook
   function useFacebookPageView() {
