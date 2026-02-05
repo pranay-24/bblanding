@@ -50,13 +50,13 @@ const Hero: React.FC<HeroProps> = ({ contactFormEmbed }) => {
   };
 
   return (
-    <section className="pt-[80px] md:pt-[150px] lg:pt-[150px] relative" id="">
+    <section className="pt-[120px] md:pt-[150px] lg:pt-[150px] relative" id="">
       <div className="w-full relative">
         <Slider {...sliderSettings}>
           {carouselImages.map((slide, index) => (
             <div key={index} className="">
               {/* Fixed height container with responsive heights */}
-              <div className="h-auto lg:h-[85vh] w-full relative">
+              <div className="min-h-[calc(100vh-120px)] md:min-h-0 md:h-auto lg:h-[85vh] w-full relative">
                 <div
                   className="absolute inset-0 bg-center bg-cover bg-no-repeat"
                   style={{ backgroundImage: `url(${slide.url})` }}
@@ -68,37 +68,50 @@ const Hero: React.FC<HeroProps> = ({ contactFormEmbed }) => {
                   <div className="flex flex-col lg:flex-row h-full items-center justify-center md:justify-between py-10">
                     {/* Left side - Text content */}
                     <div className="text-white z-10 max-w-[768px]  md:mr-8 mb-10 md:mb-0 fade-in lg:flex-1">
+                      {/* Google Rating */}
                       <div className="flex items-center space-x-2 mb-6">
-                 <div className="flex items-center  h-full">
-              <img 
-             src="/google-g-logo.svg"
-             alt="Column 1 Image 1"
-             className="w-11 h-full object-contain"
-           />
-            </div>
-                <div className="flex flex-col items-start">
-              <div className="flex items-center space-x-1 mb-1">
-                {[...Array(5)].map((_, i) => (
-                  <Star 
-                    key={i} 
-                    className={`w-4 h-4 fill-[#ffffed] text-[#ffffed]`} 
-                  />
-                ))}
-              </div>
-              <div className="flex flex-row space-x-3 justify-center items-center ">
-                <span className="text-lg font-bold text-[#ffffed]">5.0 RATING</span>
-                <span className="text-sm font-bold text-[#ffffed]">(2000+ Reviews)</span>
-              </div>
-            </div>
+                        <div className="flex items-center h-full">
+                          <img
+                            src="/google-g-logo.svg"
+                            alt="Google"
+                            className="w-11 h-full object-contain"
+                          />
+                        </div>
+                        <div className="flex flex-col items-start">
+                          <div className="flex items-center space-x-1 mb-1">
+                            {[...Array(5)].map((_, i) => (
+                              <Star
+                                key={i}
+                                className={`w-4 h-4 fill-[#ffffed] text-[#ffffed]`}
+                              />
+                            ))}
+                          </div>
+                          <div className="flex flex-row space-x-3 justify-center items-center">
+                            <span className="text-lg font-bold text-[#ffffed]">5.0 RATING</span>
+                            <span className="text-sm font-bold text-[#ffffed]">(2500+ Reviews)</span>
+                          </div>
+                        </div>
+                      </div>
 
-            </div>  
+                      {/* Main Offer Title */}
+                      <h1 className="text-3xl md:text-5xl font-bold mb-2">{slide.title1}</h1>
 
+                      {/* Limited Time Offer - moved below title */}
+                      <p className="text-base md:text-xl mb-4 text-white/90">
+                       {slide.subTitle2}
+                      </p>
 
-                      <h1 className="text-3xl md:text-5xl font-bold mb-4">{slide.title1}</h1>
                       <h3 className="text-xl md:text-2xl font-bold mb-4">{slide.title2}</h3>
 
-                      <p className="text-base md:text-xl mb-6">
-                       {slide.subTitle2}
+                      {/* Company Tagline */}
+                      
+
+                      {/* Service Area */}
+                      <p className="text-base md:text-xl mb-4 text-white/90">
+                        Trusted HVAC & Plumbing Services in Bountiful, Greater Salt Lake City Area & Along the Wasatch Front
+                      </p>
+                      <p className="text-lg md:text-2xl font-semibold text-orange-400 mb-2">
+                        Put Your Mind to Rest: Call Blue Best!
                       </p>
                       <p className="font-bold text-base md:text-xl mb-3">{slide.subTitle}</p>
                       <div className="flex flex-col xl:flex-row gap-4 max-w-md lg:max-w-3xl">
@@ -115,6 +128,13 @@ const Hero: React.FC<HeroProps> = ({ contactFormEmbed }) => {
                           <Phone size={18} className="mr-2" />
                           (385) 200-2604
                         </a>
+                      </div>
+
+                      {/* Trust Badges */}
+                      <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 mt-6 text-xs md:text-sm text-white/60 uppercase tracking-wide">
+                        <span className="font-semibold">Women-Owned & Operated</span>
+                        <span>|</span>
+                        <span className="font-semibold">3 Times Best of State Winner</span>
                       </div>
                     </div>
                     
@@ -171,7 +191,7 @@ export function MultiColumnSection() {
           />
         </div>
         <div className="text-blue-primary-dark text-md font-bold  text-center">
-          3x Best-of-State Winner – Heat & Air
+          3 Times Best of State Winner – Heat & Air
         </div>
       </div>
 

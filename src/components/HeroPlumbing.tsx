@@ -168,7 +168,7 @@ export function MultiColumnSection() {
           />
         </div>
         <div className="text-blue-primary-dark text-md font-bold  text-center">
-          3x Best-of-State Winner – Heat & Air
+          3 Times Best of State Winner – Heat & Air
         </div>
       </div>
 

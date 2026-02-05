@@ -160,11 +160,19 @@ useEffect(() => {
 
 
   return (
-    <header 
+    <header
       className={`fixed w-full top-0 z-50 transition-all duration-300 ${
         isScrolled ? 'bg-blue-light shadow-nav' : 'bg-blue-light shadow-nav'
       }`}
     >
+      {/* Mobile Call Bar */}
+      <a
+        href="tel:+13852002604"
+        className="md:hidden block text-center py-2.5 bg-blue-primary-dark text-white text-base font-bold"
+      >
+        CALL (385) 200-2604
+      </a>
+
       <div className="lg:container px-4 mx-auto ">
         <div className="flex flex-col">
           {/* Top Bar */}
