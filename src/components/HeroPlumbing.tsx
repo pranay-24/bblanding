@@ -13,9 +13,9 @@ const HeroPlumbing: React.FC<HeroProps> = ({ contactFormEmbed }) => {
   const carouselImages = [
     {
       url: 'https://res.cloudinary.com/dwe4p22ut/image/upload/v1750980769/BB_Plumbing_1_uxf8fa.png',
-      title: '$50 Off on Any Plumbing Repair and Replacement.',
-      subTitle: 'Get your free estimate by filling up the form.',
-      subTitle2: 'A limited-time offer from most trusted plumbing experts.'
+      title: 'Enjoy Softer Water & Luxurious Hot Showers Starting at $2,795',
+      subTitle: '',
+      subTitle2: 'A limited-time offer from most trusted HVAC & Plumbing services in Bountiful, Greater Salt Lake City area & along the Wasatch Front'
     },
   ];
 
@@ -49,13 +49,13 @@ const HeroPlumbing: React.FC<HeroProps> = ({ contactFormEmbed }) => {
   };
 
   return (
-    <section className="pt-[80px] md:pt-[150px] lg:pt-[130px] relative" id="">
+    <section className="pt-[120px] md:pt-[150px] lg:pt-[150px] relative" id="">
       <div className="w-full relative">
         <Slider {...sliderSettings}>
           {carouselImages.map((slide, index) => (
             <div key={index} className="">
               {/* Fixed height container with responsive heights */}
-              <div className="h-[500px] md:h-[70vh] lg:h-[75vh] w-full relative">
+              <div className="min-h-[calc(100vh-120px)] md:min-h-0 md:h-auto lg:h-[85vh] w-full relative">
                 <div
                   className="absolute inset-0 bg-center bg-cover bg-no-repeat"
                   style={{ backgroundImage: `url(${slide.url})` }}
@@ -68,50 +68,70 @@ const HeroPlumbing: React.FC<HeroProps> = ({ contactFormEmbed }) => {
                     {/* Left side - Text content */}
                     <div className="text-white z-10 max-w-[768px]  md:mr-8 mb-10 md:mb-0 fade-in lg:flex-1">
 
+                      {/* Google Rating */}
                       <div className="flex items-center space-x-2 mb-6">
-                 <div className="flex items-center  h-full">
-              <img 
-             src="/google-g-logo.svg"
-             alt="Column 1 Image 1"
-             className="w-11 h-full object-contain"
-           />
-            </div>
-                <div className="flex flex-col items-start">
-              <div className="flex items-center space-x-1 mb-1">
-                {[...Array(5)].map((_, i) => (
-                  <Star 
-                    key={i} 
-                    className={`w-4 h-4 fill-[#ffffed] text-[#ffffed]`} 
-                  />
-                ))}
-              </div>
-              <div className="flex flex-row space-x-3 justify-center items-center ">
-                <span className="text-lg font-bold text-[#ffffed]">5.0 RATING</span>
-                <span className="text-sm font-bold text-[#ffffed]">(2000+ Reviews)</span>
-              </div>
-            </div>
+                        <div className="flex items-center h-full">
+                          <img
+                            src="/google-g-logo.svg"
+                            alt="Google"
+                            className="w-11 h-full object-contain"
+                          />
+                        </div>
+                        <div className="flex flex-col items-start">
+                          <div className="flex items-center space-x-1 mb-1">
+                            {[...Array(5)].map((_, i) => (
+                              <Star
+                                key={i}
+                                className={`w-4 h-4 fill-[#ffffed] text-[#ffffed]`}
+                              />
+                            ))}
+                          </div>
+                          <div className="flex flex-row space-x-3 justify-center items-center">
+                            <span className="text-lg font-bold text-[#ffffed]">5.0 RATING</span>
+                            <span className="text-sm font-bold text-[#ffffed]">(2500+ Reviews)</span>
+                          </div>
+                        </div>
+                      </div>
 
-            </div>  
-                      <h1 className="text-3xl md:text-5xl font-bold mb-4">{slide.title}</h1>
-                      
-                      <p className="text-base md:text-xl mb-6">
-                       {slide.subTitle2}
+                      {/* Main Offer Title */}
+                      <h1 className="text-3xl md:text-5xl font-bold mb-2">{slide.title}</h1>
+
+                      {/* Limited Time Offer - below title */}
+                      <p className="text-base md:text-xl mb-4 text-white/90">
+                        {slide.subTitle2}
                       </p>
-                      {/* <p className="font-bold text-base md:text-xl mb-3">{slide.subTitle}</p> */}
+
+                      {/* Service Area */}
+                      {/* <p className="text-base md:text-xl mb-4 text-white/90">
+                        Trusted HVAC & Plumbing Services in Bountiful, Greater Salt Lake City Area & Along the Wasatch Front
+                      </p> */}
+
+                      {/* Company Tagline */}
+                      <p className="text-lg md:text-2xl font-semibold text-orange-400 mb-4">
+                        Put Your Mind to Rest: Call Blue Best!
+                      </p>
+
                       <div className="flex flex-col xl:flex-row gap-4 max-w-md lg:max-w-3xl">
-                        <a 
+                        <a
                           onClick={handleClick}
                           className="px-11 py-3.5 text-base bg-gradient-to-b from-orange-600 to-orange-500 text-white text-center ease-out whitespace-pre-wrap rounded-full uppercase font-semibold font-['Kanit'] leading-relaxed shadow-[0_0.2em_0_#003572] transition duration-300 cursor-pointer"
                         >
-                          GET IMMEDIATE ASSISTANCE 
+                          GET IMMEDIATE ASSISTANCE
                         </a>
                         <a
                           href="tel:+13852002604"
-                          className=" flex items-center justify-center px-11 py-3.5 text-base bg-blue-primary-dark text-white text-center ease-out whitespace-pre-wrap rounded-full uppercase font-semibold font-['Kanit'] leading-relaxed shadow-[0_0.2em_0_#f97316] transition duration-300"
+                          className="flex items-center justify-center px-11 py-3.5 text-base bg-blue-primary-dark text-white text-center ease-out whitespace-pre-wrap rounded-full uppercase font-semibold font-['Kanit'] leading-relaxed shadow-[0_0.2em_0_#f97316] transition duration-300"
                         >
                           <Phone size={18} className="mr-2" />
                           (385) 200-2604
                         </a>
+                      </div>
+
+                      {/* Trust Badges */}
+                      <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 mt-6 text-xs md:text-sm text-white/60 uppercase tracking-wide">
+                        <span className="font-semibold">Women-Owned & Operated</span>
+                        <span>|</span>
+                        <span className="font-semibold">3 Times Best of State Winner</span>
                       </div>
                     </div>
                     

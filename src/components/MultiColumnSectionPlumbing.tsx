@@ -12,115 +12,88 @@ import React, { useState, useEffect, useRef } from 'react';
 
   {/* Column 1 - Takes 33% on desktop, full width on mobile */}
   
-  <div className="flex flex-col md:flex-row bg-white p-2 rounded-lg h-42 md:h-full  mx-auto ">
-  
-     
-  
+  <div className="flex flex-col md:flex-row flex-wrap bg-white p-2 rounded-lg h-42 md:h-full mx-auto">
 
-   {/* Column 2 - Takes 22% on desktop (1/3 of remaining 66%), half width on mobile */}
-   <div className="w-full md:w-[33%]  p-3 flex justify-center ">
-   <div className="flex flex-col bg-white p-2 rounded-lg h-42 md:h-full border-4 border-[var(--orange-dark)] w-full">
+   {/* Column 1 - Softer Water & Hot Showers */}
+   <div className="w-full md:w-[25%] p-3 flex justify-center">
+     <div className="flex flex-col bg-white p-2 rounded-lg h-42 md:h-full border-4 border-[var(--orange-dark)] w-full">
+       <div className="text-center">
+         {/* Main heading */}
+         <div className="text-lg md:text-xl font-semibold text-black uppercase mb-2">
+           Softer Water & Hot Showers
+         </div>
 
-    <div className="text-center">
-   {/* Sub heading */}
-   {/* <div className="text-xs md:text-sm font-semibold text-gray-600 uppercase mb-1">
-     AWARD WINNING
-   </div> */}
-  
-   {/* Main heading */}
-   <div className="text-3xl md:text-4xl font-bold text-blue-primary-dark uppercase mb-2">
-    Free
-   </div>
-  
-   {/* Secondary sub heading */}
-   <div className="text-lg md:text-lg font-semibold text-black uppercase mb-2">
-    CAMERA INSPECTION
-   </div>
-  
-   {/* Paragraph */}
-   <p className="text-base md:text-base text-black  mb-2 leading-tight">
-     Recognized for excellence in heating and cooling solutions across the state.
-   </p>
-  
-   {/* Sub text */}
-   <div className="text-sm md:text-sm text-black italic">
-    Must present offer at time of service Expires 7/30/25.
-   </div>
- </div>
-   </div>
-    
+         {/* Price */}
+         <div className="text-3xl md:text-4xl font-bold text-blue-primary-dark mb-2">
+           Starting at $2,795
+         </div>
+
+                </div>
+     </div>
    </div>
 
-   {/* Column 3 - Takes 22% on desktop (1/3 of remaining 66%), half width on mobile */}
-   <div className="w-full md:w-[33%] flex  p-3 justify-center">
-    <div className="flex flex-col bg-white p-2 rounded-lg h-42 md:h-full border-4 border-[var(--orange-dark)] w-full">
+   {/* Column 2 - Free Camera Inspection */}
+   <div className="w-full md:w-[25%] p-3 flex justify-center">
+     <div className="flex flex-col bg-white p-2 rounded-lg h-42 md:h-full border-4 border-[var(--orange-dark)] w-full">
+       <div className="text-center">
+         {/* Main heading */}
+         <div className="text-3xl md:text-4xl font-bold text-blue-primary-dark uppercase mb-2">
+           Free
+         </div>
 
-     <div className="text-center">
-   {/* Sub heading */}
-   {/* <div className="text-xs md:text-sm font-semibold text-gray-600 uppercase mb-1">
-     AWARD WINNING
-   </div> */}
-  
-   {/* Main heading */}
-   <div className="text-3xl md:text-4xl font-bold text-blue-primary-dark uppercase mb-2">
-    $99
-   </div>
-  
-   {/* Secondary sub heading */}
-   <div className="text-lg md:text-lg font-semibold text-black uppercase mb-2">
-    WATER HEATER TUNE-UP + ANODE ROD CHECK
-   </div>
-  
-   {/* Paragraph */}
-   {/* <p className="text-xs md:text-sm text-black  mb-2 leading-tight">
-     Recognized for excellence in heating and cooling solutions across the state.
-   </p> */}
-  
-   {/* Sub text */}
-   <div className="text-sm md:text-sm text-black italic">
-    Must present offer at time of service Expires 11/30/25.
-   </div>
- </div>
-    </div>
-    
+         {/* Secondary sub heading */}
+         <div className="text-lg md:text-lg font-semibold text-black uppercase mb-2">
+           CAMERA INSPECTION
+         </div>
+
+         {/* Paragraph */}
+         <p className="text-base md:text-base text-black mb-2 leading-tight">
+           Recognized for excellence in heating and cooling solutions across the state.
+         </p>
+
+                </div>
+     </div>
    </div>
 
+   {/* Column 3 - Water Heater Tune-up */}
+   <div className="w-full md:w-[25%] flex p-3 justify-center">
+     <div className="flex flex-col bg-white p-2 rounded-lg h-42 md:h-full border-4 border-[var(--orange-dark)] w-full">
+       <div className="text-center">
+         {/* Main heading */}
+         <div className="text-3xl md:text-4xl font-bold text-blue-primary-dark uppercase mb-2">
+           $99
+         </div>
 
-  
-   {/* Column 4 - Takes 22% on desktop (1/3 of remaining 66%), full width centered on mobile */}
-   <div className="w-full md:w-[33%] flex justify-center p-3 mx-auto md:mx-0">
-      <div className="flex flex-col bg-white p-2 rounded-lg h-42 md:h-full border-4 border-[var(--orange-dark)] w-full">
+         {/* Secondary sub heading */}
+         <div className="text-lg md:text-lg font-semibold text-black uppercase mb-2">
+           WATER HEATER TUNE-UP + ANODE ROD CHECK
+         </div>
 
-      <div className="text-center">
-   {/* Sub heading */}
-   {/* <div className="text-xs md:text-sm font-semibold text-gray-600 uppercase mb-1">
-     AWARD WINNING
-   </div> */}
-  
-   {/* Main heading */}
-   <div className="text-3xl md:text-4xl font-bold text-blue-primary-dark uppercase mb-2">
-   $500 OFF
-   </div>
-  
-   {/* Secondary sub heading */}
-   <div className="text-lg md:text-lg font-semibold text-black uppercase mb-2">
-    OFF A NEW WATER HEATER
-   </div>
-  
-   {/* Paragraph */}
-   {/* <p className="text-xs md:text-sm text-black  mb-2 leading-tight">
-     Recognized for excellence in heating and cooling solutions across the state.
-   </p> */}
-  
-   {/* Sub text */}
-   <div className="text-sm md:text-sm text-black italic">
-    Must present offer at time of service Expires 7/30/25.
-   </div>
- </div>
-      </div>
-    
+         {/* Sub text */}
+         <div className="text-sm md:text-sm text-black italic">
+           Must present offer at time of service Expires 11/30/25.
+         </div>
+       </div>
+     </div>
    </div>
 
+   {/* Column 4 - $500 Off Water Heater */}
+   <div className="w-full md:w-[25%] flex justify-center p-3 mx-auto md:mx-0">
+     <div className="flex flex-col bg-white p-2 rounded-lg h-42 md:h-full border-4 border-[var(--orange-dark)] w-full">
+       <div className="text-center">
+         {/* Main heading */}
+         <div className="text-3xl md:text-4xl font-bold text-blue-primary-dark uppercase mb-2">
+           $500 OFF
+         </div>
+
+         {/* Secondary sub heading */}
+         <div className="text-lg md:text-lg font-semibold text-black uppercase mb-2">
+           OFF A NEW WATER HEATER
+         </div>
+
+                </div>
+     </div>
+   </div>
 
   </div>
   

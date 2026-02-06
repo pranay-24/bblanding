@@ -37,7 +37,7 @@ const SecondaryHeroPlumbing: React.FC = () => {
         <div className="text-left md:text-center mb-12 mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-blue-primary mb-4">Limited-Time Offer – Act Fast!</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            $50 OFF on any Plumbing Repair and Replacement. This offer is only valid for a short time book your free estimate today before it expires.
+            Enjoy Softer Water & Luxurious Hot Showers Starting at $2,795
           </p>
         </div>
         <div className="flex flex-col max-w-fit gap-2 justify-center text-center mt-12 mx-auto">
