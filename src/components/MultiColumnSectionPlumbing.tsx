@@ -68,11 +68,6 @@ import React, { useState, useEffect, useRef } from 'react';
          <div className="text-lg md:text-lg font-semibold text-black uppercase mb-2">
            WATER HEATER TUNE-UP + ANODE ROD CHECK
          </div>
-
-         {/* Sub text */}
-         <div className="text-sm md:text-sm text-black italic">
-           Must present offer at time of service Expires 11/30/25.
-         </div>
        </div>
      </div>
    </div>
