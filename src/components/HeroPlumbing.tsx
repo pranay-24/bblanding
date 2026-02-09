@@ -13,7 +13,7 @@ const HeroPlumbing: React.FC<HeroProps> = ({ contactFormEmbed }) => {
   const carouselImages = [
     {
       url: 'https://res.cloudinary.com/dwe4p22ut/image/upload/v1750980769/BB_Plumbing_1_uxf8fa.png',
-      title: 'Enjoy Softer Water & Luxurious Hot Showers Starting at $2,795',
+      title: 'Enjoy Softer Water & Hot Showers Starting at $2,795',
       subTitle: '',
       subTitle2: 'A limited-time offer from most trusted HVAC & Plumbing services in Bountiful, Greater Salt Lake City area & along the Wasatch Front'
     },
