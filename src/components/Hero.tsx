@@ -13,10 +13,10 @@ const Hero: React.FC<HeroProps> = ({ contactFormEmbed }) => {
   const carouselImages = [
     {
       url: 'https://res.cloudinary.com/dwe4p22ut/image/upload/v1748381588/hero-banner-2_o7dlss.jpg',
-      title1: 'Trade In Your Old System & Save Up to $1,000',
+      title1: 'Cash Back On Comfort',
       title2: '',
       subTitle: '',
-      subTitle2: 'A limited-time offer from Salt Lake City\'s most trusted HVAC & plumbing experts.'
+      subTitle2: 'Get Up to $2,650 in Rebates on High-Efficiency Heat Pumps'
     },
   ];
 
