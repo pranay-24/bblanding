@@ -13,10 +13,10 @@ const Hero: React.FC<HeroProps> = ({ contactFormEmbed }) => {
   const carouselImages = [
     {
       url: 'https://res.cloudinary.com/dwe4p22ut/image/upload/v1748381588/hero-banner-2_o7dlss.jpg',
-      title1: 'Cash Back On Comfort',
+      title1: 'Up to $1,500 Back on Complete Heating & Cooling Systems',
       title2: '',
       subTitle: '',
-      subTitle2: 'Get Up to $2,650 in Rebates on High-Efficiency Heat Pumps'
+      subTitle2: ''
     },
   ];
 

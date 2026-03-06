@@ -25,16 +25,16 @@ import React, { useState, useEffect, useRef } from 'react';
   
   {/* Main heading */}
   <h3 className="text-3xl md:text-4xl  font-bold text-blue-primary-dark  mb-2">
-   Cash Back On Comfort
+   Up to $1,500 Back on Complete Heating & Cooling Systems
   </h3>
   
   {/* Secondary sub heading */}
   {/* <div className="text-lg md:text-lg font-semibold text-black uppercase mb-2">
     IN REBATES AND TAX INCENTIVES!
   </div> */}
-  <p className="text-base md:text-lg text-black  mb-2 leading-tight">
+  {/* <p className="text-base md:text-lg text-black  mb-2 leading-tight">
     Get Up to $2,650 in Rebates on High-Efficiency Heat Pumps
-  </p>
+  </p> */}
   {/* Paragraph */}
   <p className="text-base md:text-lg text-black  mb-2 leading-tight">
     Stay warm and comfortable without breaking the bank. Enjoy professional installation, and dependable performance you can trust.
