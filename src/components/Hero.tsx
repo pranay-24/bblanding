@@ -13,10 +13,10 @@ const Hero: React.FC<HeroProps> = ({ contactFormEmbed }) => {
   const carouselImages = [
     {
       url: 'https://res.cloudinary.com/dwe4p22ut/image/upload/v1748381588/hero-banner-2_o7dlss.jpg',
-      title1: 'Up to $1,500 Back on Complete Heating & Cooling Systems',
+      title1: 'GET YOUR $500 OFF',
       title2: '',
-      subTitle: '',
-      subTitle2: ''
+      subTitle: 'A limited-time offer from Salt Lake City\'s most trusted HVAC & plumbing experts.',
+      subTitle2: 'New Furnace Installation'
     },
   ];
 
@@ -97,7 +97,7 @@ const Hero: React.FC<HeroProps> = ({ contactFormEmbed }) => {
                       <h1 className="text-3xl md:text-5xl font-bold mb-2">{slide.title1}</h1>
 
                       {/* Limited Time Offer - moved below title */}
-                      <p className="text-base md:text-xl mb-4 text-white/90">
+                      <p className="text-xl font-bold md:text-3xl mb-4 text-white/90">
                        {slide.subTitle2}
                       </p>
 
@@ -107,9 +107,7 @@ const Hero: React.FC<HeroProps> = ({ contactFormEmbed }) => {
                       
 
                       {/* Service Area */}
-                      <p className="text-base md:text-xl mb-4 text-white/90">
-                        Trusted HVAC & Plumbing Services in Bountiful, Greater Salt Lake City Area & Along the Wasatch Front
-                      </p>
+                     
                       <p className="text-lg md:text-2xl font-semibold text-orange-400 mb-2">
                         Put Your Mind to Rest: Call Blue Best!
                       </p>

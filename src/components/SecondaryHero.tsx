@@ -36,15 +36,12 @@ const SecondaryHero: React.FC = () => {
         
         <div className="text-left md:text-center mb-12 mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-blue-primary mb-4">Limited-Time Offer – Act Fast!</h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-           Up to $1,500 Back on Complete Heating & Cooling Systems
+          <p className="text-2xl text-blue-primary max-w-3xl mx-auto">
+         GET YOUR $500 OFF
           </p>
-          {/* <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-           Get Up to $2,650 in Rebates on High-Efficiency Heat Pumps
-          </p> */}
-          {/* <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Offer Ending on December 31 
-          </p> */}
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            New Furnace Installation
+          </p>
         </div>
         <div className="flex flex-col lg:flex-row gap-2 justify-center text-center mt-12">
           
