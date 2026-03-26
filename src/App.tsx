@@ -12,6 +12,7 @@ import FurnaceService from './pages/FurnaceService';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsAndConditions from './pages/TermsAndConditions';
 import AccessibilityStatement from './pages/AccessibilityStatement';
+import NewsletterPage from './pages/NewsletterPage';
 
 const App: React.FC = () => {
   // Your embed code would go here as a state variable
@@ -102,9 +103,13 @@ const App: React.FC = () => {
                 path="/furnace-service" 
                 element={<FurnaceService contactFormEmbed={furnaceFormEmbed } />} 
               />
-              <Route 
-                path="/thank-you" 
-                element={<ThankYouPage />} 
+              <Route
+                path="/newsletter"
+                element={<NewsletterPage />}
+              />
+              <Route
+                path="/thank-you"
+                element={<ThankYouPage />}
               />
               <Route 
                 path="/privacy-policy" 
