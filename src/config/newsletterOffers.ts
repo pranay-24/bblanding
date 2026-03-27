@@ -13,7 +13,7 @@
 // to /newsletter?service=<key>  (default: hvac)
 // ============================================================
 
-export type ServiceKey = 'hvac' | 'water-heater' | 'hvac-tune-up' | 'furnace-service';
+export type ServiceKey = 'hvac' | 'water-heater' | 'hvac-tune-up' | 'furnace-service' | 'plumbing';
 
 export interface OfferCard {
   /** Optional badge label above the heading (e.g. "NEW OFFER") */
@@ -59,8 +59,15 @@ export interface SecondaryHeroOffer {
 }
 
 export interface NewsletterServiceConfig {
-  /** Elfsight form embed widget ID for this service */
+  /** Elfsight form embed widget ID for the regular service page */
   formEmbedId: string;
+  /**
+   * Elfsight form embed widget ID used on the /newsletter page.
+   * These forms redirect to /thank-you?form_id=nl-<service> so the
+   * thank-you page can send the user back to the newsletter page on close.
+   * Leave undefined if the newsletter form has not been created yet.
+   */
+  newsletterFormEmbedId?: string;
   hero: HeroOffer;
   multiColumn: MultiColumnOffer;
   secondaryHero: SecondaryHeroOffer;
@@ -77,6 +84,8 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
   // ----------------------------------------------------------
   hvac: {
     formEmbedId: '66cf87e4-4cd5-4498-98e4-93447252644a',
+    // HVAC V2 Newsletter form — redirects to /thank-you?form_id=nl-hvac
+    newsletterFormEmbedId: '9772a226-155c-4ba8-82c2-58c9bebcfdf0',
 
     hero: {
       backgroundImage: 'https://res.cloudinary.com/dwe4p22ut/image/upload/v1748381588/hero-banner-2_o7dlss.jpg',
@@ -112,6 +121,8 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
   // ----------------------------------------------------------
   'water-heater': {
     formEmbedId: '9fd1aba2-a3c8-4d9e-9f8e-0798ea11031e',
+    // Water Heater Newsletter form — redirects to /thank-you?form_id=nl-wh
+    newsletterFormEmbedId: 'cabff370-07ee-4462-a413-7f581133952e',
 
     hero: {
       backgroundImage: '/water-heater-hero-image.png',
@@ -147,6 +158,9 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
   // ----------------------------------------------------------
   'hvac-tune-up': {
     formEmbedId: '68a16ab9-1de2-4515-9130-b5b0d11544d3',
+    // TODO: Newsletter form for HVAC Tune-up has NOT been created in Elfsight yet.
+    // Once created, add the embed ID here and set its redirect URL to /thank-you?form_id=nl-tu
+    // newsletterFormEmbedId: undefined,
 
     hero: {
       backgroundImage: 'https://res.cloudinary.com/dwe4p22ut/image/upload/v1748381588/hero-banner-2_o7dlss.jpg',
@@ -186,6 +200,8 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
   // ----------------------------------------------------------
   'furnace-service': {
     formEmbedId: '273f7c94-a8c3-4b17-a1bf-664cc55c81cd',
+    // Furnace Newsletter form — redirects to /thank-you?form_id=nl-furnace
+    newsletterFormEmbedId: '67884641-f495-492d-a107-14bcbbda087c',
 
     hero: {
       backgroundImage: '/man-installs-furnace.png',
@@ -218,6 +234,52 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
       description:
         'Get $500 OFF your new furnace system installation and enjoy reliable comfort when it matters most. This exclusive deal won\'t last long — schedule your free in-home estimate today before it expires.',
       ctaText: 'REQUEST ESTIMATE',
+    },
+  },
+
+  // ----------------------------------------------------------
+  // PLUMBING
+  // ----------------------------------------------------------
+  plumbing: {
+    formEmbedId: '9ea74b87-b66a-4830-aa5d-c10757a6db11',
+    // Plumbing Newsletter form — redirects to /thank-you?form_id=nl-plumbing
+    newsletterFormEmbedId: 'a648097e-6abd-4029-bcc3-40bb48293b72',
+
+    hero: {
+      backgroundImage: 'https://res.cloudinary.com/dwe4p22ut/image/upload/v1750980769/BB_Plumbing_1_uxf8fa.png',
+      title1: 'Enjoy Softer Water & Hot Showers Starting at $2,795',
+      subTitle: 'A limited-time offer from most trusted HVAC & Plumbing services in Bountiful, Greater Salt Lake City area & along the Wasatch Front.',
+      ctaText: 'GET IMMEDIATE ASSISTANCE',
+    },
+
+    multiColumn: {
+      sectionHeading: 'Offers',
+      cards: [
+        {
+          heading: 'Starting at $2,795',
+          subheading: 'SOFTER WATER & HOT SHOWERS',
+        },
+        {
+          heading: 'Free',
+          subheading: 'CAMERA INSPECTION',
+          description: 'Recognized for excellence in heating and cooling solutions across the state.',
+        },
+        {
+          heading: '$99',
+          subheading: 'WATER HEATER TUNE-UP + ANODE ROD CHECK',
+        },
+        {
+          heading: '$500 OFF',
+          subheading: 'OFF A NEW WATER HEATER',
+        },
+      ],
+    },
+
+    secondaryHero: {
+      backgroundImage: 'https://res.cloudinary.com/dwe4p22ut/image/upload/v1750980769/BB_Plumbing_3_szlspg.png',
+      heading: 'Limited-Time Offer – Act Fast!',
+      description: 'Enjoy Softer Water & Luxurious Hot Showers Starting at $2,795.',
+      ctaText: 'GET IMMEDIATE ASSISTANCE',
     },
   },
 };

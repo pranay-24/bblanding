@@ -23,6 +23,7 @@ import AvoidHeadaches from '../components/AvoidHeadaches';
 import AvoidHeadachesWH from '../components/water_heater/AvoidHeadachesWH';
 import AvoidHeadachesTU from '../components/tu/AvoidHeadachesTU';
 import AvoidHeadachesFurnace from '../components/furnace/AvoidHeadachesFurnace';
+import AvoidHeadachesPlumbing from '../components/AvoidHeadachesPlumbing';
 
 // Service-specific: Testimonials
 import TestimonialsSection from '../components/TestimonialsSection';
@@ -34,8 +35,9 @@ import ProcessSection from '../components/ProcessSection';
 import ProcessSectionWH from '../components/water_heater/ProcessSectionWH';
 import ProcessSectionTU from '../components/tu/ProcessSectionTU';
 import ProcessSectionFurnace from '../components/furnace/ProcessSectionFurnace';
+import ProcessSectionPlumbing from '../components/ProcessSectionPlumbing';
 
-const VALID_SERVICES: ServiceKey[] = ['hvac', 'water-heater', 'hvac-tune-up', 'furnace-service'];
+const VALID_SERVICES: ServiceKey[] = ['hvac', 'water-heater', 'hvac-tune-up', 'furnace-service', 'plumbing'];
 
 const NewsletterPage: React.FC = () => {
   const [searchParams] = useSearchParams();
@@ -45,7 +47,12 @@ const NewsletterPage: React.FC = () => {
     : DEFAULT_SERVICE;
 
   const config = NEWSLETTER_OFFERS[service];
-  const formEmbed = `<div class="elfsight-app-${config.formEmbedId}"></div>`;
+
+  // Use the newsletter-specific form if available (redirects back to /newsletter on close).
+  // Falls back to the regular service form when a newsletter form hasn't been created yet
+  // (currently missing: hvac-tune-up — see TODO in newsletterOffers.ts).
+  const activeFormEmbedId = config.newsletterFormEmbedId ?? config.formEmbedId;
+  const formEmbed = `<div class="elfsight-app-${activeFormEmbedId}"></div>`;
 
   return (
     <>
@@ -80,6 +87,7 @@ const NewsletterPage: React.FC = () => {
       {service === 'water-heater' && <AvoidHeadachesWH contactFormEmbed={formEmbed} />}
       {service === 'hvac-tune-up' && <AvoidHeadachesTU contactFormEmbed={formEmbed} />}
       {service === 'furnace-service' && <AvoidHeadachesFurnace contactFormEmbed={formEmbed} />}
+      {service === 'plumbing' && <AvoidHeadachesPlumbing contactFormEmbed={formEmbed} />}
 
       {/* ── OFFER SECTION 3: Secondary hero banner ── */}
       <NewsletterSecondaryHero offer={config.secondaryHero} />
@@ -95,11 +103,13 @@ const NewsletterPage: React.FC = () => {
         {service === 'water-heater' && <TestimonialsSectionPlumbing />}
         {service === 'hvac-tune-up' && <TestimonialsSection />}
         {service === 'furnace-service' && <TestimonialsSectionFurnace />}
+        {service === 'plumbing' && <TestimonialsSectionPlumbing />}
 
         {service === 'hvac' && <ProcessSection />}
         {service === 'water-heater' && <ProcessSectionWH />}
         {service === 'hvac-tune-up' && <ProcessSectionTU />}
         {service === 'furnace-service' && <ProcessSectionFurnace />}
+        {service === 'plumbing' && <ProcessSectionPlumbing />}
 
         <CertificationsSection />
       </div>
