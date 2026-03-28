@@ -13,7 +13,7 @@ const ProcessSectionTU: React.FC = () => {
             const target = document.getElementById('hero_Section-bblanding');
             
                if (target) {
-      const navbarOffset = 90;
+      const navbarOffset = document.querySelector('header')?.offsetHeight ?? 100;
       const elementPosition = target.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - navbarOffset;
       

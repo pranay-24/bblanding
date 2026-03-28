@@ -98,7 +98,7 @@ const Navbar: React.FC = () => {
       const targetElement = document.getElementById(targetId);
       
       if (targetElement) {
-        const navbarHeight = 120; // Adjust this value based on your navbar height
+        const navbarHeight = document.querySelector('header')?.offsetHeight ?? 100;
         const elementPosition = targetElement.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
 
@@ -161,55 +161,25 @@ useEffect(() => {
 
   return (
     <header
-      className={`fixed w-full top-0 z-50 transition-all duration-300 ${
+      className={`fixed w-full max-w-full top-0 z-50 transition-all duration-300 ${
         isScrolled ? 'bg-blue-light shadow-nav' : 'bg-blue-light shadow-nav'
       }`}
     >
       {/* Mobile Call Bar */}
       <a
         href="tel:+13852002604"
-        className="md:hidden block text-center py-2.5 bg-blue-primary-dark text-white text-base font-bold"
+        className="min-[1150px]:hidden block text-center py-2.5 bg-blue-primary-dark text-white text-base font-bold"
       >
         CALL (385) 200-2604
       </a>
 
-      <div className="lg:container px-4 mx-auto ">
-        <div className="flex flex-col">
-          {/* Top Bar */}
-          <div className="flex justify-between items-center py-4">
-            <Logo />
-            
-            {/* Phone Number Button */}
-            <div className="flex items-center gap-4">
-              {/* <a
-                href="#specials"
-                className="hidden md:inline-block px-4 py-2 text-orange-primary font-medium hover:text-orange-dark transition duration-300"
-              >
-                Special Offers
-              </a> */}
-              <a
-                href="tel:+13852002604"
-                className="hidden md:flex items-center px-11 py-3.5 text-lg bg-gradient-to-b from-orange-600 to-orange-500 text-white text-center ease-out whitespace-pre-wrap rounded-full uppercase font-semibold font-['Kanit'] leading-relaxed shadow-[0_0.2em_0_#003572] transition duration-300"
-              >
-                <Phone size={18} className="mr-2" />
-                (385) 200-2604
-                
-              </a>
-              
-              {/* Mobile Menu Button */}
-              <button
-              data-menu-button
-                className="md:hidden text-blue-primary"
-                onClick={() => setIsOpen(!isOpen)}
-                aria-label="Toggle Menu"
-              >
-                {isOpen ? <X size={24} /> : <Menu size={24} />}
-              </button>
-            </div>
-          </div>
+      <div className="lg:container px-4 mx-auto">
+        <div className="flex items-center justify-between py-3 gap-4">
+          {/* Logo */}
+          <Logo />
 
-          {/* Navigation Bar */}
-          <nav className="hidden md:flex justify-center  border-t border-gray-100">
+          {/* Desktop Navigation — centered, only at 1150px+ */}
+          <nav className="hidden min-[1150px]:flex items-center flex-1 justify-center gap-1">
             {navItems.map((item) => (
               <div
                 key={item.title}
@@ -220,33 +190,40 @@ useEffect(() => {
                 <a
                   href={item.href}
                   onClick={(e) => handleSmoothScroll(e, item.href)}
-                  className="px-4 py-2 font-bold text-base xl:text-lg text-blue-primary hover:text-orange-primary transition duration-300 flex items-center"
+                  className="px-3 py-2 font-bold text-sm xl:text-base text-blue-primary hover:text-orange-primary transition duration-300 flex items-center whitespace-nowrap"
                 >
                   {item.title}
-                  {/* {item.dropdown && <ChevronDown size={16} className="ml-1" />} */}
                 </a>
-                {/* {item.dropdown && activeDropdown === item.title && (
-                  <div className="absolute top-full left-0 w-48 bg-white shadow-lg rounded-lg py-2 z-50">
-                    {item.dropdown.map((dropItem) => (
-                      <a
-                        key={dropItem.title}
-                        href={dropItem.href}
-                        className="block px-4 py-2 text-gray-700 hover:bg-blue-light hover:text-orange-primary transition duration-300"
-                      >
-                        {dropItem.title}
-                      </a>
-                    ))}
-                  </div>
-                )} */}
               </div>
             ))}
           </nav>
+
+          {/* CTA + Mobile/Tablet Menu Button */}
+          <div className="flex items-center gap-3 shrink-0">
+            <a
+              href="tel:+13852002604"
+              className="hidden min-[1150px]:flex items-center px-8 py-3 text-base bg-gradient-to-b from-orange-600 to-orange-500 text-white rounded-full uppercase font-semibold font-['Kanit'] shadow-[0_0.2em_0_#003572] transition duration-300 whitespace-nowrap"
+            >
+              <Phone size={18} className="mr-2" />
+              (385) 200-2604
+            </a>
+
+            {/* Hamburger — shows below 1150px */}
+            <button
+              data-menu-button
+              className="min-[1150px]:hidden text-blue-primary"
+              onClick={() => setIsOpen(!isOpen)}
+              aria-label="Toggle Menu"
+            >
+              {isOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
         {/* Mobile Navigation */}
 {isOpen && (
-  <div data-mobile-menu className="md:hidden mt-4 pb-4">
+  <div data-mobile-menu className="min-[1150px]:hidden mt-4 pb-4">
     <nav className="flex flex-col space-y-4">
       {navItems.map((item) => (
         <div key={item.title}>

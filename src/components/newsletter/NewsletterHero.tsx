@@ -24,7 +24,7 @@ const NewsletterHero: React.FC<NewsletterHeroProps> = ({ offer }) => {
     e.preventDefault();
     const target = document.getElementById('hero_Section-bblanding');
     if (target) {
-      const navbarOffset = 90;
+      const navbarOffset = document.querySelector('header')?.offsetHeight ?? 100;
       const offsetPosition =
         target.getBoundingClientRect().top + window.pageYOffset - navbarOffset;
       window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
@@ -32,7 +32,7 @@ const NewsletterHero: React.FC<NewsletterHeroProps> = ({ offer }) => {
   };
 
   return (
-    <section className="pt-[120px] md:pt-[150px] lg:pt-[150px] relative">
+    <section className="pt-[120px] min-[1150px]:pt-[90px]">
       <div className="w-full relative">
         <Slider {...sliderSettings}>
           <div>

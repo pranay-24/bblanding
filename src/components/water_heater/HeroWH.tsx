@@ -37,7 +37,7 @@ const HeroWH: React.FC<HeroProps> = ({ contactFormEmbed }) => {
     const target = document.getElementById('hero_Section-bblanding');
     
     if (target) {
-      const navbarOffset = 90;
+      const navbarOffset = document.querySelector('header')?.offsetHeight ?? 100;
       const elementPosition = target.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - navbarOffset;
       
@@ -49,7 +49,7 @@ const HeroWH: React.FC<HeroProps> = ({ contactFormEmbed }) => {
   };
 
   return (
-    <section className="pt-[80px] md:pt-[150px] lg:pt-[150px] relative" id="">
+    <section className="pt-[120px] min-[1150px]:pt-[90px]" id="">
       <div className="w-full relative">
         <Slider {...sliderSettings}>
           {carouselImages.map((slide, index) => (
@@ -104,7 +104,7 @@ const HeroWH: React.FC<HeroProps> = ({ contactFormEmbed }) => {
                           onClick={handleClick}
                           className="px-11 py-3.5 text-base bg-gradient-to-b from-orange-600 to-orange-500 text-white text-center ease-out whitespace-pre-wrap rounded-full uppercase font-semibold font-['Kanit'] leading-relaxed shadow-[0_0.2em_0_#003572] transition duration-300 cursor-pointer"
                         >
-                          GET IMMEDIATE ASSISTANCE 
+                          CLAIM OFFER NOW 
                         </a>
                         <a
                           href="tel:+13852002604"

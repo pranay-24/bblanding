@@ -1,6 +1,7 @@
 'use client';
 import { useState, useEffect, useCallback } from 'react';
 import { ChevronLeft, ChevronRight, Star, Check } from 'lucide-react';
+import type React from 'react';
 import { useIsMobile } from '../hooks/use-mobile';
 
 interface Review {
@@ -22,6 +23,17 @@ const GoogleReviewsWidget = ({ testimonials }: GoogleReviewsWidgetProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [expandedReviews, setExpandedReviews] = useState<Set<number>>(new Set());
   const isMobile = useIsMobile();
+
+  const handleEstimateClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const target = document.getElementById('hero_Section-bblanding');
+    if (target) {
+      const navbarOffset = document.querySelector('header')?.offsetHeight ?? 100;
+      const offsetPosition =
+        target.getBoundingClientRect().top + window.pageYOffset - navbarOffset;
+      window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+    }
+  };
   
  
 
@@ -275,7 +287,7 @@ const GoogleReviewsWidget = ({ testimonials }: GoogleReviewsWidgetProps) => {
           SEE ALL REVIEWS
         </a>
         <a
-          href="#hero_Section-bblanding"
+          onClick={handleEstimateClick}
           className="px-11 py-3.5 text-lg bg-blue-primary-dark text-white text-center ease-out whitespace-pre-wrap rounded-full uppercase font-semibold font-['Kanit'] leading-relaxed hover:cursor-pointer shadow-[0_0.2em_0_#f97316] transition duration-300"
         >
           GET YOUR FREE ESTIMATE

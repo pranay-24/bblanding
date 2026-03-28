@@ -11,7 +11,7 @@ const NewsletterSecondaryHero: React.FC<NewsletterSecondaryHeroProps> = ({ offer
     e.preventDefault();
     const target = document.getElementById('hero_Section-bblanding');
     if (target) {
-      const navbarOffset = 90;
+      const navbarOffset = document.querySelector('header')?.offsetHeight ?? 100;
       const offsetPosition =
         target.getBoundingClientRect().top + window.pageYOffset - navbarOffset;
       window.scrollTo({ top: offsetPosition, behavior: 'smooth' });

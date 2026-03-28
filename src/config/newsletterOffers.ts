@@ -128,7 +128,7 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
       backgroundImage: '/water-heater-hero-image.png',
       title1: 'Get $500 off your next tanked Water Heater',
       subTitle: 'A limited-time offer from most trusted HVAC experts.',
-      ctaText: 'GET IMMEDIATE ASSISTANCE',
+      ctaText: 'CLAIM OFFER NOW',
     },
 
     multiColumn: {
