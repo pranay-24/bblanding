@@ -25,12 +25,12 @@ import React, { useState, useEffect, useRef } from 'react';
   
   {/* Main heading */}
   <h3 className="text-3xl md:text-4xl  font-bold text-blue-primary-dark  mb-2">
-   GET YOUR $500 OFF
+  UPGRADE NOW. PAY OVER TIME.
   </h3>
   
   {/* Secondary sub heading */}
   <div className="text-lg md:text-lg font-semibold text-black uppercase mb-2">
-   New Furnace Installation
+   Flexible Financing for Essential Home Comfort
   </div>
   
   {/* Paragraph */}

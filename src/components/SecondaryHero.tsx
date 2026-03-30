@@ -37,10 +37,10 @@ const SecondaryHero: React.FC = () => {
         <div className="text-left md:text-center mb-12 mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-blue-primary mb-4">Limited-Time Offer – Act Fast!</h2>
           <p className="text-2xl text-blue-primary max-w-3xl mx-auto">
-         GET YOUR $500 OFF
+         UPGRADE NOW. PAY OVER TIME.
           </p>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            New Furnace Installation
+            Flexible Financing for Essential Home Comfort
           </p>
         </div>
         <div className="flex flex-col lg:flex-row gap-2 justify-center text-center mt-12">

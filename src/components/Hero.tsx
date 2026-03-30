@@ -13,10 +13,10 @@ const Hero: React.FC<HeroProps> = ({ contactFormEmbed }) => {
   const carouselImages = [
     {
       url: '/images/hero-banner-2_o7dlss.webp',
-      title1: 'GET YOUR $500 OFF',
+      title1: 'UPGRADE NOW. PAY OVER TIME.',
       title2: '',
       subTitle: 'A limited-time offer from Salt Lake City\'s most trusted HVAC & plumbing experts.',
-      subTitle2: 'New Furnace Installation'
+      subTitle2: 'Flexible Financing for Essential Home Comfort'
     },
   ];
 
@@ -94,7 +94,9 @@ const Hero: React.FC<HeroProps> = ({ contactFormEmbed }) => {
                       </div>
 
                       {/* Main Offer Title */}
-                      <h1 className="text-3xl md:text-5xl font-bold mb-2">{slide.title1}</h1>
+                      <h1 className="text-4xl md:text-5xl font-bold mb-2">
+                        UPGRADE NOW.<br className="block md:hidden" /> PAY OVER TIME.
+                      </h1>
 
                       {/* Limited Time Offer - moved below title */}
                       <p className="text-xl font-bold md:text-3xl mb-4 text-white/90">
