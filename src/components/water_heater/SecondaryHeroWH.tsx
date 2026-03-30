@@ -26,7 +26,7 @@ const SecondaryHeroWH: React.FC = () => {
   <div className="mx-auto ">
     <div className="relative">
       <img
-        src="/water-heater-limited-time-offer.png"
+        src="/water-heater-limited-time-offer.webp"
         alt="Plumbing Installation"
         className="w-full h-[600px] object-cover "
       />
@@ -72,7 +72,7 @@ const SecondaryHeroWH: React.FC = () => {
         <div className=" container mx-auto">
           <div className="relative">
             <img
-              src="https://res.cloudinary.com/dwe4p22ut/image/upload/v1748386314/hero-4_gmdtes.jpg"
+              src="/images/hero-4_gmdtes.webp"
               alt="Professional Installation"
               className="w-full h-[600px] object-cover "
             />

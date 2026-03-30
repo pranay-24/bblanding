@@ -12,7 +12,7 @@ const HeroFurnace: React.FC<HeroProps> = ({ contactFormEmbed }) => {
 
   const carouselImages = [
     {
-      url: '/man-installs-furnace.png',
+      url: '/man-installs-furnace.webp',
       title: '$500 Off on a New Furnace System Installation',
       subTitle: 'Get your free estimate by filling up the form.',
       subTitle2: 'A limited-time offer from most trusted HVAC & plumbing experts.'
@@ -158,12 +158,12 @@ export function MultiColumnSection() {
       <div className="flex flex-col p-4 border-r border-gray-300 border-b md:border-b-0">
         <div className="mb-4 flex gap-5">
           <img 
-            src="https://res.cloudinary.com/dwe4p22ut/image/upload/v1748383311/log-2_x9jcve.png"
+            src="/images/log-2_x9jcve.webp"
             alt="Column 1 Image 1"
             className="w-24 h-16 object-contain"
           />
           <img 
-            src="https://res.cloudinary.com/dwe4p22ut/image/upload/v1748383311/logo-1_hzxybc.png"
+            src="/images/logo-1_hzxybc.webp"
             alt="Column 1 Image 2"
             className="w-24 h-16 object-contain"
           />
@@ -177,7 +177,7 @@ export function MultiColumnSection() {
       <div className="flex flex-col p-4 border-b md:border-b-0 md:border-r border-gray-300">
         <div className="mb-4">
           <img 
-            src="https://res.cloudinary.com/dwe4p22ut/image/upload/v1748383311/medal-logo-1_mr3xay.png"
+            src="/images/medal-logo-1_mr3xay.webp"
             alt="Column 2"
             className="w-full h-16 object-contain"
           />
@@ -191,7 +191,7 @@ export function MultiColumnSection() {
       <div className="flex flex-col p-4 border-r md:border-t-0 md:border-r border-gray-300">
         <div className="mb-4">
           <img 
-            src="https://res.cloudinary.com/dwe4p22ut/image/upload/v1748383311/goggle_logo-1_alvocy.png"
+            src="/images/goggle_logo-1_alvocy.webp"
             alt="Column 3"
             className="w-full h-16 object-contain"
           />
@@ -205,7 +205,7 @@ export function MultiColumnSection() {
       <div className="flex flex-col p-4  md:border-t-0">
         <div className="mb-4">
           <img 
-            src="https://res.cloudinary.com/dwe4p22ut/image/upload/v1748383311/lennox_logo-1_wlpewc.png"
+            src="/images/lennox_logo-1_wlpewc.webp"
             alt="Column 4"
             className="w-full h-16 object-contain"
           />

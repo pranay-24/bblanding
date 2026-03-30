@@ -8,7 +8,7 @@ const HomeGenerator: React.FC = () => {
         <div className="flex flex-col md:flex-row items-center gap-6">
           <div className="w-full md:w-1/3">
             <img
-              src="https://res.cloudinary.com/dwe4p22ut/image/upload/v1747836331/Heating-Repair_Section-2-Static-Image-1_l5l1ca.webp"
+              src="/images/Heating-Repair_Section-2-Static-Image-1_l5l1ca.webp"
               alt="Professional HVAC Service"
               className=" w-full h-[400px] object-contain"
             />
@@ -26,20 +26,20 @@ const HomeGenerator: React.FC = () => {
             </p>
             <ul className="list-none pl-4 space-y-2 mb-8">
   <li className="relative pl-6 text-gray-600">
-    <span className="absolute left-0 top-1 inline-block h-5 w-5 bg-[url(https://res.cloudinary.com/dwe4p22ut/image/upload/v1747842034/next-100_smkyiq.png)] bg-contain bg-no-repeat bg-center"></span>
+    <span className="absolute left-0 top-1 inline-block h-5 w-5 bg-[url(/images/next-100_smkyiq.webp)] bg-contain bg-no-repeat bg-center"></span>
     Automatically powers your home in seconds.
   </li>
   <li className="relative pl-6 text-gray-600">
-    <span className="absolute left-0 top-1 inline-block h-5 w-5 bg-[url(https://res.cloudinary.com/dwe4p22ut/image/upload/v1747842034/next-100_smkyiq.png)] bg-contain bg-no-repeat bg-center"></span>
+    <span className="absolute left-0 top-1 inline-block h-5 w-5 bg-[url(/images/next-100_smkyiq.webp)] bg-contain bg-no-repeat bg-center"></span>
     Keeps your family safe and comfortable.
 
   </li>
   <li className="relative pl-6  text-gray-600">
-    <span className="absolute left-0 top-1 inline-block h-5 w-5 bg-[url(https://res.cloudinary.com/dwe4p22ut/image/upload/v1747842034/next-100_smkyiq.png)] bg-contain bg-no-repeat bg-center"></span>
+    <span className="absolute left-0 top-1 inline-block h-5 w-5 bg-[url(/images/next-100_smkyiq.webp)] bg-contain bg-no-repeat bg-center"></span>
     Protects your valuables and appliances.
   </li>
     <li className="relative pl-6  text-gray-600">
-    <span className="absolute left-0 top-1 inline-block h-5 w-5 bg-[url(https://res.cloudinary.com/dwe4p22ut/image/upload/v1747842034/next-100_smkyiq.png)] bg-contain bg-no-repeat bg-center"></span>
+    <span className="absolute left-0 top-1 inline-block h-5 w-5 bg-[url(/images/next-100_smkyiq.webp)] bg-contain bg-no-repeat bg-center"></span>
     Ensures uninterrupted remote work and productivity.
   </li>
 </ul>

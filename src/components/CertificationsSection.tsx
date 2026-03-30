@@ -18,7 +18,7 @@ const CertificationsSection: React.FC = () => {
        
         <div className="px-4">
             <img 
-                src="https://res.cloudinary.com/dwe4p22ut/image/upload/v1748440410/new-blue-best-ornament_jnhios.svg" 
+                src="/images/new-blue-best-ornament_jnhios.svg" 
                 alt="Logo" 
                 className="w-12 h-12 object-contain"
             />
@@ -47,16 +47,16 @@ const CertificationsSection: React.FC = () => {
  <div className="grid grid-cols-2 md:grid-cols-4 gap-0 items-center justify-items-center">
       {/* Using placeholder images with styled containers */}
       <div className="p-3 h-full w-100 bg-transparent  flex items-center justify-center">
-        <img src="https://res.cloudinary.com/dwe4p22ut/image/upload/v1747858371/bbb-accredited-business-logo_hv3udv.webp" alt="BBB Accredited" className="max-h-16" />
+        <img src="/images/bbb-accredited-business-logo_hv3udv.webp" alt="BBB Accredited" className="max-h-16" />
       </div>
       <div className="p-3 h-full w-[240px] bg-transparent  flex items-center justify-center">
-        <img src="https://res.cloudinary.com/dwe4p22ut/image/upload/v1747858371/04635b494c4e2d7444da429e7ef4ce32.soap-solid-border_rez6j4.webp" alt="HomeAdvisor Pro" className="max-h-16" />
+        <img src="/images/04635b494c4e2d7444da429e7ef4ce32.soap-solid-border_rez6j4.webp" alt="HomeAdvisor Pro" className="max-h-16" />
       </div>
       <div className="p-3 h-full w-100 bg-blue-primary flex items-center justify-center">
-        <img src="https://res.cloudinary.com/dwe4p22ut/image/upload/v1747858371/lennox-premier-dealer-logo-white_iei5wl.webp" alt="Lennox Premier" className="max-h-16" />
+        <img src="/images/lennox-premier-dealer-logo-white_iei5wl.webp" alt="Lennox Premier" className="max-h-16" />
       </div>
       <div className="p-3 h-full w-100 bg-transparent  flex items-center justify-center">
-        <img src="https://res.cloudinary.com/dwe4p22ut/image/upload/v1747858371/image_123650291-2_psxo08.webp" alt="Pro Network" className="max-h-16" />
+        <img src="/images/image_123650291-2_psxo08.webp" alt="Pro Network" className="max-h-16" />
       </div>
     </div>
 
@@ -69,7 +69,7 @@ const CertificationsSection: React.FC = () => {
       <div className="flex items-center justify-center p-4">
         <div className="w-[100px] md:w-full aspect-square ">
           <img 
-            src="https://res.cloudinary.com/dwe4p22ut/image/upload/v1747859201/MedalLogo_t4d2x4.webp" 
+            src="/images/MedalLogo_t4d2x4.webp" 
             alt="Award placeholder" 
             className="w-full h-full object-cover"
           />

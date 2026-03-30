@@ -7,7 +7,7 @@ const AboutSection: React.FC = () => {
         <div className="flex flex-col md:flex-row items-center gap-6">
           <div className="w-full md:w-1/2">
             <img
-              src="https://res.cloudinary.com/dwe4p22ut/image/upload/v1747854703/Picture1_dz1fru.png"
+              src="/images/Picture1_dz1fru.webp"
               alt="Professional HVAC Service"
               className=" w-full h-[400px] object-contain"
             />

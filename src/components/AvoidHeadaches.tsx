@@ -24,20 +24,20 @@ const AvoidHeadaches: React.FC<HeroProps> = ({ contactFormEmbed }) => {
             </p> */}
             <ul className="list-none pl-4 space-y-2 mb-8">
   <li className="relative pl-6 text-gray-600">
-    <span className="absolute left-0 top-1 inline-block h-5 w-5 bg-[url(https://res.cloudinary.com/dwe4p22ut/image/upload/v1747842034/next-100_smkyiq.png)] bg-contain bg-no-repeat bg-center"></span>
+    <span className="absolute left-0 top-1 inline-block h-5 w-5 bg-[url(/images/next-100_smkyiq.webp)] bg-contain bg-no-repeat bg-center"></span>
     Improper system sizing leads to high energy bills
   </li>
   <li className="relative pl-6 text-gray-600">
-    <span className="absolute left-0 top-1 inline-block h-5 w-5 bg-[url(https://res.cloudinary.com/dwe4p22ut/image/upload/v1747842034/next-100_smkyiq.png)] bg-contain bg-no-repeat bg-center"></span>
+    <span className="absolute left-0 top-1 inline-block h-5 w-5 bg-[url(/images/next-100_smkyiq.webp)] bg-contain bg-no-repeat bg-center"></span>
     Delays and no-shows from unreliable contractors
 
   </li>
   <li className="relative pl-6  text-gray-600">
-    <span className="absolute left-0 top-1 inline-block h-5 w-5 bg-[url(https://res.cloudinary.com/dwe4p22ut/image/upload/v1747842034/next-100_smkyiq.png)] bg-contain bg-no-repeat bg-center"></span>
+    <span className="absolute left-0 top-1 inline-block h-5 w-5 bg-[url(/images/next-100_smkyiq.webp)] bg-contain bg-no-repeat bg-center"></span>
     Poor installation = weak airflow and inconsistent temps
   </li>
     <li className="relative pl-6  text-gray-600">
-    <span className="absolute left-0 top-1 inline-block h-5 w-5 bg-[url(https://res.cloudinary.com/dwe4p22ut/image/upload/v1747842034/next-100_smkyiq.png)] bg-contain bg-no-repeat bg-center"></span>
+    <span className="absolute left-0 top-1 inline-block h-5 w-5 bg-[url(/images/next-100_smkyiq.webp)] bg-contain bg-no-repeat bg-center"></span>
     Lack of clear pricing or financing options
   </li>
 </ul>

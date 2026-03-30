@@ -6,7 +6,7 @@ const Logo: React.FC = () => {
     <a href="/" className="flex items-center">
     <div className="relative w-52">
       <img 
-        src="https://res.cloudinary.com/dwe4p22ut/image/upload/v1747786465/New-Logo_w6yqqg.svg" 
+        src="/images/New-Logo_w6yqqg.svg" 
         alt="BlueBest Plumbing Heating Air Generators" 
         className="w-full h-auto"
       />

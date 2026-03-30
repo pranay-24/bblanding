@@ -15,12 +15,12 @@ const FeaturesSection: React.FC = () => {
                <div className="flex flex-col p-4 ">
         <div className="mb-4 flex gap-5 mx-auto">
           <img 
-            src="https://res.cloudinary.com/dwe4p22ut/image/upload/v1748383311/log-2_x9jcve.png"
+            src="/images/log-2_x9jcve.webp"
             alt="Column 1 Image 1"
             className="w-24 h-20 object-contain"
           />
           <img 
-            src="https://res.cloudinary.com/dwe4p22ut/image/upload/v1748383311/logo-1_hzxybc.png"
+            src="/images/logo-1_hzxybc.webp"
             alt="Column 1 Image 2"
             className="w-24 h-20 object-contain"
           />
@@ -33,7 +33,7 @@ const FeaturesSection: React.FC = () => {
       <div className="flex flex-col p-4 ">
         <div className="mb-4 mx-auto">
           <img 
-            src="https://res.cloudinary.com/dwe4p22ut/image/upload/v1748383311/medal-logo-1_mr3xay.png"
+            src="/images/medal-logo-1_mr3xay.webp"
             alt="Column 2"
             className="w-full h-20 object-contain"
           />
@@ -46,7 +46,7 @@ const FeaturesSection: React.FC = () => {
 <div className="flex flex-col p-4 ">
         <div className="mb-4 mx-auto">
           <img 
-            src="https://res.cloudinary.com/dwe4p22ut/image/upload/v1748383311/goggle_logo-1_alvocy.png"
+            src="/images/goggle_logo-1_alvocy.webp"
             alt="Column 3"
             className="w-full h-20 object-contain"
           />
@@ -59,7 +59,7 @@ const FeaturesSection: React.FC = () => {
       <div className="flex flex-col p-4 ">
         <div className="mb-4 mx-auto">
           <img 
-            src="https://res.cloudinary.com/dwe4p22ut/image/upload/v1748383311/lennox_logo-1_wlpewc.png"
+            src="/images/lennox_logo-1_wlpewc.webp"
             alt="Column 4"
             className="w-full h-20 object-contain"
           />
@@ -72,7 +72,7 @@ const FeaturesSection: React.FC = () => {
  <div className="flex flex-col p-4 ">
         <div className="mb-4 mx-auto">
           <img 
-            src="https://res.cloudinary.com/dwe4p22ut/image/upload/v1748388272/license-svg_k6r6ix.svg"
+            src="/images/license-svg_k6r6ix.svg"
             alt="Column 4"
             className="w-full h-20 object-contain"
           />
@@ -87,7 +87,7 @@ const FeaturesSection: React.FC = () => {
           </div>
           <div className="w-full lg:w-1/2">
             <img
-              src="https://res.cloudinary.com/dwe4p22ut/image/upload/v1748386314/hero-4_gmdtes.jpg"
+              src="/images/hero-4_gmdtes.webp"
               alt="Professional Service Team"
               className=" shadow-lg w-full h-[500px] md:h-[600px] object-cover"
             />

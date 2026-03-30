@@ -26,7 +26,7 @@ const SecondaryHeroFurnace: React.FC = () => {
   <div className="mx-auto ">
     <div className="relative">
       <img
-        src="/worker-refilling-hvac.png"
+        src="/worker-refilling-hvac.webp"
         alt="Furnace Installation"
         className="w-full h-[600px] object-cover "
       />
@@ -72,7 +72,7 @@ const SecondaryHeroFurnace: React.FC = () => {
         <div className=" container mx-auto">
           <div className="relative">
             <img
-              src="https://res.cloudinary.com/dwe4p22ut/image/upload/v1748386314/hero-4_gmdtes.jpg"
+              src="/images/hero-4_gmdtes.webp"
               alt="Professional Installation"
               className="w-full h-[600px] object-cover "
             />

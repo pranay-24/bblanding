@@ -50,11 +50,11 @@ const LandingPageWH: React.FC<LandingPageProps> = ({ contactFormEmbed }) => {
       
       <SecondaryHeroWH />
       
-      <div className="bg-[url('https://res.cloudinary.com/dwe4p22ut/image/upload/v1747858949/Orange-Tones-BG-1_kf4kpy.webp')] bg-cover bg-center bg-no-repeat">
+      <div className="bg-[url('/images/Orange-Tones-BG-1_kf4kpy.webp')] bg-cover bg-center bg-no-repeat">
         <FeaturesSection />
       </div>
       
-      <div className="bg-[linear-gradient(to_bottom,rgba(255,255,255,0)_0%,rgba(255,255,255,1)_100%),url('https://res.cloudinary.com/dwe4p22ut/image/upload/v1747853406/toparticlewrapperbg_wyeckj.webp')] bg-cover bg-center bg-no-repeat">
+      <div className="bg-[linear-gradient(to_bottom,rgba(255,255,255,0)_0%,rgba(255,255,255,1)_100%),url('/images/toparticlewrapperbg_wyeckj.webp')] bg-cover bg-center bg-no-repeat">
         <TestimonialsSectionPlumbing />
         <ProcessSectionWH />
         <CertificationsSection />

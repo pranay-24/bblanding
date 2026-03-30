@@ -88,7 +88,7 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
     newsletterFormEmbedId: '9772a226-155c-4ba8-82c2-58c9bebcfdf0',
 
     hero: {
-      backgroundImage: 'https://res.cloudinary.com/dwe4p22ut/image/upload/v1748381588/hero-banner-2_o7dlss.jpg',
+      backgroundImage: '/images/hero-banner-2_o7dlss.webp',
       title1: 'GET YOUR $500 OFF',
       subTitle2: 'New Furnace Installation',
       subTitle: "A limited-time offer from Salt Lake City's most trusted HVAC & plumbing experts.",
@@ -108,7 +108,7 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
     },
 
     secondaryHero: {
-      backgroundImage: 'https://res.cloudinary.com/dwe4p22ut/image/upload/v1748386263/hero-3_rxo7uq.png',
+      backgroundImage: '/images/hero-3_rxo7uq.webp',
       heading: 'Limited-Time Offer – Act Fast!',
       mainOfferText: 'GET YOUR $500 OFF',
       description: 'New Furnace Installation',
@@ -125,7 +125,7 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
     newsletterFormEmbedId: 'cabff370-07ee-4462-a413-7f581133952e',
 
     hero: {
-      backgroundImage: '/water-heater-hero-image.png',
+      backgroundImage: '/water-heater-hero-image.webp',
       title1: 'Get $500 off your next tanked Water Heater',
       subTitle: 'A limited-time offer from most trusted HVAC experts.',
       ctaText: 'CLAIM OFFER NOW',
@@ -145,7 +145,7 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
     },
 
     secondaryHero: {
-      backgroundImage: '/water-heater-limited-time-offer.png',
+      backgroundImage: '/water-heater-limited-time-offer.webp',
       heading: 'Limited-Time Offer – Act Fast!',
       description:
         'Get $500 off your next tanked Water Heater',
@@ -163,7 +163,7 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
     // newsletterFormEmbedId: undefined,
 
     hero: {
-      backgroundImage: 'https://res.cloudinary.com/dwe4p22ut/image/upload/v1748381588/hero-banner-2_o7dlss.jpg',
+      backgroundImage: '/images/hero-banner-2_o7dlss.webp',
       title1: 'Stay Comfortable Year-Round With Our $129 HVAC Tune-Up',
       subTitle: 'Prevent breakdowns, reduce energy bills, and extend the life of your system — all for just $129.',
       ctaText: 'Book My $129 Tune-Up',
@@ -187,7 +187,7 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
     },
 
     secondaryHero: {
-      backgroundImage: 'https://res.cloudinary.com/dwe4p22ut/image/upload/v1748386263/hero-3_rxo7uq.png',
+      backgroundImage: '/images/hero-3_rxo7uq.webp',
       heading: 'Limited-Time Offer – Act Fast!',
       description:
         'Extend the life of your HVAC system for just $129. This offer is only valid for a short time — book today before it expires.',
@@ -204,7 +204,7 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
     newsletterFormEmbedId: '67884641-f495-492d-a107-14bcbbda087c',
 
     hero: {
-      backgroundImage: '/man-installs-furnace.png',
+      backgroundImage: '/man-installs-furnace.webp',
       title1: '$500 Off on a New Furnace System Installation',
       subTitle: 'A limited-time offer from most trusted HVAC & plumbing experts.',
       ctaText: 'GET IMMEDIATE ASSISTANCE',
@@ -229,7 +229,7 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
     },
 
     secondaryHero: {
-      backgroundImage: '/worker-refilling-hvac.png',
+      backgroundImage: '/worker-refilling-hvac.webp',
       heading: "Limited-Time Furnace Offer – Don't Wait!",
       description:
         'Get $500 OFF your new furnace system installation and enjoy reliable comfort when it matters most. This exclusive deal won\'t last long — schedule your free in-home estimate today before it expires.',
@@ -246,7 +246,7 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
     newsletterFormEmbedId: 'a648097e-6abd-4029-bcc3-40bb48293b72',
 
     hero: {
-      backgroundImage: 'https://res.cloudinary.com/dwe4p22ut/image/upload/v1750980769/BB_Plumbing_1_uxf8fa.png',
+      backgroundImage: '/images/BB_Plumbing_1_uxf8fa.webp',
       title1: 'Enjoy Softer Water & Hot Showers Starting at $2,795',
       subTitle: 'A limited-time offer from most trusted HVAC & Plumbing services in Bountiful, Greater Salt Lake City area & along the Wasatch Front.',
       ctaText: 'GET IMMEDIATE ASSISTANCE',
@@ -276,7 +276,7 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
     },
 
     secondaryHero: {
-      backgroundImage: 'https://res.cloudinary.com/dwe4p22ut/image/upload/v1750980769/BB_Plumbing_3_szlspg.png',
+      backgroundImage: '/images/BB_Plumbing_3_szlspg.webp',
       heading: 'Limited-Time Offer – Act Fast!',
       description: 'Enjoy Softer Water & Luxurious Hot Showers Starting at $2,795.',
       ctaText: 'GET IMMEDIATE ASSISTANCE',
