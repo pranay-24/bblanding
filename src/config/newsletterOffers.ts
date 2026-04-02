@@ -89,8 +89,8 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
 
     hero: {
       backgroundImage: '/images/hero-banner-2_o7dlss.webp',
-      title1: 'GET YOUR $500 OFF',
-      subTitle2: 'New Furnace Installation',
+      title1: 'BEAT THE HEAT',
+      subTitle2: '$500 Off a New Complete System',
       subTitle: "A limited-time offer from Salt Lake City's most trusted HVAC & plumbing experts.",
       ctaText: 'GET YOUR FREE ESTIMATE',
     },
@@ -99,8 +99,8 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
       cards: [
         {
           label: 'NEW OFFER',
-          heading: 'GET YOUR $500 OFF',
-          subheading: 'New Furnace Installation',
+          heading: 'BEAT THE HEAT',
+          subheading: '$500 Off a New Complete System',
           description:
             'Stay warm and comfortable without breaking the bank. Enjoy professional installation, and dependable performance you can trust.',
         },
@@ -110,8 +110,8 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
     secondaryHero: {
       backgroundImage: '/images/hero-3_rxo7uq.webp',
       heading: 'Limited-Time Offer – Act Fast!',
-      mainOfferText: 'GET YOUR $500 OFF',
-      description: 'New Furnace Installation',
+      mainOfferText: 'BEAT THE HEAT',
+      description: '$500 Off a New Complete System',
       ctaText: 'Request Estimate',
     },
   },
@@ -140,7 +140,7 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
           description: '',
           expiry: 'Must present offer at time of service. Valid while supplies last.',
         }
-        
+
       ],
     },
 
