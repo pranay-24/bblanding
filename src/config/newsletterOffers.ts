@@ -102,7 +102,7 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
           heading: 'BEAT THE HEAT',
           subheading: '$500 Off a New Complete System',
           description:
-            'Stay warm and comfortable without breaking the bank. Enjoy professional installation, and dependable performance you can trust.',
+            'Stay cool and comfortable without breaking the bank. Enjoy professional installation, and dependable performance you can trust.',
         },
       ],
     },
