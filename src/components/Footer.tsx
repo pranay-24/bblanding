@@ -2,111 +2,159 @@ import React from 'react';
 import { MapPin, Phone, Mail, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
 import Logo from './Logo';
 
-const Footer: React.FC = () => {
-  return (
-    <footer className="bg-blue-primary text-white pt-12 pb-6">
-      <div className="lg:container mx-auto px-4">
-      
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-             <span className="bg-transparent   mb-4 flex items-center justify-center">
-              <div className="bg-white p-4 rounded-lg"> 
-                <Logo />
-              </div>
-   
-  </span>
+const quickLinks = [
+  { label: 'Offers', href: '#offers' },
+  { label: 'Why Trust Blue Best', href: '#why-trust-bluebest' },
+  { label: 'Testimonials', href: '#testimonials' },
+  { label: 'Request Free Estimate', href: '#hero_Section-bblanding' },
+];
 
-          {/* Logo and Contact */}
-          <div className="col-span-1 flex items-center justify-center">
-            
-            <ul className="space-y-3 mt-4">
-              <li className="flex items-start">
-                <MapPin size={20} className="mr-2 mt-1 flex-shrink-0" />
-                <span>600 N 500 W Suite D<br />Bountiful, UT 84010</span>
-              </li>
-              <li className="flex items-center">
-                <Phone size={20} className="mr-2 flex-shrink-0" />
-                <a href="tel:+13852002604" className="hover:text-orange-primary transition duration-300">(385) 200-2604</a>
-              </li>
-              <li className="flex items-center">
-                <Mail size={20} className="mr-2 flex-shrink-0" />
-                <a href="mailto:info@bluebest.com" className="hover:text-orange-primary transition duration-300">info@bluebest.com</a>
-              </li>
+const Footer: React.FC = () => {
+  const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (href.startsWith('#')) {
+      e.preventDefault();
+      const target = document.querySelector(href);
+      if (target) {
+        const navbarHeight = 80;
+        const top = target.getBoundingClientRect().top + window.scrollY - navbarHeight;
+        window.scrollTo({ top, behavior: 'smooth' });
+      }
+    }
+  };
+
+  return (
+    <footer
+      className="bg-blue-primary text-white relative"
+      style={{
+        backgroundImage: `
+          repeating-linear-gradient(
+            -45deg,
+            transparent,
+            transparent 10px,
+            rgba(255,255,255,0.04) 10px,
+            rgba(255,255,255,0.04) 11px
+          )
+        `,
+      }}
+    >
+      <div className="max-w-6xl mx-auto px-10 pt-16 pb-10">
+
+        {/* Main grid: 3 columns */}
+        <div className="grid grid-cols-1 md:grid-cols-[2fr_1.5fr_1.5fr] gap-x-16 gap-y-10 mb-12">
+
+          {/* Column 1 — Logo + Google Rating + Social Icons */}
+          <div className="flex flex-col gap-5">
+            <div className="bg-white p-3 rounded-lg shadow-md inline-block w-fit">
+              <Logo />
+            </div>
+
+            {/* Google Rating */}
+            <div>
+              <div className="flex items-center gap-2 mb-1">
+                <svg width="28" height="28" viewBox="0 0 48 48" className="flex-shrink-0">
+                  <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
+                  <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
+                  <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
+                  <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.31-8.16 2.31-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
+                  <path fill="none" d="M0 0h48v48H0z"/>
+                </svg>
+                <div className="flex gap-0.5">
+                  {[1,2,3,4,5].map((s) => (
+                    <svg key={s} width="18" height="18" viewBox="0 0 24 24" fill="#F7941D">
+                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                  ))}
+                </div>
+              </div>
+              <p className="font-kanit font-bold text-base md:text-lg text-white">
+                5.0 RATING <span className="font-normal text-white/80">(2600+ Reviews)</span>
+              </p>
+            </div>
+
+            {/* Social Icons */}
+            <div className="flex gap-5">
+              {[
+                { Icon: Facebook, href: '#', label: 'Facebook' },
+                { Icon: Instagram, href: '#', label: 'Instagram' },
+                { Icon: Linkedin, href: '#', label: 'LinkedIn' },
+                { Icon: Youtube, href: '#', label: 'YouTube' },
+              ].map(({ Icon, href, label }) => (
+                <a
+                  key={label}
+                  href={href}
+                  aria-label={label}
+                  className="text-white hover:text-orange-primary transition-colors duration-300"
+                >
+                  <Icon size={26} />
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Column 2 — Quick Links */}
+          <div>
+            <h3 className="font-kanit text-xl font-bold text-orange-primary mb-6">
+              Quick Links
+            </h3>
+            <ul className="space-y-4 font-lato text-base md:text-lg text-white">
+              {quickLinks.map((link) => (
+                <li key={link.href}>
+                  <a
+                    href={link.href}
+                    onClick={(e) => handleAnchorClick(e, link.href)}
+                    className="hover:text-orange-primary transition-colors duration-300"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Services */}
-          {/* <div className="col-span-1">
-            <h3 className="text-xl font-semibold mb-4">Services</h3>
-            <ul className="space-y-2">
-              <li><a href="https://bluebest.com/furnace-company-bountiful-ut/" className="hover:text-orange-primary transition duration-300">Heating</a></li>
-              <li><a href="https://bluebest.com/ac-company-bountiful-ut/" className="hover:text-orange-primary transition duration-300">Cooling</a></li>
-              <li><a href="https://bluebest.com/plumbing-bountiful-ut/" className="hover:text-orange-primary transition duration-300">Plumbing</a></li>
-              <li><a href="https://bluebest.com/air-quality-bountiful-ut/" className="hover:text-orange-primary transition duration-300">Air Quality</a></li>
-              <li><a href="https://bluebest.com/briggs-stratton-generators-bounitful-ut/" className="hover:text-orange-primary transition duration-300">Generators</a></li>
-              <li><a href="https://bluebest.com/hvac-maintenance-plan-layton-ut/" className="hover:text-orange-primary transition duration-300">Maintenance Plans</a></li>
+          {/* Column 3 — Contact Us */}
+          <div>
+            <h3 className="font-kanit text-xl font-bold text-orange-primary mb-6">
+              Contact Us
+            </h3>
+            <ul className="space-y-4 font-lato text-base md:text-lg text-white">
+              <li className="flex items-start gap-3">
+                <MapPin size={20} className="flex-shrink-0 mt-0.5 text-orange-primary" />
+                <span>600 N 500 W Suite D Bountiful, UT 84010</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Phone size={20} className="flex-shrink-0 text-orange-primary" />
+                <a href="tel:+13852002604" className="hover:text-orange-primary transition-colors duration-300">
+                  (385) 200-2604
+                </a>
+              </li>
+              <li className="flex items-center gap-3">
+                <Mail size={20} className="flex-shrink-0 text-orange-primary" />
+                <a href="mailto:info@bluebest.com" className="hover:text-orange-primary transition-colors duration-300">
+                  info@bluebest.com
+                </a>
+              </li>
             </ul>
-          </div> */}
-
-          {/* Company */}
-          {/* <div className="col-span-1">
-            <h3 className="text-xl font-semibold mb-4">Company</h3>
-            <ul className="space-y-2">
-              <li><a href="https://bluebest.com/about-us/" className="hover:text-orange-primary transition duration-300">About Us</a></li>
-              <li><a href="https://bluebest.com/reviews/" className="hover:text-orange-primary transition duration-300">Testimonials</a></li>
-              <li><a href="https://bluebest.com/financing/" className="hover:text-orange-primary transition duration-300">Financing</a></li>
-              <li><a href="https://bluebest.com/apply-jobs/" className="hover:text-orange-primary transition duration-300">Careers</a></li>
-              <li><a href="https://bluebest.com/blog/" className="hover:text-orange-primary transition duration-300">Blog</a></li>
-              <li><a href="https://bluebest.com/contact-us/" className="hover:text-orange-primary transition duration-300">Contact</a></li>
-            </ul>
-          </div> */}
-
-          {/* Hours and Social */}
-          <div className="col-span-1 flex items-center justify-center">
-            {/* <h3 className="text-xl font-semibold mb-4">Hours</h3>
-            <ul className="space-y-1 mb-6">
-              <li className="flex justify-between">
-                <span>Monday - Friday:</span>
-                <span>8:00 AM - 5:00 PM</span>
-              </li>
-              <li className="flex justify-between">
-                <span>Saturday:</span>
-                <span>By Appointment</span>
-              </li>
-              <li className="flex justify-between">
-                <span>Sunday:</span>
-                <span>Closed</span>
-              </li>
-              <li className="mt-2 text-orange-primary font-medium">24/7 Emergency Service Available</li>
-            </ul> */}
-            <div>
- <h3 className="text-xl font-semibold mb-4">Connect With Us</h3>
-            <div className="flex space-x-4">
-              <a href="#" className="hover:text-orange-primary transition duration-300">
-                <Facebook size={24} />
-              </a>
-              <a href="#" className="hover:text-orange-primary transition duration-300">
-                <Instagram size={24} />
-              </a>
-              <a href="#" className="hover:text-orange-primary transition duration-300">
-                <Linkedin size={24} />
-              </a>
-              <a href="#" className="hover:text-orange-primary transition duration-300">
-                <Youtube size={24} />
-              </a>
-            </div>
-            </div>
-           
           </div>
         </div>
 
-        <hr className="border-blue-dark/30 my-6" />
-        
-        <div className="text-center text-sm text-blue-100/80">
-          <p>&copy; {new Date().getFullYear()} BlueBest Plumbing, Heating, Air, Generators. All rights reserved.</p>
-          <div className="mt-2 flex justify-center space-x-4">
-            <a href="/privacy-policy" className="hover:text-orange-primary transition duration-300">Privacy Policy</a>
-            <a href="/terms-and-conditions" className="hover:text-orange-primary transition duration-300">Terms of Service</a>
-            <a href="/accessibility-statement" className="hover:text-orange-primary transition duration-300">Accessibility</a>
+        {/* Divider */}
+        <hr className="border-white/15 my-6" />
+
+        {/* Bottom bar */}
+        <div className="flex flex-col sm:flex-row flex-wrap sm:items-center sm:justify-between gap-3 font-lato text-base md:text-lg text-white text-center sm:text-left">
+          <p className="md:mb-0">
+            &copy; {new Date().getFullYear()} BlueBest Plumbing, Heating, Air, Generators. All rights reserved.
+          </p>
+          <div className="flex flex-wrap justify-center sm:justify-end items-center gap-4 leading-none">
+            <a href="/privacy-policy" className="hover:text-orange-primary transition-colors duration-300">
+              Privacy Policy
+            </a>
+            <a href="/terms-and-conditions" className="hover:text-orange-primary transition-colors duration-300">
+              Terms of Service
+            </a>
+            <a href="/accessibility-statement" className="hover:text-orange-primary transition-colors duration-300">
+              Accessibility
+            </a>
           </div>
         </div>
       </div>
