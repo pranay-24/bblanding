@@ -89,8 +89,7 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
 
     hero: {
       backgroundImage: '/images/hero-banner-2_o7dlss.webp',
-      title1: 'BEAT THE HEAT',
-      subTitle2: '$500 Off a New Complete System',
+      title1: 'Up to $1,500 in Manufacturer Rebates on Complete Systems',
       subTitle: "A limited-time offer from Salt Lake City's most trusted HVAC & plumbing experts.",
       ctaText: 'GET YOUR FREE ESTIMATE',
     },
@@ -99,10 +98,10 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
       cards: [
         {
           label: 'NEW OFFER',
-          heading: 'BEAT THE HEAT',
-          subheading: '$500 Off a New Complete System',
+          heading: 'Up to $1,500 in Manufacturer Rebates on Complete Systems',
+          subheading: '',
           description:
-            'Stay cool and comfortable without breaking the bank. Enjoy professional installation, and dependable performance you can trust.',
+            'When you invest in a new complete system, manufacturers are putting real money back in your pocket, up to $1,500 in rebates.',
         },
       ],
     },
@@ -110,8 +109,8 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
     secondaryHero: {
       backgroundImage: '/images/hero-3_rxo7uq.webp',
       heading: 'Limited-Time Offer – Act Fast!',
-      mainOfferText: 'BEAT THE HEAT',
-      description: '$500 Off a New Complete System',
+      mainOfferText: 'Up to $1,500 in Manufacturer Rebates on Complete Systems',
+      description: 'When you invest in a new complete system, manufacturers are putting real money back in your pocket, up to $1,500 in rebates.',
       ctaText: 'Request Estimate',
     },
   },
