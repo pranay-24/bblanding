@@ -157,9 +157,7 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
   // ----------------------------------------------------------
   'hvac-tune-up': {
     formEmbedId: '68a16ab9-1de2-4515-9130-b5b0d11544d3',
-    // TODO: Newsletter form for HVAC Tune-up has NOT been created in Elfsight yet.
-    // Once created, add the embed ID here and set its redirect URL to /thank-you?form_id=nl-tu
-    // newsletterFormEmbedId: undefined,
+    // HVAC Tune-up Newsletter form — redirects to /thank-you?form_id=nl-tu
     newsletterFormEmbedId: 'cdb98937-7749-4269-a488-2e817b30e1a4',
 
     hero: {

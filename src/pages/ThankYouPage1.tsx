@@ -35,8 +35,7 @@ const NEWSLETTER_FORM_MAP: Record<string, { service: ServiceKey; closeUrl: strin
   'nl-wh':       { service: 'water-heater',    closeUrl: '/newsletter?service=water-heater' },
   'nl-furnace':  { service: 'furnace-service', closeUrl: '/newsletter?service=furnace-service' },
   'nl-plumbing': { service: 'plumbing',        closeUrl: '/newsletter?service=plumbing' },
-  // 'nl-tu': add this entry once the HVAC Tune-up newsletter form is created in Elfsight
-  //          redirect URL in Elfsight should be: /thank-you?form_id=nl-tu
+  'nl-tu':       { service: 'hvac-tune-up',   closeUrl: '/newsletter?service=hvac-tune-up' },
 };
 
 const ThankYouPage: React.FC = () => {
