@@ -21,7 +21,7 @@ import CertificationsSection from '../components/CertificationsSection';
 // Service-specific: AvoidHeadaches
 import AvoidHeadaches from '../components/AvoidHeadaches';
 import AvoidHeadachesWH from '../components/water_heater/AvoidHeadachesWH';
-import AvoidHeadachesTU from '../components/tu/AvoidHeadachesTU';
+import AvoidHeadachesTUNewsletter from '../components/tu/AvoidHeadachesTUNewsletter';
 import AvoidHeadachesFurnace from '../components/furnace/AvoidHeadachesFurnace';
 import AvoidHeadachesPlumbing from '../components/AvoidHeadachesPlumbing';
 
@@ -85,7 +85,7 @@ const NewsletterPage: React.FC = () => {
       {/* ── Service-specific: Avoid Headaches + form ── */}
       {service === 'hvac' && <AvoidHeadaches contactFormEmbed={formEmbed} />}
       {service === 'water-heater' && <AvoidHeadachesWH contactFormEmbed={formEmbed} />}
-      {service === 'hvac-tune-up' && <AvoidHeadachesTU contactFormEmbed={formEmbed} />}
+      {service === 'hvac-tune-up' && <AvoidHeadachesTUNewsletter contactFormEmbed={formEmbed} />}
       {service === 'furnace-service' && <AvoidHeadachesFurnace contactFormEmbed={formEmbed} />}
       {service === 'plumbing' && <AvoidHeadachesPlumbing contactFormEmbed={formEmbed} />}
 
@@ -107,7 +107,7 @@ const NewsletterPage: React.FC = () => {
 
         {service === 'hvac' && <ProcessSection />}
         {service === 'water-heater' && <ProcessSectionWH />}
-        {service === 'hvac-tune-up' && <ProcessSectionTU />}
+        {service === 'hvac-tune-up' && <ProcessSectionTU ctaTitle="$89 Precision Tune-Up & Safety Inspection" />}
         {service === 'furnace-service' && <ProcessSectionFurnace />}
         {service === 'plumbing' && <ProcessSectionPlumbing />}
 

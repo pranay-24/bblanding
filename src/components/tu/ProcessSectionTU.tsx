@@ -1,7 +1,11 @@
 import React from 'react';
 import {  Phone } from 'lucide-react';
 
-const ProcessSectionTU: React.FC = () => {
+interface ProcessSectionTUProps {
+  ctaTitle?: string;
+}
+
+const ProcessSectionTU: React.FC<ProcessSectionTUProps> = ({ ctaTitle = 'Book Your $129 HVAC Tune-Up Today!' }) => {
   const steps = [
     { number: 1, title: 'Free Consultation', text: 'Schedule Your Estimate' },
     { number: 2, title: 'Professional Installation', text: 'Get Expert Advice' },
@@ -67,7 +71,7 @@ const ProcessSectionTU: React.FC = () => {
   <span>Done Right.</span>
 </p>
            <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-primary mb-4 max-w-3xl text-center mx-auto">Book Your $129 HVAC Tune-Up Today!</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-primary mb-4 max-w-3xl text-center mx-auto">{ctaTitle}</h2>
           {/* <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             BlueBest provides quality plumbing, heating, and air conditioning services to homes and businesses in Bountiful, UT and surrounding areas.
           </p> */}

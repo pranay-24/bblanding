@@ -160,36 +160,34 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
     // TODO: Newsletter form for HVAC Tune-up has NOT been created in Elfsight yet.
     // Once created, add the embed ID here and set its redirect URL to /thank-you?form_id=nl-tu
     // newsletterFormEmbedId: undefined,
+    newsletterFormEmbedId: 'cdb98937-7749-4269-a488-2e817b30e1a4',
 
     hero: {
       backgroundImage: '/images/hero-banner-2_o7dlss.webp',
-      title1: 'Stay Comfortable Year-Round With Our $129 HVAC Tune-Up',
-      subTitle: 'Prevent breakdowns, reduce energy bills, and extend the life of your system — all for just $129.',
-      ctaText: 'Book My $129 Tune-Up',
+      title1: '$89 Precision Tune-Up & Safety Inspection',
+      subTitle2: 'Keep Your System Running Safe, Smooth & Efficient',
+      ctaText: 'SCHEDULE MY TUNE-UP NOW',
+      subTitle: ""
     },
 
     multiColumn: {
-      sectionHeading: 'Other Offers — HVAC Installation',
       cards: [
         {
-          heading: 'Upto $6300 cash back',
-          subheading: 'IN REBATES AND TAX INCENTIVES',
-          description: 'We planned ahead and have 2024 inventory in stock at great prices!',
-          expiry: '*25-C tax credit, terms and conditions apply. Must present offer at time of service Expires 7/30/25.',
-        },
-        {
-          heading: '0% financing',
-          subheading: 'FOR 12 MONTHS ON NEW HVAC SYSTEM',
-          expiry: 'Must present offer at time of service Expires 11/30/25.',
+          label: 'NEW OFFER',
+          heading: '$89 Precision Tune-Up & Safety Inspection',
+          subheading: 'Stay Ahead of Problems',
+          description: 'Small issues turn into expensive repairs fast. A quick tune-up now can save you from a full system breakdown later.',
+          expiry: '',
         },
       ],
     },
 
     secondaryHero: {
       backgroundImage: '/images/hero-3_rxo7uq.webp',
-      heading: 'Limited-Time Offer – Act Fast!',
+      heading: '$89 Precision Tune-Up & Safety Inspection',
+      mainOfferText: 'Keep Your System Running Safe, Smooth & Efficient',
       description:
-        'Extend the life of your HVAC system for just $129. This offer is only valid for a short time — book today before it expires.',
+        'Small issues turn into expensive repairs fast.  A quick tune-up now can save you from a full system breakdown later.',
       ctaText: 'Book HVAC Tune Up Now',
     },
   },
