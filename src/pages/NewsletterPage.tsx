@@ -19,7 +19,7 @@ import FeaturesSection from '../components/FeaturesSection';
 import CertificationsSection from '../components/CertificationsSection';
 
 // Service-specific: AvoidHeadaches
-import AvoidHeadaches from '../components/AvoidHeadaches';
+import AvoidHeadachesHVACNewsletter from '../components/AvoidHeadachesHVACNewsletter';
 import AvoidHeadachesWH from '../components/water_heater/AvoidHeadachesWH';
 import AvoidHeadachesTUNewsletter from '../components/tu/AvoidHeadachesTUNewsletter';
 import AvoidHeadachesFurnace from '../components/furnace/AvoidHeadachesFurnace';
@@ -83,7 +83,7 @@ const NewsletterPage: React.FC = () => {
       </div>
 
       {/* ── Service-specific: Avoid Headaches + form ── */}
-      {service === 'hvac' && <AvoidHeadaches contactFormEmbed={formEmbed} />}
+      {service === 'hvac' && <AvoidHeadachesHVACNewsletter contactFormEmbed={formEmbed} />}
       {service === 'water-heater' && <AvoidHeadachesWH contactFormEmbed={formEmbed} />}
       {service === 'hvac-tune-up' && <AvoidHeadachesTUNewsletter contactFormEmbed={formEmbed} />}
       {service === 'furnace-service' && <AvoidHeadachesFurnace contactFormEmbed={formEmbed} />}

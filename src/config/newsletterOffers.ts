@@ -89,7 +89,7 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
 
     hero: {
       backgroundImage: '/images/hero-banner-2_o7dlss.webp',
-      title1: 'Up to $1,500 in Manufacturer Rebates on Complete Systems',
+      title1: 'GET $1,000 OFF ON A NEW COMPLETE SYSTEM',
       subTitle: "A limited-time offer from Salt Lake City's most trusted HVAC & plumbing experts.",
       ctaText: 'GET YOUR FREE ESTIMATE',
     },
@@ -98,10 +98,9 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
       cards: [
         {
           label: 'NEW OFFER',
-          heading: 'Up to $1,500 in Manufacturer Rebates on Complete Systems',
+          heading: 'GET $1,000 OFF ON A NEW COMPLETE SYSTEM',
           subheading: '',
-          description:
-            'When you invest in a new complete system, manufacturers are putting real money back in your pocket, up to $1,500 in rebates.',
+          description:"Invest in a complete heating and cooling system — professionally installed, whole-home comfort, lower energy bills, and $1,000 off.",
         },
       ],
     },
@@ -109,8 +108,8 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
     secondaryHero: {
       backgroundImage: '/images/hero-3_rxo7uq.webp',
       heading: 'Limited-Time Offer – Act Fast!',
-      mainOfferText: 'Up to $1,500 in Manufacturer Rebates on Complete Systems',
-      description: 'When you invest in a new complete system, manufacturers are putting real money back in your pocket, up to $1,500 in rebates.',
+      mainOfferText: 'GET $1,000 OFF ON A NEW COMPLETE SYSTEM',
+      description: "Your old system isn't getting better. Your energy bills aren't going down. This is your chance to upgrade smart, save big, and finally get the comfort your home deserves.",
       ctaText: 'Request Estimate',
     },
   },
