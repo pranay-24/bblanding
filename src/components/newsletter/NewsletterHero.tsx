@@ -71,7 +71,7 @@ const NewsletterHero: React.FC<NewsletterHeroProps> = ({ offer }) => {
                     </div>
 
                     {/* Main offer headline */}
-                    <h1 className="text-3xl md:text-5xl font-bold mb-2">{offer.title1}</h1>
+                    <h1 className="text-3xl md:text-5xl font-bold mb-2 whitespace-pre-line">{offer.title1}</h1>
 
                     {/* Optional service name */}
                     {offer.subTitle2 && (

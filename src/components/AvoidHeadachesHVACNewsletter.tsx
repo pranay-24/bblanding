@@ -6,11 +6,11 @@ interface HeroProps {
 
 const AvoidHeadachesHVACNewsletter: React.FC<HeroProps> = ({ contactFormEmbed }) => {
   const bullets = [
-    'Complete heating and cooling system',
-    'Professional installation by certified techs',
+    'High-efficiency AC system upgrade',
+    'Professional installation by certified technicians',
     'Lower energy bills from day one',
-    'Whole-home comfort, no more hot and cold spots',
-    '$1,000 off the total cost',
+    'Quieter, more consistent cooling throughout your home',
+    '$300 off installation plus a free smart thermostat',
   ];
 
   return (
