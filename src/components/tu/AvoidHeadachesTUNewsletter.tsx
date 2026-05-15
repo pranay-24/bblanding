@@ -13,15 +13,15 @@ const AvoidHeadachesTUNewsletter: React.FC<HeroProps> = ({ contactFormEmbed }) =
 
           <div className="w-full lg:w-1/2">
             <h2 className="text-3xl md:text-4xl font-bold text-blue-primary mb-8">
-              What You Get for $89
+              What You Get for $179
             </h2>
             <div className="space-y-6 mb-8">
               <div>
                 <div className="flex items-center gap-2 mb-2">
                   <span className="inline-block h-6 w-6 shrink-0 bg-[url(/images/next-100_smkyiq.webp)] bg-contain bg-no-repeat bg-center"></span>
-                  <h3 className="text-2xl font-bold text-blue-primary-dark leading-none mb-0">Full System Check</h3>
+                  <h3 className="text-2xl font-bold text-blue-primary-dark leading-none mb-0">Triple Coverage in One Visit</h3>
                 </div>
-                <p className="text-gray-600 ml-8">We inspect, test, and fine-tune your system to make sure everything is working exactly as it should.</p>
+                <p className="text-gray-600 ml-8">One appointment covers your AC, furnace, and plumbing — no juggling schedules, no chasing multiple companies.</p>
               </div>
               <div>
                 <div className="flex items-center gap-2 mb-2">

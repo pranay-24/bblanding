@@ -73,6 +73,13 @@ const NewsletterHero: React.FC<NewsletterHeroProps> = ({ offer }) => {
                     {/* Main offer headline */}
                     <h1 className="text-3xl md:text-5xl font-bold mb-2 whitespace-pre-line">{offer.title1}</h1>
 
+                    {/* Optional accent line directly below H1 */}
+                    {offer.belowHeading && (
+                      <p className="text-lg md:text-2xl font-semibold mb-3 text-white/95">
+                        {offer.belowHeading}
+                      </p>
+                    )}
+
                     {/* Optional service name */}
                     {offer.subTitle2 && (
                       <p className="text-xl font-bold md:text-3xl mb-4 text-white/90">

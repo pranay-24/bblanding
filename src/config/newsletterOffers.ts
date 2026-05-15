@@ -32,6 +32,8 @@ export interface HeroOffer {
   backgroundImage: string;
   /** Primary H1 — the main offer line */
   title1: string;
+  /** Optional accent line rendered directly below H1 (above subTitle2) */
+  belowHeading?: string;
   /** Optional service name shown below H1 */
   subTitle2?: string;
   /** Supporting description line */
@@ -162,7 +164,8 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
 
     hero: {
       backgroundImage: '/images/hero-banner-2_o7dlss.webp',
-      title1: '$89 Precision Tune-Up & Safety Inspection',
+      title1: 'ONE APPOINTMENT.\nTHREE TUNE-UPS AT $179',
+      belowHeading: 'AC + Furnace + Plumbing - covered in one visit.',
       subTitle2: 'Keep Your System Running Safe, Smooth & Efficient',
       ctaText: 'SCHEDULE MY TUNE-UP NOW',
       subTitle: ""
@@ -171,10 +174,10 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
     multiColumn: {
       cards: [
         {
-          label: 'NEW OFFER',
-          heading: '$89 Precision Tune-Up & Safety Inspection',
-          subheading: 'Stay Ahead of Problems',
-          description: 'Small issues turn into expensive repairs fast. A quick tune-up now can save you from a full system breakdown later.',
+          label: 'TRIPLE PLAY BUNDLE',
+          heading: 'One Appointment. Three Tune-Ups at $179.',
+          subheading: 'AC + FURNACE + PLUMBING',
+          description: "Your AC, furnace, and plumbing all need regular check-ups. Most homeowners put it off because juggling three appointments is a hassle. The Triple Play Bundle covers all three in one visit — and saves you $168 in the process.",
           expiry: '',
         },
       ],
@@ -182,11 +185,11 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
 
     secondaryHero: {
       backgroundImage: '/images/hero-3_rxo7uq.webp',
-      heading: '$89 Precision Tune-Up & Safety Inspection',
-      mainOfferText: 'Keep Your System Running Safe, Smooth & Efficient',
+      heading: 'Limited-Time Triple Play Offer — Act Fast!',
+      mainOfferText: 'One Appointment. Three Tune-Ups at $179.',
       description:
-        'Small issues turn into expensive repairs fast.  A quick tune-up now can save you from a full system breakdown later.',
-      ctaText: 'Book HVAC Tune Up Now',
+        "Your home works hard for you. Make sure it's running right — without the runaround. Book your Triple Play and check AC, furnace, and plumbing off the list in one visit.",
+      ctaText: 'Book Triple Play Now',
     },
   },
 
