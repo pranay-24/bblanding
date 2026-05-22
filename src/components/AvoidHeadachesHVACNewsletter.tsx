@@ -6,11 +6,10 @@ interface HeroProps {
 
 const AvoidHeadachesHVACNewsletter: React.FC<HeroProps> = ({ contactFormEmbed }) => {
   const bullets = [
-    'High-efficiency AC system upgrade',
-    'Professional installation by certified technicians',
-    'Lower energy bills from day one',
-    'Quieter, more consistent cooling throughout your home',
-    '$300 off installation plus a free smart thermostat',
+    'Complete HVAC system — heating and cooling, year-round comfort',
+    'New water heater — tanked or tankless, your choice',
+    'Both systems installed by certified technicians',
+    '$1,000 off when you bundle the upgrade',
   ];
 
   return (
@@ -31,8 +30,8 @@ const AvoidHeadachesHVACNewsletter: React.FC<HeroProps> = ({ contactFormEmbed })
               ))}
             </ul>
             <p className="text-gray-600 mb-6">
-              With over 20 years of experience in serving the entire Wasatch Front region, we are
-              proud to bring the best in home comfort solutions.
+              Not sure which water heater is right for you? We&rsquo;ll help you choose based on your
+              home, your usage, and your budget.
             </p>
           </div>
 

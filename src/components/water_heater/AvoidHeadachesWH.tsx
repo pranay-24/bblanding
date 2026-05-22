@@ -14,14 +14,18 @@ const AvoidHeadachesWH: React.FC<HeroProps> = ({ contactFormEmbed }) => {
           <div className="w-full lg:w-1/2">
             {/* <span className="text-orange-primary font-medium mb-2 block">Meet Your Home's New Best Friend</span> */}
             <h2 className=" text-3xl md:text-4xl font-bold text-blue-primary mb-4">
-             Don’t Let Cold Showers Ruin Your Day
+             If One System Needs Replacing, The Other Probably Isn’t Far Behind.
             </h2>
             <p className=" text-gray-600 mb-6">
-              When your water heater fails, you need a team that shows up fast and gets the job done right. Whether it’s time to replace an old unit or upgrade to something more efficient, Blue Best is here to help.
+              Your HVAC and water heater work harder than almost anything else in your home. They age together. They struggle together. And when one goes, the other usually follows.
             </p>
 
              <p className=" text-gray-600 mb-6">
-              We install all types of water heaters including gas, electric, and tankless models with upfront pricing, fast turnaround, and 5-star service.
+              So why deal with two separate projects, two separate appointments, and two separate bills?
+            </p>
+
+             <p className=" text-gray-600 mb-6">
+              Not sure which water heater is right for you? We’ll help you choose based on your home, your usage, and your budget.
             </p>
 
 

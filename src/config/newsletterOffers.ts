@@ -91,29 +91,30 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
 
     hero: {
       backgroundImage: '/images/hero-banner-2_o7dlss.webp',
-      title1: 'SCORE $300 OFF\nHIGH-EFFICIENCY AC',
-      subTitle2: 'WITH FREE THERMOSTAT',
-      subTitle: "A limited-time offer from Salt Lake City's most trusted HVAC & plumbing experts.",
-      ctaText: 'GET YOUR FREE ESTIMATE',
+      title1: '$1,000 OFF ON A WATER HEATER\nWITH ANY COMPLETE SYSTEM PURCHASE',
+      subTitle2: 'TWO UPGRADES. ONE SMART MOVE.',
+      subTitle: '',
+      ctaText: 'GET FREE ESTIMATE',
     },
 
     multiColumn: {
+      sectionHeading: 'Bundle Them & Save on the Upgrade',
       cards: [
         {
-          label: 'NEW OFFER',
-          heading: 'Score $300 Off High-Efficiency AC WITH FREE THERMOSTAT',
-          subheading: '',
-          description:"Upgrade to a high-efficiency cooling system with professional installation, enjoy lower energy bills and quieter comfort, and get $300 off installation plus a free smart thermostat for a limited time.",
+          heading: '$1,000 OFF',
+          subheading: 'On a Water Heater With Any Complete System Purchase',
+          description: 'Pair a new water heater with a complete HVAC system installation and save $1,000. Two upgrades, one smart move — both systems installed by certified techs.',
+          expiry: 'Must present offer at time of service. Valid while supplies last.',
         },
       ],
     },
 
     secondaryHero: {
       backgroundImage: '/images/hero-3_rxo7uq.webp',
-      heading: 'Limited-Time Offer – Act Fast!',
-      mainOfferText: 'Score $300 Off High-Efficiency AC WITH FREE THERMOSTAT',
-      description: "Upgrade to a high-efficiency cooling system with professional installation, enjoy lower energy bills and quieter comfort, and get $300 off installation plus a free smart thermostat for a limited time.",
-      ctaText: 'Request Estimate',
+      heading: 'One Decision. Two Upgrades. $1,000 Saved.',
+      mainOfferText: '$1,000 OFF',
+      description: "You're going to need both eventually. Why not handle it now, while the savings are on the table and the calendar is open?",
+      ctaText: 'CLAIM $1,000 OFF',
     },
   },
 
@@ -127,18 +128,19 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
 
     hero: {
       backgroundImage: '/water-heater-hero-image.webp',
-      title1: 'Get $500 off your next tanked Water Heater',
-      subTitle: 'A limited-time offer from most trusted HVAC experts.',
-      ctaText: 'CLAIM OFFER NOW',
+      title1: '$1,000 OFF ON A WATER HEATER\nWITH ANY COMPLETE SYSTEM PURCHASE',
+      subTitle2: 'TWO UPGRADES. ONE SMART MOVE.',
+      subTitle: '',
+      ctaText: 'GET FREE ESTIMATE',
     },
 
     multiColumn: {
-      sectionHeading: 'Offers',
+      sectionHeading: 'Bundle Them & Save on the Upgrade',
       cards: [
         {
-          heading: '$500 OFF',
-          subheading: 'Get $500 off your next tanked Water Heater',
-          description: '',
+          heading: '$1,000 OFF',
+          subheading: 'On a Water Heater With Any Complete System Purchase',
+          description: 'Pair a new water heater with a complete HVAC system installation and save $1,000. Two upgrades, one smart move — both systems installed by certified techs.',
           expiry: 'Must present offer at time of service. Valid while supplies last.',
         }
 
@@ -147,10 +149,11 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
 
     secondaryHero: {
       backgroundImage: '/water-heater-limited-time-offer.webp',
-      heading: 'Limited-Time Offer – Act Fast!',
+      heading: 'One Decision. Two Upgrades. $1,000 Saved.',
+      mainOfferText: '$1,000 OFF',
       description:
-        'Get $500 off your next tanked Water Heater',
-      ctaText: 'Schedule & Save Today',
+        "You're going to need both eventually. Why not handle it now, while the savings are on the table and the calendar is open?",
+      ctaText: 'CLAIM $1,000 OFF',
     },
   },
 
