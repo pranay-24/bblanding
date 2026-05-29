@@ -91,30 +91,27 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
 
     hero: {
       backgroundImage: '/images/hero-banner-2_o7dlss.webp',
-      title1: '$1,000 OFF ON A WATER HEATER\nWITH ANY COMPLETE SYSTEM PURCHASE',
-      subTitle2: 'TWO UPGRADES. ONE SMART MOVE.',
+      title1: '$1,000 Reward Card\nOn New Complete Systems $15,000 and Up',
       subTitle: '',
-      ctaText: 'GET FREE ESTIMATE',
+      ctaText: 'CLAIM MY REWARD',
     },
 
     multiColumn: {
-      sectionHeading: 'Bundle Them & Save on the Upgrade',
       cards: [
         {
-          heading: '$1,000 OFF',
-          subheading: 'On a Water Heater With Any Complete System Purchase',
-          description: 'Pair a new water heater with a complete HVAC system installation and save $1,000. Two upgrades, one smart move — both systems installed by certified techs.',
-          expiry: 'Must present offer at time of service. Valid while supplies last.',
+          heading: 'Real Money Back on Your Next Upgrade',
+          subheading: '$1,000 Reward Card on Complete Systems $15K and Up',
+          description: 'Invest in a new complete system $15,000 or more, and we put a $1,000 reward card back in your pocket. Real money on a real upgrade — from the HVAC team Utah trusts most.',
         },
       ],
     },
 
     secondaryHero: {
       backgroundImage: '/images/hero-3_rxo7uq.webp',
-      heading: 'One Decision. Two Upgrades. $1,000 Saved.',
-      mainOfferText: '$1,000 OFF',
-      description: "You're going to need both eventually. Why not handle it now, while the savings are on the table and the calendar is open?",
-      ctaText: 'CLAIM $1,000 OFF',
+      heading: 'A Reward This Size Will Not Sit Forever.',
+      mainOfferText: '$1,000 REWARD CARD',
+      description: 'Pick your new system, get it installed, and the $1,000 reward card is yours. If you have been thinking about upgrading, now is the time to make it count.',
+      ctaText: 'CLAIM MY REWARD',
     },
   },
 

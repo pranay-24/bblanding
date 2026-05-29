@@ -52,7 +52,7 @@ const FeaturesSection: React.FC = () => {
           />
         </div>
         <div className="text-blue-primary-dark text-md font-bold leading-relaxed text-center">
-          2,500+ Five-Star Google Reviews
+          2,700+ Five-Star Google Reviews
         </div>
       </div>
 

@@ -140,7 +140,7 @@ const GoogleReviewsWidget = ({ testimonials }: GoogleReviewsWidgetProps) => {
                   <Star key={i} className="w-4 h-4 fill-[var(--google-yellow)] text-[var(--google-yellow)]" />
                 ))}
               </div>
-              <span className="text-sm text-gray-600">( 2,000+ reviews)</span>
+              <span className="text-sm text-gray-600">( 2,700+ reviews)</span>
             </div>
           </div>
           </a>
@@ -168,7 +168,7 @@ const GoogleReviewsWidget = ({ testimonials }: GoogleReviewsWidgetProps) => {
               </div>
               <div className="flex items-center space-x-2">
                 <span className="text-lg font-bold text-gray-600 mb-0">5.0</span>
-                <span className="text-sm text-gray-600">( 2,000+ reviews)</span>
+                <span className="text-sm text-gray-600">( 2,700+ reviews)</span>
               </div>
             </div>
           </div>

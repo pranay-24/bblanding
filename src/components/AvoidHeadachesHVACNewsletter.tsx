@@ -6,10 +6,10 @@ interface HeroProps {
 
 const AvoidHeadachesHVACNewsletter: React.FC<HeroProps> = ({ contactFormEmbed }) => {
   const bullets = [
-    'Complete HVAC system — heating and cooling, year-round comfort',
-    'New water heater — tanked or tankless, your choice',
-    'Both systems installed by certified technicians',
-    '$1,000 off when you bundle the upgrade',
+    'New complete system, $15K and up — $1,000 reward card',
+    'Professional installation — included',
+    'Premium equipment, expertly installed — years of reliable comfort',
+    'Premium equipment, expertly installed — low monthly payments',
   ];
 
   return (
@@ -30,8 +30,8 @@ const AvoidHeadachesHVACNewsletter: React.FC<HeroProps> = ({ contactFormEmbed })
               ))}
             </ul>
             <p className="text-gray-600 mb-6">
-              Not sure which water heater is right for you? We&rsquo;ll help you choose based on your
-              home, your usage, and your budget.
+              Not sure which system fits your home? We&rsquo;ll help you choose based on your home,
+              your usage, and your budget &mdash; then put $1,000 back in your pocket.
             </p>
           </div>
 

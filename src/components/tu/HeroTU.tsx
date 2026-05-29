@@ -86,7 +86,7 @@ const HeroTU: React.FC<HeroProps> = ({ contactFormEmbed }) => {
               </div>
               <div className="flex flex-row space-x-3 justify-center items-center ">
                 <span className="text-lg font-bold text-[#ffffed]">5.0 RATING</span>
-                <span className="text-sm font-bold text-[#ffffed]">(2000+ Reviews)</span>
+                <span className="text-sm font-bold text-[#ffffed]">(2700+ Reviews)</span>
               </div>
             </div>
 
@@ -197,7 +197,7 @@ export function MultiColumnSection() {
           />
         </div>
         <div className="text-blue-primary-dark text-md font-bold  text-center">
-          2,000+ 5-Star Google Reviews
+          2,700+ 5-Star Google Reviews
         </div>
       </div>
 
