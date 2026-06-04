@@ -34,12 +34,14 @@ export function NewsletterMultiColumn({ offer }: NewsletterMultiColumnProps) {
                 {cards[0].subheading}
               </div>
               {cards[0].description && (
-                <p className="text-base md:text-lg text-black mb-2 leading-tight">
+                <p className="text-base md:text-lg text-black mb-2 leading-tight whitespace-pre-line">
                   {cards[0].description}
                 </p>
               )}
               {cards[0].expiry && (
-                <div className="text-sm md:text-sm text-black italic">{cards[0].expiry}</div>
+                <div className="text-lg md:text-xl font-bold text-orange-500 mt-3 pt-3 border-t border-orange-200">
+                  {cards[0].expiry}
+                </div>
               )}
             </div>
           </div>

@@ -91,7 +91,8 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
 
     hero: {
       backgroundImage: '/images/hero-banner-2_o7dlss.webp',
-      title1: '$1,000 Reward Card\nOn New Complete Systems $15,000 and Up',
+      title1: 'Good News\nThe R-410A Deadline Just Lifted.',
+      belowHeading: 'Heat Pumps, ACs, And Furnaces Still Available At Our Clearance Prices. The rush is gone. The savings are not.',
       subTitle: '',
       ctaText: 'CLAIM MY REWARD',
     },
@@ -99,18 +100,19 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
     multiColumn: {
       cards: [
         {
-          heading: 'Real Money Back on Your Next Upgrade',
-          subheading: '$1,000 Reward Card on Complete Systems $15K and Up',
-          description: 'Invest in a new complete system $15,000 or more, and we put a $1,000 reward card back in your pocket. Real money on a real upgrade — from the HVAC team Utah trusts most.',
+          heading: 'The Deadline Pressure Is Off. The Inventory Is Still Here.',
+          subheading: 'EPA UPDATE — SAME CLEARANCE PRICES · R-410A CLEARED FOR INSTALL',
+          description: 'The EPA removed the January 1, 2026 R-410A install deadline. Our inventory is cleared for install and still priced at the clearance rates\nwe set when this was a hard cutoff.',
+          expiry: 'So the rush is gone. The savings are not.',
         },
       ],
     },
 
     secondaryHero: {
       backgroundImage: '/images/hero-3_rxo7uq.webp',
-      heading: 'A Reward This Size Will Not Sit Forever.',
-      mainOfferText: '$1,000 REWARD CARD',
-      description: 'Pick your new system, get it installed, and the $1,000 reward card is yours. If you have been thinking about upgrading, now is the time to make it count.',
+      heading: 'No Deadline. Still Limited Inventory.',
+      mainOfferText: 'R-410A CLEARANCE PRICING — SAME DEAL. EPA APPROVED.',
+      description: 'The regulatory pressure is off, but the units are not unlimited. The deal we set still holds. When this batch is installed, the clearance ends and pricing returns to normal.',
       ctaText: 'CLAIM MY REWARD',
     },
   },

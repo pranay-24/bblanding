@@ -6,10 +6,10 @@ interface HeroProps {
 
 const AvoidHeadachesHVACNewsletter: React.FC<HeroProps> = ({ contactFormEmbed }) => {
   const bullets = [
-    'New complete system, $15K and up — $1,000 reward card',
-    'Professional installation — included',
-    'Premium equipment, expertly installed — years of reliable comfort',
-    'Premium equipment, expertly installed — low monthly payments',
+    'R-410A cleared for install — EPA approved, same clearance prices',
+    'Heat Pumps, ACs, Furnaces — all three categories still in stock',
+    'Professional installation — NATE certified Utah techs. Done right.',
+    'No deadline — but limited inventory. When this batch is installed, clearance pricing ends.',
   ];
 
   return (
@@ -19,7 +19,7 @@ const AvoidHeadachesHVACNewsletter: React.FC<HeroProps> = ({ contactFormEmbed })
 
           <div className="w-full lg:w-1/2">
             <h2 className="text-3xl md:text-4xl font-bold text-blue-primary mb-4">
-              What You're Getting:
+              Here's What's Still Available:
             </h2>
             <ul className="list-none pl-4 space-y-2 mb-8">
               {bullets.map((item) => (
@@ -29,10 +29,6 @@ const AvoidHeadachesHVACNewsletter: React.FC<HeroProps> = ({ contactFormEmbed })
                 </li>
               ))}
             </ul>
-            <p className="text-gray-600 mb-6">
-              Not sure which system fits your home? We&rsquo;ll help you choose based on your home,
-              your usage, and your budget &mdash; then put $1,000 back in your pocket.
-            </p>
           </div>
 
           <div className="w-full lg:w-1/2">
