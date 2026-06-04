@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Slider from 'react-slick';
-import { Menu, X, Phone, ChevronDown, Star } from 'lucide-react';
+import { Menu, X, ChevronDown, Star } from 'lucide-react';
 interface HeroProps {
   contactFormEmbed: string;
 }
@@ -121,13 +121,12 @@ const Hero: React.FC<HeroProps> = ({ contactFormEmbed }) => {
                         >
                           GET YOUR FREE ESTIMATE
                         </a>
-                        <a
-                          href="tel:+13852002604"
-                          className=" flex items-center justify-center px-11 py-3.5 text-base bg-blue-primary-dark text-white text-center ease-out whitespace-pre-wrap rounded-full uppercase font-semibold font-['Kanit'] leading-relaxed shadow-[0_0.2em_0_#f97316] transition duration-300"
+                        <button
+                          onClick={() => (window as any).STWidgetManager?.('ws-open')}
+                          className="flex items-center justify-center px-11 py-3.5 text-base bg-blue-primary-dark text-white text-center ease-out whitespace-pre-wrap rounded-full uppercase font-semibold font-['Kanit'] leading-relaxed shadow-[0_0.2em_0_#f97316] transition duration-300 cursor-pointer"
                         >
-                          <Phone size={18} className="mr-2" />
-                          (385) 200-2604
-                        </a>
+                          Schedule Now
+                        </button>
                       </div>
 
                       {/* Trust Badges */}
