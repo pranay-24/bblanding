@@ -47,7 +47,7 @@ const ThankYouPage: React.FC = () => {
   const isNewsletter = Boolean(newsletterEntry);
 
   const handleClose = () => {
-    // Newsletter form submissions → back to the newsletter page for that service
+    // Newsletters form submissions → back to the newsletter page for that service
     if (newsletterEntry) {
       window.location.href = newsletterEntry.closeUrl;
       return;
