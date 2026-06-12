@@ -91,29 +91,40 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
 
     hero: {
       backgroundImage: '/images/hero-banner-2_o7dlss.webp',
-      title1: 'Good News\nThe R-410A Deadline Just Lifted.',
-      belowHeading: 'Heat Pumps, ACs, And Furnaces Still Available At Our Clearance Prices. The rush is gone. The savings are not.',
+      title1: 'Get Up to\n$1,700 Back',
+      belowHeading: 'Instant Manufacturer Rebate On New Systems.',
+      subTitle2: 'Real Money Off Your Next System.',
       subTitle: '',
-      ctaText: 'CLAIM MY REWARD',
+      ctaText: 'CLAIM OFFER',
     },
 
     multiColumn: {
+      sectionHeading: 'Limited Time. This rebate is open right now. Once it closes, $1,700 in savings goes with it.',
       cards: [
         {
-          heading: 'The Deadline Pressure Is Off. The Inventory Is Still Here.',
-          subheading: 'EPA UPDATE — SAME CLEARANCE PRICES · R-410A CLEARED FOR INSTALL',
-          description: 'The EPA removed the January 1, 2026 R-410A install deadline. Our inventory is cleared for install and still priced at the clearance rates\nwe set when this was a hard cutoff.',
-          expiry: 'So the rush is gone. The savings are not.',
+          heading: 'Up to $1,700 Back',
+          subheading: 'Instant rebate on new complete system',
+        },
+        {
+          heading: 'Mention It At Booking',
+          subheading: 'Bring up this offer when you schedule',
+        },
+        {
+          heading: 'Amana + Lennox',
+          subheading: 'Two of the premium brands we install every day',
+        },
+        {
+          heading: 'Pro Installation',
+          subheading: 'NATE certified Utah techs. Done right.',
         },
       ],
     },
 
     secondaryHero: {
       backgroundImage: '/images/hero-3_rxo7uq.webp',
-      heading: 'No Deadline. Still Limited Inventory.',
-      mainOfferText: 'R-410A CLEARANCE PRICING — SAME DEAL. EPA APPROVED.',
-      description: 'The regulatory pressure is off, but the units are not unlimited. The deal we set still holds. When this batch is installed, the clearance ends and pricing returns to normal.',
-      ctaText: 'CLAIM MY REWARD',
+      heading: '$1,700 Off a New System.',
+      description: 'Pick a new Amana or Lennox system, mention this offer when you book, and save up to $1,700.',
+      ctaText: 'CLAIM MY REBATE',
     },
   },
 
