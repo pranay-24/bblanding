@@ -91,40 +91,38 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
 
     hero: {
       backgroundImage: '/images/hero-banner-2_o7dlss.webp',
-      title1: 'Get Up to\n$1,700 Back',
-      belowHeading: 'Instant Manufacturer Rebate On New Systems.',
-      subTitle2: 'Real Money Off Your Next System.',
-      subTitle: '',
-      ctaText: 'CLAIM OFFER',
+      title1: 'New System Installed in 24 Hours.\nOr Your First Tune-Up Is Free.',
+      subTitle: 'For the emergencies that cannot wait three weeks for every other contractor to catch up.',
+      ctaText: 'SCHEDULE MY ESTIMATE',
     },
 
     multiColumn: {
-      sectionHeading: 'Limited Time. This rebate is open right now. Once it closes, $1,700 in savings goes with it.',
+      sectionHeading: 'The Hottest Days Cluster. AC failures happen on the hottest days — get the estimate done now, so when you need us, you are already on our books.',
       cards: [
         {
-          heading: 'Up to $1,700 Back',
-          subheading: 'Instant rebate on new complete system',
+          heading: '24-Hour Install Start',
+          subheading: 'Guaranteed on qualifying emergency replacements',
         },
         {
-          heading: 'Mention It At Booking',
-          subheading: 'Bring up this offer when you schedule',
+          heading: 'Miss It, First Tune-Up Free',
+          subheading: 'A real consequence, not just a promise',
         },
         {
-          heading: 'Amana + Lennox',
-          subheading: 'Two of the premium brands we install every day',
+          heading: 'Priority Inventory',
+          subheading: 'Common Amana and Lennox systems on hand',
         },
         {
-          heading: 'Pro Installation',
-          subheading: 'NATE certified Utah techs. Done right.',
+          heading: 'Same or Next Day Done',
+          subheading: 'Full install typically complete in 1 to 2 days',
         },
       ],
     },
 
     secondaryHero: {
       backgroundImage: '/images/hero-3_rxo7uq.webp',
-      heading: '$1,700 Off a New System.',
-      description: 'Pick a new Amana or Lennox system, mention this offer when you book, and save up to $1,700.',
-      ctaText: 'CLAIM MY REBATE',
+      heading: '24 Hours. Or the First Tune-Up Is Free.',
+      description: 'Get the estimate on the calendar now.',
+      ctaText: 'SCHEDULE MY ESTIMATE',
     },
   },
 

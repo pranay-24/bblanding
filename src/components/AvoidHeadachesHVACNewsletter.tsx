@@ -6,10 +6,10 @@ interface HeroProps {
 
 const AvoidHeadachesHVACNewsletter: React.FC<HeroProps> = ({ contactFormEmbed }) => {
   const bullets = [
-    'New complete Amana or Lennox system → Up to $1,700 instant rebate',
-    'Professional installation → Included',
-    'Energy efficient equipment → Lower monthly bills',
-    'Manufacturer warranty → Long term peace of mind',
+    'Total heating or cooling loss → We come out the same day',
+    'Quote approved by 2pm → Install starts within 24 hours',
+    'We miss the window → First annual tune-up free ($89 value)',
+    'Standard 1 to 2 day install → Most jobs complete in 1 to 2 days',
   ];
 
   return (
@@ -19,7 +19,7 @@ const AvoidHeadachesHVACNewsletter: React.FC<HeroProps> = ({ contactFormEmbed })
 
           <div className="w-full lg:w-1/2">
             <h2 className="text-3xl md:text-4xl font-bold text-blue-primary mb-4">
-              Here Is What You Are Looking For:
+              Three Weeks Without AC? Not on Our Watch.
             </h2>
             <ul className="list-none pl-4 space-y-2 mb-6">
               {bullets.map((item) => (
@@ -30,7 +30,7 @@ const AvoidHeadachesHVACNewsletter: React.FC<HeroProps> = ({ contactFormEmbed })
               ))}
             </ul>
             <p className="text-base md:text-lg text-gray-700 mb-8">
-              Right now, you can save up to $1,700 on a new complete Amana or Lennox system. Just mention this offer when you book your estimate.
+              If your heating or cooling fails completely, we guarantee installation start within 24 hours. Miss the window and your first annual tune-up is free — an $89 value.
             </p>
           </div>
 
