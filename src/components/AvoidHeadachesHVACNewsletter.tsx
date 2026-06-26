@@ -6,10 +6,12 @@ interface HeroProps {
 
 const AvoidHeadachesHVACNewsletter: React.FC<HeroProps> = ({ contactFormEmbed }) => {
   const bullets = [
-    'Total heating or cooling loss → We come out the same day',
-    'Quote approved by 2pm → Install starts within 24 hours',
-    'We miss the window → First annual tune-up free ($89 value)',
-    'Standard 1 to 2 day install → Most jobs complete in 1 to 2 days',
+    'A new central AC or heat pump can qualify for up to $1,700 back through RMP Wattsmart.',
+    'A high-efficiency gas furnace can qualify for up to $450 through Enbridge ThermWise.',
+    'A dual-fuel heat pump can qualify for up to $1,450 through RMP Wattsmart.',
+    'A smart thermostat can qualify for up to $150 combined from RMP and ThermWise.',
+    'Duct sealing can qualify for up to $300.',
+    'Stacked on a qualifying high-efficiency system, that is up to $2,000 back.',
   ];
 
   return (
@@ -19,7 +21,7 @@ const AvoidHeadachesHVACNewsletter: React.FC<HeroProps> = ({ contactFormEmbed })
 
           <div className="w-full lg:w-1/2">
             <h2 className="text-3xl md:text-4xl font-bold text-blue-primary mb-4">
-              Three Weeks Without AC? Not on Our Watch.
+              Upgrading Your AC This Summer? Don't Leave the Rebates Behind.
             </h2>
             <ul className="list-none pl-4 space-y-2 mb-6">
               {bullets.map((item) => (
@@ -30,7 +32,7 @@ const AvoidHeadachesHVACNewsletter: React.FC<HeroProps> = ({ contactFormEmbed })
               ))}
             </ul>
             <p className="text-base md:text-lg text-gray-700 mb-8">
-              If your heating or cooling fails completely, we guarantee installation start within 24 hours. Miss the window and your first annual tune-up is free — an $89 value.
+              Exact amounts depend on your equipment and the current utility programs — we confirm what you qualify for when we quote. Rebate amounts and program availability shift through the year, so the simplest way to know exactly what you qualify for today is to let us check it for you, free, when we come out to quote.
             </p>
           </div>
 

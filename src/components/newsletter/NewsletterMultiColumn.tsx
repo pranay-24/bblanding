@@ -62,7 +62,7 @@ export function NewsletterMultiColumn({ offer }: NewsletterMultiColumnProps) {
                         {card.label}
                       </div>
                     )}
-                    <div className="text-3xl md:text-4xl font-bold text-blue-primary-dark uppercase mb-2">
+                    <div className="text-xl md:text-2xl font-bold text-blue-primary-dark uppercase mb-2">
                       {card.heading}
                     </div>
                     <div className="text-lg md:text-lg font-semibold text-black mb-2">

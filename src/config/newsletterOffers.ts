@@ -91,38 +91,42 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
 
     hero: {
       backgroundImage: '/images/hero-banner-2_o7dlss.webp',
-      title1: 'New System Installed in 24 Hours.\nOr Your First Tune-Up Is Free.',
-      subTitle: 'For the emergencies that cannot wait three weeks for every other contractor to catch up.',
-      ctaText: 'SCHEDULE MY ESTIMATE',
+      title1: 'Up to $2,000 Back\nin Utility Rebates',
+      subTitle: 'On a new AC, heat pump, furnace, and more. We find every rebate you qualify for, file the paperwork, and you keep the savings.',
+      ctaText: 'SEE WHAT I QUALIFY FOR',
     },
 
     multiColumn: {
-      sectionHeading: 'The Hottest Days Cluster. AC failures happen on the hottest days — get the estimate done now, so when you need us, you are already on our books.',
+      sectionHeading: 'Every Rebate, Handled For You',
       cards: [
         {
-          heading: '24-Hour Install Start',
-          subheading: 'Guaranteed on qualifying emergency replacements',
+          heading: 'We Do the Paperwork',
+          subheading: '',
+          description: 'We complete every rebate form and submit it for you.',
         },
         {
-          heading: 'Miss It, First Tune-Up Free',
-          subheading: 'A real consequence, not just a promise',
+          heading: 'You Keep the Savings',
+          subheading: '',
+          description: 'The rebate money is yours. We just make sure you get it.',
         },
         {
-          heading: 'Priority Inventory',
-          subheading: 'Common Amana and Lennox systems on hand',
+          heading: 'Not Just Heat Pumps',
+          subheading: '',
+          description: 'A new AC, furnace, thermostat, and duct sealing all qualify.',
         },
         {
-          heading: 'Same or Next Day Done',
-          subheading: 'Full install typically complete in 1 to 2 days',
+          heading: 'Participating Contractor',
+          subheading: '',
+          description: 'Approved for RMP Wattsmart and Enbridge ThermWise.',
         },
       ],
     },
 
     secondaryHero: {
       backgroundImage: '/images/hero-3_rxo7uq.webp',
-      heading: '24 Hours. Or the First Tune-Up Is Free.',
-      description: 'Get the estimate on the calendar now.',
-      ctaText: 'SCHEDULE MY ESTIMATE',
+      heading: 'Every Rebate. We Handle the Paperwork.',
+      description: 'Upgrade your AC or system this summer, and we will find every rebate you qualify for and file it for you. Up to $2,000 back across utility rebates.',
+      ctaText: 'CLAIM MY REBATE',
     },
   },
 
