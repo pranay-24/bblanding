@@ -91,42 +91,26 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
 
     hero: {
       backgroundImage: '/images/hero-banner-2_o7dlss.webp',
-      title1: 'Up to $2,000 Back\nin Utility Rebates',
-      subTitle: 'On a new AC, heat pump, furnace, and more. We find every rebate you qualify for, file the paperwork, and you keep the savings.',
-      ctaText: 'SEE WHAT I QUALIFY FOR',
+      title1: 'A New AC From\n$69 a Month',
+      subTitle: 'When Your Furnace Is Fine But The AC Is On Its Last Legs.',
+      ctaText: 'SEE IF I QUALIFY',
     },
 
     multiColumn: {
-      sectionHeading: 'Every Rebate, Handled For You',
       cards: [
         {
-          heading: 'We Do the Paperwork',
+          heading: 'Replace the AC. Not Your Budget.',
           subheading: '',
-          description: 'We complete every rebate form and submit it for you.',
-        },
-        {
-          heading: 'You Keep the Savings',
-          subheading: '',
-          description: 'The rebate money is yours. We just make sure you get it.',
-        },
-        {
-          heading: 'Not Just Heat Pumps',
-          subheading: '',
-          description: 'A new AC, furnace, thermostat, and duct sealing all qualify.',
-        },
-        {
-          heading: 'Participating Contractor',
-          subheading: '',
-          description: 'Approved for RMP Wattsmart and Enbridge ThermWise.',
+          description: 'If your furnace is still going strong but your air conditioner is struggling through another Utah summer, you don\'t have to replace everything. Put in a new high-efficiency AC on its own, with payments starting at $69 a month for qualified buyers.',
         },
       ],
     },
 
     secondaryHero: {
       backgroundImage: '/images/hero-3_rxo7uq.webp',
-      heading: 'Every Rebate. We Handle the Paperwork.',
-      description: 'Upgrade your AC or system this summer, and we will find every rebate you qualify for and file it for you. Up to $2,000 back across utility rebates.',
-      ctaText: 'CLAIM MY REBATE',
+      heading: 'A New AC. From $69 a Month.',
+      description: 'Replace just your air conditioner with low monthly payments. Keep your budget intact and your home cool all summer.',
+      ctaText: 'SEE IF I QUALIFY',
     },
   },
 
