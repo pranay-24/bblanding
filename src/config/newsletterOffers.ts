@@ -91,26 +91,27 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
 
     hero: {
       backgroundImage: '/images/hero-banner-2_o7dlss.webp',
-      title1: 'A New AC From\n$69 a Month',
-      subTitle: 'When Your Furnace Is Fine But The AC Is On Its Last Legs.',
-      ctaText: 'SEE IF I QUALIFY',
+      title1: '$600 OFF A NEW HIGH-EFFICIENCY AC',
+      subTitle2: 'A Cooler Home, and $600 Back In Your Pocket',
+      subTitle: 'If your AC is aging, running loud, or driving up your bills through another Utah summer, now is the time to upgrade.',
+      ctaText: 'CLAIM $600 OFF',
     },
 
     multiColumn: {
       cards: [
         {
-          heading: 'Replace the AC. Not Your Budget.',
-          subheading: '',
-          description: 'If your furnace is still going strong but your air conditioner is struggling through another Utah summer, you don\'t have to replace everything. Put in a new high-efficiency AC on its own, with payments starting at $69 a month for qualified buyers.',
+          heading: '$600 Off Your New AC Install',
+          subheading: 'HIGH-EFFICIENCY AC OR HEAT PUMP',
+          description: 'A high-efficiency system keeps your home comfortable on the hottest days and uses less energy all Utah summer. Add free in-home sizing, a 10-year parts warranty, and old equipment hauled away — the savings add up fast.',
         },
       ],
     },
 
     secondaryHero: {
       backgroundImage: '/images/hero-3_rxo7uq.webp',
-      heading: 'A New AC. From $69 a Month.',
-      description: 'Replace just your air conditioner with low monthly payments. Keep your budget intact and your home cool all summer.',
-      ctaText: 'SEE IF I QUALIFY',
+      heading: '$600 Off a New AC or Heat Pump.',
+      description: 'Upgrade to high-efficiency cooling and take $600 off your install. Free sizing, warranty, and old unit removal included.',
+      ctaText: 'CLAIM $600 OFF',
     },
   },
 
