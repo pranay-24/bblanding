@@ -237,7 +237,9 @@ const QuiltLandingPage: React.FC = () => {
                 Your Free In-Home Assessment
               </p>
               <h2 className="mt-2 font-heading text-3xl font-bold text-blue-primary-dark sm:text-4xl">
-                No Guesswork. A Real Plan to Fix It.
+                No Guesswork.
+                <br />
+                A Real Plan to Fix It.
               </h2>
               <p className="mt-4 font-body text-lg text-grey-color">
                 Your free consultation is a no-cost, no-obligation visit from a Blue Best comfort
