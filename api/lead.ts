@@ -90,14 +90,11 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       sourcePageTitle: String(sourcePageTitle || 'Blue Best x Quilt Landing').slice(0, 200),
       sourcePageUrl: String(sourcePageUrl || req.headers.referer || '').slice(0, 500),
       timestamp: new Date().toISOString(),
-      metadata: {
-        source: 'bblanding-quilt',
-        userAgent: req.headers['user-agent'] || '',
-        ip:
-          (req.headers['x-forwarded-for'] as string) ||
-          (req.headers['x-real-ip'] as string) ||
-          '',
-      },
+      leadSource: 'bblanding-quilt-lead-form',
+      userAgent: String(req.headers['user-agent'] || '').slice(0, 500),
+      ipAddress: String(
+        (req.headers['x-forwarded-for'] as string) || (req.headers['x-real-ip'] as string) || ''
+      ).slice(0, 100),
     };
 
     const zapierWebhookUrl = process.env.ZAPIER_LEAD_WEBHOOK_URL;
@@ -112,7 +109,6 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       body: JSON.stringify({
         ...submissionData,
         webhookTimestamp: new Date().toISOString(),
-        source: 'bblanding-quilt-lead-form',
       }),
     });
 
