@@ -179,7 +179,7 @@ const QuiltLandingPage: React.FC = () => {
           <div className="text-white">
             <span className="inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-1.5 font-body text-sm font-medium">
               <span className="inline-flex items-center rounded bg-white px-1.5 py-0.5">
-                <img src="/images/New-Logo_w6yqqg.svg" alt="Blue Best" className="h-4 w-auto" />
+                <img src="/images/New-Logo_w6yqqg.svg" alt="Blue Best" className="h-6 w-auto" />
               </span>
               ×
               <svg
@@ -187,7 +187,7 @@ const QuiltLandingPage: React.FC = () => {
                 height="22"
                 viewBox="0 0 62 22"
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-auto text-black"
+                className="h-6 w-auto text-black"
                 fill="currentColor"
                 role="img"
                 aria-label="Quilt"
