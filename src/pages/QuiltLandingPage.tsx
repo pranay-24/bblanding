@@ -188,7 +188,7 @@ const QuiltLandingPage: React.FC = () => {
                 height="22"
                 viewBox="0 0 62 22"
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-auto text-orange-primary"
+                className="h-4 w-auto text-black"
                 fill="currentColor"
                 role="img"
                 aria-label="Quilt"
