@@ -147,13 +147,6 @@ const QuiltForm: React.FC = () => {
           </span>
           .
         </p>
-        <p className="mt-4 font-body text-sm text-grey-color">
-          Need to talk sooner? Call us at{' '}
-          <a href="tel:+13852002604" className="font-semibold text-blue-primary hover:underline">
-            (385) 200-2604
-          </a>
-          .
-        </p>
       </div>
     );
   }
