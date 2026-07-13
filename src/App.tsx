@@ -13,6 +13,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsAndConditions from './pages/TermsAndConditions';
 import AccessibilityStatement from './pages/AccessibilityStatement';
 import NewsletterPage from './pages/NewsletterPage';
+import QuiltLandingPage from './pages/QuiltLandingPage';
 
 const App: React.FC = () => {
   // Your embed code would go here as a state variable
@@ -60,6 +61,7 @@ const App: React.FC = () => {
       'water-heater': 'Water Heater Service Lead',
       'hvac-tune-up': 'HVAC Tune-up Service Lead',
       'furnace-service': 'Furnace Service Lead',
+      'quilt': 'Quilt Partnership Lead',
       // Add more mappings as needed
     };
     
@@ -106,6 +108,10 @@ const App: React.FC = () => {
               <Route
                 path="/newsletter"
                 element={<NewsletterPage />}
+              />
+              <Route
+                path="/quilt"
+                element={<QuiltLandingPage />}
               />
               <Route
                 path="/thank-you"

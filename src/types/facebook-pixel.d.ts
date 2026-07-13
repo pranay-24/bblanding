@@ -7,6 +7,7 @@ declare global {
       event: string,
       parameters?: Record<string, unknown>
     ) => void;
+    gtag?: (...args: unknown[]) => void;
   }
 }
 
