@@ -178,15 +178,17 @@ const QuiltLandingPage: React.FC = () => {
         <div className="relative container mx-auto grid items-center gap-10 px-4 lg:grid-cols-2">
           <div className="text-white">
             <span className="inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-1.5 font-body text-sm font-medium">
-              New Partnership · Blue Best × Quilt
+              New Partnership · Blue Best ×{' '}
+              <span className="font-bold text-orange-primary">Quilt</span>
             </span>
             <h1 className="mt-5 font-heading text-4xl font-bold leading-tight sm:text-5xl">
               Every Home Has That One Room
             </h1>
             <p className="mt-4 max-w-xl font-body text-lg text-blue-light">
               Too cold in the winter. Too hot in the summer. The room nobody wants to sit in. Now
-              you can fix it, room by room, with Quilt — the smartest home comfort system available,
-              installed by Blue Best.
+              you can fix it, room by room, with{' '}
+              <span className="font-bold text-orange-primary">Quilt</span> — the smartest home
+              comfort system available, installed by Blue Best.
             </p>
             <div className="mt-7 flex flex-wrap items-center gap-4">
               <CTAButton>Book My Free In-Home Assessment</CTAButton>

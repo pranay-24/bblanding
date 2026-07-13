@@ -35,7 +35,9 @@ const toE164 = (raw: string) => {
 };
 
 const inputBase =
-  'w-full rounded-lg border border-gray-300 bg-white pl-11 pr-4 py-3 font-body text-base text-gray-900 placeholder-gray-400 focus:border-blue-primary focus:ring-2 focus:ring-blue-primary/30 focus:outline-none transition';
+  'w-full rounded-lg border border-gray-300 bg-white pl-10 pr-3.5 py-2.5 font-body text-sm text-gray-900 placeholder-gray-400 focus:border-blue-primary focus:ring-2 focus:ring-blue-primary/30 focus:outline-none transition';
+const plainInputBase =
+  'w-full rounded-lg border border-gray-300 bg-white px-3.5 py-2.5 font-body text-sm text-gray-900 placeholder-gray-400 focus:border-blue-primary focus:ring-2 focus:ring-blue-primary/30 focus:outline-none transition';
 
 const QuiltForm: React.FC = () => {
   const [step, setStep] = useState<1 | 2>(1);
@@ -152,9 +154,9 @@ const QuiltForm: React.FC = () => {
   }
 
   return (
-    <div className="w-full max-w-md rounded-2xl bg-white p-6 shadow-[0_10px_40px_rgba(0,0,0,0.12)] sm:p-8">
-      <div className="mb-6 text-center">
-        <h3 className="font-heading text-2xl font-bold text-blue-primary-dark">
+    <div className="w-full max-w-md rounded-2xl bg-white p-5 shadow-[0_10px_40px_rgba(0,0,0,0.12)] sm:p-6">
+      <div className="mb-4 text-center">
+        <h3 className="font-heading text-xl font-bold text-blue-primary-dark">
           Book Your Free In-Home Assessment
         </h3>
         <p className="mt-1 font-body text-sm text-grey-color">
@@ -163,7 +165,7 @@ const QuiltForm: React.FC = () => {
       </div>
 
       {/* progress bar */}
-      <div className="mb-6 flex gap-2">
+      <div className="mb-4 flex gap-2">
         <span className="h-1.5 flex-1 rounded-full bg-blue-primary" />
         <span className={`h-1.5 flex-1 rounded-full ${step === 2 ? 'bg-blue-primary' : 'bg-gray-200'}`} />
       </div>
@@ -182,11 +184,11 @@ const QuiltForm: React.FC = () => {
         />
 
         {step === 1 && (
-          <div className="space-y-4">
+          <div className="space-y-3">
             <div className="grid grid-cols-2 gap-3">
               <div>
                 <div className="relative">
-                  <User className="pointer-events-none absolute left-3.5 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400" />
+                  <User className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400" />
                   <input
                     type="text"
                     placeholder="First name"
@@ -200,7 +202,7 @@ const QuiltForm: React.FC = () => {
               </div>
               <div>
                 <div className="relative">
-                  <User className="pointer-events-none absolute left-3.5 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400" />
+                  <User className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400" />
                   <input
                     type="text"
                     placeholder="Last name"
@@ -215,7 +217,7 @@ const QuiltForm: React.FC = () => {
             </div>
             <div>
               <div className="relative">
-                <Mail className="pointer-events-none absolute left-3.5 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400" />
+                <Mail className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400" />
                 <input
                   type="email"
                   placeholder="Email address"
@@ -229,7 +231,7 @@ const QuiltForm: React.FC = () => {
             </div>
             <div>
               <div className="relative">
-                <Phone className="pointer-events-none absolute left-3.5 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400" />
+                <Phone className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400" />
                 <input
                   type="tel"
                   placeholder="Phone number"
@@ -246,7 +248,7 @@ const QuiltForm: React.FC = () => {
             </div>
             <div>
               <div className="relative">
-                <MapPin className="pointer-events-none absolute left-3.5 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400" />
+                <MapPin className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400" />
                 <input
                   type="text"
                   placeholder="Street address"
@@ -264,7 +266,7 @@ const QuiltForm: React.FC = () => {
                 placeholder="City"
                 value={data.city}
                 onChange={update('city')}
-                className="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 font-body text-base text-gray-900 placeholder-gray-400 focus:border-blue-primary focus:ring-2 focus:ring-blue-primary/30 focus:outline-none transition"
+                className={plainInputBase}
                 autoComplete="address-level2"
               />
               {err('city')}
@@ -276,7 +278,7 @@ const QuiltForm: React.FC = () => {
                   placeholder="State"
                   value={data.state}
                   onChange={update('state')}
-                  className="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 font-body text-base text-gray-900 placeholder-gray-400 focus:border-blue-primary focus:ring-2 focus:ring-blue-primary/30 focus:outline-none transition"
+                  className={plainInputBase}
                   autoComplete="address-level1"
                 />
                 {err('state')}
@@ -287,7 +289,7 @@ const QuiltForm: React.FC = () => {
                   placeholder="ZIP code"
                   value={data.zip}
                   onChange={update('zip')}
-                  className="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 font-body text-base text-gray-900 placeholder-gray-400 focus:border-blue-primary focus:ring-2 focus:ring-blue-primary/30 focus:outline-none transition"
+                  className={plainInputBase}
                   autoComplete="postal-code"
                   inputMode="numeric"
                 />
@@ -298,7 +300,7 @@ const QuiltForm: React.FC = () => {
             <button
               type="button"
               onClick={goNext}
-              className="flex w-full items-center justify-center gap-2 rounded-lg bg-orange-primary py-3.5 font-heading text-lg font-semibold text-white transition hover:bg-orange-dark"
+              className="flex w-full items-center justify-center gap-2 rounded-lg bg-orange-primary py-3 font-heading text-base font-semibold text-white transition hover:bg-orange-dark"
             >
               Continue <ChevronRight className="h-5 w-5" />
             </button>
@@ -306,13 +308,13 @@ const QuiltForm: React.FC = () => {
         )}
 
         {step === 2 && (
-          <div className="space-y-4">
+          <div className="space-y-3">
             <div>
               <label className="mb-1 block font-body text-sm font-medium text-gray-700">
                 Preferred date
               </label>
               <div className="relative">
-                <Calendar className="pointer-events-none absolute left-3.5 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400" />
+                <Calendar className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400" />
                 <input
                   type="date"
                   min={todayISO}
@@ -328,7 +330,7 @@ const QuiltForm: React.FC = () => {
                 Preferred time
               </label>
               <div className="relative">
-                <Clock className="pointer-events-none absolute left-3.5 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400" />
+                <Clock className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400" />
                 <select
                   value={data.preferredTime}
                   onChange={update('preferredTime')}
@@ -353,14 +355,14 @@ const QuiltForm: React.FC = () => {
               <button
                 type="button"
                 onClick={() => setStep(1)}
-                className="flex items-center justify-center gap-1 rounded-lg border border-gray-300 px-4 py-3.5 font-heading text-base font-semibold text-gray-700 transition hover:bg-gray-50"
+                className="flex items-center justify-center gap-1 rounded-lg border border-gray-300 px-4 py-3 font-heading text-sm font-semibold text-gray-700 transition hover:bg-gray-50"
               >
                 <ChevronLeft className="h-5 w-5" /> Back
               </button>
               <button
                 type="submit"
                 disabled={submitting}
-                className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-orange-primary py-3.5 font-heading text-lg font-semibold text-white transition hover:bg-orange-dark disabled:opacity-70"
+                className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-orange-primary py-3 font-heading text-base font-semibold text-white transition hover:bg-orange-dark disabled:opacity-70"
               >
                 {submitting ? (
                   <>
