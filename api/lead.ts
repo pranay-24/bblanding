@@ -73,7 +73,10 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       return res.status(400).json({ success: false, message: 'Invalid or missing fields' });
     }
 
+    const leadId = crypto.randomUUID();
+
     const submissionData = {
+      leadId,
       firstName,
       lastName,
       name: `${firstName} ${lastName}`.trim(),
@@ -121,7 +124,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     return res.status(200).json({
       success: true,
       message: 'Lead submitted successfully',
-      leadId: `LEAD_${Date.now()}`,
+      leadId,
     });
   } catch (error) {
     console.error('Error processing lead form:', error);
