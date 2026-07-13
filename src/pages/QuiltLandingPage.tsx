@@ -178,7 +178,6 @@ const QuiltLandingPage: React.FC = () => {
         <div className="relative container mx-auto grid items-center gap-10 px-4 lg:grid-cols-2">
           <div className="text-white">
             <span className="inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-1.5 font-body text-sm font-medium">
-              New Partnership ·
               <span className="inline-flex items-center rounded bg-white px-1.5 py-0.5">
                 <img src="/images/New-Logo_w6yqqg.svg" alt="Blue Best" className="h-4 w-auto" />
               </span>
