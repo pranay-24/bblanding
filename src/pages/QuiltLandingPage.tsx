@@ -298,7 +298,7 @@ const QuiltLandingPage: React.FC = () => {
                 <img src={img} alt={alt} className="h-72 w-full object-cover" loading="lazy" />
                 <div className="p-6">
                   <h3 className="font-heading text-xl font-semibold text-blue-primary-dark">{title}</h3>
-                  <p className="mt-2 font-body text-grey-color">{text}</p>
+                  <p className="mt-2 font-body text-sm text-grey-color">{text}</p>
                 </div>
               </div>
             ))}
