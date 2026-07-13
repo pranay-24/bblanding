@@ -45,7 +45,7 @@ const MEET_QUILT = [
   {
     title: 'Quilt Dial',
     text: 'Room-by-room control at a touch',
-    img: '/images/quilt/img-04.jpeg',
+    img: '/images/quilt/img-04.webp',
     alt: 'Hand turning the Quilt Dial on a wall',
   },
   {
@@ -72,34 +72,34 @@ const WHY_QUILT = [
   {
     title: 'Rediscover every room',
     text: 'Turn chilly corners and hot spaces into your favorite rooms. Quilt quietly warms or cools the rooms you avoid. Upgrade one room or your whole home for comfort you will wonder how you lived without.',
-    img: '/images/quilt/img-08.jpeg',
+    img: '/images/quilt/img-08.webp',
     alt: 'A mother and son reading on a bed with a Quilt unit above',
   },
   {
     title: 'Lower bills, higher comfort',
     text: 'Quilt is the most efficient heat pump on the market, with a SEER2 rating of 25 and up. Homeowners are seeing lower energy bills and higher comfort from one all-electric system.',
-    img: '/images/quilt/img-09.jpeg',
+    img: '/images/quilt/img-09.webp',
     alt: 'A person relaxing while using the Quilt app',
   },
   {
     title: 'Smart enough to save on its own',
     text: "Quilt's Auto-Away senses empty rooms and stops heating and cooling them automatically. Control your climate from anywhere and see energy use room by room, right from the Quilt app.",
-    img: '/images/quilt/img-10.jpeg',
+    img: '/images/quilt/img-10.webp',
     alt: 'A family in a kitchen with a Quilt unit with a white oak cover',
   },
   {
     title: 'Installed by the team Utah trusts',
     text: "Your Quilt system is installed by Blue Best, Utah's Best of State team, and backed by Quilt's manufacturer warranty and remote diagnostics. Most homes are upgraded in days.",
-    img: '/images/quilt/img-11.jpeg',
+    img: '/images/quilt/img-11.webp',
     alt: 'Two licensed installers mounting a Quilt indoor unit',
   },
 ];
 
 const GALLERY = [
-  { img: '/images/quilt/img-12.jpeg', alt: 'A family in a kitchen with a Quilt unit with a white oak cover' },
+  { img: '/images/quilt/img-12.webp', alt: 'A family in a kitchen with a Quilt unit with a white oak cover' },
   { img: '/images/quilt/img-13.webp', alt: 'Quilt indoor unit mounted on a wood slat wall' },
-  { img: '/images/quilt/img-14.jpeg', alt: 'Bedroom with a Quilt unit' },
-  { img: '/images/quilt/img-15.jpeg', alt: 'Quilt outdoor unit on a wooden deck' },
+  { img: '/images/quilt/img-14.webp', alt: 'Bedroom with a Quilt unit' },
+  { img: '/images/quilt/img-15.webp', alt: 'Quilt outdoor unit on a wooden deck' },
 ];
 
 const ASSESSMENT_POINTS = [
