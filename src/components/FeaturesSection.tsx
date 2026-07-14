@@ -9,7 +9,7 @@ const FeaturesSection: React.FC = () => {
       <div className="lg:container mx-auto px-4 py-16">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="w-full lg:w-1/2">
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-6">Why Salt Lake City Trusts BlueBest</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-6">Why Salt Lake City Trusts Blue Best</h2>
             <div className="grid   grid-cols-1 sm:grid-cols-2 gap-6">
               
                <div className="flex flex-col p-4 ">
@@ -39,7 +39,7 @@ const FeaturesSection: React.FC = () => {
           />
         </div>
         <div className="text-blue-primary-dark text-md font-bold leading-relaxed text-center">
-         Current Best-of-State Winner – Plumbing
+         7x Best of State Winner in 4 Years
         </div>
       </div>
 

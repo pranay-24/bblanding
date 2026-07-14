@@ -67,7 +67,7 @@ const Footer: React.FC = () => {
                 </div>
               </div>
               <p className="font-kanit font-bold text-base md:text-lg text-white">
-                5.0 RATING <span className="font-normal text-white/80">(2600+ Reviews)</span>
+                5.0 RATING <span className="font-normal text-white/80">(2700+ Reviews)</span>
               </p>
             </div>
 

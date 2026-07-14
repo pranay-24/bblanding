@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
     },
     
     {
-      title: ' Why Trusts Blue Best',
+      title: ' Why Trust Blue Best',
       href: '#why-trust-bluebest',
       dropdown: [
         // { title: 'Furnace Repair', href: 'https://bluebest.com/furnace-service-bountiful-ut/' },

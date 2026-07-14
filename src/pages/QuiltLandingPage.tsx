@@ -235,8 +235,6 @@ const QuiltLandingPage: React.FC = () => {
           <span className="inline-flex items-center gap-1">
             <Stars /> 5.0 · 2,700+ Reviews
           </span>
-          <span className="text-white/40">|</span>
-          <span>Lennox Premier Dealer</span>
         </div>
       </div>
 
