@@ -91,27 +91,27 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
 
     hero: {
       backgroundImage: '/images/hero-banner-2_o7dlss.webp',
-      title1: '$600 OFF A NEW HIGH-EFFICIENCY AC',
-      subTitle2: 'A Cooler Home, and $600 Back In Your Pocket',
-      subTitle: 'If your AC is aging, running loud, or driving up your bills through another Utah summer, now is the time to upgrade.',
-      ctaText: 'CLAIM $600 OFF',
+      title1: 'THE PRICE WE QUOTE\nIS THE PRICE YOU PAY',
+      subTitle2: 'No Surprises. No Hidden Fees. No Games.',
+      subTitle: 'You get a written estimate before any work begins, with no hidden fees and no emergency markups, ever.',
+      ctaText: 'GET MY ESTIMATE',
     },
 
     multiColumn: {
       cards: [
         {
-          heading: '$600 Off Your New AC Install',
-          subheading: 'HIGH-EFFICIENCY AC OR HEAT PUMP',
-          description: 'A high-efficiency system keeps your home comfortable on the hottest days and uses less energy all Utah summer. Add free in-home sizing, a 10-year parts warranty, and old equipment hauled away — the savings add up fast.',
+          heading: 'Our Pricing Promise',
+          subheading: '5.0 RATING FROM 2,700+ UTAH NEIGHBORS',
+          description: "Getting quotes for a new AC or a repair this summer? Here is our promise. The price on your written estimate is the price you pay. If it is not in the quote, you do not pay for it. Found a better price on comparable equipment or service? We will match it. And you will never see an emergency markup from us, no matter when you call. That is how we earned a 5.0 rating from more than 2,700+ Utah neighbors.",
         },
       ],
     },
 
     secondaryHero: {
       backgroundImage: '/images/hero-3_rxo7uq.webp',
-      heading: '$600 Off a New AC or Heat Pump.',
-      description: 'Upgrade to high-efficiency cooling and take $600 off your install. Free sizing, warranty, and old unit removal included.',
-      ctaText: 'CLAIM $600 OFF',
+      heading: 'No Hidden Fees. Guaranteed.',
+      description: 'The price on your written estimate is the price you pay. Compare us, and hold us to it.',
+      ctaText: 'GET MY ESTIMATE',
     },
   },
 

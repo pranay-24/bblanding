@@ -6,12 +6,10 @@ interface HeroProps {
 
 const AvoidHeadachesHVACNewsletter: React.FC<HeroProps> = ({ contactFormEmbed }) => {
   const bullets = [
-    '$600 off your install — straight off a new high-efficiency AC or heat pump.',
-    '10-year parts warranty, plus a 1-year labor warranty you can extend.',
-    '0% APR financing available for qualified buyers, so it is easier to say yes.',
-    'Free in-home sizing — a Manual J load calculation so your system is matched to your home, not oversized, not undersized.',
-    'Old equipment removed — we haul away your old system at no extra charge.',
-    'Stacks with rebates — combine your $600 with manufacturer and utility rebates.',
+    { label: 'No Hidden Fees', text: 'if it is not in your written quote, you do not pay for it.' },
+    { label: 'Price Match Guarantee', text: 'find a better price on comparable equipment or service, and we will match it.' },
+    { label: 'Written Estimates', text: 'you get the full price in writing before any work begins.' },
+    { label: 'Free Diagnostic With Repair', text: 'book the repair and the diagnostic is on us.' },
   ];
 
   return (
@@ -25,15 +23,12 @@ const AvoidHeadachesHVACNewsletter: React.FC<HeroProps> = ({ contactFormEmbed })
             </h2>
             <ul className="list-none pl-4 space-y-2 mb-6">
               {bullets.map((item) => (
-                <li key={item} className="relative pl-6 text-gray-600">
+                <li key={item.label} className="relative pl-6 text-gray-600">
                   <span className="absolute left-0 top-1 inline-block h-5 w-5 bg-[url(/images/next-100_smkyiq.webp)] bg-contain bg-no-repeat bg-center" />
-                  {item}
+                  <strong className="font-bold text-blue-primary">{item.label}</strong>: {item.text}
                 </li>
               ))}
             </ul>
-            <p className="text-base md:text-lg text-gray-700 mb-8">
-              Not sure whether to repair or replace? We'll come out, take a look, and give you a straight answer. A new high-efficiency AC keeps your home comfortable now, and $600 off makes the timing easy — installed by a NATE-certified Utah crew.
-            </p>
           </div>
 
           <div className="w-full lg:w-1/2">
