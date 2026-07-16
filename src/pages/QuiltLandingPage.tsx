@@ -109,7 +109,7 @@ const ASSESSMENT_POINTS = [
   },
   {
     title: 'A custom Quilt comfort plan',
-    text: 'Sized to your home, never a guess.',
+    text: 'Sized to your home, never a guess',
   },
   {
     title: 'A clear, upfront quote',
@@ -215,7 +215,7 @@ const QuiltLandingPage: React.FC = () => {
               </a>
             </div>
             <p className="mt-5 font-body text-sm font-semibold text-orange-primary">
-              Now booking summer installs. Assessments are free, and only a few slots open each week.
+              Now booking summer installs | Assessments are free, and only a few slots open each week
             </p>
           </div>
 
