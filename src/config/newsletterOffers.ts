@@ -46,6 +46,12 @@ export interface MultiColumnOffer {
   /** Optional heading above the offer cards */
   sectionHeading?: string;
   cards: OfferCard[];
+  /** Optional bold heading shown below the cards, outside any box */
+  noteHeading?: string;
+  /** Optional paragraph shown below noteHeading, outside any box */
+  note?: string;
+  /** Optional small-print legal/detail lines shown at the very bottom, each rendered with a leading asterisk */
+  footnotes?: string[];
 }
 
 export interface SecondaryHeroOffer {
@@ -91,27 +97,36 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
 
     hero: {
       backgroundImage: '/images/hero-banner-2_o7dlss.webp',
-      title1: 'THE PRICE WE QUOTE\nIS THE PRICE YOU PAY',
-      subTitle2: 'No Surprises. No Hidden Fees. No Games.',
-      subTitle: 'You get a written estimate before any work begins, with no hidden fees and no emergency markups, ever.',
-      ctaText: 'GET MY ESTIMATE',
+      title1: 'REFER A NEIGHBOR.\nGET PAID.',
+      subTitle: 'Earn Up To $150 Every Time You Send A Neighbor Our Way.\nPaid By Venmo Or Zelle. No Cap.',
+      ctaText: 'REFER A NEIGHBOR',
     },
 
     multiColumn: {
+      sectionHeading: 'Here Is What You Earn For Every Referral',
       cards: [
         {
-          heading: 'Our Pricing Promise',
-          subheading: '5.0 RATING FROM 2,700+ UTAH NEIGHBORS',
-          description: "Getting quotes for a new AC or a repair this summer? Here is our promise. The price on your written estimate is the price you pay. If it is not in the quote, you do not pay for it. Found a better price on comparable equipment or service? We will match it. And you will never see an emergency markup from us, no matter when you call. That is how we earned a 5.0 rating from more than 2,700+ Utah neighbors.",
+          heading: '$150',
+          subheading: 'COMPLETE HIGH-EFFICIENCY HVAC SYSTEM',
         },
+        {
+          heading: '$75',
+          subheading: 'PER EQUIPMENT PIECE (FURNACE, AC, HEAT PUMP, WATER HEATER)',
+        },
+      ],
+      noteHeading: 'The Best Compliment Is an Introduction.',
+      note: 'Summer is when neighbors compare notes on who to trust with their homes. If Blue Best earned yours, we would be grateful for the introduction, and happy to reward it.',
+      footnotes: [
+        "We send your reward by Venmo or Zelle after your neighbor's install is complete. No limit on how many neighbors you refer. How it works: give us a call, or have your neighbor mention your name when they book. We will take care of the rest.",
+        "Referral reward is paid to the referrer by Venmo or Zelle after the referred customer's install is completed and final payment received: up to $150 for a complete high-efficiency HVAC system, or $75 per piece of equipment (furnace, AC, heat pump, or water heater). Referrer must have an active Blue Best account. No cap on referral volume.",
       ],
     },
 
     secondaryHero: {
       backgroundImage: '/images/hero-3_rxo7uq.webp',
-      heading: 'No Hidden Fees. Guaranteed.',
-      description: 'The price on your written estimate is the price you pay. Compare us, and hold us to it.',
-      ctaText: 'GET MY ESTIMATE',
+      heading: 'Refer a Neighbor. Get Up to $300.',
+      description: 'Send a neighbor our way. When they install with Blue Best, we pay you by Venmo or Zelle. No cap on referrals.',
+      ctaText: 'REFER A NEIGHBOR',
     },
   },
 

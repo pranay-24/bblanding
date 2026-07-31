@@ -26,3 +26,6 @@ dist-ssr
 
 .vercel
 UPDATE_OFFER.md
+
+# visual-qa agent screenshot output
+qa/

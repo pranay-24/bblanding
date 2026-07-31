@@ -6,14 +6,23 @@ interface NewsletterMultiColumnProps {
 }
 
 export function NewsletterMultiColumn({ offer }: NewsletterMultiColumnProps) {
-  const { sectionHeading, cards } = offer;
+  const { sectionHeading, cards, noteHeading, note, footnotes } = offer;
   const isSingle = cards.length === 1;
 
   return (
     <section id="offers">
       <div className="lg:container mx-auto px-4 py-16">
+        {noteHeading && (
+          <h3 className="text-center text-3xl md:text-4xl font-bold text-blue-primary mb-2">
+            {noteHeading}
+          </h3>
+        )}
+        {note && (
+          <p className="text-center text-gray-700 max-w-2xl mx-auto mb-8">{note}</p>
+        )}
+
         {sectionHeading && (
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-primary mb-4 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-orange-500 mb-4 text-center">
             {sectionHeading}
           </h2>
         )}
@@ -79,6 +88,14 @@ export function NewsletterMultiColumn({ offer }: NewsletterMultiColumnProps) {
                   </div>
                 </div>
               </div>
+            ))}
+          </div>
+        )}
+
+        {footnotes && footnotes.length > 0 && (
+          <div className="mt-10 max-w-3xl mx-auto space-y-1">
+            {footnotes.map((f, idx) => (
+              <p key={idx} className="text-xs text-gray-500 text-center">* {f}</p>
             ))}
           </div>
         )}

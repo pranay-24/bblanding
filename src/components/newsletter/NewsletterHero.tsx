@@ -93,7 +93,7 @@ const NewsletterHero: React.FC<NewsletterHeroProps> = ({ offer }) => {
                     </p>
 
                     {/* Description */}
-                    <p className="font-bold text-base md:text-xl mb-3">{offer.subTitle}</p>
+                    <p className="font-bold text-base md:text-xl mb-3 whitespace-pre-line">{offer.subTitle}</p>
 
                     {/* CTAs */}
                     <div className="flex flex-col xl:flex-row gap-4 max-w-md lg:max-w-3xl">
