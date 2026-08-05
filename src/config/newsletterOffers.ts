@@ -97,36 +97,37 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
 
     hero: {
       backgroundImage: '/images/hero-banner-2_o7dlss.webp',
-      title1: 'REFER A NEIGHBOR.\nGET PAID.',
-      subTitle: 'Earn Up To $150 Every Time You Send A Neighbor Our Way.\nPaid By Venmo Or Zelle. No Cap.',
-      ctaText: 'REFER A NEIGHBOR',
+      title1: '$75 OFF HVAC REPAIRS\nOVER $500',
+      subTitle: 'For The Repairs That Actually Feel Like A Repair. When Your Total Runs Past $500, We Take $75 Off.',
+      ctaText: 'BOOK MY REPAIR',
     },
 
     multiColumn: {
-      sectionHeading: 'Here Is What You Earn For Every Referral',
       cards: [
         {
-          heading: '$150',
-          subheading: 'COMPLETE HIGH-EFFICIENCY HVAC SYSTEM',
+          heading: 'Major Repairs Qualify',
+          subheading: 'Any HVAC repair with a parts and labor subtotal of $500 or more.',
         },
         {
-          heading: '$75',
-          subheading: 'PER EQUIPMENT PIECE (FURNACE, AC, HEAT PUMP, WATER HEATER)',
+          heading: 'Off Your Written Quote',
+          subheading: 'The $75 comes off the top of your upfront, written-price, before you approve the work.',
+        },
+        {
+          heading: 'Trusted Across Utah',
+          subheading: 'Licensed, insured, and a seven-time Best of State winner.',
         },
       ],
-      noteHeading: 'The Best Compliment Is an Introduction.',
-      note: 'Summer is when neighbors compare notes on who to trust with their homes. If Blue Best earned yours, we would be grateful for the introduction, and happy to reward it.',
       footnotes: [
-        "We send your reward by Venmo or Zelle after your neighbor's install is complete. No limit on how many neighbors you refer. How it works: give us a call, or have your neighbor mention your name when they book. We will take care of the rest.",
-        "Referral reward is paid to the referrer by Venmo or Zelle after the referred customer's install is completed and final payment received: up to $150 for a complete high-efficiency HVAC system, or $75 per piece of equipment (furnace, AC, heat pump, or water heater). Referrer must have an active Blue Best account. No cap on referral volume.",
+        'How to use it: mention this offer when you book, or let your technician know before you approve the repair. We will take the $75 off.',
+        'Applies to HVAC repairs with a labor and parts subtotal of $500 or more. Cannot be combined with other offers or 360 Whole Home Plan member discounts (members already save 15%). One use per household per year.',
       ],
     },
 
     secondaryHero: {
       backgroundImage: '/images/hero-3_rxo7uq.webp',
-      heading: 'Refer a Neighbor. Get Up to $300.',
-      description: 'Send a neighbor our way. When they install with Blue Best, we pay you by Venmo or Zelle. No cap on referrals.',
-      ctaText: 'REFER A NEIGHBOR',
+      heading: '$75 Off HVAC Repairs Over $500.',
+      description: 'Book a repair with Blue Best. When your parts and labor total is $500 or more, we take $75 off your written quote.',
+      ctaText: 'BOOK MY REPAIR',
     },
   },
 
