@@ -22,7 +22,7 @@ export function NewsletterMultiColumn({ offer }: NewsletterMultiColumnProps) {
         )}
 
         {sectionHeading && (
-          <h2 className="text-2xl md:text-3xl font-bold text-orange-500 mb-4 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-blue-primary mb-4 text-center">
             {sectionHeading}
           </h2>
         )}

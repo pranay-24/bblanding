@@ -97,37 +97,42 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
 
     hero: {
       backgroundImage: '/images/hero-banner-2_o7dlss.webp',
-      title1: '$75 OFF HVAC REPAIRS\nOVER $500',
-      subTitle: 'For The Repairs That Actually Feel Like A Repair. When Your Total Runs Past $500, We Take $75 Off.',
-      ctaText: 'BOOK MY REPAIR',
+      title1: 'Protected for 10 Years.\nStandard.',
+      subTitle: 'Not an extra. Not an add-on. Just what a Blue Best install comes with.',
+      ctaText: 'Book My Free Estimate',
     },
 
     multiColumn: {
+      sectionHeading: 'What Every Blue Best Install Includes',
       cards: [
         {
-          heading: 'Major Repairs Qualify',
-          subheading: 'Any HVAC repair with a parts and labor subtotal of $500 or more.',
+          heading: '10-year manufacturer parts warranty',
+          subheading: 'on all major components.',
         },
         {
-          heading: 'Off Your Written Quote',
-          subheading: 'The $75 comes off the top of your upfront, written-price, before you approve the work.',
+          heading: '1-year labor warranty',
+          subheading: 'on Blue Best workmanship, extendable up to 10 years.',
         },
         {
-          heading: 'Trusted Across Utah',
-          subheading: 'Licensed, insured, and a seven-time Best of State winner.',
+          heading: 'Transferable',
+          subheading: 'to the next homeowner if you sell.',
+        },
+        {
+          heading: 'No registration to mail in.',
+          subheading: 'We file it for you.',
         },
       ],
       footnotes: [
-        'How to use it: mention this offer when you book, or let your technician know before you approve the repair. We will take the $75 off.',
-        'Applies to HVAC repairs with a labor and parts subtotal of $500 or more. Cannot be combined with other offers or 360 Whole Home Plan member discounts (members already save 15%). One use per household per year.',
+        'Want even longer peace of mind? Ask about extending your labor warranty up to 10 years when we scope your install.',
+        'Parts warranty terms are set by the manufacturer; Blue Best registers on the customer\'s behalf at the time of install. The labor warranty covers Blue Best workmanship on the installed system and is extendable up to 10 years (ask for details). Excludes consumables (filters, thermostat batteries) and damage from misuse or neglect.',
       ],
     },
 
     secondaryHero: {
       backgroundImage: '/images/hero-3_rxo7uq.webp',
-      heading: '$75 Off HVAC Repairs Over $500.',
-      description: 'Book a repair with Blue Best. When your parts and labor total is $500 or more, we take $75 off your written quote.',
-      ctaText: 'BOOK MY REPAIR',
+      heading: 'Protected for 10 Years. Standard.',
+      description: 'Not an extra. Not an add-on. Just what a Blue Best install comes with.',
+      ctaText: 'Book My Free Estimate',
     },
   },
 
