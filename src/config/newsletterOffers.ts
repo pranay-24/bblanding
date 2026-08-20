@@ -98,7 +98,7 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
     hero: {
       backgroundImage: '/images/hero-banner-2_o7dlss.webp',
       title1: 'UP TO $2,000 BACK ON OUR MOST EFFICIENT SYSTEM',
-      subTitle: 'Premium Furnace & Heat Pump — every utility rebate filed for you. Financing from ~$200/month for qualified buyers.',
+      subTitle: 'Premium Furnace & Heat Pump - every utility rebate filed for you. Financing from ~$200/month for qualified buyers.',
       ctaText: 'Claim My Rebates',
     },
 
