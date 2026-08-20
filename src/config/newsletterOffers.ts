@@ -97,42 +97,38 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
 
     hero: {
       backgroundImage: '/images/hero-banner-2_o7dlss.webp',
-      title1: 'Protected for 10 Years.\nStandard.',
-      subTitle: 'Not an extra. Not an add-on. Just what a Blue Best install comes with.',
-      ctaText: 'Book My Free Estimate',
+      title1: 'UP TO $2,000 BACK ON OUR MOST EFFICIENT SYSTEM',
+      subTitle: 'Premium Furnace & Heat Pump — every utility rebate filed for you. Financing from ~$200/month for qualified buyers.',
+      ctaText: 'Claim My Rebates',
     },
 
     multiColumn: {
-      sectionHeading: 'What Every Blue Best Install Includes',
+      sectionHeading: 'The Rebates We File For You',
       cards: [
         {
-          heading: '10-year manufacturer parts warranty',
-          subheading: 'on all major components.',
+          heading: 'Up to $1,450',
+          subheading: 'Variable-speed dual-fuel heat pump',
         },
         {
-          heading: '1-year labor warranty',
-          subheading: 'on Blue Best workmanship, extendable up to 10 years.',
+          heading: 'Up to $450',
+          subheading: 'High-efficiency furnace (97%+ AFUE)',
         },
         {
-          heading: 'Transferable',
-          subheading: 'to the next homeowner if you sell.',
-        },
-        {
-          heading: 'No registration to mail in.',
-          subheading: 'We file it for you.',
+          heading: 'Up to $150',
+          subheading: 'Smart thermostat',
         },
       ],
       footnotes: [
-        'Want even longer peace of mind? Ask about extending your labor warranty up to 10 years when we scope your install.',
-        'Parts warranty terms are set by the manufacturer; Blue Best registers on the customer\'s behalf at the time of install. The labor warranty covers Blue Best workmanship on the installed system and is extendable up to 10 years (ask for details). Excludes consumables (filters, thermostat batteries) and damage from misuse or neglect.',
+        'Together, a qualifying premium system can see up to around $2,000 in utility rebates. Amounts are set by Rocky Mountain Power (Wattsmart) and Enbridge Gas (ThermWise), and we confirm exactly what you qualify for, free, when we quote.',
+        'Not sure which rebates you qualify for? That is our job. We check every current program the day we quote and file the paperwork for you.',
       ],
     },
 
     secondaryHero: {
       backgroundImage: '/images/hero-3_rxo7uq.webp',
-      heading: 'Protected for 10 Years. Standard.',
-      description: 'Not an extra. Not an add-on. Just what a Blue Best install comes with.',
-      ctaText: 'Book My Free Estimate',
+      heading: 'UP TO $2,000 BACK ON OUR MOST EFFICIENT SYSTEM',
+      description: 'A Premium Modulating Furnace And Variable-Speed Heat Pump, With Every Utility Rebate Filed For You. Financing From Around $200 A Month For Qualified Buyers.',
+      ctaText: 'Claim My Rebates',
     },
   },
 

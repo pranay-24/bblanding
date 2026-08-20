@@ -11,17 +11,15 @@ const AvoidHeadachesHVACNewsletter: React.FC<HeroProps> = ({ contactFormEmbed })
         <div className="flex flex-col lg:flex-row items-baseline gap-6">
 
           <div className="w-full lg:w-1/2">
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-primary mb-4">
-              Peace of Mind Comes Standard.
+            <h2 className="text-3xl md:text-4xl font-bold text-blue-primary mb-1">
+              Maximum Efficiency, Maximum Rebates.
             </h2>
-            <div className="space-y-4 text-gray-600 mb-6">
+            <div className="space-y-4 text-gray-600 mb-6 mt-4">
               <p>
-                A new system is a big decision. With Blue Best, it comes with a{' '}
-                <span className="text-orange-primary font-semibold">10-year manufacturer parts warranty</span>{' '}
-                on all major components, plus a 1-year warranty on our workmanship. Not an upsell. Not a line item. It is simply what your install includes.
+                Our premium tier pairs a 97 percent AFUE modulating furnace with a variable-speed heat pump. It is the equipment that qualifies for the top tier of utility rebates in Utah, and it keeps your home comfortable through both the summer heat and the winter cold.
               </p>
               <p>
-                We register the warranty for you, so there is nothing to mail in and nothing to track. And if you ever sell your home, the coverage transfers to the new owners.
+                We handle all of the Rocky Mountain Power and ThermWise paperwork, so the savings land in your pocket, not in a pile of forms. And because it is a bigger investment, we make it manageable with low-interest financing, with payments starting around $200 a month for qualified buyers.
               </p>
             </div>
           </div>
