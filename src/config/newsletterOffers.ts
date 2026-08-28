@@ -222,7 +222,7 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
       backgroundImage: '/man-installs-furnace.webp',
       title1: 'A New Furnace From $49 a Month',
       subTitle: 'That is less than a phone bill, for a high-efficiency furnace installed and backed by Blue Best. Low-interest financing for qualified buyers.',
-      ctaText: 'GET IMMEDIATE ASSISTANCE',
+      ctaText: 'Get My Free Quote',
     },
 
     multiColumn: {
