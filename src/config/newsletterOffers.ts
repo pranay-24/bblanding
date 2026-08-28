@@ -216,7 +216,7 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
   'furnace-service': {
     formEmbedId: '273f7c94-a8c3-4b17-a1bf-664cc55c81cd',
     // Furnace Newsletter form — redirects to /thank-you?form_id=nl-furnace
-    newsletterFormEmbedId: '67884641-f495-492d-a107-14bcbbda087c',
+    newsletterFormEmbedId: '739f50d7-ba27-4e01-8408-b6ae1e20ddbd',
 
     hero: {
       backgroundImage: '/man-installs-furnace.webp',
