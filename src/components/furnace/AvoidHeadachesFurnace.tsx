@@ -14,18 +14,14 @@ const AvoidHeadachesFurnace: React.FC<HeroProps> = ({ contactFormEmbed }) => {
           <div className="w-full lg:w-1/2">
             {/* <span className="text-orange-primary font-medium mb-2 block">Meet Your Home's New Best Friend</span> */}
             <h2 className=" text-3xl md:text-4xl font-bold text-blue-primary mb-4">
-             Don't Let a Broken Furnace Leave You in the Cold
+              Beat the First Cold Snap.
             </h2>
             <p className=" text-gray-600 mb-6">
-              When your furnace stops working, you need a team that shows up fast and gets the job done right. BlueBest is the trusted furnace company serving <strong>Bountiful and the entire Salt Lake City metro area</strong>, providing quick repairs, seamless installations, and dependable maintenance.
+              Utah winters do not wait. A new high-efficiency furnace keeps your home warm and your energy bills in check, and with payments starting at $49 a month, getting there is easier than you might think.
             </p>
 
-             <p className=" text-gray-600 mb-6">
-              If your furnace is blowing cold air, making strange noises, or not keeping up with the temperature, our certified technicians are ready to help; <strong>same day, every day.</strong>
-            </p>
-
- <p className=" text-gray-600 mb-6">
-              With <strong>BlueBest</strong>, you’re guaranteed expert service, honest pricing, and <strong>certified HVAC professionals</strong> who treat your home like their own.
+            <p className=" text-gray-600 mb-6">
+              Every Blue Best furnace install comes backed by a 10-year parts warranty and a 1-year labor warranty. And your new furnace can stack with ThermWise utility rebates, which we confirm and file for you at your quote.
             </p>
 
 

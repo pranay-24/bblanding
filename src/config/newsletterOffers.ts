@@ -220,8 +220,8 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
 
     hero: {
       backgroundImage: '/man-installs-furnace.webp',
-      title1: '$500 Off on a New Furnace System Installation',
-      subTitle: 'A limited-time offer from most trusted HVAC & plumbing experts.',
+      title1: 'A New Furnace From $49 a Month',
+      subTitle: 'That is less than a phone bill, for a high-efficiency furnace installed and backed by Blue Best. Low-interest financing for qualified buyers.',
       ctaText: 'GET IMMEDIATE ASSISTANCE',
     },
 
@@ -229,25 +229,28 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
       sectionHeading: "This Season's Best Furnace Offers",
       cards: [
         {
-          heading: '$49/MONTH',
-          subheading: 'FURNACE TUNE-UP + FREE SMART THERMOSTAT',
+          heading: 'From $49 a Month',
+          subheading: 'Low-interest financing for qualified buyers. Not a 0% APR offer.',
         },
         {
-          heading: 'UP TO $2,000 OFF',
-          subheading: 'FURNACE TRADE-IN SAVINGS',
+          heading: 'Backed 10 Years',
+          subheading: '10-year parts warranty and 1-year labor warranty on every install.',
         },
         {
-          heading: '0% FINANCING',
-          subheading: 'FOR 12 MONTHS ON NEW FURNACE SYSTEMS',
+          heading: 'Stacks With Rebates',
+          subheading: 'Add ThermWise furnace rebates, up to $450, verified at your quote.',
         },
+      ],
+      footnotes: [
+        'Not sure what your monthly payment would be? We will give you an exact number, with no obligation, when we come out to quote.',
       ],
     },
 
     secondaryHero: {
       backgroundImage: '/worker-refilling-hvac.webp',
-      heading: "Limited-Time Furnace Offer – Don't Wait!",
+      heading: 'A New Furnace From $49 a Month',
       description:
-        'Get $500 OFF your new furnace system installation and enjoy reliable comfort when it matters most. This exclusive deal won\'t last long — schedule your free in-home estimate today before it expires.',
+        'High-efficiency furnace installs with low-interest financing for qualified buyers. Backed by a 10-year parts and 1-year labor warranty, and it stacks with ThermWise rebates.',
       ctaText: 'REQUEST ESTIMATE',
     },
   },

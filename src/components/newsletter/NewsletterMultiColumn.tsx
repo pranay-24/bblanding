@@ -17,9 +17,6 @@ export function NewsletterMultiColumn({ offer }: NewsletterMultiColumnProps) {
             {noteHeading}
           </h3>
         )}
-        {note && (
-          <p className="text-center text-gray-700 max-w-2xl mx-auto mb-8">{note}</p>
-        )}
 
         {sectionHeading && (
           <h2 className="text-2xl md:text-3xl font-bold text-blue-primary mb-4 text-center">
