@@ -105,7 +105,7 @@ const NewsletterPage: React.FC = () => {
         {service === 'furnace-service' && <TestimonialsSectionFurnace />}
         {service === 'plumbing' && <TestimonialsSectionPlumbing />}
 
-        {service === 'hvac' && <ProcessSection />}
+        {service === 'hvac' && <ProcessSection ctaTitle="Free First Year of Tune-Ups With Every Install" />}
         {service === 'water-heater' && <ProcessSectionWH />}
         {service === 'hvac-tune-up' && <ProcessSectionTU ctaTitle="$89 Precision Tune-Up & Safety Inspection" />}
         {service === 'furnace-service' && <ProcessSectionFurnace />}

@@ -12,14 +12,14 @@ const AvoidHeadachesHVACNewsletter: React.FC<HeroProps> = ({ contactFormEmbed })
 
           <div className="w-full lg:w-1/2">
             <h2 className="text-3xl md:text-4xl font-bold text-blue-primary mb-1">
-              Maximum Efficiency, Maximum Rebates.
+              A New System Deserves a Great First Year.
             </h2>
             <div className="space-y-4 text-gray-600 mb-6 mt-4">
               <p>
-                Our premium tier pairs a 97 percent AFUE modulating furnace with a variable-speed heat pump. It is the equipment that qualifies for the top tier of utility rebates in Utah, and it keeps your home comfortable through both the summer heat and the winter cold.
+                When you install with Blue Best, we do not just set it up and say goodbye. Your first year includes two seasonal tune-ups, on us, so your new system keeps running at its best.
               </p>
               <p>
-                We handle all of the Rocky Mountain Power and ThermWise paperwork, so the savings land in your pocket, not in a pile of forms. And because it is a bigger investment, we make it manageable with low-interest financing, with payments starting around $200 a month for qualified buyers.
+                We take care of the scheduling, so there is nothing for you to remember. Two visits, a full performance check each time, and a system that keeps performing like new.
               </p>
             </div>
           </div>

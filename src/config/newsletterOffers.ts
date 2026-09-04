@@ -97,38 +97,38 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
 
     hero: {
       backgroundImage: '/images/hero-banner-2_o7dlss.webp',
-      title1: 'UP TO $2,000 BACK ON OUR MOST EFFICIENT SYSTEM',
-      subTitle: 'Premium Furnace & Heat Pump - every utility rebate filed for you. Financing from ~$200/month for qualified buyers.',
-      ctaText: 'Claim My Rebates',
+      title1: 'YOUR FIRST YEAR\nOF TUNE-UPS IS ON US',
+      subTitle: 'Install a new system with Blue Best, and both of your first-year tune-ups are free. A $258 value, and we schedule them for you.',
+      ctaText: 'BOOK MY FREE ESTIMATE',
     },
 
     multiColumn: {
-      sectionHeading: 'The Rebates We File For You',
+      sectionHeading: 'What Your First Year Includes',
       cards: [
         {
-          heading: 'Up to $1,450',
-          subheading: 'Variable-speed dual-fuel heat pump',
+          heading: 'Two seasonal tune-ups, free.',
+          subheading: 'A combined value of $258.',
         },
         {
-          heading: 'Up to $450',
-          subheading: 'High-efficiency furnace (97%+ AFUE)',
+          heading: 'We schedule them for you.',
+          subheading: 'No need to call in and remember.',
         },
         {
-          heading: 'Up to $150',
-          subheading: 'Smart thermostat',
+          heading: 'A full performance check each visit.',
+          subheading: 'So your new system keeps running like new.',
         },
       ],
       footnotes: [
-        'Together, a qualifying premium system can see up to around $2,000 in utility rebates. Amounts are set by Rocky Mountain Power (Wattsmart) and Enbridge Gas (ThermWise), and we confirm exactly what you qualify for, free, when we quote.',
-        'Not sure which rebates you qualify for? That is our job. We check every current program the day we quote and file the paperwork for you.',
+        'Already planning a new system? Ask about your free first-year tune-ups when we come out to quote.',
+        'Included with all qualifying HVAC system installations. Two seasonal tune-ups are performed after your install date; combined value $258, based on the $129 standard tune-up. Blue Best schedules the visits via the contact method on file. Two total tune-ups per installed system in year one. Does not include repairs or parts, which are discounted at standard rates.',
       ],
     },
 
     secondaryHero: {
       backgroundImage: '/images/hero-3_rxo7uq.webp',
-      heading: 'UP TO $2,000 BACK ON OUR MOST EFFICIENT SYSTEM',
-      description: 'A Premium Modulating Furnace And Variable-Speed Heat Pump, With Every Utility Rebate Filed For You. Financing From Around $200 A Month For Qualified Buyers.',
-      ctaText: 'Claim My Rebates',
+      heading: 'One Less Thing to Worry About.',
+      description: 'A new system is a big step. Knowing the first year of upkeep is handled, and free, makes it an easier one. Book your free estimate today.',
+      ctaText: 'BOOK MY FREE ESTIMATE',
     },
   },
 
