@@ -98,10 +98,14 @@ died on Playwright's 2000px image limit before the constraint was made literal.
 
 ## What was built
 
-Nothing is committed. Branch `main`, all changes uncommitted:
-`M src/App.tsx`, plus untracked `api/membership-lead.ts`,
+Committed at the end of session 2 as `d858a2b` on branch `main`. **Local only,
+not pushed** — the user pushes. Working tree is clean apart from `qa/` (visual QA
+screenshot evidence, untracked and safe to delete).
+
+The commit covers `src/App.tsx`, `src/index.css`, `api/membership-lead.ts`,
 `src/config/membershipPlans.ts`, `src/pages/MembershipPage.tsx`,
-`src/components/membership/`, `public/images/membership/`, `MEMBERSHIP-PLAN.md`.
+`src/components/membership/`, `public/images/membership/`, `MEMBERSHIP-PLAN.md`
+and this file.
 
 ### Shared contract (written by main thread, agents consumed it)
 - `src/config/membershipPlans.ts` — single source of truth. All 3 tiers with
