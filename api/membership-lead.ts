@@ -1,0 +1,137 @@
+import type { VercelRequest, VercelResponse } from '@vercel/node';
+
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const PHONE_RE = /^\+?[1-9]\d{7,14}$/;
+const ZIP_RE = /^\d{5}(-\d{4})?$/;
+
+const ALLOWED_PLANS = ['Safety Plan', '360 Home Comfort', 'Signature Plan', 'Not sure yet'];
+
+function isNonEmptyString(v: unknown, maxLen: number): v is string {
+  return typeof v === 'string' && v.trim().length > 0 && v.length <= maxLen;
+}
+
+function isAllowedOrigin(req: VercelRequest): boolean {
+  const origin = req.headers.origin;
+  if (typeof origin !== 'string') return false;
+  const host = (req.headers['x-forwarded-host'] as string) || req.headers.host;
+  if (!host) return false;
+  try {
+    return new URL(origin).host === host;
+  } catch {
+    return false;
+  }
+}
+
+export default async function handler(req: VercelRequest, res: VercelResponse) {
+  if (req.method !== 'POST') {
+    res.setHeader('Allow', 'POST');
+    return res.status(405).json({ success: false, message: 'Method not allowed' });
+  }
+
+  if (!isAllowedOrigin(req)) {
+    return res.status(403).json({ success: false, message: 'Forbidden' });
+  }
+
+  try {
+    const body = typeof req.body === 'string' ? JSON.parse(req.body) : req.body;
+
+    const {
+      firstName,
+      lastName,
+      email,
+      phone,
+      street,
+      city,
+      zip,
+      plan,
+      hvacSystems,
+      sourcePageUrl,
+      sourcePageTitle,
+    } = body ?? {};
+
+    // Honeypot: silently accept bots without forwarding
+    if (body?.company) {
+      return res.status(200).json({ success: true, message: 'Lead submitted successfully' });
+    }
+
+    if (
+      !isNonEmptyString(firstName, 60) ||
+      !isNonEmptyString(lastName, 60) ||
+      !isNonEmptyString(email, 254) ||
+      !EMAIL_RE.test(email) ||
+      !isNonEmptyString(phone, 20) ||
+      !PHONE_RE.test(phone) ||
+      !isNonEmptyString(street, 200) ||
+      !isNonEmptyString(city, 100) ||
+      !isNonEmptyString(zip, 10) ||
+      !ZIP_RE.test(zip) ||
+      !isNonEmptyString(plan, 40) ||
+      !ALLOWED_PLANS.includes(plan) ||
+      (hvacSystems !== undefined &&
+        hvacSystems !== '' &&
+        !isNonEmptyString(hvacSystems, 40)) ||
+      (sourcePageUrl !== undefined && typeof sourcePageUrl !== 'string') ||
+      (sourcePageTitle !== undefined && typeof sourcePageTitle !== 'string')
+    ) {
+      return res.status(400).json({ success: false, message: 'Invalid or missing fields' });
+    }
+
+    const state = 'UT';
+    const leadId = crypto.randomUUID();
+
+    const submissionData = {
+      leadId,
+      firstName,
+      lastName,
+      name: `${firstName} ${lastName}`.trim(),
+      email,
+      phone,
+      street,
+      city,
+      state,
+      zip,
+      address: `${street}, ${city}, ${state} ${zip}`.trim(),
+      plan,
+      hvacSystems: hvacSystems || '',
+      formType: 'membership',
+      sourcePageTitle: String(sourcePageTitle || 'Blue Best Membership Plans').slice(0, 200),
+      sourcePageUrl: String(sourcePageUrl || req.headers.referer || '').slice(0, 500),
+      timestamp: new Date().toISOString(),
+      leadSource: 'bblanding-membership-form',
+      userAgent: String(req.headers['user-agent'] || '').slice(0, 500),
+      ipAddress: String(
+        (req.headers['x-forwarded-for'] as string) || (req.headers['x-real-ip'] as string) || ''
+      ).slice(0, 100),
+    };
+
+    const zapierWebhookUrl = process.env.ZAPIER_MEMBERSHIP_WEBHOOK_URL;
+    if (!zapierWebhookUrl) {
+      console.error('ZAPIER_MEMBERSHIP_WEBHOOK_URL not configured');
+      return res.status(500).json({ success: false, message: 'Webhook not configured' });
+    }
+
+    const zapierResponse = await fetch(zapierWebhookUrl, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        ...submissionData,
+        webhookTimestamp: new Date().toISOString(),
+      }),
+    });
+
+    if (!zapierResponse.ok) {
+      const errText = await zapierResponse.text();
+      console.error('Zapier webhook error:', zapierResponse.status, errText);
+      return res.status(502).json({ success: false, message: 'Webhook delivery failed' });
+    }
+
+    return res.status(200).json({
+      success: true,
+      message: 'Lead submitted successfully',
+      leadId,
+    });
+  } catch (error) {
+    console.error('Error processing membership form:', error);
+    return res.status(500).json({ success: false, message: 'Failed to submit membership form' });
+  }
+}

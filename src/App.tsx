@@ -14,6 +14,10 @@ import TermsAndConditions from './pages/TermsAndConditions';
 import AccessibilityStatement from './pages/AccessibilityStatement';
 import NewsletterPage from './pages/NewsletterPage';
 import QuiltLandingPage from './pages/QuiltLandingPage';
+import MembershipPage from './pages/MembershipPage';
+
+// Routes that ship their own nav and footer instead of the global chrome.
+const SELF_CHROMED_ROUTES = ['/membership'];
 
 const App: React.FC = () => {
   // Your embed code would go here as a state variable
@@ -62,6 +66,7 @@ const App: React.FC = () => {
       'hvac-tune-up': 'HVAC Tune-up Service Lead',
       'furnace-service': 'Furnace Service Lead',
       'quilt': 'Quilt Partnership Lead',
+      'membership': 'Membership Plan Lead',
       // Add more mappings as needed
     };
     
@@ -74,12 +79,26 @@ const App: React.FC = () => {
     return <>{children}</>;
   }
 
+  function ChromeLayout({ children }: { children: React.ReactNode }) {
+    const location = useLocation();
+
+    if (SELF_CHROMED_ROUTES.includes(location.pathname)) {
+      return <>{children}</>;
+    }
+
+    return (
+      <div className="flex flex-col min-h-screen">
+        <Navbar />
+        <main className="flex-grow">{children}</main>
+        <Footer />
+      </div>
+    );
+  }
+
   return (
     <Router>
       <PixelWrapper>
-        <div className="flex flex-col min-h-screen">
-          <Navbar />
-          <main className="flex-grow">
+        <ChromeLayout>
             <Routes>
               <Route 
                 path="/" 
@@ -114,6 +133,10 @@ const App: React.FC = () => {
                 element={<QuiltLandingPage />}
               />
               <Route
+                path="/membership"
+                element={<MembershipPage />}
+              />
+              <Route
                 path="/thank-you"
                 element={<ThankYouPage />}
               />
@@ -129,10 +152,8 @@ const App: React.FC = () => {
                 path="/accessibility-statement" 
                 element={<AccessibilityStatement />} 
               />
-            </Routes>
-          </main>
-          <Footer />
-        </div>
+          </Routes>
+        </ChromeLayout>
       </PixelWrapper>
     </Router>
   );

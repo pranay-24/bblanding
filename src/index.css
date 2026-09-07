@@ -144,9 +144,10 @@ body {
   background-color: transparent;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 
+/* Clip only on html: it propagates to the viewport. The same rule on body would
+   make body a scroll container and break position:sticky everywhere. */
 html {
   overflow-x: hidden;
 }
