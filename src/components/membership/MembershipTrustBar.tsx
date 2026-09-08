@@ -18,7 +18,7 @@ const TRUST_ITEMS: React.ReactNode[] = [
 const Divider: React.FC = () => (
   <span
     aria-hidden="true"
-    className="hidden h-[30px] w-px shrink-0 bg-white/20 min-[760px]:block"
+    className="hidden h-[42px] w-px shrink-0 bg-white/20 min-[760px]:block"
   />
 );
 
@@ -31,12 +31,12 @@ const MembershipTrustBar: React.FC = () => (
         width={183}
         height={159}
         loading="lazy"
-        className="h-[52px] w-auto shrink-0"
+        className="h-[80px] w-auto shrink-0 min-[760px]:h-[104px]"
       />
       {TRUST_ITEMS.map((item, i) => (
         <React.Fragment key={i}>
           {i > 0 && <Divider />}
-          <span className="text-center font-body text-[11px] font-extrabold uppercase tracking-[0.12em] min-[760px]:whitespace-nowrap min-[760px]:tracking-[0.05em]">
+          <span className="text-center font-body text-[13px] font-extrabold uppercase tracking-[0.1em] min-[760px]:whitespace-nowrap min-[760px]:text-[15px] min-[760px]:tracking-[0.04em]">
             {item}
           </span>
         </React.Fragment>

@@ -64,7 +64,7 @@ export interface MembershipPlan {
   loyaltyCredit: string;
   loyaltyIcon: BenefitIcon;
   ledger: { rows: LedgerRow[]; total: string; afterText: string };
-  warranty: { shieldImg: string; shieldAlt: string; copy: string };
+  warranty: { years: number; tone: 'blue' | 'red'; copy: string };
   popular?: boolean;
 }
 
@@ -93,8 +93,8 @@ export const MEMBERSHIP_PLANS: MembershipPlan[] = [
     annual: 204,
     sealImg: `${IMG}/seal-safety.webp`,
     sealAlt: 'Blue Best Safety Plan membership seal',
-    sealWidth: 446,
-    sealHeight: 292,
+    sealWidth: 528,
+    sealHeight: 330,
     bestFor:
       'One HVAC system in good shape. You want the tune-ups handled and priority when something breaks.',
     groups: [
@@ -171,8 +171,8 @@ export const MEMBERSHIP_PLANS: MembershipPlan[] = [
         'Then add 10% off every repair, priority scheduling, and 5 years of install labor warranty.',
     },
     warranty: {
-      shieldImg: `${IMG}/shield-5yr.png`,
-      shieldAlt: '5 year',
+      years: 5,
+      tone: 'blue',
       copy:
         'Five years of install labor warranty on equipment installed by Blue Best, plus one year of labor warranty on repairs.',
     },
@@ -188,8 +188,8 @@ export const MEMBERSHIP_PLANS: MembershipPlan[] = [
     annual: 360,
     sealImg: `${IMG}/seal-360.webp`,
     sealAlt: 'Blue Best 360 Home Comfort membership seal',
-    sealWidth: 520,
-    sealHeight: 327,
+    sealWidth: 602,
+    sealHeight: 376,
     bestFor:
       'Most Utah homes. Covers the HVAC side and the plumbing side, water heater included.',
     groups: [
@@ -271,8 +271,8 @@ export const MEMBERSHIP_PLANS: MembershipPlan[] = [
         'The plan has already paid for itself before the tune-ups, the water heater flush, the filters, and the plumbing inspection are counted.',
     },
     warranty: {
-      shieldImg: `${IMG}/shield-10yr-blue.png`,
-      shieldAlt: '10 year',
+      years: 10,
+      tone: 'blue',
       copy:
         'Up to ten years of install labor warranty on equipment installed by Blue Best, plus three years of labor warranty on repairs.',
     },
@@ -289,8 +289,8 @@ export const MEMBERSHIP_PLANS: MembershipPlan[] = [
     annual: 720,
     sealImg: `${IMG}/seal-signature.webp`,
     sealAlt: 'Blue Best Signature Plan membership seal',
-    sealWidth: 460,
-    sealHeight: 290,
+    sealWidth: 504,
+    sealHeight: 315,
     bestFor:
       'Whole-home coverage, especially homes with a softener, a reverse osmosis system, or a humidifier.',
     groups: [
@@ -383,8 +383,8 @@ export const MEMBERSHIP_PLANS: MembershipPlan[] = [
         'Then add 20% off every repair, the softener and RO service, and up to 20 years of plumbing install labor warranty.',
     },
     warranty: {
-      shieldImg: `${IMG}/shield-20yr.png`,
-      shieldAlt: '20 year',
+      years: 20,
+      tone: 'red',
       copy:
         'Up to twenty years of labor warranty on plumbing installs, up to ten years on HVAC installs, and five years on repairs.',
     },

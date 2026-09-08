@@ -100,7 +100,7 @@ const PlanCard: React.FC<{
         width={plan.sealWidth}
         height={plan.sealHeight}
         loading="lazy"
-        className="mx-auto h-auto w-full max-w-[250px] drop-shadow-[0_6px_12px_rgba(15,37,71,0.26)]"
+        className="mx-auto h-[160px] w-full max-w-[270px] object-contain drop-shadow-[0_6px_12px_rgba(15,37,71,0.26)]"
       />
     </div>
 

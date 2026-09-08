@@ -50,14 +50,18 @@ const SectionHeading: React.FC<Props> = ({
       )}
     </h2>
     {ornament && (
-      <img
-        src="/images/membership/ornament.svg"
-        alt=""
-        width={92}
-        height={97}
-        loading="lazy"
-        className="mx-auto mt-3 h-6 w-auto opacity-70"
-      />
+      <div className="mx-auto mt-4 flex w-full max-w-[420px] items-center justify-center">
+        <div className="h-0.5 flex-1 bg-orange-primary" />
+        <img
+          src="/favicon1.svg"
+          alt=""
+          width={92}
+          height={97}
+          loading="lazy"
+          className="mx-4 h-8 w-auto"
+        />
+        <div className="h-0.5 flex-1 bg-orange-primary" />
+      </div>
     )}
     {lead && (
       <p

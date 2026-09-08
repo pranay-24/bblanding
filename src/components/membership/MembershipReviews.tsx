@@ -21,6 +21,10 @@ const REVIEWS = [
   },
 ];
 
+/** `,1,` in the lrd fragment opens the reviews list on the Google listing. */
+const GOOGLE_REVIEWS_URL =
+  'https://www.google.com/search?q=bluebest&oq=bluebest&sourceid=chrome&ie=UTF-8#lrd=0x8752ff4365496a3f:0x5129267295c0c9fd,1,,,,';
+
 const Stars: React.FC<{ className?: string; size?: string }> = ({
   className = '',
   size = 'h-4 w-4',
@@ -64,6 +68,23 @@ const MembershipReviews: React.FC = () => (
             </figcaption>
           </figure>
         ))}
+      </div>
+
+      <div className="mt-8 flex flex-col items-center gap-2">
+        <a
+          href={GOOGLE_REVIEWS_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center gap-2.5 rounded-lg bg-orange-primary px-7 py-3.5 font-heading text-lg font-semibold text-white shadow-md transition hover:bg-orange-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-dark"
+        >
+          <span className="flex h-6 w-6 items-center justify-center rounded-full bg-white">
+            <img src="/google-g-logo.svg" alt="" width={16} height={16} className="h-4 w-4" />
+          </span>
+          See All 2,900+ Google Reviews
+        </a>
+        <span className="font-body text-[13px] text-grey-color">
+          Opens our Google listing in a new tab
+        </span>
       </div>
     </div>
   </section>

@@ -15,6 +15,7 @@ const BADGES = [
   {
     src: '/images/membership/badge-best-of-state.webp',
     alt: 'Best of State award winner',
+    caption: 'Three-Time & Current Best-of-State Winner – Heat & Air',
     width: 500,
     height: 500,
     dark: false,
@@ -22,6 +23,7 @@ const BADGES = [
   {
     src: '/images/membership/badge-lennox-premier.webp',
     alt: 'Lennox Premier Dealer',
+    caption: 'Lennox-Certified Premier Dealer',
     width: 197,
     height: 121,
     dark: true,
@@ -29,6 +31,7 @@ const BADGES = [
   {
     src: '/images/membership/badge-bbb.webp',
     alt: 'BBB accredited business',
+    caption: 'BBB Accredited Business',
     width: 217,
     height: 80,
     dark: false,
@@ -36,6 +39,7 @@ const BADGES = [
   {
     src: '/images/membership/badge-license.svg',
     alt: 'Licensed, bonded and insured',
+    caption: 'Local. Licensed. Bonded. Insured.',
     width: 800,
     height: 800,
     dark: false,
@@ -95,11 +99,11 @@ const MembershipTeamTrust: React.FC = () => (
         </div>
       </div>
 
-      <ul className="mt-10 flex list-none flex-wrap items-center justify-center gap-4 p-0 sm:mt-12 sm:gap-[18px]">
+      <ul className="mt-10 flex list-none flex-wrap items-stretch justify-center gap-4 p-0 sm:mt-12 sm:gap-[18px]">
         {BADGES.map((badge) => (
           <li
             key={badge.src}
-            className={`m-0 flex items-center justify-center rounded-xl border px-4 py-3 shadow-[0_4px_14px_rgba(20,45,80,0.08)] sm:px-[18px] ${
+            className={`m-0 flex w-[150px] flex-col items-center gap-3 rounded-xl border px-4 py-4 shadow-[0_4px_14px_rgba(20,45,80,0.08)] sm:w-[200px] sm:px-[18px] ${
               badge.dark
                 ? 'border-blue-primary-dark bg-blue-primary-dark'
                 : 'border-blue-primary/15 bg-white'
@@ -113,6 +117,13 @@ const MembershipTeamTrust: React.FC = () => (
               loading="lazy"
               className="block h-11 w-auto max-w-[150px] object-contain sm:h-[58px]"
             />
+            <span
+              className={`text-center font-body text-[12px] font-bold leading-snug sm:text-[13px] ${
+                badge.dark ? 'text-white' : 'text-blue-primary-dark'
+              }`}
+            >
+              {badge.caption}
+            </span>
           </li>
         ))}
       </ul>

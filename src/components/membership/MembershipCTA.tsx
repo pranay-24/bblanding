@@ -2,7 +2,7 @@ import React from 'react';
 import { MEMBERSHIP_PHONE_DISPLAY, MEMBERSHIP_PHONE_HREF } from '../../config/membershipPlans';
 import { scrollToJoin } from './scrollToJoin';
 
-type Size = 'md' | 'lg';
+type Size = 'sm' | 'md' | 'lg';
 
 interface ButtonProps {
   children?: React.ReactNode;
@@ -13,6 +13,7 @@ interface ButtonProps {
 }
 
 const SIZES: Record<Size, string> = {
+  sm: 'px-4 py-2 text-xs',
   md: 'px-5 py-2.5 text-sm',
   lg: 'px-7 py-3.5 text-lg',
 };

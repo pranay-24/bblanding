@@ -1,15 +1,7 @@
 import React from 'react';
 import { MEMBERSHIP_PLANS } from '../../config/membershipPlans';
 import SectionHeading from './SectionHeading';
-
-const SHIELD_DIMS: Record<string, { w: number; h: number }> = {
-  'shield-5yr.png': { w: 83, h: 78 },
-  'shield-10yr-blue.png': { w: 64, h: 73 },
-  'shield-20yr.png': { w: 64, h: 70 },
-};
-
-const shieldDims = (src: string) =>
-  SHIELD_DIMS[src.split('/').pop() ?? ''] ?? { w: 64, h: 64 };
+import MembershipYearShield from './MembershipYearShield';
 
 const MembershipWarranty: React.FC = () => (
   <section className="relative overflow-hidden bg-blue-primary-dark py-16">
@@ -37,33 +29,28 @@ const MembershipWarranty: React.FC = () => (
       />
 
       <div className="mt-10 grid grid-cols-1 gap-[18px] [@media(min-width:800px)]:grid-cols-3">
-        {MEMBERSHIP_PLANS.map((plan) => {
-          const dims = shieldDims(plan.warranty.shieldImg);
-          return (
-            <article
-              key={plan.id}
-              className="rounded-xl border border-white/20 bg-white/[0.08] px-6 py-7 text-center backdrop-blur-sm"
-            >
-              <img
-                src={plan.warranty.shieldImg}
-                alt={plan.warranty.shieldAlt}
-                width={dims.w}
-                height={dims.h}
-                loading="lazy"
-                className="mx-auto mb-3 h-24 w-auto object-contain drop-shadow-[0_6px_14px_rgba(0,0,0,0.45)]"
-              />
-              <p className="font-heading text-[10.5px] font-bold uppercase tracking-[0.18em] text-orange-primary">
-                {plan.tierLabel}
-              </p>
-              <h3 className="mt-2 font-heading text-[23px] font-bold leading-tight text-white">
-                {plan.name}
-              </h3>
-              <p className="mt-2 font-body text-[13.5px] leading-relaxed text-blue-light/90">
-                {plan.warranty.copy}
-              </p>
-            </article>
-          );
-        })}
+        {MEMBERSHIP_PLANS.map((plan) => (
+          <article
+            key={plan.id}
+            className="rounded-xl border border-white/20 bg-white/[0.08] px-6 py-7 text-center backdrop-blur-sm"
+          >
+            <MembershipYearShield
+              years={plan.warranty.years}
+              tone={plan.warranty.tone}
+              label={`${plan.warranty.years} year labor warranty`}
+              className="mx-auto mb-3 h-24 w-auto drop-shadow-[0_6px_14px_rgba(0,0,0,0.45)]"
+            />
+            <p className="font-heading text-[10.5px] font-bold uppercase tracking-[0.18em] text-orange-primary">
+              {plan.tierLabel}
+            </p>
+            <h3 className="mt-2 font-heading text-[23px] font-bold leading-tight text-white">
+              {plan.name}
+            </h3>
+            <p className="mt-2 font-body text-[13.5px] leading-relaxed text-blue-light/90">
+              {plan.warranty.copy}
+            </p>
+          </article>
+        ))}
       </div>
 
       <p className="mx-auto mt-9 max-w-[840px] rounded-xl border border-orange-primary/40 border-l-4 border-l-orange-primary bg-orange-primary/10 px-6 py-5 font-body text-[14.5px] leading-relaxed text-blue-light">

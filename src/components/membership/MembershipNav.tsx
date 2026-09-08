@@ -27,20 +27,20 @@ const MembershipNav: React.FC = () => (
           width={360}
           height={99}
           loading="lazy"
-          className="h-9 w-auto min-[700px]:h-11"
+          className="h-9 w-auto min-[700px]:h-12"
         />
       </Link>
 
       <nav
         aria-label="Membership sections"
-        className="hidden items-center gap-[22px] min-[1080px]:flex"
+        className="hidden shrink-0 items-center gap-[14px] min-[1080px]:flex"
       >
         {NAV_LINKS.map(({ label, id }) => (
           <a
             key={id}
             href={`#${id}`}
             onClick={(e) => scrollToAnchor(id, e)}
-            className="rounded font-body text-xs font-bold uppercase tracking-[0.06em] text-blue-primary-dark transition hover:text-orange-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-primary"
+            className="whitespace-nowrap rounded font-body text-xs font-bold uppercase tracking-[0.04em] text-blue-primary-dark transition hover:text-orange-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-primary"
           >
             {label}
           </a>
@@ -50,7 +50,7 @@ const MembershipNav: React.FC = () => (
       <div className="ml-auto flex shrink-0 items-center gap-3">
         <CallBox />
         <div className="hidden min-[700px]:block">
-          <JoinButton size="md">Start My Membership</JoinButton>
+          <JoinButton size="sm">Start My Membership</JoinButton>
         </div>
       </div>
     </div>

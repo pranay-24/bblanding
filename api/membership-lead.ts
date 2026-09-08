@@ -77,7 +77,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     }
 
     const state = 'UT';
-    const leadId = crypto.randomUUID();
+    // Digits only: the Zap's ServiceTitan step rejects alphanumeric IDs.
+    const leadId = Date.now() * 1000 + Math.floor(Math.random() * 1000);
 
     const submissionData = {
       leadId,
