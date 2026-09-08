@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { CheckCircle2, Loader2 } from 'lucide-react';
+import { CheckCircle2, Loader2, Mail, MapPin, Phone, User } from 'lucide-react';
 import {
   HVAC_SYSTEM_OPTIONS,
   MEMBERSHIP_PHONE_DISPLAY,
@@ -42,13 +42,18 @@ const toE164 = (raw: string) => {
   return raw.trim().startsWith('+') ? raw.trim() : `+1${digits}`;
 };
 
+const iconFieldBase =
+  'w-full rounded-lg border border-gray-300 bg-white pl-10 pr-3.5 py-2.5 font-body text-sm text-gray-900 placeholder-gray-400 focus:border-blue-primary focus:ring-2 focus:ring-blue-primary/30 focus:outline-none transition';
 const fieldBase =
   'w-full rounded-lg border border-gray-300 bg-white px-3.5 py-2.5 font-body text-sm text-gray-900 placeholder-gray-400 focus:border-blue-primary focus:ring-2 focus:ring-blue-primary/30 focus:outline-none transition';
-const labelBase = 'mb-1 block font-body text-sm font-medium text-gray-700';
+const selectBase =
+  'w-full appearance-none rounded-lg border border-gray-300 bg-white px-3.5 py-2.5 font-body text-sm focus:border-blue-primary focus:ring-2 focus:ring-blue-primary/30 focus:outline-none transition';
+const iconBase =
+  'pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400';
 const stepLabel =
   'font-heading text-sm font-bold uppercase tracking-[0.1em] text-blue-primary-dark';
 const tileBase =
-  'flex h-full cursor-pointer flex-col items-center justify-center gap-0.5 rounded-lg border-2 px-1.5 py-3 text-center transition peer-focus-visible:ring-2 peer-focus-visible:ring-blue-primary peer-focus-visible:ring-offset-2';
+  'flex h-full cursor-pointer flex-col items-center justify-center gap-0.5 rounded-lg border-2 px-1.5 py-2.5 text-center transition peer-focus-visible:ring-2 peer-focus-visible:ring-blue-primary peer-focus-visible:ring-offset-2';
 
 const MembershipForm: React.FC<MembershipFormProps> = ({ selectedPlan, onSelectPlan }) => {
   const [submitting, setSubmitting] = useState(false);
@@ -220,7 +225,7 @@ const MembershipForm: React.FC<MembershipFormProps> = ({ selectedPlan, onSelectP
                         className={`${tileBase} ${
                           active
                             ? 'border-orange-primary bg-orange-primary text-white'
-                            : 'border-gray-300 bg-white hover:border-blue-primary'
+                            : 'border-gray-300 bg-white text-gray-700 hover:border-blue-primary'
                         }`}
                       >
                         <span className="font-heading text-[11px] font-semibold uppercase leading-tight tracking-wide sm:text-xs">
@@ -261,100 +266,120 @@ const MembershipForm: React.FC<MembershipFormProps> = ({ selectedPlan, onSelectP
 
             <p className={`${stepLabel} mb-2`}>2. Your home</p>
 
-            <div className="space-y-3">
-              <div className="grid grid-cols-1 gap-3 min-[420px]:grid-cols-2">
+            <div className="space-y-2.5">
+              <div className="grid grid-cols-1 gap-2.5 min-[420px]:grid-cols-2">
                 <div>
-                  <label htmlFor="mf-firstName" className={labelBase}>
-                    First Name *
+                  <label htmlFor="mf-firstName" className="sr-only">
+                    First Name
                   </label>
-                  <input
-                    id="mf-firstName"
-                    type="text"
-                    value={data.firstName}
-                    onChange={update('firstName')}
-                    className={fieldBase}
-                    autoComplete="given-name"
-                    {...aria('firstName')}
-                  />
+                  <div className="relative">
+                    <User className={iconBase} />
+                    <input
+                      id="mf-firstName"
+                      type="text"
+                      placeholder="First name"
+                      value={data.firstName}
+                      onChange={update('firstName')}
+                      className={iconFieldBase}
+                      autoComplete="given-name"
+                      {...aria('firstName')}
+                    />
+                  </div>
                   {err('firstName')}
                 </div>
                 <div>
-                  <label htmlFor="mf-lastName" className={labelBase}>
-                    Last Name *
+                  <label htmlFor="mf-lastName" className="sr-only">
+                    Last Name
                   </label>
-                  <input
-                    id="mf-lastName"
-                    type="text"
-                    value={data.lastName}
-                    onChange={update('lastName')}
-                    className={fieldBase}
-                    autoComplete="family-name"
-                    {...aria('lastName')}
-                  />
+                  <div className="relative">
+                    <User className={iconBase} />
+                    <input
+                      id="mf-lastName"
+                      type="text"
+                      placeholder="Last name"
+                      value={data.lastName}
+                      onChange={update('lastName')}
+                      className={iconFieldBase}
+                      autoComplete="family-name"
+                      {...aria('lastName')}
+                    />
+                  </div>
                   {err('lastName')}
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 gap-3 min-[420px]:grid-cols-2">
-                <div>
-                  <label htmlFor="mf-email" className={labelBase}>
-                    Email *
-                  </label>
+              <div>
+                <label htmlFor="mf-email" className="sr-only">
+                  Email
+                </label>
+                <div className="relative">
+                  <Mail className={iconBase} />
                   <input
                     id="mf-email"
                     type="email"
+                    placeholder="Email address"
                     value={data.email}
                     onChange={update('email')}
-                    className={fieldBase}
+                    className={iconFieldBase}
                     autoComplete="email"
                     {...aria('email')}
                   />
-                  {err('email')}
                 </div>
-                <div>
-                  <label htmlFor="mf-phone" className={labelBase}>
-                    Phone *
-                  </label>
+                {err('email')}
+              </div>
+
+              <div>
+                <label htmlFor="mf-phone" className="sr-only">
+                  Phone
+                </label>
+                <div className="relative">
+                  <Phone className={iconBase} />
                   <input
                     id="mf-phone"
                     type="tel"
+                    placeholder="Phone number"
                     value={data.phone}
                     onChange={update('phone')}
                     onFocus={() => {
                       if (!data.phone.trim()) setData((d) => ({ ...d, phone: '+1 ' }));
                     }}
-                    className={fieldBase}
+                    className={iconFieldBase}
                     autoComplete="tel"
                     {...aria('phone')}
                   />
-                  {err('phone')}
                 </div>
+                {err('phone')}
               </div>
 
               <div>
-                <label htmlFor="mf-street" className={labelBase}>
-                  Street Address *
+                <label htmlFor="mf-street" className="sr-only">
+                  Street Address
                 </label>
-                <input
-                  id="mf-street"
-                  type="text"
-                  value={data.street}
-                  onChange={update('street')}
-                  className={fieldBase}
-                  autoComplete="street-address"
-                  {...aria('street')}
-                />
+                <div className="relative">
+                  <MapPin className={iconBase} />
+                  <input
+                    id="mf-street"
+                    type="text"
+                    placeholder="Street address"
+                    value={data.street}
+                    onChange={update('street')}
+                    className={iconFieldBase}
+                    autoComplete="street-address"
+                    {...aria('street')}
+                  />
+                </div>
                 {err('street')}
               </div>
 
-              <div className="grid grid-cols-1 gap-3 min-[420px]:grid-cols-2">
+              <div className="grid grid-cols-1 gap-2.5 min-[420px]:grid-cols-2">
                 <div>
-                  <label htmlFor="mf-city" className={labelBase}>
-                    City *
+                  <label htmlFor="mf-city" className="sr-only">
+                    City
                   </label>
                   <input
                     id="mf-city"
                     type="text"
+                    placeholder="City"
                     value={data.city}
                     onChange={update('city')}
                     className={fieldBase}
@@ -364,12 +389,13 @@ const MembershipForm: React.FC<MembershipFormProps> = ({ selectedPlan, onSelectP
                   {err('city')}
                 </div>
                 <div>
-                  <label htmlFor="mf-zip" className={labelBase}>
-                    Zip *
+                  <label htmlFor="mf-zip" className="sr-only">
+                    Zip
                   </label>
                   <input
                     id="mf-zip"
                     type="text"
+                    placeholder="ZIP code"
                     value={data.zip}
                     onChange={update('zip')}
                     className={fieldBase}
@@ -382,16 +408,18 @@ const MembershipForm: React.FC<MembershipFormProps> = ({ selectedPlan, onSelectP
               </div>
 
               <div>
-                <label htmlFor="mf-hvacSystems" className={labelBase}>
+                <label htmlFor="mf-hvacSystems" className="sr-only">
                   HVAC systems in your home
                 </label>
                 <select
                   id="mf-hvacSystems"
                   value={data.hvacSystems}
                   onChange={update('hvacSystems')}
-                  className={`${fieldBase} appearance-none`}
+                  className={`${selectBase} ${
+                    data.hvacSystems ? 'text-gray-900' : 'text-gray-400'
+                  }`}
                 >
-                  <option value="">Select one</option>
+                  <option value="">HVAC systems in your home</option>
                   {HVAC_SYSTEM_OPTIONS.map((opt) => (
                     <option key={opt} value={opt}>
                       {opt}

@@ -36,7 +36,7 @@ const MembershipReviews: React.FC = () => (
   <section id="reviews" className="overflow-hidden border-t border-blue-light bg-white py-14 scroll-mt-24 sm:py-20">
     <div className="mx-auto w-full max-w-[1160px] px-[22px]">
       <SectionHeading
-        eyebrow="2,700+ Five-Star Reviews"
+        eyebrow="2,900+ Five-Star Reviews"
         heading="What Homeowners"
         headingThin="Are Saying"
         ornament={false}
@@ -45,7 +45,7 @@ const MembershipReviews: React.FC = () => (
       <div className="mt-4 flex items-center justify-center gap-2.5">
         <Stars size="h-[22px] w-[22px]" />
         <span className="font-heading text-xl font-semibold tracking-wide text-blue-primary-dark sm:text-2xl">
-          5.0 &middot; 2,700+ Reviews
+          5.0 &middot; 2,900+ Reviews
         </span>
       </div>
 

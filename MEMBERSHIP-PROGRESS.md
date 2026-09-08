@@ -9,6 +9,8 @@ Status: code complete, NOT QA complete, 2 known bugs open.
 **Session 2: 2026-09-07.** Both bugs fixed, visual QA ran, one QA defect fixed.
 Status: **build + QA complete. No known blockers. Deploy items below still open.**
 
+**Session 3: 2026-09-08.** Form compacted to match `/quilt`. Uncommitted.
+
 ---
 
 ## Resume here (next session)
@@ -16,6 +18,58 @@ Status: **build + QA complete. No known blockers. Deploy items below still open.
 No code blockers. Remaining work is deploy config and client content, all in
 "Deploy / open items" at the bottom. The only build-side item worth revisiting
 is the optional polish list under "Session 2 QA results" — all rated nit.
+
+Session 3 change is uncommitted (`src/components/membership/MembershipForm.tsx`).
+
+---
+
+## Session 3: form compaction
+
+Client read the form as too big. Measured against `/quilt` first: the input
+boxes were already identical (50px tall, `px-3.5 py-2.5 text-sm`, 15.75px text
+because `html` is 18px). The bulk was the visible label above every field —
+seven labels at ~30px each — which the reference HTML had and `/quilt` does not.
+
+Changed `MembershipForm.tsx` to `/quilt`'s pattern:
+- Labels are now `sr-only`; each field carries a placeholder instead. Lucide
+  icons (`User`/`Mail`/`Phone`/`MapPin`) inside the box on the four fields
+  `/quilt` also icons; city, ZIP and the select stay plain.
+- Email and phone moved from a shared row to full-width rows so the icon
+  padding does not crowd the placeholder at 430px.
+- Field gaps `gap-3`/`space-y-3` -> `2.5`; plan tile padding `py-3` -> `py-2.5`.
+- Select needed its own `selectBase` without `text-gray-900` — appending a
+  conditional `text-gray-400` to `fieldBase` lost the specificity tie, so the
+  empty state rendered dark. Now gray-400 empty, gray-900 once picked.
+
+Form card 1440px: 980px tall, fits inside the hero next to the copy column.
+
+Also fixed a pre-existing bug found while re-screenshotting: the inactive plan
+tiles inherited `text-white` from the hero section, so "SAFETY" and "SIGNATURE"
+were white-on-white and invisible (only the inline-styled prices showed). Added
+`text-gray-700` to the inactive tile state.
+
+Verified: `npm run build` passes; empty submit still renders all seven inline
+errors; `scrollWidth === clientWidth` at 390 / 768 / 1440.
+
+### Trust bar: one line, and review count now 2,900+
+
+`MembershipTrustBar.tsx`:
+- Divider before the first item removed, so the Best of State medal now sits
+  directly against "3x Best of State, Heating & Air". Dividers between the four
+  text items stay.
+- All four items now fit one line down to 1024px (they wrapped at 1440 before).
+  Needed 144px: `gap-x-6` -> `gap-x-4` (~63px) and `tracking-[0.12em]` ->
+  `[0.05em]` at >=760px (~84px). No copy was shortened.
+- `whitespace-nowrap` is scoped to `min-[760px]` on purpose. Unscoped, it pushed
+  9px of horizontal overflow at 320px; below 760 the dividers are hidden and the
+  items are meant to wrap anyway.
+
+Review count 2,700+ -> 2,900+ in all five places on the page: trust bar, hero
+chip, `MembershipReviews` eyebrow and rating line, `MembershipTeamTrust` bullet.
+
+Note, not fixed, out of scope: at 320px the *nav* call box overflows 9px
+(`ml-auto flex shrink-0` phone block). Pre-existing; this page was only QA'd
+down to 390.
 
 ---
 

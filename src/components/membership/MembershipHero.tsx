@@ -10,7 +10,7 @@ const HERO_CHIPS: React.ReactNode[] = [
   <>
     <b className="font-extrabold text-orange-primary">Best of State</b> Winner
   </>,
-  '5.0 ★ 2,700+ Reviews',
+  '5.0 ★ 2,900+ Reviews',
 ];
 
 const MembershipHero: React.FC<MembershipHeroProps> = ({ form }) => (

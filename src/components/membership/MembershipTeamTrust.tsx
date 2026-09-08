@@ -5,7 +5,7 @@ const TRUST_POINTS = [
   '**Best of State award winner** for Heating and Air, three-time and current',
   'Voted **Best of SLC** for Heating and Air, 2025',
   'The only **women-owned and operated** HVAC company in Utah',
-  '**2,700+ five-star reviews** across the Wasatch Front',
+  '**2,900+ five-star reviews** across the Wasatch Front',
   '**Lennox Premier Dealer** and Amana dealer',
   'Member of the **Air Conditioning Contractors of America**',
   'Local. Licensed. Bonded. Insured.',

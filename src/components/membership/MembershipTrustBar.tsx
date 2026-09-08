@@ -11,7 +11,7 @@ const TRUST_ITEMS: React.ReactNode[] = [
     Utah&apos;s Only <b className="font-extrabold text-orange-primary">Women-Owned</b> HVAC Company
   </>,
   <>
-    <b className="font-extrabold text-orange-primary">5.0</b> ★ 2,700+ Reviews
+    <b className="font-extrabold text-orange-primary">5.0</b> ★ 2,900+ Reviews
   </>,
 ];
 
@@ -24,7 +24,7 @@ const Divider: React.FC = () => (
 
 const MembershipTrustBar: React.FC = () => (
   <div className="border-t-[3px] border-orange-primary bg-blue-primary-dark py-4 text-blue-light">
-    <div className="mx-auto flex w-full max-w-[1160px] flex-wrap items-center justify-center gap-x-5 gap-y-3 px-[22px] min-[760px]:gap-x-6">
+    <div className="mx-auto flex w-full max-w-[1160px] flex-wrap items-center justify-center gap-x-4 gap-y-3 px-[22px]">
       <img
         src="/images/membership/2025-Best-Of-State.png"
         alt="2025 Best of State winner"
@@ -35,8 +35,8 @@ const MembershipTrustBar: React.FC = () => (
       />
       {TRUST_ITEMS.map((item, i) => (
         <React.Fragment key={i}>
-          <Divider />
-          <span className="text-center font-body text-[11px] font-extrabold uppercase tracking-[0.12em] min-[760px]:text-xs">
+          {i > 0 && <Divider />}
+          <span className="text-center font-body text-[11px] font-extrabold uppercase tracking-[0.12em] min-[760px]:whitespace-nowrap min-[760px]:tracking-[0.05em]">
             {item}
           </span>
         </React.Fragment>
