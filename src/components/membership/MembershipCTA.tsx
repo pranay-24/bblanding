@@ -42,20 +42,23 @@ export const JoinButton: React.FC<ButtonProps> = ({
 
 interface CallBoxProps {
   dark?: boolean;
+  compact?: boolean;
   className?: string;
 }
 
 /** Phone block: big number over a small "CALL US TODAY" line. */
-export const CallBox: React.FC<CallBoxProps> = ({ dark = false, className = '' }) => (
+export const CallBox: React.FC<CallBoxProps> = ({ dark = false, compact = false, className = '' }) => (
   <a
     href={MEMBERSHIP_PHONE_HREF}
-    className={`inline-flex flex-col rounded-lg border px-5 py-2.5 font-heading leading-tight transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${
+    className={`inline-flex flex-col rounded-lg border py-2.5 font-heading leading-tight transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${
+      compact ? 'px-3 min-[700px]:px-5' : 'px-5'
+    } ${
       dark
         ? 'border-white/30 text-white hover:border-white/60 focus-visible:outline-white'
         : 'border-blue-primary/30 text-blue-primary-dark hover:border-blue-primary focus-visible:outline-blue-primary'
     } ${className}`}
   >
-    <span className="text-lg font-bold">{MEMBERSHIP_PHONE_DISPLAY}</span>
+    <span className={`font-bold ${compact ? 'text-[17px] min-[700px]:text-lg' : 'text-lg'}`}>{MEMBERSHIP_PHONE_DISPLAY}</span>
     <span
       className={`text-[10px] font-semibold uppercase tracking-[0.14em] ${
         dark ? 'text-blue-light' : 'text-grey-color'

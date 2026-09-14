@@ -78,7 +78,7 @@ export const TIER_COLORS = {
   greenDark: '#1f6323',
 } as const;
 
-export const MEMBERSHIP_PHONE_DISPLAY = '801-801-BEST';
+export const MEMBERSHIP_PHONE_DISPLAY = '801-801-BEST (2378)';
 export const MEMBERSHIP_PHONE_HREF = 'tel:+18018012378';
 
 export const MEMBERSHIP_PLANS: MembershipPlan[] = [

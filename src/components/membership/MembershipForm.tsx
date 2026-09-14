@@ -454,7 +454,7 @@ const MembershipForm: React.FC<MembershipFormProps> = ({ selectedPlan, onSelectP
             </button>
 
             <p className="mt-3 text-center font-body text-sm text-grey-color">
-              Talk it through instead. Call{' '}
+              Talk it through instead.<br className="min-[700px]:hidden" /> Call{' '}
               <a
                 href={MEMBERSHIP_PHONE_HREF}
                 className="font-semibold text-blue-primary underline hover:text-blue-dark"

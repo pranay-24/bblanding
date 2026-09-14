@@ -48,7 +48,7 @@ const MembershipNav: React.FC = () => (
       </nav>
 
       <div className="ml-auto flex shrink-0 items-center gap-3">
-        <CallBox />
+        <CallBox compact />
         <div className="hidden min-[700px]:block">
           <JoinButton size="sm">Start My Membership</JoinButton>
         </div>
