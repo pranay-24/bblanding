@@ -6,7 +6,7 @@ interface NewsletterMultiColumnProps {
 }
 
 export function NewsletterMultiColumn({ offer }: NewsletterMultiColumnProps) {
-  const { sectionHeading, cards, noteHeading, note, footnotes } = offer;
+  const { sectionHeading, description, cards, noteHeading, footnotes } = offer;
   const isSingle = cards.length === 1;
 
   return (
@@ -22,6 +22,16 @@ export function NewsletterMultiColumn({ offer }: NewsletterMultiColumnProps) {
           <h2 className="text-2xl md:text-3xl font-bold text-blue-primary mb-4 text-center">
             {sectionHeading}
           </h2>
+        )}
+
+        {description && (
+          <div className="max-w-4xl mx-auto mb-8">
+            {description.split('\n\n').map((para, i) => (
+              <p key={i} className="text-base md:text-lg text-gray-700 text-center leading-relaxed mb-2">
+                {para}
+              </p>
+            ))}
+          </div>
         )}
 
         {/* Single-card layout (e.g. HVAC) */}

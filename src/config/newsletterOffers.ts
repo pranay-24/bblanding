@@ -45,6 +45,8 @@ export interface HeroOffer {
 export interface MultiColumnOffer {
   /** Optional heading above the offer cards */
   sectionHeading?: string;
+  /** Optional description shown directly below sectionHeading */
+  description?: string;
   cards: OfferCard[];
   /** Optional bold heading shown below the cards, outside any box */
   noteHeading?: string;
@@ -220,38 +222,39 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
 
     hero: {
       backgroundImage: '/man-installs-furnace.webp',
-      title1: 'A New Furnace From $49 a Month',
-      subTitle: 'That is less than a phone bill, for a high-efficiency furnace installed and backed by Blue Best. Low-interest financing for qualified buyers.',
-      ctaText: 'Get My Free Quote',
+      title1: 'FREE CARBON MONOXIDE MONITORS WITH\nEVERY INSTALL',
+      subTitle: 'Install a new furnace or heat pump with Blue Best, and two CO monitors come standard. Not an upsell, just the right thing to do. A value of up to $300.',
+      ctaText: 'BOOK MY FREE ESTIMATE',
     },
 
     multiColumn: {
-      sectionHeading: "This Season's Best Furnace Offers",
+      sectionHeading: 'Because CO Safety Is the Point.',
+      description: 'As the weather cools and your furnace comes back on, carbon monoxide is the risk you cannot see or smell. So with every furnace or heat pump we install, we include two carbon monoxide monitors, standard.\n\nYour technician will walk you through the best spots to place them, usually your upper and main floors, so your family is protected where it matters most.',
       cards: [
         {
-          heading: 'From $49 a Month',
-          subheading: 'Low-interest financing for qualified buyers. Not a 0% APR offer.',
+          heading: 'Two Monitors Included',
+          subheading: 'Two carbon monoxide monitors, a value of up to $300, on us.',
         },
         {
-          heading: 'Backed 10 Years',
-          subheading: '10-year parts warranty and 1-year labor warranty on every install.',
+          heading: 'Standard, Not an Upsell',
+          subheading: 'Included with every furnace or heat pump install, never an add-on charge.',
         },
         {
-          heading: 'Stacks With Rebates',
-          subheading: 'Add ThermWise furnace rebates, up to $450, verified at your quote.',
+          heading: 'Placement Guidance',
+          subheading: 'Your technician recommends the best spots to place them in your home.',
         },
       ],
       footnotes: [
-        'Not sure what your monthly payment would be? We will give you an exact number, with no obligation, when we come out to quote.',
+        'Not planning a new system just yet? Every furnace and heat pump we install includes them, so it is one more reason to choose Blue Best when you are ready.',
       ],
     },
 
     secondaryHero: {
       backgroundImage: '/worker-refilling-hvac.webp',
-      heading: 'A New Furnace From $49 a Month',
+      heading: 'Free CO Monitors With Every Install',
       description:
-        'High-efficiency furnace installs with low-interest financing for qualified buyers. Backed by a 10-year parts and 1-year labor warranty, and it stacks with ThermWise rebates.',
-      ctaText: 'REQUEST ESTIMATE',
+        'Install a furnace or heat pump with Blue Best and two carbon monoxide monitors come standard, a value of up to $300. Not an upsell, just safety.',
+      ctaText: 'BOOK MY FREE ESTIMATE',
     },
   },
 
