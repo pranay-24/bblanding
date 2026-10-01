@@ -18,7 +18,7 @@ import NewsletterSecondaryHero from '../components/newsletter/NewsletterSecondar
 
 // Service-specific components used in the newsletter background
 import AvoidHeadachesWH from '../components/water_heater/AvoidHeadachesWH';
-import AvoidHeadachesFurnace from '../components/furnace/AvoidHeadachesFurnace';
+import AvoidHeadachesFurnaceNewsletter from '../components/furnace/AvoidHeadachesFurnaceNewsletter';
 import AvoidHeadachesPlumbing from '../components/AvoidHeadachesPlumbing';
 import TestimonialsSectionPlumbing from '../components/TestimonialsSectionPlumbing';
 import TestimonialsSectionFurnace from '../components/furnace/TestimonialsSectionFurnace';
@@ -155,7 +155,7 @@ const ThankYouPage: React.FC = () => {
             </div>
             {service === 'hvac'            && <AvoidHeadaches contactFormEmbed={dummyEmbed} />}
             {service === 'water-heater'    && <AvoidHeadachesWH contactFormEmbed={dummyEmbed} />}
-            {service === 'furnace-service' && <AvoidHeadachesFurnace contactFormEmbed={dummyEmbed} />}
+            {service === 'furnace-service' && <AvoidHeadachesFurnaceNewsletter contactFormEmbed={dummyEmbed} />}
             {service === 'plumbing'        && <AvoidHeadachesPlumbing contactFormEmbed={dummyEmbed} />}
             <NewsletterSecondaryHero offer={cfg.secondaryHero} />
             <div className="bg-[url('/images/Orange-Tones-BG-1_kf4kpy.webp')] bg-cover bg-center bg-no-repeat">

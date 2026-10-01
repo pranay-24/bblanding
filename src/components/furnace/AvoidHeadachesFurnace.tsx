@@ -13,14 +13,15 @@ const AvoidHeadachesFurnace: React.FC<HeroProps> = ({ contactFormEmbed }) => {
          
           <div className="w-full lg:w-1/2">
             {/* <span className="text-orange-primary font-medium mb-2 block">Meet Your Home's New Best Friend</span> */}
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-primary mb-4">
-              Heading Into Furnace Season.
+            <h2 className=" text-3xl md:text-4xl font-bold text-blue-primary mb-4">
+              Beat the First Cold Snap.
             </h2>
-            <p className="text-gray-600 mb-6">
-              The best time to think about carbon monoxide is before the furnace runs all winter. If a new system is on your list, book a free estimate and we will include your monitors.
+            <p className=" text-gray-600 mb-6">
+              Utah winters do not wait. A new high-efficiency furnace keeps your home warm and your energy bills in check, and with payments starting at $49 a month, getting there is easier than you might think.
             </p>
-            <p className="text-sm text-gray-400 italic">
-              Included with any gas furnace, heat pump, or combined system installation. Two monitors per home, with recommended placement on the upper and main floors. Your technician provides placement guidance; the homeowner installs the plug-in units. Name-brand (First Alert or Kidde) sealed-battery monitors with a 10-year rated life. Value up to $300.
+
+            <p className=" text-gray-600 mb-6">
+              Every Blue Best furnace install comes backed by a 10-year parts warranty and a 1-year labor warranty. And your new furnace can stack with ThermWise utility rebates, which we confirm and file for you at your quote.
             </p>
 
 

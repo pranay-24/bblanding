@@ -22,7 +22,7 @@ import CertificationsSection from '../components/CertificationsSection';
 import AvoidHeadachesHVACNewsletter from '../components/AvoidHeadachesHVACNewsletter';
 import AvoidHeadachesWH from '../components/water_heater/AvoidHeadachesWH';
 import AvoidHeadachesTUNewsletter from '../components/tu/AvoidHeadachesTUNewsletter';
-import AvoidHeadachesFurnace from '../components/furnace/AvoidHeadachesFurnace';
+import AvoidHeadachesFurnaceNewsletter from '../components/furnace/AvoidHeadachesFurnaceNewsletter';
 import AvoidHeadachesPlumbing from '../components/AvoidHeadachesPlumbing';
 
 // Service-specific: Testimonials
@@ -86,7 +86,7 @@ const NewsletterPage: React.FC = () => {
       {service === 'hvac' && <AvoidHeadachesHVACNewsletter contactFormEmbed={formEmbed} />}
       {service === 'water-heater' && <AvoidHeadachesWH contactFormEmbed={formEmbed} />}
       {service === 'hvac-tune-up' && <AvoidHeadachesTUNewsletter contactFormEmbed={formEmbed} />}
-      {service === 'furnace-service' && <AvoidHeadachesFurnace contactFormEmbed={formEmbed} />}
+      {service === 'furnace-service' && <AvoidHeadachesFurnaceNewsletter contactFormEmbed={formEmbed} />}
       {service === 'plumbing' && <AvoidHeadachesPlumbing contactFormEmbed={formEmbed} />}
 
       {/* ── OFFER SECTION 3: Secondary hero banner ── */}
