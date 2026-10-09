@@ -12,14 +12,14 @@ const AvoidHeadachesHVACNewsletter: React.FC<HeroProps> = ({ contactFormEmbed })
 
           <div className="w-full lg:w-1/2">
             <h2 className="text-3xl md:text-4xl font-bold text-blue-primary mb-1">
-              A New System Deserves a Great First Year.
+              Comfort That Fits Your Budget.
             </h2>
             <div className="space-y-4 text-gray-600 mb-6 mt-4">
               <p>
-                When you install with Blue Best, we do not just set it up and say goodbye. Your first year includes two seasonal tune-ups, on us, so your new system keeps running at its best.
+                One efficient system keeps your home warm in winter and cool in summer, and with payments starting at $119 a month, the upgrade is easier on your budget than you might expect.
               </p>
               <p>
-                We take care of the scheduling, so there is nothing for you to remember. Two visits, a full performance check each time, and a system that keeps performing like new.
+                Every Blue Best install is backed by a 10-year parts and 1-year labor warranty, and it can stack with utility rebates we handle for you. Want to see your options first? Our soft pre-qualification checks your rate with no impact to your credit.
               </p>
             </div>
           </div>
