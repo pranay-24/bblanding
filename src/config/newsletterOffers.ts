@@ -99,36 +99,37 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
 
     hero: {
       backgroundImage: '/images/hero-banner-2_o7dlss.webp',
-      title1: 'A NEW HEAT PUMP\nFROM $119 A MONTH',
-      subTitle: 'Efficient heating and cooling, all year, on a payment that fits your monthly budget. Low-interest financing for qualified buyers.',
+      title1: '$75 OFF\nHVAC REPAIRS OVER $500',
+      subTitle: 'For the repairs that actually feel like a repair. When your heating repair runs past $500, we take $75 off.',
       ctaText: 'BOOK MY FREE ESTIMATE',
     },
 
     multiColumn: {
+      sectionHeading: 'How It Works',
       cards: [
         {
-          heading: 'From $119 a Month',
-          subheading: 'Low-interest financing for qualified buyers. Not a 0% APR offer.',
+          heading: 'Book your repair',
+          subheading: 'and mention this offer.',
         },
         {
-          heading: 'No Credit Impact',
-          subheading: 'Soft pre-qualification lets you see your options without affecting your score.',
+          heading: 'Get a written, upfront quote',
+          subheading: 'before any work begins.',
         },
         {
-          heading: 'Backed 10 Years',
-          subheading: '10-year parts warranty and 1-year labor warranty on every install.',
+          heading: 'If parts and labor total $500 or more,',
+          subheading: 'we take $75 off.',
         },
       ],
       footnotes: [
-        'Not sure what your payment would be? We will give you an exact number, with no obligation and no credit impact, when we come out to quote.',
-        'Low-interest financing; term and APR vary by credit approval. The $119 per month is a starting payment on a qualifying system; your actual payment varies by system and credit, and this is not a 0% APR offer. Soft pre-qualification has no impact on your credit score. Utility rebate amounts are set by Rocky Mountain Power and Enbridge Gas, subject to change, and confirmed at your quote. Includes a 10-year manufacturer parts warranty and a 1-year Blue Best labor warranty.',
+        'Repairs adding up? Blue Best members save 10% to 20% on repairs and services, plus two tune-ups a year. Ask us about a membership plan.',
+        'Applies to HVAC repairs with a labor and parts subtotal of $500 or more. Cannot be combined with other offers or Blue Best membership discounts. One use per household per year.',
       ],
     },
 
     secondaryHero: {
       backgroundImage: '/images/hero-3_rxo7uq.webp',
-      heading: 'Warm All Winter, Cool All Summer.',
-      description: 'A heat pump handles both, efficiently, on one system. Head into the cold season with a new system and a payment that fits. Book your free estimate today.',
+      heading: '$75 Off Your Next HVAC Repair.',
+      description: 'For the repairs that actually feel like a repair. When your heating repair runs past $500, we take $75 off. Book your free estimate today.',
       ctaText: 'BOOK MY FREE ESTIMATE',
     },
   },

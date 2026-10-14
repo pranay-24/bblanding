@@ -12,14 +12,20 @@ const AvoidHeadachesHVACNewsletter: React.FC<HeroProps> = ({ contactFormEmbed })
 
           <div className="w-full lg:w-1/2">
             <h2 className="text-3xl md:text-4xl font-bold text-blue-primary mb-1">
-              Comfort That Fits Your Budget.
+              Fix It Before the <span className="text-orange-500">First Freeze.</span>
             </h2>
             <div className="space-y-4 text-gray-600 mb-6 mt-4">
               <p>
-                One efficient system keeps your home warm in winter and cool in summer, and with payments starting at $119 a month, the upgrade is easier on your budget than you might expect.
+                Cold weather puts real strain on your heating system, and that is when worn parts tend to give out. For the bigger repairs, the ones with a parts and labor total of $500 or more, we take $75 off.
               </p>
               <p>
-                Every Blue Best install is backed by a 10-year parts and 1-year labor warranty, and it can stack with utility rebates we handle for you. Want to see your options first? Our soft pre-qualification checks your rate with no impact to your credit.
+                You see the number before any work begins. The $75 comes off your written, upfront quote, so you know exactly what you are paying.
+              </p>
+              <h3 className="text-xl md:text-2xl font-bold text-blue-primary pt-2">
+                DON'T GET CAUGHT <span className="text-orange-500">IN THE COLD.</span>
+              </h3>
+              <p>
+                Small heating problems turn into big ones once temperatures drop. If your system needs more than a quick fix, book now and take $75 off the repair.
               </p>
             </div>
           </div>
