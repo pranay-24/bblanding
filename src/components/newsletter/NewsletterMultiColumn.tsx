@@ -6,7 +6,7 @@ interface NewsletterMultiColumnProps {
 }
 
 export function NewsletterMultiColumn({ offer }: NewsletterMultiColumnProps) {
-  const { sectionHeading, description, cards, noteHeading, footnotes } = offer;
+  const { sectionHeading, description, cards, tableRows, noteHeading, footnotes } = offer;
   const isSingle = cards.length === 1;
 
   return (
@@ -34,8 +34,31 @@ export function NewsletterMultiColumn({ offer }: NewsletterMultiColumnProps) {
           </div>
         )}
 
+        {/* Earnings table layout */}
+        {tableRows && tableRows.length > 0 && (
+          <div className="max-w-2xl mx-auto rounded-xl overflow-hidden border border-blue-100 shadow-sm">
+            {/* Table header */}
+            <div className="grid grid-cols-2 bg-blue-primary px-6 py-4">
+              <span className="text-white font-semibold text-base md:text-lg">When Your Neighbor Installs</span>
+              <span className="text-white font-semibold text-base md:text-lg text-right">You Earn</span>
+            </div>
+            {/* Table rows */}
+            {tableRows.map((row, idx) => (
+              <div
+                key={idx}
+                className={`grid grid-cols-2 items-center px-6 py-5 ${idx % 2 === 0 ? 'bg-blue-50' : 'bg-white'}`}
+              >
+                <span className="text-blue-primary-dark font-semibold text-sm md:text-base pr-4">{row.install}</span>
+                <span className={`text-right text-xl md:text-2xl font-bold ${row.earnHighlight ? 'text-orange-500' : 'text-blue-primary-dark'}`}>
+                  {row.earn}
+                </span>
+              </div>
+            ))}
+          </div>
+        )}
+
         {/* Single-card layout (e.g. HVAC) */}
-        {isSingle && (
+        {!tableRows && isSingle && (
           <div className="flex flex-col bg-white p-2 rounded-lg h-42 md:h-full mx-auto border-4 border-[var(--orange-dark)]">
             <div className="text-center">
               {cards[0].label && (
@@ -64,7 +87,7 @@ export function NewsletterMultiColumn({ offer }: NewsletterMultiColumnProps) {
         )}
 
         {/* Multi-card layout (e.g. Water Heater, Tune-up, Furnace) */}
-        {!isSingle && (
+        {!tableRows && !isSingle && (
           <div className="flex flex-col md:flex-row bg-white p-2 rounded-lg mx-auto">
             {cards.map((card, idx) => (
               <div

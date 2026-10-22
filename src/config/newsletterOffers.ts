@@ -42,12 +42,21 @@ export interface HeroOffer {
   ctaText: string;
 }
 
+export interface EarningsTableRow {
+  install: string;
+  earn: string;
+  /** When true the earn amount is rendered in orange */
+  earnHighlight?: boolean;
+}
+
 export interface MultiColumnOffer {
   /** Optional heading above the offer cards */
   sectionHeading?: string;
   /** Optional description shown directly below sectionHeading */
   description?: string;
   cards: OfferCard[];
+  /** When provided an earnings table is rendered instead of cards */
+  tableRows?: EarningsTableRow[];
   /** Optional bold heading shown below the cards, outside any box */
   noteHeading?: string;
   /** Optional paragraph shown below noteHeading, outside any box */
@@ -99,38 +108,30 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
 
     hero: {
       backgroundImage: '/images/hero-banner-2_o7dlss.webp',
-      title1: '$75 OFF\nHVAC REPAIRS OVER $500',
-      subTitle: 'For the repairs that actually feel like a repair. When your heating repair runs past $500, we take $75 off.',
-      ctaText: 'BOOK MY FREE ESTIMATE',
+      title1: 'REFER A NEIGHBOR.\nGET PAID.',
+      belowHeading: 'UP TO $150',
+      subTitle: 'Earn up to $150 every time you send a neighbor our way, paid by Venmo or Zelle. No cap.',
+      ctaText: 'REFER A NEIGHBOR',
     },
 
     multiColumn: {
-      sectionHeading: 'How It Works',
-      cards: [
-        {
-          heading: 'Book your repair',
-          subheading: 'and mention this offer.',
-        },
-        {
-          heading: 'Get a written, upfront quote',
-          subheading: 'before any work begins.',
-        },
-        {
-          heading: 'If parts and labor total $500 or more,',
-          subheading: 'we take $75 off.',
-        },
+      sectionHeading: 'Here Is What You Earn',
+      cards: [],
+      tableRows: [
+        { install: 'A complete high-efficiency HVAC system', earn: 'Up to $150', earnHighlight: true },
+        { install: 'Each piece of equipment (furnace, AC, heat pump, water heater)', earn: '$75' },
       ],
       footnotes: [
-        'Repairs adding up? Blue Best members save 10% to 20% on repairs and services, plus two tune-ups a year. Ask us about a membership plan.',
-        'Applies to HVAC repairs with a labor and parts subtotal of $500 or more. Cannot be combined with other offers or Blue Best membership discounts. One use per household per year.',
+        'We send your reward by Venmo or Zelle after your neighbor\'s install is complete. No limit on how many neighbors you refer.',
+        'How it works: give us a call, or have your neighbor mention your name when they book. We will take care of the rest.',
       ],
     },
 
     secondaryHero: {
       backgroundImage: '/images/hero-3_rxo7uq.webp',
-      heading: '$75 Off Your Next HVAC Repair.',
-      description: 'For the repairs that actually feel like a repair. When your heating repair runs past $500, we take $75 off. Book your free estimate today.',
-      ctaText: 'BOOK MY FREE ESTIMATE',
+      heading: 'Refer a Neighbor. Get Up to $150.',
+      description: 'Send a neighbor our way. When they install with Blue Best, we pay you by Venmo or Zelle. No cap on referrals.',
+      ctaText: 'REFER A NEIGHBOR',
     },
   },
 
