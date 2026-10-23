@@ -3,9 +3,10 @@ import {  Phone } from 'lucide-react';
 
 interface ProcessSectionProps {
   ctaTitle?: string;
+  ctaButtonText?: string;
 }
 
-const ProcessSection: React.FC<ProcessSectionProps> = ({ ctaTitle = "Ready for a New HVAC System? Let's Talk." }) => {
+const ProcessSection: React.FC<ProcessSectionProps> = ({ ctaTitle = "Ready for a New HVAC System? Let's Talk.", ctaButtonText = 'Request Estimate' }) => {
   const steps = [
     { number: 1, title: 'Free Consultation', text: 'Schedule Your Estimate' },
     { number: 2, title: 'Professional Installation', text: 'Get Expert Recommendation + Quote' },
@@ -81,7 +82,7 @@ const ProcessSection: React.FC<ProcessSectionProps> = ({ ctaTitle = "Ready for a
                onClick={handleClick}
               className="px-11 py-3.5 text-lg bg-gradient-to-b from-orange-600 to-orange-500 text-white text-center ease-out whitespace-pre-wrap rounded-full uppercase font-semibold font-['Kanit'] leading-relaxed hover:cursor-pointer shadow-[0_0.2em_0_#003572] transition duration-300"
             >
-              Request Estimate
+              {ctaButtonText}
             </a>
             <a
                 href="tel:+13852002604"
