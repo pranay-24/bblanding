@@ -78,9 +78,11 @@ const NewsletterPage: React.FC = () => {
       <NewsletterHero offer={config.hero} contactFormEmbed={formEmbed} />
 
       {/* ── OFFER SECTION 2: MultiColumn offer cards ── */}
-      <div className="md:mt-[-50px] relative z-100">
-        <NewsletterMultiColumn offer={config.multiColumn} />
-      </div>
+      {service !== 'hvac' && (
+        <div className="md:mt-[-50px] relative z-100">
+          <NewsletterMultiColumn offer={config.multiColumn} />
+        </div>
+      )}
 
       {/* ── Service-specific: Avoid Headaches + form ── */}
       {service === 'hvac' && <AvoidHeadachesHVACNewsletter contactFormEmbed={formEmbed} />}
@@ -105,7 +107,7 @@ const NewsletterPage: React.FC = () => {
         {service === 'furnace-service' && <TestimonialsSectionFurnace />}
         {service === 'plumbing' && <TestimonialsSectionPlumbing />}
 
-        {service === 'hvac' && <ProcessSection ctaTitle="Refer a Neighbor. Get Up to $150." ctaButtonText="REFER A NEIGHBOR" />}
+        {service === 'hvac' && <ProcessSection ctaTitle="Join Your Neighbors Who Trust Blue Best." ctaButtonText="BOOK WITH BLUE BEST" />}
         {service === 'water-heater' && <ProcessSectionWH />}
         {service === 'hvac-tune-up' && <ProcessSectionTU ctaTitle="$89 Precision Tune-Up & Safety Inspection" />}
         {service === 'furnace-service' && <ProcessSectionFurnace />}

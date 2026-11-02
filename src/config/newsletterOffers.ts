@@ -108,10 +108,9 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
 
     hero: {
       backgroundImage: '/images/hero-banner-2_o7dlss.webp',
-      title1: 'REFER A NEIGHBOR.\nGET PAID.',
-      belowHeading: 'UP TO $150',
-      subTitle: 'Earn up to $150 every time you send a neighbor our way, paid by Venmo or Zelle. No cap.',
-      ctaText: 'REFER A NEIGHBOR',
+      title1: 'WHY UTAH HOMEOWNERS\nTRUST BLUE BEST',
+      subTitle: 'A 5.0 rating across 2,900+ reviews, three-time Best of State for Heating and Air, locally and women-owned and operated',
+      ctaText: 'BOOK WITH BLUE BEST',
     },
 
     multiColumn: {
@@ -129,9 +128,9 @@ export const NEWSLETTER_OFFERS: Record<ServiceKey, NewsletterServiceConfig> = {
 
     secondaryHero: {
       backgroundImage: '/images/hero-3_rxo7uq.webp',
-      heading: 'Refer a Neighbor. Get Up to $150.',
-      description: 'Send a neighbor our way. When they install with Blue Best, we pay you by Venmo or Zelle. No cap on referrals.',
-      ctaText: 'REFER A NEIGHBOR',
+      heading: 'Join Your Neighbors Who Trust Blue Best',
+      description: 'From repairs and tune-ups to new systems, our team is ready to help. Ask about Blue Best membership plans, from $17 a month.',
+      ctaText: 'BOOK WITH BLUE BEST',
     },
   },
 
