@@ -1,5 +1,16 @@
-
 {
+  "redirects": [
+    {
+      "source": "/newsletter",
+      "destination": "https://bluebest.com/lp/newsletter/",
+      "statusCode": 301
+    },
+    {
+      "source": "/newsletter/",
+      "destination": "https://bluebest.com/lp/newsletter/",
+      "statusCode": 301
+    }
+  ],
   "rewrites": [
     {
       "source": "/((?!api/).*)",
