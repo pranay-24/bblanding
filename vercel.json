@@ -2,12 +2,12 @@
   "redirects": [
     {
       "source": "/newsletter",
-      "destination": "https://bluebest.com/lp/newsletter/",
+      "destination": "https://bluebest.com/newsletter/",
       "statusCode": 301
     },
     {
       "source": "/newsletter/",
-      "destination": "https://bluebest.com/lp/newsletter/",
+      "destination": "https://bluebest.com/newsletter/",
       "statusCode": 301
     }
   ],
