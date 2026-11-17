@@ -104,6 +104,26 @@
       "source": "/accessibility-statement/",
       "destination": "https://bluebest.com/accessibility-statement/",
       "statusCode": 301
+    },
+    {
+      "source": "/quilt",
+      "destination": "https://bluebest.com/",
+      "statusCode": 301
+    },
+    {
+      "source": "/quilt/",
+      "destination": "https://bluebest.com/",
+      "statusCode": 301
+    },
+    {
+      "source": "/thank-you",
+      "destination": "https://bluebest.com/",
+      "statusCode": 301
+    },
+    {
+      "source": "/thank-you/",
+      "destination": "https://bluebest.com/",
+      "statusCode": 301
     }
   ],
   "rewrites": [
