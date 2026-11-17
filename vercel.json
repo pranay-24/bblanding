@@ -9,6 +9,66 @@
       "source": "/newsletter/",
       "destination": "https://bluebest.com/newsletter/",
       "statusCode": 301
+    },
+    {
+      "source": "/membership",
+      "destination": "https://bluebest.com/memberships/",
+      "statusCode": 301
+    },
+    {
+      "source": "/membership/",
+      "destination": "https://bluebest.com/memberships/",
+      "statusCode": 301
+    },
+    {
+      "source": "/hvac",
+      "destination": "https://bluebest.com/lp/hvac/",
+      "statusCode": 301
+    },
+    {
+      "source": "/hvac/",
+      "destination": "https://bluebest.com/lp/hvac/",
+      "statusCode": 301
+    },
+    {
+      "source": "/hvac-tune-up",
+      "destination": "https://bluebest.com/lp/hvac-tune-up/",
+      "statusCode": 301
+    },
+    {
+      "source": "/hvac-tune-up/",
+      "destination": "https://bluebest.com/lp/hvac-tune-up/",
+      "statusCode": 301
+    },
+    {
+      "source": "/furnace-service",
+      "destination": "https://bluebest.com/lp/furnace-service/",
+      "statusCode": 301
+    },
+    {
+      "source": "/furnace-service/",
+      "destination": "https://bluebest.com/lp/furnace-service/",
+      "statusCode": 301
+    },
+    {
+      "source": "/water-heater",
+      "destination": "https://bluebest.com/lp/water-heater/",
+      "statusCode": 301
+    },
+    {
+      "source": "/water-heater/",
+      "destination": "https://bluebest.com/lp/water-heater/",
+      "statusCode": 301
+    },
+    {
+      "source": "/plumbing",
+      "destination": "https://bluebest.com/lp/plumbing/",
+      "statusCode": 301
+    },
+    {
+      "source": "/plumbing/",
+      "destination": "https://bluebest.com/lp/plumbing/",
+      "statusCode": 301
     }
   ],
   "rewrites": [
